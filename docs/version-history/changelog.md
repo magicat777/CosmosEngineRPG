@@ -44,6 +44,40 @@ This document tracks all changes to files within the `/docs` directory. Each ent
 
 ---
 
+## Version 3.1.0 - Drift Analysis Framework
+**Date**: 2025-01-23  
+**Type**: Minor Release  
+**Author**: System Architecture Team
+
+### Files Added
+- `core-rules/core-mechanics-reference.md` - Quick reference for core mechanics validation
+- `design-notes/drift-decisions.md` - Log of intentional mechanical variations
+- `development/mechanics-workshop/drift-analysis-framework.md` - Framework for detecting drift
+- `development/mechanics-workshop/mechanics-tracker.md` - Active tracking of all mechanics
+- `development/mechanics-workshop/drift-analysis-report.md` - Initial system analysis
+- `resources/templates/rule-validation-checklist.md` - Checklist for new rule validation
+
+### Summary of Changes
+- Established drift detection and management system
+- Created validation tools for mechanical consistency
+- Documented existing intentional variances
+- Identified attribute system as critical gap
+- Set up ongoing monitoring framework
+
+### Key Findings
+- Core mechanics consistency: 92/100
+- Intentional drifts: Initiative simplification, damage dice variety
+- Critical gap: Attribute system undefined
+- Overall system health: Good
+
+### Review Requirements
+- Check all new mechanics against core reference
+- Use validation checklist for new rules
+- Update tracker monthly
+- Document all drift decisions
+
+---
+
 ## Version History Template
 
 <!--
