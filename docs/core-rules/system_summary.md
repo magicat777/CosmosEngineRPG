@@ -32,6 +32,12 @@
 ### **Component Ranges**
 - **2d10 Base**: 2-20 (bell curve distribution, mean 11.0)
 - **Attributes**: 0-5 (human average 2-3, maximum 6 at level 20)
+  - **Might**: Force & Power (strength, endurance)
+  - **Coordination**: Precision & Control (dexterity, reflexes)
+  - **Intellect**: Analysis & Processing (reasoning, knowledge)
+  - **Awareness**: Detection & Intuition (perception, empathy)
+  - **Presence**: Influence & Command (charisma, leadership)
+  - **Resolve**: Will & Stability (willpower, stress resistance)
 - **Skills**: 0-5 base (0-7 with technological enhancement, maximum natural 5)
 - **Equipment**: 0-5 (limited by Technology Era)
 - **Situation**: -3 to +3 (consolidated modifier covering range, cover, conditions)
@@ -192,7 +198,7 @@ Cosmic Era:       5 dice   (5d4 to 5d20)
 ## Action Economy & Initiative
 
 ### **Initiative System**
-**2d10 + Reaction Attribute + Agility Rating**
+**2d10 + Coordination + Awareness**
 
 ### **Action Types per Turn**
 - **Standard Action**: Attack, complex skill use, electronic warfare
@@ -226,12 +232,14 @@ Cosmic Era:       5 dice   (5d4 to 5d20)
 - Choose starting technology era access (Primitive through Cosmic)
 
 **Phase 3: Attribute Generation** (10 minutes)
-- **Lifepath Method**: Start [2,2,2,2,2,2], then:
-  - Origin: +1 to two attributes
-  - Background: +1 to two attributes  
-  - Career: +1 to two attributes
-  - Experience: Distribute 2 additional points
+- **Starting Array**: [3,3,2,2,2,2] - assign to Might, Coordination, Intellect, Awareness, Presence, Resolve
+- **Lifepath Method**: Apply bonuses based on choices:
+  - Origin: +1 to two attributes (based on homeworld/culture)
+  - Background: +1 to two attributes (based on upbringing)  
+  - Career: +1 to two attributes (based on profession)
+  - Experience: Distribute 2 additional points freely
 - **Final Range**: Attributes 2-5 with narrative justification
+- **Example**: Soldier origin (+1 Might, +1 Resolve), Academic background (+1 Intellect, +1 Awareness)
 
 **Phase 4: Starting Skills** (10 minutes)
 - Background grants 3 skills at rank 1
@@ -374,13 +382,15 @@ Cosmic Era:       5 dice   (5d4 to 5d20)
 
 ## Unresolved Design Elements
 
-### **Attribute System** (Current Workshop Focus)
-**Current Framework**: 6 attributes, 0-5 range, human average 2-3
-**Open Questions**: 
-- Specific attribute definitions and applications
-- Cross-scale attribute use (personal vs fleet command)
-- Advancement costs and maximum values
-- Integration with derived statistics
+### **Attribute System** ✅
+**Defined**: 6 attributes, 0-5 range (6 max at level 20)
+- **Might**: Force & Power across scales
+- **Coordination**: Precision & Control
+- **Intellect**: Analysis & Processing
+- **Awareness**: Detection & Intuition
+- **Presence**: Influence & Command
+- **Resolve**: Will & Stability
+**Integrated**: Cross-scale applications, derived statistics, advancement costs defined
 
 ### **Social/Exploration Systems** (2/10 Complexity Target)
 **Requirements**: Simple, fast resolution for non-combat scenarios

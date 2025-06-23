@@ -20,11 +20,12 @@ This document records all decisions made when mechanics drift from core principl
 **Type**: Design Drift  
 **Severity**: Low  
 **Decision**: Keep Drift  
-**Description**: Initiative uses 2d10 + Reaction + Agility instead of full 4-modifier system  
+**Description**: Initiative uses 2d10 + Coordination + Awareness instead of full 4-modifier system  
 **Rationale**: 
 - Initiative needs to be calculated quickly at combat start
 - Adding equipment and situation modifiers would slow gameplay
 - The simplified system maintains 2d10 base and reasonable range
+- Uses two attributes that represent reflexes (Coordination) and perception (Awareness)
 - Players find it more intuitive  
 **Review Date**: After 10 combat playtests
 

@@ -19,8 +19,15 @@
 ### Attributes (0-5, max 6 at level 20)
 - Human average: 2-3
 - Peak human: 5
-- Enhanced maximum: 6
-- *Undefined which 6 attributes - currently in development*
+- Enhanced maximum: 6 (level 20 only, one attribute)
+
+**The Six Attributes:**
+- **Might**: Force & Power (strength, endurance, system power)
+- **Coordination**: Precision & Control (dexterity, reflexes, piloting)
+- **Intellect**: Analysis & Processing (reasoning, knowledge, tactics)
+- **Awareness**: Detection & Intuition (perception, sensors, empathy)
+- **Presence**: Influence & Command (charisma, leadership, authority)
+- **Resolve**: Will & Stability (willpower, stress resistance, focus)
 
 ### Skills (0-5 natural, 0-7 enhanced)
 - Untrained: 0
@@ -74,6 +81,34 @@ Consolidated modifier covering:
 - Legendary critical
 - Choose bonus effect
 - Extremely rare
+
+## Initiative
+```
+2d10 + Coordination + Awareness
+```
+- Uses same 2d10 base as all rolls
+- Represents reflexes + perception
+
+## Derived Statistics
+
+### Hit Points
+```
+10 + (Might × 2) + Resolve
+```
+- Starting range: 10-25
+- Maximum range: 10-30
+
+### Defense Values
+- **Physical Defense**: 10 + Coordination + Armor
+- **Mental Defense**: 10 + Resolve + (Intellect ÷ 2)
+- **Electronic Defense**: 10 + Intellect + Systems
+
+### Strain Capacity
+```
+3 + (Resolve × 2)
+```
+- Tracks exhaustion from technology use
+- Range: 3-13
 
 ## Probability Mathematics
 

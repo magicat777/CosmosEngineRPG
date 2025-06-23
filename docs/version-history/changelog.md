@@ -111,6 +111,32 @@ This document tracks all changes to files within the `/docs` directory. Each ent
 
 ---
 
+## Version 3.2.1 - Phase 1 Attribute Integration
+**Date**: 2025-01-23  
+**Type**: Patch Release  
+**Author**: System Integration Team
+
+### Files Modified
+- `core-rules/system_summary.md` - Updated initiative formula, added attribute definitions, completed character creation
+- `core-rules/core-mechanics-reference.md` - Added attribute definitions and derived statistics
+- `character-system/cosmos_character_system.md` - Integrated attributes into character creation
+- `combat-system/cosmos_combat_streamlined.md` - Changed "Will check" to "Resolve check"
+- `design-notes/drift-decisions.md` - Updated initiative drift documentation
+
+### Summary of Changes
+- Updated all initiative references from "Reaction + Agility" to "Coordination + Awareness"
+- Added complete attribute definitions to core references
+- Integrated attribute generation into character creation process
+- Added derived statistics formulas (HP, Defenses, Strain)
+- Fixed terminology (Will → Resolve)
+
+### Integration Progress
+- Phase 1 Complete: Core attribute references updated
+- Ready for Phase 2: Skill-attribute pairings and combat examples
+- Attribute system now fully referenced in core documentation
+
+---
+
 ## Version History Template
 
 <!--

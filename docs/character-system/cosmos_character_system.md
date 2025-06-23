@@ -36,9 +36,31 @@ Select from pre-designed paths with automatic optimization:
 ### **Experienced Player Path (45 minutes) - Complexity 4/10**
 
 **Phase 1: Technology Era Selection** (5 minutes)
-**Phase 2: Attribute Generation** (10 minutes) - Lifepath method
-**Phase 3: Background & Skills** (15 minutes) - Package system
-**Phase 4: Specialization Planning** (15 minutes) - 10 AP starting budget
+- Choose from Primitive through Cosmic
+- Determines equipment access and enhancement availability
+
+**Phase 2: Attribute Generation** (10 minutes)
+- **Starting Array**: [3,3,2,2,2,2] - assign to the six attributes:
+  - **Might**: Force & Power (strength, endurance)
+  - **Coordination**: Precision & Control (dexterity, reflexes)
+  - **Intellect**: Analysis & Processing (reasoning, knowledge)
+  - **Awareness**: Detection & Intuition (perception, empathy)
+  - **Presence**: Influence & Command (charisma, leadership)
+  - **Resolve**: Will & Stability (willpower, stress resistance)
+- **Lifepath Bonuses**:
+  - Origin: +1 to two attributes
+  - Background: +1 to two attributes
+  - Career: +1 to two attributes
+  - Experience: +2 points to distribute
+- **Final Range**: 2-5 per attribute
+
+**Phase 3: Background & Skills** (15 minutes)
+- Background grants 3 skills at rank 1
+- Career grants 3 skills at rank 2
+- Choose 2 personal interests at rank 1
+
+**Phase 4: Specialization Planning** (15 minutes)
+- 10 AP starting budget for skill tree basics
 
 ## Streamlined Advancement System
 

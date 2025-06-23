@@ -153,7 +153,7 @@
 **SUPPRESSIVE FIRE**
 - **Cost**: Standard Action, 3x ammunition  
 - **Effect**: Target area gains "Suppressed" condition
-- **Suppressed**: Must make Will check (TN 15) or lose Standard Action next turn
+- **Suppressed**: Must make Resolve check (TN 15) or lose Standard Action next turn
 - **Duration**: Until suppressor's next turn
 
 **COORDINATED ATTACK**
