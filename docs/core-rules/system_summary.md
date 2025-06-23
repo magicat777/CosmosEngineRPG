@@ -31,13 +31,13 @@
 
 ### **Component Ranges**
 - **2d10 Base**: 2-20 (bell curve distribution, mean 11.0)
-- **Attributes**: 0-5 (human average 2-3, maximum 6 at level 20)
-  - **Might**: Force & Power (strength, endurance)
-  - **Coordination**: Precision & Control (dexterity, reflexes)
-  - **Intellect**: Analysis & Processing (reasoning, knowledge)
-  - **Awareness**: Detection & Intuition (perception, empathy)
+- **Attributes**: 0-5 (human average 2-3, maximum 6 at level 20) - PRIMAC system:
   - **Presence**: Influence & Command (charisma, leadership)
   - **Resolve**: Will & Stability (willpower, stress resistance)
+  - **Intellect**: Analysis & Processing (reasoning, knowledge)
+  - **Might**: Force & Power (strength, endurance)
+  - **Awareness**: Detection & Intuition (perception, empathy)
+  - **Coordination**: Precision & Control (dexterity, reflexes)
 - **Skills**: 0-5 base (0-7 with technological enhancement, maximum natural 5)
 - **Equipment**: 0-5 (limited by Technology Era)
 - **Situation**: -3 to +3 (consolidated modifier covering range, cover, conditions)
@@ -232,7 +232,7 @@ Cosmic Era:       5 dice   (5d4 to 5d20)
 - Choose starting technology era access (Primitive through Cosmic)
 
 **Phase 3: Attribute Generation** (10 minutes)
-- **Starting Array**: [3,3,2,2,2,2] - assign to Might, Coordination, Intellect, Awareness, Presence, Resolve
+- **Starting Array**: [3,3,2,2,2,2] - assign to PRIMAC attributes (Presence, Resolve, Intellect, Might, Awareness, Coordination)
 - **Lifepath Method**: Apply bonuses based on choices:
   - Origin: +1 to two attributes (based on homeworld/culture)
   - Background: +1 to two attributes (based on upbringing)  

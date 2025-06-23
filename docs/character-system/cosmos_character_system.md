@@ -40,13 +40,13 @@ Select from pre-designed paths with automatic optimization:
 - Determines equipment access and enhancement availability
 
 **Phase 2: Attribute Generation** (10 minutes)
-- **Starting Array**: [3,3,2,2,2,2] - assign to the six attributes:
-  - **Might**: Force & Power (strength, endurance)
-  - **Coordination**: Precision & Control (dexterity, reflexes)
-  - **Intellect**: Analysis & Processing (reasoning, knowledge)
-  - **Awareness**: Detection & Intuition (perception, empathy)
+- **Starting Array**: [3,3,2,2,2,2] - assign to the six PRIMAC attributes:
   - **Presence**: Influence & Command (charisma, leadership)
   - **Resolve**: Will & Stability (willpower, stress resistance)
+  - **Intellect**: Analysis & Processing (reasoning, knowledge)
+  - **Might**: Force & Power (strength, endurance)
+  - **Awareness**: Detection & Intuition (perception, empathy)
+  - **Coordination**: Precision & Control (dexterity, reflexes)
 - **Lifepath Bonuses**:
   - Origin: +1 to two attributes
   - Background: +1 to two attributes

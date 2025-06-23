@@ -1,54 +1,12 @@
-# Cosmos Engine Attribute System
+# Cosmos Engine Attribute System (PRIMAC)
 
 ## Overview
 
 Six core attributes define every character, vehicle, and organization in Cosmos Engine. These attributes scale seamlessly from personal actions to galactic operations, maintaining consistent mechanics while adapting to context.
 
-## The Six Attributes
+**PRIMAC**: Presence, Resolve, Intellect, Might, Awareness, Coordination
 
-### MIGHT - Force & Power (0-5)
-The application of raw force and system power across all scales.
-
-**Personal Scale**: Physical strength, endurance, and constitution. Determines carrying capacity, melee damage, and physical resilience.
-
-**Vehicle Scale**: Engine output, structural integrity, and power generation. Affects acceleration, towing capacity, and damage resistance.
-
-**Starship Scale**: Engineering systems, reactor output, and power allocation. Influences shield strength, weapon charging, and structural durability.
-
-**Capital Scale**: Industrial capacity, resource mobilization, and logistical force projection.
-
-### COORDINATION - Precision & Control (0-5)
-Fine control and synchronized action at every level.
-
-**Personal Scale**: Dexterity, reflexes, and hand-eye coordination. Essential for ranged combat, delicate tasks, and acrobatics.
-
-**Vehicle Scale**: Piloting finesse, system synchronization, and maneuvering precision. Critical for evasion and complex maneuvers.
-
-**Starship Scale**: Navigation precision, tactical positioning, and multi-system coordination.
-
-**Capital Scale**: Fleet formations, operational timing, and strategic coordination.
-
-### INTELLECT - Analysis & Processing (0-5)
-Information processing and strategic thinking across domains.
-
-**Personal Scale**: Reasoning, education, and tactical analysis. Drives skill acquisition and technical tasks.
-
-**Vehicle Scale**: System diagnostics, route optimization, and tactical planning.
-
-**Starship Scale**: Strategic analysis, sensor interpretation, and computational power.
-
-**Capital Scale**: Grand strategy, intelligence synthesis, and predictive modeling.
-
-### AWARENESS - Detection & Intuition (0-5)
-Perception and intuitive understanding at all levels.
-
-**Personal Scale**: Sensory perception, empathy, and danger sense. Vital for avoiding ambush and reading people.
-
-**Vehicle Scale**: Environmental awareness, hazard detection, and situational assessment.
-
-**Starship Scale**: Sensor operation, threat detection, and battlefield awareness.
-
-**Capital Scale**: Intelligence networks, strategic reconnaissance, and trend detection.
+## The Six Attributes (PRIMAC Order)
 
 ### PRESENCE - Influence & Command (0-5)
 Force of personality and leadership across scales.
@@ -71,6 +29,50 @@ Mental fortitude and system stability under pressure.
 **Starship Scale**: Combat composure, crisis management, and crew steadiness.
 
 **Capital Scale**: Strategic patience, institutional stability, and long-term focus.
+
+### INTELLECT - Analysis & Processing (0-5)
+Information processing and strategic thinking across domains.
+
+**Personal Scale**: Reasoning, education, and tactical analysis. Drives skill acquisition and technical tasks.
+
+**Vehicle Scale**: System diagnostics, route optimization, and tactical planning.
+
+**Starship Scale**: Strategic analysis, sensor interpretation, and computational power.
+
+**Capital Scale**: Grand strategy, intelligence synthesis, and predictive modeling.
+
+### MIGHT - Force & Power (0-5)
+The application of raw force and system power across all scales.
+
+**Personal Scale**: Physical strength, endurance, and constitution. Determines carrying capacity, melee damage, and physical resilience.
+
+**Vehicle Scale**: Engine output, structural integrity, and power generation. Affects acceleration, towing capacity, and damage resistance.
+
+**Starship Scale**: Engineering systems, reactor output, and power allocation. Influences shield strength, weapon charging, and structural durability.
+
+**Capital Scale**: Industrial capacity, resource mobilization, and logistical force projection.
+
+### AWARENESS - Detection & Intuition (0-5)
+Perception and intuitive understanding at all levels.
+
+**Personal Scale**: Sensory perception, empathy, and danger sense. Vital for avoiding ambush and reading people.
+
+**Vehicle Scale**: Environmental awareness, hazard detection, and situational assessment.
+
+**Starship Scale**: Sensor operation, threat detection, and battlefield awareness.
+
+**Capital Scale**: Intelligence networks, strategic reconnaissance, and trend detection.
+
+### COORDINATION - Precision & Control (0-5)
+Fine control and synchronized action at every level.
+
+**Personal Scale**: Dexterity, reflexes, and hand-eye coordination. Essential for ranged combat, delicate tasks, and acrobatics.
+
+**Vehicle Scale**: Piloting finesse, system synchronization, and maneuvering precision. Critical for evasion and complex maneuvers.
+
+**Starship Scale**: Navigation precision, tactical positioning, and multi-system coordination.
+
+**Capital Scale**: Fleet formations, operational timing, and strategic coordination.
 
 ## Attribute Ranges & Advancement
 

@@ -21,13 +21,13 @@
 - Peak human: 5
 - Enhanced maximum: 6 (level 20 only, one attribute)
 
-**The Six Attributes:**
-- **Might**: Force & Power (strength, endurance, system power)
-- **Coordination**: Precision & Control (dexterity, reflexes, piloting)
-- **Intellect**: Analysis & Processing (reasoning, knowledge, tactics)
-- **Awareness**: Detection & Intuition (perception, sensors, empathy)
+**The Six Attributes (PRIMAC):**
 - **Presence**: Influence & Command (charisma, leadership, authority)
 - **Resolve**: Will & Stability (willpower, stress resistance, focus)
+- **Intellect**: Analysis & Processing (reasoning, knowledge, tactics)
+- **Might**: Force & Power (strength, endurance, system power)
+- **Awareness**: Detection & Intuition (perception, sensors, empathy)
+- **Coordination**: Precision & Control (dexterity, reflexes, piloting)
 
 ### Skills (0-5 natural, 0-7 enhanced)
 - Untrained: 0
