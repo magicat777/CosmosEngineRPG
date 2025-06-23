@@ -54,6 +54,19 @@ This document records all decisions made when mechanics drift from core principl
 - Maintains cross-scale compatibility  
 **Review Date**: After vehicle combat playtests
 
+### 2025-01-23: Scale-Based Modifier Caps
+**Type**: Design Drift  
+**Severity**: Medium  
+**Decision**: Keep Drift  
+**Description**: Modifier caps increase at higher scales (Personal +8, Starship +10, Capital +12)  
+**Rationale**:
+- Represents crew and infrastructure assistance at larger scales
+- Maintains probability integrity (still can fail on Natural 2)
+- Prevents absurd modifiers while acknowledging scale differences
+- Players expect capital ships to be more capable
+- Mathematical impact acceptable (max 97% success at TN 8)  
+**Review Date**: After multi-scale combat playtests
+
 ---
 
 ## Rejected Drifts

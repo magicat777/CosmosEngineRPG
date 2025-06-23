@@ -25,7 +25,7 @@ This document tracks all mechanics and rules across the system to monitor drift 
 
 | Mechanic | Location | Complexity | Uses Core | Drift Status | Notes |
 |----------|----------|------------|-----------|--------------|-------|
-| Attribute System | *In Development* | TBD | TBD | ⚠️ Undefined | Needs definition |
+| Attribute System | core-rules/attribute-system.md | 3/10 | ✅ | ✅ Aligned | 6 attributes defined |
 | Skill System | character-system/cosmos_character_system.md | 3/10 | ✅ | ✅ Aligned | 0-5 range, 0-7 enhanced |
 | Advancement Points | character-system/cosmos_character_system.md | 4/10 | N/A | ✅ Aligned | EVE-inspired |
 | Specialization Trees | character-system/cosmos_character_system.md | 4/10 | N/A | ✅ Aligned | Mastery bonuses |
@@ -52,7 +52,6 @@ This document tracks all mechanics and rules across the system to monitor drift 
 - **Damage Dice**: Uses polyhedral dice but not for resolution (acceptable variance)
 
 ### 🔴 Undefined/Problem Areas
-- **Attribute System**: Not yet defined - blocks several other systems
 - **Social/Exploration**: No mechanics defined yet
 
 ## Complexity Budget Tracking

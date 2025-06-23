@@ -78,6 +78,39 @@ This document tracks all changes to files within the `/docs` directory. Each ent
 
 ---
 
+## Version 3.2.0 - Attribute System Definition
+**Date**: 2025-01-23  
+**Type**: Minor Release  
+**Author**: System Design Team
+
+### Files Added
+- `core-rules/attribute-system.md` - Complete attribute system definition
+- `development/mechanics-workshop/attribute-system-analysis.md` - Analysis of proposed system
+
+### Files Modified
+- `development/mechanics-workshop/mechanics-tracker.md` - Updated attribute system status
+- `docs/design-notes/drift-decisions.md` - Added scale-based modifier cap decision
+
+### Summary of Changes
+- Defined six core attributes: Might, Coordination, Intellect, Awareness, Presence, Resolve
+- Established cross-scale applications for all attributes
+- Set attribute ranges (0-5, max 6 at level 20)
+- Created derived statistics (HP, Initiative, Defenses, Strain)
+- Implemented scale-based modifier caps (Personal +8, Starship +10, Capital +12)
+
+### Design Decisions
+- Maintained 2d10 for initiative (not 1d10)
+- Capped HP at reasonable range (10-30)
+- Technology enhances but doesn't replace attributes
+- Every attribute has vital applications (no dump stats)
+
+### Integration Notes
+- All attributes work identically across scales
+- Modifier caps adjust by scale to represent assistance
+- Technology Era provides temporary enhancements only
+
+---
+
 ## Version History Template
 
 <!--
