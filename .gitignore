@@ -1,0 +1,70 @@
+# Development Environment
+.DS_Store
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+ENV/
+env/
+*.egg
+*.egg-info/
+
+# Node.js (for web tools)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.npm
+*.log
+
+# Build outputs
+dist/
+build/
+*.spec
+.cache
+.coverage
+htmlcov/
+
+# Playtesting data (sensitive)
+playtesting/session-logs/private/
+playtesting/feedback/raw/
+
+# Temporary files
+*.tmp
+*.bak
+*.old
+.~lock.*
+
+# PDF outputs (generated)
+*.pdf
+!resources/templates/*.pdf
+!resources/handouts/*.pdf
+
+# Local configuration
+config.local.json
+.env
+.env.local
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+
+# OS generated files
+Thumbs.db
+desktop.ini
+
+# Archive files
+*.zip
+*.tar.gz
+*.rar
+!resources/releases/*.zip
