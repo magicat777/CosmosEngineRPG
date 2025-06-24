@@ -11,7 +11,9 @@ This document tracks all mechanics and rules across the system to monitor drift 
 | Basic Task Resolution | core-rules/system_summary.md | ✅ | 4 types | 8-20 | ✅ Aligned | Core mechanic |
 | Combat Attack Rolls | combat-system/cosmos_combat_streamlined.md | ✅ | 4 types | 8-20 | ✅ Aligned | |
 | Skill Checks | character-system/cosmos_character_system.md | ✅ | 4 types | 8-20 | ✅ Aligned | |
-| Initiative | combat-system/cosmos_combat_streamlined.md | ✅ | 2 types | N/A | ✅ Aligned | 2d10 + Reaction + Agility |
+| Initiative | combat-system/cosmos_combat_streamlined.md | ✅ | 2 types | N/A | ✅ Aligned | 2d10 + Coordination + Awareness |
+| Social Resolution | core-rules/social-exploration-system.md | ✅ | 4 types | 8-20 | ✅ Aligned | Binary states |
+| Exploration Resolution | core-rules/social-exploration-system.md | ✅ | 4 types | 8-20 | ✅ Aligned | Binary states |
 
 ### Damage Systems
 
@@ -52,7 +54,7 @@ This document tracks all mechanics and rules across the system to monitor drift 
 - **Damage Dice**: Uses polyhedral dice but not for resolution (acceptable variance)
 
 ### 🔴 Undefined/Problem Areas
-- **Social/Exploration**: No mechanics defined yet
+- None currently! All core systems defined
 
 ## Complexity Budget Tracking
 
@@ -62,7 +64,7 @@ This document tracks all mechanics and rules across the system to monitor drift 
 | Combat | 5-6/10 | 5/10 | ✅ On Target | Streamlined version |
 | Technology | 4/10 | 4/10 | ✅ On Target | |
 | Character Creation | 3-4/10 | 4/10 | ✅ On Target | With guided paths |
-| Social/Exploration | 2/10 | 0/10 | 🔴 Missing | Needs development |
+| Social/Exploration | 2/10 | 2/10 | ✅ On Target | Binary states + talent trees |
 
 ## Cross-Scale Compatibility Matrix
 
@@ -74,6 +76,8 @@ This document tracks all mechanics and rules across the system to monitor drift 
 | Damage (Conditions) | ❌ | ✅ | ✅ | ✅ | Vehicle+ only |
 | Status Effects | ✅ | ✅ | ✅ | ✅ | Universal |
 | Technology Modes | ✅ | ✅ | ✅ | ✅ | Universal |
+| Social (Binary States) | ✅ | ✅ | ✅ | ✅ | Universal |
+| Exploration (Binary States) | ✅ | ✅ | ✅ | ✅ | Universal |
 
 ## Version Correlation
 
