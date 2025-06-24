@@ -137,6 +137,40 @@ This document tracks all changes to files within the `/docs` directory. Each ent
 
 ---
 
+## Version 3.3.0 - Social & Exploration System
+**Date**: 2025-01-24  
+**Type**: Minor Release  
+**Author**: System Design Team
+
+### Files Added
+- `core-rules/social-exploration-system.md` - Complete social/exploration mechanics
+- `resources/reference-sheets/social-exploration-paths.md` - Specialization path guide
+- `resources/templates/binary-states-tracker.md` - GM/player tracking templates
+- `development/mechanics-workshop/social-exploration-drift-analysis.md` - Drift analysis
+
+### Files Modified
+- `development/mechanics-workshop/mechanics-tracker.md` - Updated to show social/exploration complete
+
+### Summary of Changes
+- Implemented binary state system for relationships and discoveries
+- Created deep talent trees for social and exploration specialization
+- Maintained 2/10 complexity target with zero mechanical drift
+- Added guided paths for new players and depth for optimizers
+
+### Design Decisions
+- Rejected IP/DP point system (would create 50% drift)
+- Used binary states instead of complex tracking
+- Integrated with existing AP advancement system
+- Created clear archetypal paths for ease of use
+
+### Key Features
+- 5 relationship states: Unknown → Known → Trusted → Allied → Devoted
+- 5 discovery states: Unexplored → Scouted → Mapped → Mastered → Exploited
+- 200+ AP worth of social/exploration talents
+- Works at all scales (Personal through Capital)
+
+---
+
 ## Version History Template
 
 <!--

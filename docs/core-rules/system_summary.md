@@ -392,9 +392,12 @@ Cosmic Era:       5 dice   (5d4 to 5d20)
 - **Resolve**: Will & Stability
 **Integrated**: Cross-scale applications, derived statistics, advancement costs defined
 
-### **Social/Exploration Systems** (2/10 Complexity Target)
-**Requirements**: Simple, fast resolution for non-combat scenarios
-**Needs**: Reputation system, investigation mechanics, political intrigue
+### **Social/Exploration Systems** ✅
+**Implemented**: Binary state system with talent trees
+- **Relationships**: 5-state progression tracks per NPC/faction
+- **Discoveries**: 5-state exploration tracks per location
+- **Complexity**: 2/10 achieved through binary states
+- **Depth**: 200+ AP of specialization options
 
 ### **Campaign Framework**
 **Requirements**: Guidelines for scale progression, technology era advancement
@@ -410,15 +413,19 @@ Cosmic Era:       5 dice   (5d4 to 5d20)
 - **Combat System**: Streamlined to 5-6/10 complexity with tactical depth
 - **Character Creation**: EVE-inspired advancement with guided paths
 - **Technology Integration**: Enhancement modes and era progression
+- **Attribute System**: PRIMAC - 6 attributes with cross-scale applications
+- **Social/Exploration**: Binary states with deep specialization trees
 
 ### **Current Workshop** 🔧
-- **Attribute System**: Definitions, scaling, mechanical integration
+- **Equipment Catalogs**: Detailed items by Technology Era
+- **Complete Skill List**: All skills with PRIMAC pairings
 
 ### **Pending Development** 📋
-- **Social/Exploration Systems**: Simple resolution for non-combat
 - **Campaign Framework**: Scale progression and setting guidelines  
 - **Equipment Catalogs**: Weapons, armor, vehicles by technology era
+- **Complete Skill List**: Comprehensive skills with descriptions
 - **Quick-Start Materials**: Pre-generated characters and scenarios
+- **GM Resources**: Running games, setting TNs, creating NPCs
 
 ### **Design Philosophy Validation** ✅
 **Cosmos Engine successfully achieves**:
