@@ -1,7 +1,7 @@
 # Cosmos Engine RPG
 
 <p align="center">
-  <img src="resources/artwork/cosmos-engine-logo.png" alt="Cosmos Engine RPG Logo" width="400"/>
+  <img src="https://github.com/magicat777/CosmosEngineRPG/blob/main/resources/artwork/CosmosEngine_gear.png" alt="Cosmos Engine RPG Logo" width="400"/>
 </p>
 
 <p align="center">
