@@ -31,15 +31,15 @@
 
 ### **Component Ranges**
 - **2d10 Base**: 2-20 (bell curve distribution, mean 11.0)
-- **Attributes**: 0-5 (human average 2-3, maximum 6 at level 20) - PRIMAC system:
+- **Attributes**: 1-10 (human average 4-5, maximum 10 at level 20) - PRIMAC system:
   - **Presence**: Influence & Command (charisma, leadership)
   - **Resolve**: Will & Stability (willpower, stress resistance)
   - **Intellect**: Analysis & Processing (reasoning, knowledge)
   - **Might**: Force & Power (strength, endurance)
   - **Awareness**: Detection & Intuition (perception, empathy)
   - **Coordination**: Precision & Control (dexterity, reflexes)
-- **Skills**: 0-5 base (0-7 with technological enhancement, maximum natural 5)
-- **Equipment**: 0-5 (limited by Technology Era)
+- **Skills**: 0-10 base (combat skill divided by 2 for attack/damage bonuses, maximum 10)
+- **Equipment**: 0-3 (limited by Technology Era, balanced for scaling)
 - **Situation**: -3 to +3 (consolidated modifier covering range, cover, conditions)
 
 ### **Target Numbers & Probability**
@@ -179,11 +179,43 @@ Cosmic Era:       5 dice   (5d4 to 5d20)
 - **Defense**: Each point adds +1 to Defense TN
 - **Systems**: Each point adds +1 to electronic/technical actions
 
-### **Defense System**
+### **Attack & Defense System** (Balanced Formulas)
+
+**Attack Resolution**:
+```
+2d10 + Attribute + (Skill ÷ 2) + Equipment + Situation vs Defense
+```
+- **Melee**: Might + (Combat ÷ 2)
+- **Ranged**: Coordination + (Combat ÷ 2)
+- **Other Skills**: Use appropriate attribute + (Skill ÷ 2)
+
+**Defense Calculation**:
+```
+10 + Coordination + (Combat Skill ÷ 2) + Cover + Equipment
+```
+- **Base Defense**: 10 (replaces variable Target Numbers)
+- **Combat Training**: Improves both offense and defense
+- **Cover**: +1 to +3 (light to superior)
+- **Equipment**: Armor/shields +0 to +3
+
+**Damage Resolution**:
+```
+Weapon Base + (Combat Skill ÷ 2) + Success Margin + Enhancements
+```
+- **Skill Bonus**: Combat training adds to damage
+- **Success Margin**: +1 damage per 5 points over Defense
+- **Equipment**: Technology era determines weapon dice
+
+### **Level Gap Rules** (Balance Mechanics)
+- **5-9 Level Gap**: Lower opponents are "Minions" (take double damage)
+- **10+ Level Gap**: Lower opponents are "Mooks" (defeated by any hit)
+- **Elite Scaling**: Bosses gain +2 Defense per 5 levels above party
+
+### **Defense Type Breakdown**
 - **Passive Defense**: Physical armor, hull reinforcement (+0 to +3)
 - **Active Defense**: Shields, evasive maneuvers (+0 to +3)  
 - **Electronic Defense**: ECM, AI assistance (+0 to +3)
-- **Maximum Total Defense**: +6 (prevents TN inflation)
+- **Maximum Equipment Bonus**: +3 (prevents inflation)
 
 ### **Damage Type Interactions**
 | Damage Type | Effective Against | Reduced Against | Special Properties |
@@ -197,8 +229,8 @@ Cosmic Era:       5 dice   (5d4 to 5d20)
 
 ## Action Economy & Initiative
 
-### **Initiative System**
-**2d10 + Coordination + Awareness**
+### **Initiative System** (Balanced)
+**1d10 + Coordination + Awareness**
 
 ### **Action Types per Turn**
 - **Standard Action**: Attack, complex skill use, electronic warfare

@@ -40,12 +40,13 @@
 
 ## Common Attribute Uses
 
-### Combat
-- **Melee Attack**: Might + Combat
-- **Ranged Attack**: Coordination + Combat
-- **Initiative**: Coordination + Awareness (2d10)
+### Combat (Balanced System)
+- **Melee Attack**: 2d10 + Might + (Combat ÷ 2)
+- **Ranged Attack**: 2d10 + Coordination + (Combat ÷ 2)
+- **Defense**: 10 + Coordination + (Combat ÷ 2) + Cover + Armor
+- **Damage**: Weapon Base + (Combat ÷ 2) + Success Margin
+- **Initiative**: 1d10 + Coordination + Awareness
 - **Intimidate**: Presence or Might + Social
-- **Spot Ambush**: Awareness + Combat
 
 ### Social
 - **Persuade**: Presence + Social
@@ -67,11 +68,11 @@
 
 ## Derived Statistics
 
-**Hit Points**: 10 + (Might × 2) + Resolve
+**Hit Points**: 40 + (Might × 8) + (Resolve × 4)
 
-**Initiative**: 2d10 + Coordination + Awareness
+**Initiative**: 1d10 + Coordination + Awareness
 
-**Physical Defense**: 10 + Coordination + Armor
+**Physical Defense**: 10 + Coordination + (Combat ÷ 2) + Cover + Armor
 
 **Mental Defense**: 10 + Resolve + (Intellect ÷ 2)
 

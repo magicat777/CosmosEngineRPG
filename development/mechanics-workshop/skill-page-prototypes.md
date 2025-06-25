@@ -239,7 +239,7 @@ Technology obeys your will; no interface needed
 - Psionics, Temporal Mechanics
 - Dimensional Navigation, others
 
-**Total**: ~22-25 pages of skills
+**Total**: ~23-26 pages of skills
 
 ## Tag Dictionary (2 pages)
 Quick reference of all tags and their meanings
@@ -250,6 +250,6 @@ Table showing powerful tag combinations
 ## Career Guides (6 pages)
 One page per major archetype showing optimal paths
 
-**Total Page Count**: ~32-35 pages
+**Total Page Count**: ~33-36 pages
 
 This gives you FF:SW levels of depth in 1/3 the space!

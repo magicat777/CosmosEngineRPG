@@ -1,0 +1,99 @@
+COSMOS ENGINE CHARACTER SHEET v4.0
+==================================
+
+CHARACTER INFORMATION
+Name: ______________________ Player: ______________________
+Background: _________________ Level: ____ Tier: ___________
+Species: ____________________ Age: ______ Gender: _________
+
+ATTRIBUTES (1-10)
+Presence (Influence):    [ ] Modifier: +__
+Resolve (Will):         [ ] Modifier: +__
+Intellect (Analysis):   [ ] Modifier: +__
+Might (Force):          [ ] Modifier: +__
+Awareness (Detection):  [ ] Modifier: +__
+Coordination (Precision):[ ] Modifier: +__
+
+HIT POINTS: ___/___ (40 + Might×8 + Resolve×4)
+□ Healthy (100-75%)  □ Bloodied (74-50%)  □ Wounded (49-25%, -1)  
+□ Critical (24-10%, -2)  □ Defeated (9-0%)
+
+INITIATIVE: ___ (2d10+Coord+Aware)
+
+DEFENSES
+Physical: ___ (10+Coord+Armor)
+Mental: ___ (10+Resolve+Int÷2)  
+Electronic: ___ (10+Int+Systems)
+
+SAVING THROWS (2d10 + Attribute)
+Might: +___ (poison, disease)      Coordination: +___ (explosions)
+Awareness: +___ (illusions)        Intellect: +___ (confusion)
+Resolve: +___ (fear, stress)       Presence: +___ (charm)
+
+CORE SKILLS (0-5) [Scale: P=Personal, V=Vehicle(1+), S=Ship(3+), C=Capital(5)]
+1. Combat         [_] Scale:___ Spec:________________________
+2. Pilot          [_] Scale:___ Spec:________________________
+3. Tech           [_] Scale:___ Spec:________________________
+4. Social         [_] Scale:___ Spec:________________________
+5. Exploration    [_] Scale:___ Spec:________________________
+6. Medicine       [_] Scale:___ Spec:________________________
+7. Engineering    [_] Scale:___ Spec:________________________
+8. Command        [_] Scale:___ Spec:________________________
+9. Larceny        [_] Scale:___ Spec:________________________
+10. Psionics      [_] Scale:___ Spec:________________________
+
+SECONDARY SKILLS (0-5)
+Athletics [_]    Stealth [_]      Survival [_]     Negotiation [_]
+Science [_]      Espionage [_]    Performance [_]  Xenology [_]
+Gambling [_]     Logistics [_]    Investigation [_] Intimidation [_]
+Meditation [_]
+
+WEAPONS
+Name                Era  Bonus  Damage  Range   Notes
+__________________ ___  +___   ______  ______  _______________
+__________________ ___  +___   ______  ______  _______________
+__________________ ___  +___   ______  ______  _______________
+Melee Damage: Might 1-3:+0, 4-6:+1, 7-8:+2, 9-10:+3
+
+ARMOR & DEFENSES  
+Type              Defense  Era    Special
+Passive: ________ +___    ___    _______________________
+Active: _________ +___    ___    _______________________
+Electronic: _____ +___    ___    _______________________
+
+EQUIPMENT
+_____________________________________________________________
+_____________________________________________________________
+_____________________________________________________________
+_____________________________________________________________
+
+Credits: _________ Tech Era: _____________
+
+ADVANCEMENT
+Total AP Earned: ___ Spent: ___ Available: ___
+Session Log:
+Date:______ Type:________ AP:___ Notes:_____________________
+Date:______ Type:________ AP:___ Notes:_____________________
+Date:______ Type:________ AP:___ Notes:_____________________
+
+SPECIALIZATIONS
+Skill:_________ □Basic □Advanced □Master
+Skill:_________ □Basic □Advanced □Master  
+Skill:_________ □Basic □Advanced □Master
+
+BACKGROUND & NOTES
+_____________________________________________________________
+_____________________________________________________________
+_____________________________________________________________
+_____________________________________________________________
+_____________________________________________________________
+_____________________________________________________________
+
+VEHICLES/PROPERTY
+_____________________________________________________________
+_____________________________________________________________
+
+COMBAT REFERENCE
+Attack: 2d10 + Attribute + Combat + Weapon vs Defense
+Ranges: Close +1, Short +0, Medium -1, Long -2, Extreme -3
+Critical (20): Max Damage / Status / Penetrate / Devastate / Tactical

@@ -2,13 +2,28 @@
 
 ## Overview
 
-Six core attributes define every character, vehicle, and organization in Cosmos Engine. These attributes scale seamlessly from personal actions to galactic operations, maintaining consistent mechanics while adapting to context.
+Six core attributes define every character, vehicle, and organization in Cosmos Engine. These attributes use a 1-10 scale that represents the full spectrum from below-average humans to godlike beings. The system scales seamlessly from personal actions to galactic operations, maintaining consistent mechanics while adapting to context.
 
 **PRIMAC**: Presence, Resolve, Intellect, Might, Awareness, Coordination
 
+## Attribute Scale (1-10 System)
+
+### Human Scale (1-6)
+- **1-2**: Below Average (untrained, weak, disadvantaged)
+- **3-4**: Average (normal human capability)
+- **5-6**: Exceptional (professional athlete, genius, expert)
+
+### Heroic Scale (7-8)
+- **7**: Peak Human (world records, maximum human potential)
+- **8**: Cinematic Hero (action movie protagonists, legendary figures)
+
+### Legendary Scale (9-10)
+- **9**: Mythic (demigod level, superhuman capability)
+- **10**: Divine (godlike beings, cosmic entities)
+
 ## The Six Attributes (PRIMAC Order)
 
-### PRESENCE - Influence & Command (0-5)
+### PRESENCE - Influence & Command (1-10)
 Force of personality and leadership across scales.
 
 **Personal Scale**: Charisma, leadership, and social influence. Essential for negotiations and inspiring others.
@@ -19,7 +34,7 @@ Force of personality and leadership across scales.
 
 **Capital Scale**: Political influence, alliance building, and cultural impact.
 
-### RESOLVE - Will & Stability (0-5)
+### RESOLVE - Will & Stability (1-10)
 Mental fortitude and system stability under pressure.
 
 **Personal Scale**: Willpower, stress resistance, and mental resilience. Resists fear and maintains focus.
@@ -30,7 +45,7 @@ Mental fortitude and system stability under pressure.
 
 **Capital Scale**: Strategic patience, institutional stability, and long-term focus.
 
-### INTELLECT - Analysis & Processing (0-5)
+### INTELLECT - Analysis & Processing (1-10)
 Information processing and strategic thinking across domains.
 
 **Personal Scale**: Reasoning, education, and tactical analysis. Drives skill acquisition and technical tasks.
@@ -41,7 +56,7 @@ Information processing and strategic thinking across domains.
 
 **Capital Scale**: Grand strategy, intelligence synthesis, and predictive modeling.
 
-### MIGHT - Force & Power (0-5)
+### MIGHT - Force & Power (1-10)
 The application of raw force and system power across all scales.
 
 **Personal Scale**: Physical strength, endurance, and constitution. Determines carrying capacity, melee damage, and physical resilience.
@@ -52,7 +67,7 @@ The application of raw force and system power across all scales.
 
 **Capital Scale**: Industrial capacity, resource mobilization, and logistical force projection.
 
-### AWARENESS - Detection & Intuition (0-5)
+### AWARENESS - Detection & Intuition (1-10)
 Perception and intuitive understanding at all levels.
 
 **Personal Scale**: Sensory perception, empathy, and danger sense. Vital for avoiding ambush and reading people.
@@ -63,7 +78,7 @@ Perception and intuitive understanding at all levels.
 
 **Capital Scale**: Intelligence networks, strategic reconnaissance, and trend detection.
 
-### COORDINATION - Precision & Control (0-5)
+### COORDINATION - Precision & Control (1-10)
 Fine control and synchronized action at every level.
 
 **Personal Scale**: Dexterity, reflexes, and hand-eye coordination. Essential for ranged combat, delicate tasks, and acrobatics.
@@ -74,23 +89,35 @@ Fine control and synchronized action at every level.
 
 **Capital Scale**: Fleet formations, operational timing, and strategic coordination.
 
-## Attribute Ranges & Advancement
+## Character Creation
 
-### Base Ranges
-- **0**: Deficient (significant impairment)
-- **1**: Poor (below average)
-- **2-3**: Average (human normal)
-- **4**: Excellent (professional level)
-- **5**: Peak (human maximum)
-- **6**: Legendary (level 20 only, one attribute)
+### Point Buy System
+Characters receive **30 points** to distribute among the six attributes.
+
+**Point Costs**:
+- Ratings 1-6: 1 point per rating
+- Ratings 7-8: 2 points per rating (requires 6 first)
+- Starting Maximum: 7 (peak human)
+
+**Example Starting Arrays**:
+- **Specialist**: 6, 5, 5, 4, 3, 3 (expert with clear focus)
+- **Balanced**: 5, 5, 4, 4, 4, 4 (competent all-rounder)
+- **Dual Focus**: 6, 6, 4, 4, 3, 3 (two areas of expertise)
 
 ### Advancement Costs
-| Character Level | AP Cost per +1 | Maximum Value |
-|-----------------|----------------|---------------|
-| 1-5 | 3 AP | 4 |
-| 6-10 | 4 AP | 5 |
-| 11-15 | 5 AP | 5 |
-| 16-20 | 6 AP | 6 (one only) |
+Attributes advance slowly to reflect their fundamental nature:
+
+| Current Rating | AP Cost | Character Level Required |
+|----------------|---------|-------------------------|
+| 1→2 | 2 AP | Any |
+| 2→3 | 2 AP | Any |
+| 3→4 | 3 AP | Any |
+| 4→5 | 3 AP | Any |
+| 5→6 | 3 AP | Any |
+| 6→7 | 5 AP | Level 5+ |
+| 7→8 | 5 AP | Level 10+ |
+| 8→9 | 8 AP | Level 15+ |
+| 9→10 | 8 AP | Level 20 only |
 
 ### Technology Enhancement
 Technology amplifies but never replaces base attributes:
@@ -103,22 +130,33 @@ Technology amplifies but never replaces base attributes:
 
 ### Hit Points
 ```
-10 + (Might × 2) + Resolve
+40 + (Might × 8) + (Resolve × 4)
 ```
-- Starting range: 10-25
-- Maximum range: 10-30
+- Starting range: 52-120 HP
+- Average starting: ~80 HP
+- Maximum possible: 200 HP (at level 20)
 
 ### Initiative
 ```
 2d10 + Coordination + Awareness
 ```
 - Maintains core 2d10 mechanic
-- Range: 2-30 before equipment
+- Starting range: 4-34
+- Average: 18-22
 
 ### Defense Values
 **Physical Defense**: 10 + Coordination + Armor
 **Mental Defense**: 10 + Resolve + (Intellect ÷ 2)
 **Electronic Defense**: 10 + Intellect + Systems
+
+### Saving Throws
+Each attribute provides defense against specific threats:
+- **Might**: Poison, disease, physical transformation
+- **Coordination**: Area effects, explosions, reflexive avoidance
+- **Awareness**: Illusions, ambush, sensory overload
+- **Intellect**: Mental intrusion, confusion, logic traps
+- **Resolve**: Fear, stress, willpower tests
+- **Presence**: Charm, possession, identity attacks
 
 ### Strain Capacity
 ```
