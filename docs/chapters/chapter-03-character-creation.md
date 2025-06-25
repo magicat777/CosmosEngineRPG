@@ -309,6 +309,34 @@ You have 30 points to distribute among the six attributes:
 - Two at 3 (0 points)
 - Total: 19 points (11 points for skills/gear)
 
+### Quick Character Arrays
+
+For faster character creation, use these preset arrays:
+
+**Combat Specialist** (MIG 6, COO 5, AWA 4, INT 4, RES 5, PRE 3):
+- Warrior, soldier, mercenary, bodyguard
+- Strong in physical combat, adequate elsewhere
+
+**Tech Expert** (MIG 3, COO 4, AWA 5, INT 6, RES 4, PRE 5):
+- Hacker, engineer, scientist, medic
+- Brilliant problem-solver, weak in combat
+
+**Social Leader** (MIG 4, COO 4, AWA 5, INT 5, RES 4, PRE 6):
+- Diplomat, corporate executive, politician, entertainer
+- Natural leader and negotiator
+
+**Pilot Ace** (MIG 4, COO 6, AWA 5, INT 4, RES 5, PRE 3):
+- Starship pilot, racer, test pilot, smuggler
+- Exceptional reflexes and spatial awareness
+
+**Investigator** (MIG 3, COO 4, AWA 6, INT 5, RES 5, PRE 4):
+- Detective, spy, reporter, bounty hunter
+- Sharp senses and analytical mind
+
+**Jack-of-All-Trades** (MIG 4, COO 4, AWA 4, INT 4, RES 4, PRE 4):
+- Explorer, trader, freelancer, survivor
+- Competent at everything, excels at nothing
+
 ### Attribute Descriptions
 
 **Might 1-3**: Physically weak, struggle with exertion
