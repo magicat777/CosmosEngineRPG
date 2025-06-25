@@ -1,9 +1,14 @@
 # COSMOS ENGINE RPG
-## Core Rules - First Draft
+
+<p align="center">
+  <img src="../resources/artwork/cosmos-engine-logo.png" alt="Cosmos Engine RPG Logo" width="300"/>
+</p>
+
+## Core Rules - Complete System
 
 **A science fiction tabletop RPG for adventure across time and space**
 
-*Version 3.5.0 - First Draft Compilation*
+*Version 4.0.0 - Complete Balanced System*
 
 ---
 

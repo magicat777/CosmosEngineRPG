@@ -1,4 +1,9 @@
 # COSMOS ENGINE QUICK-START ADVENTURE
+
+<p align="center">
+  <img src="../resources/artwork/cosmos-engine-logo.png" alt="Cosmos Engine RPG Logo" width="250"/>
+</p>
+
 ## "Signals in the Dark"
 
 *A complete introductory adventure for 3-5 new players*
