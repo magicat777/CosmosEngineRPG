@@ -1,396 +1,474 @@
 # Chapter 8: Vehicles and Chases
 
-From motorcycles racing through neon-lit streets to starfighters dogfighting in asteroid fields, vehicles add speed, mobility, and dramatic action to Cosmos Engine. This chapter covers vehicle operation, combat, and the heart-pounding chase sequences that define science fiction adventure.
+From motorcycles racing through neon-lit streets to starfighters dogfighting in asteroid fields, vehicles in Cosmos Engine are more than transportation—they're extensions of their pilots. The Universal Tag System transforms every vehicle into a unique character with personality, quirks, and synergies that create legendary pilot-machine partnerships.
 
-## Vehicle Basics
+## 8.1 Vehicles with Tags
 
-### Vehicle Statistics
+### Understanding Vehicle Tags
 
-Vehicles use a framework similar to characters but at different scales:
+Just as weapons and armor have tags, vehicles possess tags that define their personality, capabilities, and how they respond to different pilots. These tags interact with pilot skills, environmental conditions, and dramatic moments to create emergent gameplay.
 
-**Core Statistics**:
-- **Speed**: Base movement per round
-- **Handling**: Modifier to Pilot checks
-- **Armor**: Damage reduction
-- **Structure**: Vehicle hit points
-- **Shields**: Energy-based protection (if equipped)
-- **Size**: Affects targeting and maneuvers
-- **Crew**: Required/maximum operators
-- **Passengers**: Non-crew capacity
+**Performance Tags** - How the vehicle handles:
+- **[Fast]**: Superior speed and acceleration
+- **[Agile]**: Exceptional maneuverability
+- **[Steady]**: Stable and predictable
+- **[Responsive]**: Reacts instantly to pilot input
+- **[Sluggish]**: Slow to respond
 
-### Vehicle Scales
+**Personality Tags** - The vehicle's character:
+- **[Temperamental]**: Moody but capable
+- **[Reliable]**: Never lets you down
+- **[Lucky]**: Things just work out
+- **[Cursed]**: Attracts trouble
+- **[Protective]**: Keeps pilot safe
 
-**Personal Scale**: Human-sized
+**Capability Tags** - Special features:
+- **[Armed]**: Built-in weapons
+- **[Armored]**: Enhanced protection
+- **[Sensor-Suite]**: Advanced detection
+- **[Stealth]**: Hard to detect
+- **[All-Terrain]**: Handles any environment
+
+**Heritage Tags** - History and reputation:
+- **[Military]**: Built for war
+- **[Racing]**: Speed is everything
+- **[Custom]**: Unique modifications
+- **[Legendary]**: Famous vehicle
+- **[Bonded]**: Tied to specific pilot
+
+### Pilot-Vehicle Synergies
+
+When pilot tags match vehicle tags, extraordinary things happen:
+
+**Basic Synergy (2 matching tags)**: +1 die
+- [Daredevil] pilot + [Fast] vehicle
+- [Careful] pilot + [Steady] vehicle
+
+**Strong Synergy (3 matching tags)**: +2 dice
+- [Racing] pilot + [Fast] [Responsive] vehicle
+- [Veteran] pilot + [Military] [Reliable] vehicle
+
+**Perfect Synergy (4+ matching tags)**: +3 to +5 dice
+- [Legendary] pilot + [Legendary] [Racing] [Responsive] [Lucky] vehicle
+- Creates moments of impossible performance
+
+### Vehicle Evolution
+
+Vehicles develop personality through use:
+
+**10 Sessions**: Gain personality tag
+- Survived crashes: [Tough]
+- Perfect maintenance: [Pristine]
+- Many battles: [Battle-Scarred]
+
+**Major Events**: Gain story tags
+- Won famous race: [Champion]
+- Survived destruction: [Phoenix]
+- Pilot saved many: [Hero's Mount]
+
+**100+ Hours**: Deep bonding
+- [Soul-Bonded]: Only responds to one pilot
+- [Synchronized]: Anticipates pilot needs
+- [Awakened]: Develops AI consciousness
+
+## 8.2 Vehicle Statistics
+
+### Core Statistics with Tags
+
+**Speed**: Base movement + tag modifiers
+- [Fast] vehicles: +20% speed
+- [Sluggish] vehicles: -20% speed
+- Environmental tags affect (e.g., [Racing] + [Open Road])
+
+**Handling**: Pilot check modifier + tag synergies
+- Base: -2 to +3
+- Add pilot-vehicle synergy bonus
+- [Responsive] + [Expert Pilot] = exceptional control
+
+**Armor**: Damage reduction
+- Standard: 0-8 points
+- [Armored] tag: +2 armor
+- [Lightweight] tag: -1 armor, +1 handling
+
+**Structure**: Vehicle hit points
+- Based on size and construction
+- [Tough] tag: +25% structure
+- [Fragile] tag: -25% structure, +1 handling
+
+### Vehicle Scales and Tags
+
+**Personal Scale** (Human-sized):
 - Motorcycles, jet packs, riding animals
-- Speed in meters per round
-- Use personal combat rules
+- Tags: [Personal], [Exposed], [Nimble]
+- Pilot very vulnerable but highly maneuverable
 
-**Vehicle Scale**: Car to fighter sized
+**Vehicle Scale** (Car to fighter):
 - Ground cars, aircraft, small spacecraft
-- Speed in tens of meters
+- Tags: [Vehicle], [Enclosed], [Versatile]
 - 10× personal scale damage
 
-**Starship Scale**: Frigate sized
+**Starship Scale** (Frigate sized):
 - Transports, corvettes, patrol ships
-- Speed in hundreds of meters
+- Tags: [Starship], [Crewed], [Complex]
 - 100× personal scale damage
 
-**Capital Scale**: Massive vessels
+**Capital Scale** (Massive vessels):
 - Cruisers, carriers, stations
-- Speed in kilometers
+- Tags: [Capital], [Fortress], [City]
 - 1000× personal scale damage
 
-### Operating Vehicles
+## 8.3 Operating Vehicles
 
-**Basic Operation**: No check needed for:
-- Normal movement in clear conditions
-- Standard acceleration/deceleration
-- Following traffic patterns
-- Routine docking/parking
+### Basic Operation
 
-**Pilot Checks Required**: 
+No check needed for routine operation, but tags still matter:
+- [Reliable] vehicles: Never break down
+- [Temperamental] vehicles: May require coaxing
+- [Intuitive] vehicles: Anyone can drive
+- [Complex] vehicles: Training required
+
+### Pilot Checks with Tags
+
+**When to Roll**: 
 - Dangerous maneuvers
 - Combat situations
-- Hazardous conditions
-- Emergency responses
-- Pursuit/evasion
+- Environmental hazards
+- Tag-specific opportunities
 
-**Pilot Skill Requirements**:
-- Personal vehicles (0+): Bikes, animals
-- Ground vehicles (1+): Cars, trucks
-- Aircraft (3+): Planes, VTOLs
-- Spacecraft (5+): Shuttles, fighters
-- Capital ships (7+): Cruisers, carriers
+**Pilot Check Formula**: 2d10 + Coordination + (Pilot ÷ 2) + Handling + Tag Synergies
 
-## Vehicle Combat
+**Tag-Enhanced Maneuvers**:
+- [Daredevil] pilot + [Agile] vehicle: Impossible turns
+- [Calculated] pilot + [Precise] vehicle: Thread the needle
+- [Reckless] pilot + [Tough] vehicle: Ram through obstacles
 
-### Initiative and Actions
+### Crew Synergies
 
-**Vehicle Initiative**: 1d10 + Pilot's Awareness + Vehicle Handling
+Multi-crew vehicles benefit from team tags:
 
-**Action Economy**: Same as personal combat
-- Standard Action: Attack, complex maneuver
-- Move Action: Normal movement, simple maneuver
-- Quick Actions: Communication, simple adjustments
+**Pilot Position**:
+- Primary: Vehicle control
+- Tags needed: [Pilot], [Quick Reflexes], [Spatial Awareness]
+- Synergy with vehicle handling tags
 
-**Crew Actions**: Multiple crew members can act
-- Pilot: Movement and evasion
-- Gunner: Weapon attacks
-- Engineer: Damage control
-- Commander: Coordination bonuses
+**Gunner Position**:
+- Primary: Weapon systems
+- Tags needed: [Gunner], [Steady Hands], [Target Prediction]
+- Synergy with weapon tags
 
-### Vehicle Attacks
+**Engineer Position**:
+- Primary: Systems management
+- Tags needed: [Technical], [Intuitive], [Problem-Solver]
+- Synergy with vehicle system tags
 
-**Attack Roll**: 2d10 + Coordination + (Pilot ÷ 2) + Weapon + Targeting
+**Commander Position**:
+- Primary: Coordination
+- Tags needed: [Leader], [Tactical], [Inspiring]
+- Grants bonus dice to all crew
 
-**Vehicle Weapons**:
-- Fixed: Must aim entire vehicle
-- Turret: Independent targeting
-- Guided: Tracking missiles/torpedoes
+## 8.4 Vehicle Combat
 
-**Targeting Modifiers**:
-| Situation | Modifier |
-|-----------|----------|
-| Target size larger | +2 per scale |
-| Target size smaller | -2 per scale |
-| High relative speed | -2 to -4 |
-| Sensor lock | +2 |
-| Evasive maneuvers | -2 to -4 |
+### Initiative with Vehicle Tags
+
+**Vehicle Initiative**: 1d10 + Pilot's Awareness + Vehicle Handling + Tag Bonuses
+
+Tag bonuses:
+- [Quick-Start] vehicle: +2 initiative
+- [Alert] pilot: +2 initiative
+- [Sluggish] vehicle: -2 initiative
+- [Synchronized] pilot-vehicle: Act together perfectly
+
+### Combat Actions with Tags
+
+**Tagged Attack**: 2d10 + Coordination + (Pilot ÷ 2) + Weapon + Tag Synergies
+
+**Weapon Mount Tags**:
+- [Fixed]: Must aim entire vehicle (-1 vs agile targets)
+- [Turret]: Independent targeting (+1 flexibility)
+- [Smart]: AI-assisted targeting (+1 to hit)
+- [Linked]: Fire multiple weapons as one
+
+**Attack Approach Tags**:
+- [Strafe]: Maintain speed while firing
+- [Dive]: Attack from above (+2 damage)
+- [Ambush]: First strike advantage
+- [Suppressive]: Area denial
 
 ### Vehicle Defense
 
-**Defense**: 10 + Pilot's Coordination + (Pilot ÷ 2) + Handling + Size
+**Tagged Defense**: 10 + Pilot's Coordination + (Pilot ÷ 2) + Handling + Size + Tag Synergies
 
-**Size Modifiers**:
-- Motorcycle/Fighter: +2
-- Car/Shuttle: +0
-- Truck/Transport: -2
-- Tank/Corvette: -4
+**Defensive Tags**:
+- [Evasive]: +1 Defense per matching pilot tag
+- [Shielded]: Energy protection
+- [Countermeasures]: +3 vs guided weapons
+- [Low-Profile]: Harder to target
 
-**Active Defense**: Pilot can take Evasive Action
-- Full Defense: +4 Defense, half speed
-- Jink: +2 Defense, -2 to attacks
+**Active Defense Maneuvers**:
+- **Evasive Action**: [Agile] vehicles excel
+- **Shield Angle**: [Technical] pilots optimize
+- **Smoke/Chaff**: [Prepared] vehicles equipped
+- **Emergency Thrust**: [Powerful] engines escape
 
-### Vehicle Damage
+### Damage and Consequences
 
-**Damage Application**:
-1. Subtract Armor from damage
-2. Apply to Shields (if any)
-3. Remaining damages Structure
-4. Check damage thresholds
+Vehicle damage interacts with tags:
 
-**Damage Thresholds**:
-- **Intact** (75-100%): No penalties
-- **Damaged** (50-74%): -2 Handling
-- **Heavily Damaged** (25-49%): -4 Handling, half Speed
-- **Crippled** (1-24%): No movement, -6 Handling
-- **Destroyed** (0 or less): Vehicle inoperable
+**Damage Thresholds** with tag effects:
+- **Intact** (75-100%): Tags function normally
+- **Damaged** (50-74%): -1 tag synergy, [Temperamental] acts up
+- **Heavily Damaged** (25-49%): -2 tag synergy, lose specialty tags
+- **Crippled** (1-24%): Only negative tags function
+- **Destroyed** (0 or less): Vehicle becomes [Wreck] tag location
 
-**Critical Hits**: Roll on vehicle critical table
-1-2: Engine damage (half Speed)
-3-4: Weapon destroyed
-5-6: Control damage (-2 Handling)
-7-8: Crew injury
-9-10: System failure (GM choice)
+**Critical Hit Tags**:
+- [Vulnerable] systems: Worse critical effects
+- [Redundant] systems: Ignore first critical
+- [Explosive]: Spectacular destruction
+- [Sturdy]: Downgrade critical severity
 
-## Chase Mechanics
+## 8.5 Chase Mechanics
 
-### Chase Framework
+### Tagged Chase Framework
 
-Chases are dramatic sequences resolved through:
-1. **Establish Context**: Distance, terrain, stakes
-2. **Roll Initiative**: Act in order
-3. **Declare Actions**: What each participant attempts
-4. **Resolve Actions**: Apply results
-5. **Check Victory**: Has anyone escaped/been caught?
+Chases become cinematic when tags drive the action:
 
-### Starting Distance
+1. **Establish Tagged Context**: 
+   - Environment tags ([Urban], [Open Road], [Asteroid Field])
+   - Weather tags ([Rain], [Fog], [Solar Storm])
+   - Stakes tags ([Desperate], [Playful], [Lethal])
 
-**Chase Range Categories**:
-- **Extreme** (4+ zones): Can attempt to break off
-- **Long** (3 zones): Outside most weapon ranges
-- **Medium** (2 zones): Standard engagement range
-- **Short** (1 zone): Close combat range
-- **Contact** (0 zones): Ramming/boarding range
+2. **Tag-Based Advantages**:
+   - Matching environment tags = bonus dice
+   - Opposing tags = penalties
+   - Creative tag use = surprise benefits
 
-Starting distance depends on circumstances:
-- Ambush: Start at Short/Contact
-- Pursuit: Start at Long/Extreme
-- Interception: Start at Medium
+### Chase Actions with Tags
 
-### Chase Actions
+**Pursuit** with tags:
+- [Persistent] pilot: Never loses target
+- [Predator] vehicle: +2 to close distance
+- [Pack Hunter] multiple vehicles: Coordinate
 
-**Pursuit** (Standard Action)
-- Pilot check vs opponent's Defense
-- Success: Close 1 zone
-- Critical: Close 2 zones
-- Failure: No change
-- Fumble: Lose 1 zone
+**Evasion** with tags:
+- [Elusive] pilot: +2 to escape attempts
+- [Ghost] vehicle: Vanish at opportune moments
+- [Unpredictable] path: Confuse pursuers
 
-**Evasion** (Standard Action)
-- Pilot check vs opponent's attack
-- Success: Open 1 zone
-- Critical: Open 2 zones + lose pursuer
-- Failure: No change
-- Fumble: Lose control briefly
+**Environmental Exploitation**:
+- [Local] pilot + [Urban] environment = Know shortcuts
+- [All-Terrain] vehicle + [Rough] terrain = No penalties
+- [Amphibious] vehicle + [Water] = Unique escape route
 
-**Ram** (Standard Action, Contact range)
-- Attack at -2
-- Damage: Speed factor + vehicle size
-- Both vehicles take damage
-- Smaller vehicle takes double
+### Stunt Driving
 
-**Stunt** (Standard Action)
-- Describe creative maneuver
-- Pilot check TN varies
-- Success: Gain advantage
-- Failure: Complications
+Tags enable cinematic stunts:
 
-**Passenger Actions**:
-- Attack: Normal combat rules
-- Assist: Aid pilot/gunner
-- Repair: Fix damage
-- Navigate: Find shortcuts
+**Basic Stunts** (TN 11):
+- Bootlegger turn: [Agile] or [Stunt Driver]
+- Jump gap: [Fast] or [Daredevil]
+- Thread needle: [Precise] or [Small]
 
-### Environmental Factors
+**Advanced Stunts** (TN 14):
+- Wall ride: [Gravity-Defying] or [Impossible]
+- Corkscrew jump: [Acrobatic] or [Movie Physics]
+- Blind navigation: [Intuitive] or [Force-Guided]
 
-**Urban** (streets, buildings):
-- Tight turns: Handling checks TN 14
-- Traffic: -2 to all rolls
-- Shortcuts: Navigation can help
-- Vertical options: With right vehicle
+**Legendary Stunts** (TN 17):
+- Quantum tunnel: [Quantum] or [Reality-Bending]
+- Time-slip: [Temporal] or [Destiny]
+- Probability surf: [Lucky] or [Chaos-Rider]
 
-**Wilderness** (forests, deserts):
-- Terrain: Speed penalties
-- Obstacles: Pilot checks required
-- Weather: Additional penalties
-- Getting lost: Possible
+## 8.6 Environmental Driving
 
-**Space** (asteroids, debris):
-- 3D movement: Complex positioning
-- No friction: Momentum matters
-- Obstacles: Instant destruction
-- Sensors: Vital for range
+### Environmental Tags
 
-**Underwater**:
-- Pressure: Depth limits
-- Visibility: Severely limited
-- Slow: Half normal speed
-- Special vehicles: Required
+Different environments create unique challenges and opportunities:
 
-### Chase Resolution
+**Urban Environment**:
+- Tags: [Crowded], [Vertical], [Connected], [Dangerous]
+- [Street Racer] pilots thrive
+- [Parkour] vehicles use three dimensions
+- [Social] pilots blend with traffic
 
-**Victory Conditions**:
-- **Escape**: Open to Extreme range and break line of sight
-- **Capture**: Force to Contact range and disable
-- **Destruction**: Reduce to 0 Structure
-- **Surrender**: Negotiated end
+**Wilderness Environment**:
+- Tags: [Rough], [Natural], [Unpredictable], [Isolated]
+- [All-Terrain] vehicles excel
+- [Survivor] pilots find paths
+- [Beast] vehicles match the wild
 
-**Time Limits**: Consider:
-- Fuel/energy consumption
-- Approaching authorities
-- Environmental hazards
-- Mission deadlines
+**Space Environment**:
+- Tags: [3D], [Frictionless], [Debris], [Vast]
+- [Zero-G] pilots maneuver perfectly
+- [Newtonian] vehicles use real physics
+- [Void-Born] gain mystical advantages
 
-## Sample Vehicles
+**Exotic Environments**:
+- Tags: [Psychedelic], [Non-Euclidean], [Living], [Hostile]
+- [Alien] vehicles designed for it
+- [Adaptive] pilots adjust quickly
+- [Mad] pilots feel at home
+
+## 8.7 Vehicle Catalog
 
 ### Ground Vehicles
 
-**Motorcycle** (Industrial Era)
+**Street Bike** (Industrial)
 - Speed: 40m | Handling: +2
+- Tags: [Fast] [Agile] [Exposed]
 - Armor: 0 | Structure: 20
-- Crew: 1 | Passengers: 1
+- Evolution: Often gains [Loyal] or [Wild]
+- Synergy: [Daredevil] riders gain +2 dice
 - Cost: 1,000cr
 
-**Ground Car** (Advanced Era)
-- Speed: 30m | Handling: +0
-- Armor: 1 | Structure: 40
-- Crew: 1 | Passengers: 3-5
-- Cost: 5,000cr
+**Hover Car** (Advanced)
+- Speed: 50m | Handling: +1
+- Tags: [Smooth] [Comfortable] [Civilized]
+- Armor: 2 | Structure: 40
+- Evolution: Develops [Personality] based on use
+- Synergy: [Professional] drivers maximize efficiency
+- Cost: 15,000cr
 
-**Hover Tank** (Stellar Era)
+**Battle Tank** (Any Era)
 - Speed: 20m | Handling: -2
-- Armor: 6 | Structure: 100
-- Crew: 3 | Passengers: 0
-- Weapons: Plasma cannon
-- Cost: 250,000cr
+- Tags: [Armored] [Devastating] [Unstoppable]
+- Armor: 8 | Structure: 150
+- Weapons: [Heavy] [Turret-Mounted]
+- Evolution: [Veteran] after many battles
+- Cost: 100,000cr
+
+**Grav Bike** (Stellar)
+- Speed: 80m | Handling: +3
+- Tags: [Fast] [Responsive] [Gravity-Defying] [Dangerous]
+- Armor: 1 | Structure: 25
+- Evolution: Bonds with single rider
+- Synergy: [Synchronized] = one being
+- Cost: 25,000cr
 
 ### Aircraft
 
-**Helicopter** (Industrial Era)
-- Speed: 50m | Handling: +0
-- Armor: 1 | Structure: 60
-- Crew: 2 | Passengers: 6
-- Cost: 50,000cr
+**Combat Helicopter** (Industrial)
+- Speed: 60m | Handling: +0
+- Tags: [Military] [Versatile] [Loud]
+- Armor: 3 | Structure: 80
+- Weapons: [Rockets] [Minigun]
+- Evolution: [Protective] of crew
+- Cost: 75,000cr
 
-**Fighter Jet** (Advanced Era)
+**Fighter Jet** (Advanced)
 - Speed: 200m | Handling: +1
-- Armor: 2 | Structure: 80
-- Crew: 1 | Passengers: 0
-- Weapons: Missiles, cannon
+- Tags: [Fast] [Armed] [Military] [Complex]
+- Armor: 3 | Structure: 100
+- Weapons: [Missiles] [Cannon]
+- Evolution: [Ace's Mount] with skilled pilot
 - Cost: 500,000cr
 
-**Grav Flyer** (Stellar Era)
+**Grav Flyer** (Stellar)
 - Speed: 150m | Handling: +2
-- Armor: 3 | Structure: 60
-- Crew: 1 | Passengers: 3
+- Tags: [Agile] [Silent] [Luxurious] [Smart]
+- Armor: 2 | Structure: 60
+- Evolution: Develops [AI Companion]
+- Synergy: [Technical] pilots unlock features
 - Cost: 100,000cr
 
 ### Spacecraft
 
-**Shuttle** (Advanced Era)
-- Speed: 100m | Handling: -1
-- Armor: 3 | Structure: 150
-- Crew: 2 | Passengers: 20
-- Cost: 1,000,000cr
+**Racing Pod** (Advanced)
+- Speed: 300m | Handling: +3
+- Tags: [Fast] [Fragile] [Temperamental] [Racing]
+- Armor: 1 | Structure: 30
+- Evolution: [Record-Breaker] or [Death-Trap]
+- Synergy: [Fearless] required
+- Cost: 50,000cr
 
-**Fighter** (Stellar Era)
-- Speed: 300m | Handling: +2
-- Armor: 4 | Structure: 100
-- Crew: 1 | Passengers: 0
-- Weapons: Lasers, torpedoes
+**Strike Fighter** (Stellar)
+- Speed: 400m | Handling: +2
+- Tags: [Military] [Agile] [Lethal] [Advanced]
+- Armor: 4 | Structure: 120
+- Weapons: [Lasers] [Torpedoes] [Smart]
+- Evolution: [Squadron Pride]
 - Cost: 2,000,000cr
 
-**Transport** (Any Era)
-- Speed: 50m | Handling: -2
-- Armor: 5 | Structure: 300
-- Crew: 4 | Passengers: 50
-- Cost: 5,000,000cr
+**Quantum Racer** (Cosmic)
+- Speed: 500m+ | Handling: +4
+- Tags: [Quantum] [Impossible] [Legendary] [Alive]
+- Armor: 5 | Structure: 100
+- Special: Probability drive
+- Evolution: Transcends normal space
+- Cost: Priceless
 
-## Vehicle Modifications
+## 8.8 Vehicle Modifications
 
-### Basic Modifications (Tech TN 14)
+### Modification Tags
 
-**Performance**:
-- **Tuned Engine**: +10m Speed
-- **Improved Handling**: +1 Handling
-- **Reinforced Frame**: +20% Structure
+Modifications add new tags or enhance existing ones:
 
-**Defense**:
-- **Armor Plating**: +1 Armor, -5m Speed
-- **Countermeasures**: +2 vs guided weapons
-- **Smoke Screen**: Creates concealment
+**Performance Mods**:
+- Turbo Boost: Add [Burst Speed] tag
+- Precision Handling: Add [Precise] tag
+- Reinforced Frame: Add [Tough] tag
 
-**Utility**:
-- **Extended Fuel**: Double range
-- **Sensor Package**: +2 detection
-- **Cargo Space**: Increase capacity
+**Defensive Mods**:
+- Armor Plating: Add [Armored] tag
+- Stealth Coating: Add [Stealth] tag
+- Shield Generator: Add [Shielded] tag
 
-### Advanced Modifications (Tech TN 17)
+**Special Mods**:
+- AI Pilot: Add [Autonomous] tag
+- Quantum Core: Add [Quantum] tag
+- Living Metal: Add [Self-Repairing] tag
 
-**Weapons**:
-- **Weapon Mount**: Add vehicle weapon
-- **Targeting System**: +2 to attacks
-- **Ammo Feed**: Double ammunition
+### Modification Synergies
 
-**Protection**:
-- **Shield Generator**: 20-50 shield points
-- **Stealth Coating**: -4 to detect
-- **Emergency Ejection**: Crew safety
+Some modifications work better with certain vehicles:
+- [Racing] vehicle + Speed mods = Exponential gains
+- [Military] vehicle + Armor mods = Fortress
+- [Custom] vehicle + Any mod = Unique results
 
-**Special**:
-- **AI Pilot**: Autonomous operation
-- **Transformation**: Multiple modes
-- **Jump Jets**: Limited flight
+## 8.9 Chase Example
 
-## Quick Vehicle Reference
+**Setup**: Maya [Street Racer] [Quick] [Local] in her [Custom] [Fast] [Lucky] hover bike versus two Corporate Security [Military] [Persistent] [Coordinated] in [Reliable] [Armed] patrol flyers.
 
-### Common Pilot TNs
-- Routine maneuver: TN 8
-- Sharp turn: TN 11
-- Dangerous stunt: TN 14
-- Impossible feat: TN 17
-
-### Speed Categories
-- Stationary: 0m
-- Slow: 10-20m
-- Moderate: 30-50m
-- Fast: 60-100m
-- Extreme: 100m+
-
-### Range Zones
-- Contact: 0 (ramming)
-- Short: 1 (close combat)
-- Medium: 2 (firearms)
-- Long: 3 (sniping)
-- Extreme: 4+ (escape)
-
-### Cross-Scale Damage
-- **Personal weapons vs Vehicles**: Damage ÷10 (pistol dealing 8 damage = 0.8, rounds to 1 vs vehicle)
-- **Vehicle weapons vs Personal**: Damage ×10 (vehicle cannon dealing 15 = 150 vs person)
-- **Vehicle to Starship**: Damage ÷10
-- **Starship to Capital**: Damage ÷10
-- **Higher to Lower Scale**: Always ×10 damage multiplier
-
-**Personal Weapons vs Vehicles Example**: A character with an assault rifle (1d10+2 damage) attacking a hover car would deal (roll result) ÷10 damage, minimum 1 point per hit. Most personal weapons require many hits to disable vehicles.
-
-## Vehicle Combat Example
-
-**Setup**: Hover bike chase through city
-
-**Participants**:
-- Zara: Grav Bike (Speed 60m, Handling +2)
-- Pursuer 1: Security Hover (Speed 50m, Handling +0)
-- Pursuer 2: Security Hover (Speed 50m, Handling +0)
+**Environment**: [Urban] [Neon-Lit] [Vertical] [Crowded]
 
 **Round 1**:
-- Zara: Evasion through traffic (Pilot TN 14)
-  - Roll: 16, opens 1 zone to Long
-- Pursuer 1: Pursuit
-  - Roll: 13 vs Defense 15, fails
-- Pursuer 2: Shortcut attempt
-  - Roll: 18, closes to Medium
+- Maya's Initiative: Base + [Quick] + [Fast] vehicle = goes first
+- Maya: "I use my [Local] knowledge with my [Custom] bike's [Lucky] nature to find a shortcut through the [Vertical] city!"
+- Roll: 2d10 + 7 (Pilot) + 3 (bike handling) + 4 (tag synergies: Local+Urban+Fast+Lucky) = 24!
+- She vanishes into a maintenance tunnel, opening two zones
 
 **Round 2**:
-- Zara: Stunt - jump between buildings
-  - Roll: 19 vs TN 17, gains advantage
-- Pursuer 1: Fire stun weapon
-  - Roll: 12 vs Defense 17, miss
-- Pursuer 2: Ram attempt
-  - Too far away
+- Security 1: Tries to follow, but [Military] training doesn't know [Local] shortcuts
+- Roll: Standard pilot check, no synergies = 14, loses her
+- Security 2: Uses [Coordinated] tag to predict exit point
+- Roll: Gets +2 from tag, positions for intercept
 
-Chase continues with environmental hazards, passenger actions, and dramatic stunts...
+The chase continues with environmental hazards, dramatic stunts, and tag-driven narrative moments!
+
+## 8.10 Vehicle Combat Integration
+
+### Scale Transitions
+
+Vehicle tags help when transitioning between scales:
+
+**Personal to Vehicle Combat**:
+- [Exposed] vehicles vulnerable to small arms
+- [Open-Top] allows boarding attempts
+- [Sealed] protects crew completely
+
+**Vehicle to Starship Combat**:
+- [Fighter] craft can engage larger ships
+- [Bomber] specialized for anti-ship
+- [Escort] protects capital ships
+
+### Combined Arms
+
+Different vehicle tags create tactical options:
+- [Scout] vehicles spot for [Artillery]
+- [Transport] delivers [Infantry]
+- [Interceptor] protects [Bomber]
+- [Command] coordinates all units
 
 ---
 
-*Continue to Chapter 9: Starships and Space Travel for interstellar vessels and travel...*
+*Continue to Chapter 9: Starships and Space Travel for interstellar vessels with soul...*

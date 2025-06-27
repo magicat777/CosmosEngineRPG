@@ -1,402 +1,722 @@
 # Chapter 7: Equipment and Gear
 
-Equipment in Cosmos Engine spans from primitive tools to reality-bending technology. This chapter covers weapons, armor, general equipment, and the economic systems that govern their availability across the galaxy.
+Equipment in Cosmos Engine spans from primitive tools to reality-bending technology. More than just numbers and bonuses, every piece of equipment possesses **tags** that define its personality, capabilities, and how it interacts with character abilities. Your gear grows with you, developing new traits through use and becoming as unique as your character.
 
-## Equipment Fundamentals
+## 7.1 The Equipment Tag System
 
-### Technology Eras
+### Understanding Equipment Tags
 
-Equipment is categorized by six technology eras, each representing major advances in capability:
+Just as characters have skill tags that describe *how* they act, equipment has tags that describe *what* it enables and *how* it behaves. These tags:
+- Create **synergies** with character tags (+1 to +5 dice)
+- **Evolve** through use and story
+- Define equipment **personality** and quirks
+- Enable **emergent gameplay** through combinations
 
-**Primitive Era**: Pre-industrial technology
-- Natural materials (wood, stone, bone)
-- Simple mechanical devices
-- Animal-powered transportation
+### Tag Categories for Equipment
 
-**Industrial Era**: Mass production begins
-- Firearms and combustion engines
-- Basic electronics
-- Steel and early plastics
+**Quality Tags** - Construction level:
+- **[Basic]**: Standard functionality, reliable
+- **[Superior]**: Enhanced performance, durable
+- **[Masterwork]**: Exceptional craft, prestigious
+- **[Legendary]**: Unique history, famous
 
-**Advanced Era**: Information age
-- Computers and networks
-- Advanced materials
-- Precision manufacturing
+**Damage Type Tags** - How it harms:
+- **[Kinetic]**: Physical projectiles, bullets
+- **[Energy]**: Lasers, plasma, particle beams
+- **[Explosive]**: Area damage, concussive force
+- **[Exotic]**: Unusual damage (psionic, dimensional)
 
-**Stellar Era**: Interstellar civilization
-- Energy weapons standard
-- Gravity manipulation
-- FTL communication
+**Combat Style Tags** - Tactical application:
+- **[Accurate]**: Enhanced hit probability
+- **[Rapid]**: Multiple attacks capability
+- **[Heavy]**: High damage, slower use
+- **[Silent]**: Minimal noise signature
 
-**Cosmic Era**: Reality manipulation
-- Dimensional technology
-- Consciousness transfer
-- Localized physics control
+**Special Property Tags** - Unique features:
+- **[Smart]**: Adapts to user preferences
+- **[Living]**: Biological components
+- **[Quantum]**: Probability manipulation
+- **[Cursed]**: Powerful but dangerous
 
-### Equipment Scaling (Balanced System)
+### Equipment Evolution
 
-To maintain game balance across all levels, equipment bonuses are capped:
+Equipment gains tags through:
+- **Use** (10+ sessions): Develop personality tags
+- **Story Events**: Gain reputation or history tags
+- **Modification**: Add functional tags
+- **Bonding**: Create user-specific tags
 
-**Maximum Equipment Bonuses**:
-- Primitive/Industrial: +0 to +1
-- Advanced: +1 to +2
-- Stellar: +2 to +3
-- Cosmic: +3 (with special properties)
+### Tag Limits by Tech Level
 
-This prevents numerical inflation while keeping equipment meaningful at all levels.
+Technology level determines maximum tags:
+- **Primitive Era**: 1 tag maximum
+- **Industrial Era**: 2 tags maximum
+- **Advanced Era**: 3 tags maximum
+- **Stellar Era**: 4 tags maximum
+- **Cosmic Era**: 5-6 tags maximum
 
-### Quality Levels
+## 7.2 Weapons
 
-Within each era, equipment has quality tiers:
+### Understanding Weapon Tags
 
-| Quality | Bonus | Cost Multiplier | Availability |
-|---------|-------|-----------------|--------------|
-| Inferior | -1 | ×0.5 | Common |
-| Standard | +0 | ×1 | Common |
-| Superior | +1 | ×3 | Uncommon |
-| Masterwork | +2 | ×10 | Rare |
-| Legendary | +3 | ×50+ | Exotic |
-
-## Weapons
+Weapons combine damage potential with tactical options through their tags. A [Precise] character wielding an [Accurate] weapon achieves synergy, while a [Brutal] warrior might prefer [Heavy] weapons that match their style.
 
 ### Melee Weapons
 
-**Damage Types**:
-- **Slashing**: Standard damage, bleeding on critical
-- **Piercing**: Armor penetration 1
-- **Bludgeoning**: Stun on critical
-- **Energy**: Ignores primitive armor
+#### Primitive/Industrial Era Melee
 
-**Common Melee Weapons**:
+**Club/Mace**
+- Damage: 1d6
+- Tags: [Kinetic] [Simple]
+- Cost: 5-50 credits
+- *Evolution Example*: After 10 sessions → gains [Trusted] or [Brutal]*
 
-| Weapon | Damage | Properties | Era | Cost |
-|--------|--------|------------|-----|------|
-| Club | 1d6 | Bludgeoning | Primitive | 5 |
-| Knife | 1d4 | Piercing, Concealed | Any | 20 |
-| Sword | 1d8 | Slashing, Balanced | Primitive+ | 100 |
-| Vibroblade | 1d8+1 | AP 2, Energy | Advanced | 500 |
-| Energy Sword | 1d10+2 | AP 3, Energy | Stellar | 2,000 |
-| Phase Blade | 2d8+3 | Ignores armor | Cosmic | 10,000 |
+**Combat Knife**
+- Damage: 1d4
+- Tags: [Kinetic] [Precise]
+- Special: Concealed, thrown
+- Cost: 20-100 credits
+- *Evolution Example*: Assassination use → gains [Silent]*
 
-**Special Properties**:
-- **Balanced**: +1 to Combat rolls
-- **Two-handed**: Add Might bonus to damage
-- **Reach**: Attack from 3+ meters
-- **Concealed**: +2 to hide weapon
-- **AP (X)**: Armor Penetration X
+**Sword/Axe**
+- Damage: 1d8
+- Tags: [Kinetic] [Balanced]
+- Cost: 100-500 credits
+- *Evolution Example*: Dueling use → gains [Elegant]*
+
+**Greatweapon (Two-handed)**
+- Damage: 1d10
+- Tags: [Kinetic] [Heavy]
+- Special: Add Might to damage
+- Cost: 200-1,000 credits
+- *Evolution Example*: Many battles → gains [Bloodthirsty]*
+
+#### Advanced Era Melee
+
+**Vibroblade**
+- Damage: 1d8+1
+- Tags: [Kinetic] [Energy] [Precise]
+- Special: Armor Penetration 2
+- Cost: 500-2,000 credits
+- *Synergy*: [Precise] character + [Precise] weapon = +2 dice*
+
+**Shock Baton**
+- Damage: 1d6+1
+- Tags: [Energy] [Stunning] [Control]
+- Special: Stun on critical
+- Cost: 300-1,500 credits
+- *Synergy*: [Control] + [Law Enforcement] = Non-lethal mastery*
+
+**Monofilament Whip**
+- Damage: 1d8
+- Tags: [Exotic] [Flexible] [Dangerous]
+- Special: Ignores armor, risk to user
+- Cost: 1,000-5,000 credits
+- *Evolution*: Master use → loses [Dangerous], gains [Elegant]*
+
+#### Stellar Era Melee
+
+**Energy Sword**
+- Damage: 1d10+2
+- Tags: [Energy] [Elegant] [Iconic] [Hot]
+- Special: Armor Penetration 3
+- Cost: 2,000-10,000 credits
+- *Synergy*: [Duelist] + [Elegant] = Legendary swordplay*
+
+**Gravity Hammer**
+- Damage: 2d8+2
+- Tags: [Kinetic] [Heavy] [Area] [Devastating]
+- Special: Knockback, area damage
+- Cost: 5,000-20,000 credits
+- *Evolution*: Epic kills → gains [Legendary]*
+
+**Neural Whip**
+- Damage: 1d6+2
+- Tags: [Psionic] [Precise] [Painful] [Specialized]
+- Special: Bypasses physical armor
+- Cost: 3,000-15,000 credits
+- *Requirement*: [Psionic] character tag to use effectively*
+
+#### Cosmic Era Melee
+
+**Phase Blade**
+- Damage: 2d8+3
+- Tags: [Quantum] [Phasing] [Legendary] [Unique] [Sentient]
+- Special: Ignores all armor, cuts dimensions
+- Cost: 10,000-50,000 credits
+- *Evolution*: Bonds with wielder → gains [Soul-Bound]*
+
+**Singularity Maul**
+- Damage: 3d10+3
+- Tags: [Gravity] [Heavy] [Reality-Bending] [Unstable] [Awakened]
+- Special: Creates micro black holes
+- Cost: 50,000+ credits
+- *Warning*: May develop hostile personality*
 
 ### Ranged Weapons
 
-**Ammunition Types**:
-- **Kinetic**: Standard bullets/projectiles
-- **Energy**: Battery powered
-- **Exotic**: Special ammunition
+#### Primitive/Industrial Era Ranged
 
-**Common Ranged Weapons**:
+**Bow/Crossbow**
+- Damage: 1d6
+- Range: 50m/100m
+- Tags: [Kinetic] [Silent]
+- Cost: 50-200 credits
+- *Evolution*: Hunter use → gains [Reliable]*
 
-| Weapon | Damage | Range | Magazine | Era | Cost |
-|--------|--------|-------|----------|-----|------|
-| Bow | 1d6 | 50m | 1 | Primitive | 50 |
-| Pistol | 1d8 | 30m | 15 | Industrial | 200 |
-| Rifle | 1d10 | 150m | 30 | Industrial | 500 |
-| Laser Pistol | 1d8+1 | 50m | 50 | Advanced | 1,000 |
-| Plasma Rifle | 1d12+2 | 200m | 20 | Stellar | 3,000 |
-| Void Cannon | 2d10+3 | 500m | 10 | Cosmic | 15,000 |
+**Pistol (Ballistic)**
+- Damage: 1d8
+- Range: 30m
+- Magazine: 15
+- Tags: [Kinetic] [Concealable]
+- Cost: 200-1,000 credits
+- *Synergy*: [Quick-Draw] + [Concealable] = Instant combat*
 
-**Weapon Modes**:
-- **Single**: Standard attack
-- **Burst**: +2 damage, 3 rounds
-- **Auto**: Attack multiple targets, 10 rounds
-- **Overcharge**: +1d6 damage, depletes cell
+**Rifle (Ballistic)**
+- Damage: 1d10
+- Range: 150m
+- Magazine: 30
+- Tags: [Kinetic] [Accurate]
+- Cost: 500-2,500 credits
+- *Evolution*: Sniper use → gains [Patient]*
+
+**Shotgun**
+- Damage: 2d6
+- Range: 20m
+- Magazine: 8
+- Tags: [Kinetic] [Devastating]
+- Cost: 300-1,500 credits
+- *Synergy*: [Brutal] character + [Devastating] = Terror weapon*
+
+**Assault Rifle**
+- Damage: 1d10
+- Range: 100m
+- Magazine: 30
+- Tags: [Kinetic] [Rapid] [Military]
+- Modes: Single/Burst/Auto
+- Cost: 1,000-5,000 credits
+- *Evolution*: Veteran use → gains [Reliable]*
+
+#### Advanced Era Ranged
+
+**Laser Pistol**
+- Damage: 1d8+1
+- Range: 50m
+- Power Cell: 50 shots
+- Tags: [Energy] [Precise] [Clean]
+- Cost: 1,000-5,000 credits
+- *Synergy*: [Technical] + [Energy] = Overcharge capability*
+
+**Plasma Rifle**
+- Damage: 1d12+1
+- Range: 100m
+- Power Cell: 20 shots
+- Tags: [Energy] [Hot] [Penetrating]
+- Cost: 2,000-10,000 credits
+- *Evolution*: Heavy use → gains [Overheating] flaw*
+
+**Rail Gun**
+- Damage: 2d10+1
+- Range: 500m
+- Magazine: 10
+- Tags: [Kinetic] [Accurate] [Penetrating] [Electromagnetic]
+- Cost: 5,000-25,000 credits
+- *Synergy*: [Patient] + [Accurate] = One shot, one kill*
+
+**Sonic Disruptor**
+- Damage: 1d8 (ignores armor)
+- Range: 30m
+- Power Cell: 30 shots
+- Tags: [Sonic] [Exotic] [Non-Lethal Option]
+- Cost: 3,000-15,000 credits
+- *Special*: Can switch to stun mode*
+
+#### Stellar Era Ranged
+
+**Particle Beam Rifle**
+- Damage: 2d10+2
+- Range: 300m
+- Power Cell: 40 shots
+- Tags: [Energy] [Precise] [Sustained] [Advanced]
+- Cost: 10,000-50,000 credits
+- *Evolution*: Perfect maintenance → gains [Flawless]*
+
+**Plasma Caster**
+- Damage: 2d12+2
+- Range: 150m
+- Power Cell: 10 shots
+- Tags: [Energy] [Heavy] [Area] [Devastating]
+- Cost: 15,000-75,000 credits
+- *Synergy*: [Heavy Weapons] + [Area] = Crowd control*
+
+**Graviton Rifle**
+- Damage: 2d8+2
+- Range: 200m
+- Power Cell: 20 shots
+- Tags: [Gravity] [Exotic] [Pinning] [Scientific]
+- Special: Immobilizes targets
+- Cost: 20,000-100,000 credits
+- *Requirement*: [Technical] or [Scientific] tag to maintain*
+
+#### Cosmic Era Ranged
+
+**Void Cannon**
+- Damage: 3d10+3
+- Range: 500m
+- Power Cell: 10 shots
+- Tags: [Quantum] [Reality-Rending] [Legendary] [Unstable] [Awakened]
+- Special: Tears holes in space
+- Cost: 50,000+ credits
+- *Warning*: May attract entities from torn dimensions*
+
+**Probability Gun**
+- Damage: Variable (2d6 to 4d12)
+- Range: ∞ (line of sight)
+- Power Cell: 7 shots
+- Tags: [Quantum] [Unpredictable] [Lucky] [Cursed] [Sentient]
+- Special: Damage based on quantum flux
+- Cost: 100,000+ credits
+- *Evolution*: Develops preferences for certain targets*
 
 ### Heavy Weapons
 
-Require setup or vehicle mounting:
+**Machine Gun (Industrial)**
+- Damage: 2d8
+- Range: 200m
+- Tags: [Kinetic] [Rapid] [Suppressing]
+- Special: Auto fire only, requires mount
+- Cost: 2,000-10,000 credits
 
-| Weapon | Damage | Properties | Era | Cost |
-|--------|--------|------------|-----|------|
-| Machine Gun | 2d8 | Auto only | Industrial | 2,000 |
-| Rocket Launcher | 3d10 | Area 5m | Industrial | 1,500 |
-| Plasma Cannon | 4d10+3 | Area 10m | Stellar | 10,000 |
-| Singularity Gun | 5d12+3 | Gravity well | Cosmic | 50,000 |
+**Rocket Launcher (Industrial)**
+- Damage: 3d10
+- Range: 300m
+- Tags: [Explosive] [Heavy] [Anti-Vehicle]
+- Special: Area 5m, single shot
+- Cost: 1,500-7,500 credits
 
-## Armor and Defense
+**Plasma Cannon (Stellar)**
+- Damage: 4d10+3
+- Range: 500m
+- Tags: [Energy] [Heavy] [Devastating] [Artillery]
+- Special: Area 10m, vehicle mount
+- Cost: 10,000-50,000 credits
 
-### Armor Types
+**Singularity Projector (Cosmic)**
+- Damage: 5d12+3
+- Range: 1000m
+- Tags: [Gravity] [Reality-Bending] [Unique] [Catastrophic] [Forbidden]
+- Special: Creates temporary black hole
+- Cost: 100,000+ credits
+- *Warning*: May have unintended consequences*
 
-**Protection Methods**:
-- **Passive**: Physical armor reducing damage
-- **Active**: Energy shields and reactive systems
-- **Electronic**: ECM and stealth fields
+### Weapon Modes and Options
+
+Many advanced weapons have multiple modes:
+
+**Burst Fire**: +2 damage, uses 3 rounds, [Rapid] tag synergy
+**Full Auto**: Attack multiple targets, uses 10 rounds, [Suppressing] effect
+**Overcharge**: +1d6 damage, depletes power cell, [Reckless] synergy
+**Stun Mode**: Non-lethal damage, [Control] or [Merciful] synergy
+
+## 7.3 Armor and Defense
+
+### Understanding Armor Tags
+
+Armor provides more than protection - its tags define how it protects and what advantages it provides. [Hardened] armor excels against kinetic attacks, while [Adaptive] armor learns from damage taken.
 
 ### Personal Armor
 
-| Armor | Protection | Defense Penalty | Era | Cost |
-|-------|------------|-----------------|-----|------|
-| Leather | 1 | 0 | Primitive | 50 |
-| Kevlar Vest | 2 | 0 | Industrial | 200 |
-| Combat Armor | 2 | -1 | Advanced | 1,000 |
-| Power Armor | 3 | 0 | Stellar | 5,000 |
-| Void Suit | 3 | 0 | Cosmic | 20,000 |
+#### Primitive/Industrial Era Armor
 
-**Special Features**:
-- **Sealed**: Environmental protection
-- **Powered**: No Defense penalty, +2 Might
-- **Adaptive**: +1 vs specific damage after exposure
-- **Cloaking**: +3 Stealth when stationary
+**Leather/Hide Armor**
+- Protection: 1
+- Tags: [Natural] [Flexible]
+- Cost: 50-250 credits
+- *Evolution*: Battle-scarred → gains [Intimidating]*
+
+**Kevlar Vest**
+- Protection: 2
+- Tags: [Kinetic-Resistant] [Concealable]
+- Cost: 200-1,000 credits
+- *Synergy*: [Subtle] character + [Concealable] = Hidden protection*
+
+**Riot Gear**
+- Protection: 2
+- Defense Penalty: -1
+- Tags: [Hardened] [Intimidating]
+- Cost: 500-2,500 credits
+- *Evolution*: Crowd control use → gains [Authoritative]*
+
+#### Advanced Era Armor
+
+**Combat Armor**
+- Protection: 2
+- Defense Penalty: -1
+- Tags: [Composite] [Military] [Modular]
+- Special: Attachment points
+- Cost: 1,000-5,000 credits
+- *Synergy*: [Soldier] + [Military] = Squad coordination bonus*
+
+**Stealth Suit**
+- Protection: 1
+- Tags: [Light] [Silent] [Adaptive-Camo]
+- Special: +3 Stealth when still
+- Cost: 2,000-10,000 credits
+- *Evolution*: Infiltration use → gains [Ghost-Like]*
+
+**Hazard Suit**
+- Protection: 2
+- Tags: [Sealed] [Environmental] [Durable]
+- Special: Complete environmental protection
+- Cost: 1,500-7,500 credits
+- *Synergy*: [Survivor] + [Environmental] = Thrive anywhere*
+
+#### Stellar Era Armor
+
+**Power Armor**
+- Protection: 3
+- Tags: [Powered] [Integrated] [Military] [Augmenting]
+- Special: +2 Might, no defense penalty
+- Cost: 5,000-25,000 credits
+- *Evolution*: Bonds with user → gains [Synchronized]*
+
+**Adaptive Defense Suit**
+- Protection: 2
+- Tags: [Smart] [Adaptive] [Regenerating] [Learning]
+- Special: +1 vs damage type after taking it
+- Cost: 10,000-50,000 credits
+- *Synergy*: [Technical] + [Smart] = Predictive defense*
+
+**Phase Suit**
+- Protection: 2
+- Tags: [Quantum] [Phasing] [Exotic] [Energy-Hungry]
+- Special: Can phase through matter briefly
+- Cost: 20,000-100,000 credits
+- *Warning*: Phasing failures can be fatal*
+
+#### Cosmic Era Armor
+
+**Void Suit**
+- Protection: 3
+- Tags: [Reality-Anchoring] [Sealed] [Legendary] [Self-Aware] [Protective]
+- Special: Immune to reality effects
+- Cost: 20,000-100,000 credits
+- *Evolution*: Develops personality, becomes [Guardian]*
+
+**Singularity Armor**
+- Protection: 4
+- Tags: [Gravity-Warping] [Heavy] [Unique] [Dangerous] [Awakened]
+- Special: Deflects attacks into pocket dimensions
+- Cost: 100,000+ credits
+- *Warning*: May develop own agenda*
 
 ### Shields and Active Defense
 
-| Shield | Defense Bonus | Special | Era | Cost |
-|--------|---------------|---------|-----|------|
-| Buckler | +1 | Quick draw | Any | 50 |
-| Riot Shield | +2 | Cover bonus | Industrial | 200 |
-| Energy Shield | +2 | Blocks energy only | Advanced | 2,000 |
-| Void Shield | +3 | Deflects all | Cosmic | 10,000 |
+**Buckler (Any Era)**
+- Defense: +1
+- Tags: [Quick] [Light]
+- Cost: 50-250 credits
 
-## General Equipment
+**Riot Shield (Industrial)**
+- Defense: +2
+- Tags: [Heavy] [Cover]
+- Special: Provides cover
+- Cost: 200-1,000 credits
 
-### Survival Gear
+**Energy Shield (Advanced)**
+- Defense: +2
+- Tags: [Energy] [Powered] [Visible]
+- Special: Only blocks energy attacks
+- Cost: 2,000-10,000 credits
 
-**Environmental Protection**:
+**Void Shield (Cosmic)**
+- Defense: +3
+- Tags: [Quantum] [All-Deflecting] [Reality-Bending]
+- Special: Deflects all attacks
+- Cost: 10,000-50,000 credits
 
-| Item | Duration | Protection | Era | Cost |
-|------|----------|------------|-----|------|
-| Filter Mask | 4 hours | Toxins | Industrial | 50 |
-| Radiation Suit | 8 hours | Radiation | Industrial | 200 |
-| Environment Suit | 24 hours | All hazards | Advanced | 1,000 |
-| Hostile Env Suit | 1 week | Extreme | Stellar | 5,000 |
+### Armor Modifications
 
-**Survival Kits**:
-- **Basic** (50cr): Fire, shelter, water purification
-- **Advanced** (200cr): Above + food processor, beacon
-- **Military** (500cr): Above + weapon maintenance, medical
+Armor can be modified with additional systems:
 
-### Technical Equipment
+**Cloaking Field**: +[Cloaking] tag, +3 Stealth when activated
+**Medical Systems**: +[Medical] tag, auto-stabilize when injured
+**Jump Jets**: +[Mobile] tag, enhanced movement
+**Neural Interface**: +[Integrated] tag, thought control
 
-**Computing Devices**:
+## 7.4 General Equipment
 
-| Device | Function | Bonus | Era | Cost |
-|--------|----------|-------|-----|------|
-| Tablet | Basic computing | +1 Research | Industrial | 100 |
-| Portable Comp | Full system | +2 Tech | Advanced | 500 |
-| Quantum Deck | AI-assisted | +3 all Tech | Stellar | 2,000 |
-| Reality Editor | Physics hacking | Special | Cosmic | 10,000 |
+### Tools and Kits
 
-**Tools and Kits**:
-- **Mechanic's Kit**: +2 to repair Tech
-- **Medical Kit**: +2 to Medicine
-- **Forensics Kit**: +2 to Investigation
-- **Electronic Kit**: +2 to hacking
-- **Climbing Gear**: +2 to Athletics (climbing)
+Equipment for specific tasks, each with characteristic tags:
+
+**Mechanic's Kit**
+- Bonus: +2 to repair
+- Tags: [Professional] [Comprehensive]
+- Cost: 200 credits
+- *Synergy*: [Technical] + [Professional] = Master repairs*
+
+**Medical Kit**
+- Bonus: +2 to Medicine
+- Tags: [Medical] [Sterile] [Organized]
+- Cost: 300 credits
+- *Evolution*: Field use → gains [Battle-Tested]*
+
+**Hacking Deck**
+- Bonus: +2 to electronic intrusion
+- Tags: [Digital] [Illegal] [Customizable]
+- Cost: 1,000 credits
+- *Synergy*: [Hacker] + [Digital] = Ghost in the machine*
+
+**Climbing Gear**
+- Bonus: +2 to climbing
+- Tags: [Reliable] [Professional]
+- Cost: 100 credits
+- *Evolution*: Extreme use → gains [Trusted]*
+
+### Survival Equipment
+
+**Environment Suit**
+- Duration: 24 hours
+- Tags: [Sealed] [Life-Support] [Durable]
+- Protection: All environmental hazards
+- Cost: 1,000 credits
+
+**Survival Kit (Advanced)**
+- Contents: Shelter, food processor, beacon
+- Tags: [Comprehensive] [Military] [Compact]
+- Cost: 200 credits
+- *Synergy*: [Survivor] + [Comprehensive] = Thrive anywhere*
+
+**Emergency Beacon**
+- Range: System-wide
+- Tags: [Reliable] [Emergency] [Traceable]
+- Cost: 100 credits
+- *Warning*: [Traceable] means enemies can find you too*
 
 ### Communication Equipment
 
-| Device | Range | Special | Era | Cost |
-|--------|-------|---------|-----|------|
-| Radio | 50km | Audio only | Industrial | 50 |
-| Satellite Comm | Planetary | Audio/video | Advanced | 200 |
-| Quantum Comm | System-wide | Encrypted | Stellar | 1,000 |
-| Ansible | Galactic | Instant | Cosmic | 5,000 |
+**Quantum Communicator**
+- Range: System-wide
+- Tags: [Quantum] [Encrypted] [Instant]
+- Cost: 1,000 credits
+- *Synergy*: [Technical] + [Quantum] = Unbreakable encryption*
 
-### Professional Packages
+**Neural Transmitter**
+- Range: Planetary
+- Tags: [Neural] [Discreet] [Thought-Activated]
+- Cost: 5,000 credits
+- *Requirement*: [Enhanced] or [Psionic] tag to use*
 
-Pre-selected equipment sets for character archetypes:
+### Scanners and Sensors
 
-**Explorer Package** (1,500cr):
-- Environment suit
-- Survival kit (advanced)
-- Portable computer
-- Climbing gear
-- Scanner
-- Medkit
+**Handheld Scanner**
+- Range: 100m
+- Tags: [Precise] [Scientific] [Versatile]
+- Cost: 500 credits
+- *Evolution*: Exploration use → gains [Intuitive]*
 
-**Soldier Package** (2,000cr):
-- Combat armor
-- Assault rifle + sidearm
-- Tactical kit
-- Medkit (combat)
-- Explosives
-- Comm unit
+**Psionic Detector**
+- Range: 50m
+- Tags: [Psionic] [Specialized] [Sensitive]
+- Cost: 2,000 credits
+- *Synergy*: [Psionic] user + [Sensitive] = Expanded awareness*
 
-**Tech Specialist** (1,800cr):
-- Portable computer
-- Electronic toolkit
-- Scanner (advanced)
-- Repair kit
-- Data storage
-- Security breaker
+## 7.5 Vehicles
 
-## Vehicles
+Vehicles use the same tag system, creating synergies with pilot skills:
 
-### Personal Vehicles
+### Ground Vehicles
 
-Ground and atmospheric transportation:
+**Motorcycle (Industrial)**
+- Speed: 40m/turn
+- Tags: [Fast] [Agile]
+- Cost: 1,000 credits
+- *Synergy*: [Daredevil] pilot + [Agile] = Impossible stunts*
 
-| Vehicle | Speed | Passengers | Era | Cost |
-|---------|-------|------------|-----|------|
-| Horse | 15m | 1-2 | Primitive | 200 |
-| Motorcycle | 40m | 1-2 | Industrial | 1,000 |
-| Ground Car | 30m | 4-6 | Industrial | 5,000 |
-| Hover Car | 50m | 4-6 | Advanced | 15,000 |
-| Grav Sled | 100m | 2-4 | Stellar | 30,000 |
+**Hover Car (Advanced)**
+- Speed: 50m/turn
+- Tags: [Smooth] [Luxurious] [Automated]
+- Cost: 15,000 credits
+- *Evolution*: Regular use → gains [Reliable]*
+
+**Grav Bike (Stellar)**
+- Speed: 80m/turn
+- Tags: [Fast] [Responsive] [Thrilling] [Dangerous]
+- Cost: 25,000 credits
+- *Synergy*: [Lightning] pilot + [Responsive] = One with machine*
 
 ### Combat Vehicles
 
-Military and security vehicles:
+**Battle Tank (Industrial)**
+- Armor: 8
+- Tags: [Heavy] [Armored] [Devastating] [Slow]
+- Weapons: Cannon + MG
+- Cost: 100,000 credits
+- *Evolution*: Many battles → gains [Veteran]*
 
-| Vehicle | Armor | Weapons | Era | Cost |
-|---------|-------|---------|-----|------|
-| Armored Car | 4 | Machine gun | Industrial | 20,000 |
-| Battle Tank | 8 | Cannon + MG | Industrial | 100,000 |
-| Hover Tank | 6 | Plasma cannon | Advanced | 250,000 |
-| Grav Fighter | 4 | Missiles + laser | Stellar | 500,000 |
+**Hover Tank (Advanced)**
+- Armor: 6
+- Tags: [Agile] [Armored] [High-Tech] [Expensive]
+- Weapons: Plasma cannon
+- Cost: 250,000 credits
+- *Synergy*: [Technical] crew + [High-Tech] = System optimization*
 
-## Special Equipment
+**Grav Fighter (Stellar)**
+- Armor: 4
+- Tags: [Fast] [Armed] [Responsive] [Military]
+- Weapons: Missiles + lasers
+- Cost: 500,000 credits
+- *Evolution*: Ace pilot → gains [Legendary]*
 
-### Cybernetics
+## 7.6 Cybernetics and Enhancements
 
-Enhancement scaling limited to maintain balance:
+Cybernetic enhancements use tags to define their integration with the user:
 
-**Neural Enhancements**:
-- **Basic Interface** (+1 Tech): 5,000cr
-- **Advanced Processor** (+2 INT tasks): 20,000cr
-- **Quantum Brain** (+3 all mental): 100,000cr
+### Neural Enhancements
 
-**Physical Enhancements**:
-- **Muscle Augmentation** (+1 Might): 10,000cr
-- **Reflex Boosters** (+1 Initiative): 15,000cr
-- **Subdermal Armor** (+1 protection): 25,000cr
+**Basic Neural Interface**
+- Bonus: +1 to Tech rolls
+- Tags: [Neural] [Digital] [Integrated]
+- Cost: 5,000 credits
+- *Synergy*: [Hacker] + [Digital] = Direct network access*
 
-**Cybernetic Limits**:
+**Quantum Brain Module**
+- Bonus: +3 to mental tasks
+- Tags: [Quantum] [Neural] [Advanced] [Glitchy]
+- Cost: 100,000 credits
+- *Warning*: [Glitchy] tag means occasional malfunctions*
+
+### Physical Enhancements
+
+**Muscle Augmentation**
+- Bonus: +1 Might
+- Tags: [Enhanced] [Biological] [Obvious]
+- Cost: 10,000 credits
+- *Evolution*: Heavy use → gains [Synchronized]*
+
+**Reflex Boosters**
+- Bonus: +1 Initiative
+- Tags: [Enhanced] [Neural] [Twitchy]
+- Cost: 15,000 credits
+- *Synergy*: [Quick] + [Enhanced] = Superhuman speed*
+
+**Subdermal Armor**
+- Bonus: +1 Protection
+- Tags: [Hidden] [Protective] [Invasive]
+- Cost: 25,000 credits
+- *Note*: [Invasive] means -1 to social with unenhanced*
+
+### Cybernetic Limits and Drawbacks
+
 - Maximum 3 major enhancements
-- -1 Presence per 2 enhancements (uncanny valley)
-- Requires maintenance and power
+- Each 2 enhancements: -1 Presence (uncanny valley)
+- Tags like [Obvious] or [Invasive] affect social interactions
+- Requires maintenance (ignore = gain [Malfunctioning])
 
-### Exotic Technology
+## 7.7 Equipment Evolution
 
-**Dimensional Devices**:
-- **Pocket Dimension**: 1 cubic meter storage
-- **Phase Shifter**: Walk through walls (limited)
-- **Probability Manipulator**: Reroll one die per scene
+### How Equipment Gains Tags
 
-**Consciousness Tech**:
-- **Memory Recorder**: Store/playback memories
-- **Skill Chip**: Temporary +2 to one skill
-- **Personality Backup**: Insurance against death
+Equipment becomes unique through use:
 
-## Economy and Availability
+**10 Sessions**: Gain personality tag
+- Weapons: [Bloodthirsty], [Merciful], [Lucky]
+- Armor: [Protective], [Scarred], [Comfortable]
+- Tools: [Reliable], [Quirky], [Intuitive]
+
+**Major Events**: Gain story tags
+- Killing a legend: [Dragonslayer], [Kingsbane]
+- Surviving destruction: [Unbreaking], [Phoenix]
+- Saving lives: [Guardian], [Life-Saver]
+
+**100+ Hours Use**: Deep bonding
+- [Soul-Bound]: Only works for you
+- [Synchronized]: Anticipates needs
+- [Awakened]: Gains consciousness
+
+### Managing Tag Evolution
+
+GMs should:
+- Track significant equipment use
+- Note memorable moments
+- Suggest appropriate tags
+- Let players name evolved gear
+- Create equipment personality
+
+### Example Evolution: "Whisper"
+
+Starting: Basic laser pistol [Energy] [Precise]
+- After 10 stealth missions → gains [Silent]
+- After assassinating crime lord → gains [Notorious]
+- After 100 hours use → gains [Soul-Bound]
+- Final: "Whisper" [Energy] [Precise] [Silent] [Notorious] [Soul-Bound]
+
+## 7.8 Equipment Synergy Quick Reference
+
+### Combat Synergies
+- [Precise] character + [Accurate] weapon = +2 to hit
+- [Brutal] character + [Heavy] weapon = +2 damage
+- [Quick] character + [Light] armor = +2 defense
+- [Technical] character + [Smart] equipment = +2 to all uses
+
+### Survival Synergies
+- [Environmental] character + [Sealed] armor = Ignore all hazards
+- [Scout] character + [Silent] gear = +3 to stealth
+- [Leader] character + [Military] equipment = +1 to squad
+
+### Technical Synergies
+- [Hacker] character + [Digital] tools = +3 to intrusion
+- [Mechanic] character + [Professional] kit = +2 to repairs
+- [Pilot] character + [Responsive] vehicle = +3 to maneuvers
+
+### Evolution Synergies
+- Using equipment matching your tags = Faster evolution
+- Epic moments with gear = Gain legendary tags
+- Perfect character-equipment match = Awakening possible
+
+## 7.9 Economy and Availability
 
 ### Currency
-
 **Universal Credits (cr)**: Standard galactic currency
 - 1 credit = 1 hour unskilled labor
 - 10 credits = Basic meal
 - 100 credits = Night's lodging
 - 1,000 credits = Monthly middle-class expenses
 
-### Availability Categories
+### Availability by Tags
+- [Basic] equipment: Found everywhere
+- [Military] equipment: Restricted, licenses required
+- [Illegal] equipment: Black market only
+- [Unique] equipment: Cannot be purchased
+- [Legendary] equipment: Quests required
 
-| Category | Modifier | Examples |
-|----------|----------|----------|
-| Common | ×1 | Basic equipment, standard weapons |
-| Uncommon | ×2 | Military gear, restricted items |
-| Rare | ×5 | Experimental tech, illegal items |
-| Exotic | ×10 | Alien artifacts, unique items |
-| Unique | ×50+ | One-of-a-kind, legendary |
+### Starting Equipment Packages
 
-### Regional Modifiers
+**Explorer Package** (1,500cr)
+- Environment suit [Sealed] [Durable]
+- Advanced survival kit [Comprehensive] [Military]
+- Scanner [Precise] [Scientific]
+- Climbing gear [Reliable]
 
-**Core Worlds**: All eras available, -10% cost
-**Frontier**: Limited to Advanced era, +20% cost
-**Backwater**: Industrial era maximum, +50% cost
-**War Zone**: Military gear common, ×2 civilian
-**Black Market**: Anything available, ×3-5 cost
+**Soldier Package** (2,000cr)
+- Combat armor [Hardened] [Military]
+- Assault rifle [Kinetic] [Rapid]
+- Sidearm [Reliable] [Quick]
+- Tactical kit [Professional]
 
-### Maintenance and Upkeep
+**Tech Specialist** (1,800cr)
+- Portable computer [Digital] [Advanced]
+- Hacking deck [Digital] [Illegal]
+- Tool kit [Professional] [Comprehensive]
+- Scanner [Precise] [Technical]
 
-**Equipment Maintenance**:
-- Simple gear: 1% monthly
-- Complex gear: 5% monthly
-- Vehicles: 10% monthly
-- Starships: See Chapter 9
-
-**Ammunition Costs**:
-- Kinetic: 10cr per 100 rounds
-- Energy: 50cr per cell (50 shots)
-- Exotic: 100cr+ per shot
-
-## Equipment Modification
-
-### Basic Modifications
-
-Available with Tech skill:
-
-**Weapons**:
-- **Improved Accuracy**: +1 attack (×3 cost)
-- **Extended Magazine**: +50% capacity
-- **Silencer**: -4 to detect shots
-- **Smart Link**: +1 with neural interface
-
-**Armor**:
-- **Lightweight**: Reduce penalty by 1
-- **Reinforced**: +1 protection, +1 penalty
-- **Sealed**: Environmental protection
-- **Camouflage**: +2 Stealth in environment
-
-### Advanced Modifications
-
-Require specialized facilities:
-
-**Weapons**:
-- **Variable Frequency**: Bypass specific defenses
-- **Biometric Lock**: Only authorized users
-- **AI Targeting**: +2 attack, requires power
-- **Dimensional Phase**: Ignores cover
-
-**Armor**:
-- **Reactive Plating**: +1d6 vs first hit
-- **Holographic Projector**: Visual disguise
-- **Medical Systems**: Heal 1 HP/hour
-- **Jump Jets**: Limited flight
-
-## Quick Equipment Reference
-
-### Starting Packages by Tech Level
-
-**Primitive** (500cr):
-- Melee weapon
-- Leather armor
-- Survival gear
-- Trade tools
-
-**Industrial** (1,000cr):
-- Firearm + ammo
-- Basic armor
-- Comm device
-- Professional kit
-
-**Advanced** (2,500cr):
-- Energy weapon
-- Combat armor
-- Computer
-- Vehicle access
-
-**Stellar** (5,000cr):
-- Plasma weapon
-- Power armor
-- Advanced gear
-- Cybernetics
-
-### Equipment by Function
-
-**Combat**: Weapons, armor, explosives
-**Survival**: Environmental gear, medical
-**Technical**: Computers, tools, scanners
-**Social**: Disguises, recording devices
-**Transport**: Vehicles, navigation
-**Special**: Cybernetics, exotic tech
+**Pilot Package** (2,200cr)
+- Flight suit [Protective] [Professional]
+- Navigation computer [Precise] [Reliable]
+- Emergency beacon [Emergency] [Traceable]
+- Personal sidearm [Quick] [Concealable]
 
 ---
 
-*Continue to Chapter 8: Vehicles and Chases for vehicle combat and pursuit rules...*
+This completes Chapter 7: Equipment and Gear. The Universal Tag System transforms equipment from static bonuses into dynamic tools that grow with characters, creating personalized gear with unique personalities and capabilities. Every item tells a story, and every story makes the item more powerful.

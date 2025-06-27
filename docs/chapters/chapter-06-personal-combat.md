@@ -1,618 +1,371 @@
 # Chapter 6: Personal Combat
 
-Combat in Cosmos Engine is fast, deadly, and tactical. This chapter covers all aspects of personal-scale combat: initiative, attacks, defense, damage, healing, and tactical options. The balanced combat system ensures that skill matters as much as equipment, maintaining consistent challenge across all levels.
+Combat in Cosmos Engine is fast, deadly, and tactical. The Universal Tag System transforms every fight into a dynamic narrative where character abilities, weapon properties, and environmental conditions create emergent gameplay. Your combat tags don't just provide bonuses—they define *how* you fight, creating cinematic moments and tactical depth.
 
-## Combat Overview
+## 6.1 Combat with Tags
 
-### Combat Sequence
+### Understanding Combat Tags
 
-1. **Determine Awareness**: Check for surprise
-2. **Roll Initiative**: Determine action order
-3. **Declare Actions**: In initiative order
-4. **Resolve Actions**: Apply results
-5. **End of Round**: Reset for next round
+Combat is where the tag system truly shines. Every element—your character's fighting style, your weapon's properties, the environment, even your emotional state—uses tags that interact to create unique combat experiences.
 
-Each combat round represents 6 seconds of intense action.
+**Character Combat Tags** describe your fighting approach:
+- **[Precise]**: Careful shot placement, surgical strikes
+- **[Brutal]**: Overwhelming force, intimidation through violence
+- **[Defensive]**: Protection-focused, counter-fighting
+- **[Aggressive]**: Relentless assault, pressure tactics
+- **[Tactical]**: Battlefield control, exploiting weaknesses
 
-### Initiative
+**Weapon Tags** define equipment behavior:
+- **[Accurate]**: Enhanced hit probability
+- **[Heavy]**: High damage, slower use
+- **[Rapid]**: Multiple attack capability
+- **[Silent]**: Minimal noise signature
+- **[Devastating]**: Extreme damage potential
 
-**Rolling Initiative**: 1d10 + Awareness + Coordination
+**Environmental Tags** create battlefield dynamics:
+- **[Confined]**: Close quarters favor melee
+- **[Elevated]**: High ground provides advantage
+- **[Unstable]**: Shifting terrain disrupts movement
+- **[Dark]**: Shadows enable stealth
+- **[Chaotic]**: Confusion aids misdirection
 
-- Roll once at combat start
-- Act in descending order
-- Ties broken by: Awareness > Coordination > 2d10 roll
-- Can delay to act later in order
-- Can interrupt with Awareness check TN 17
+### Tag Synergies in Combat
 
-**Initiative Modifiers**:
-- Surprised: -5 to initiative
-- Ready for combat: +2
-- Combat drugs: +2 to +4
-- Encumbered: -2
+When tags align, they create powerful synergies:
 
-### Action Economy
+**Basic Synergy (2 matching tags)**: +1 die
+- [Precise] character + [Accurate] weapon
+- [Aggressive] fighter + [Brutal] environment
 
-Each round, characters receive:
+**Strong Synergy (3 matching tags)**: +2 dice
+- [Silent] character + [Silent] weapon + [Dark] environment
+- [Defensive] fighter + [Cover] + [Patient] approach
 
-**1 Standard Action**:
-- Make an attack
-- Full skill use
-- Complex maneuver
-- Activate device
-- Rally ally
-- Total defense
+**Perfect Synergy (4+ matching tags)**: +3 to +5 dice
+- [Tactical] + [High Ground] + [Prepared] + [Superior Equipment]
+- Creates moments of legendary performance
 
-**1 Move Action**:
-- Move up to Speed
-- Stand from prone
-- Draw/sheathe weapon
-- Open/close door
-- Reload weapon
-- Mount/dismount
+### Combat Tag Evolution
 
-**Unlimited Quick Actions** (GM discretion):
-- Drop item
-- Speak brief phrase
-- Simple gesture
-- Fall prone
-- Activate simple device
+Your combat approach evolves through experience:
+- **10 Battles**: Gain reputation tag ([Feared], [Honorable], [Survivor])
+- **Legendary Victory**: Gain achievement tag ([Dragonslayer], [Duelist])
+- **100 Fights**: Master synergy unlocks unique combat abilities
 
-**Free Actions**:
-- Maintain effects
-- Observe surroundings
+## 6.2 Combat Sequence
 
-### Surprise
+### Initiative with Tags
 
-When combat begins unexpectedly:
+**Rolling Initiative**: 1d10 + Awareness + Coordination + Tag Bonuses
 
-1. **Awareness Check**: TN varies by situation
-   - Obvious threat: TN 8
-   - Hidden ambush: TN 14
-   - Perfect ambush: TN 17+
+Tag bonuses to initiative:
+- **[Quick]** or **[Alert]**: +2
+- **[Patient]** or **[Prepared]**: Act on chosen count
+- **[Aggressive]** or **[Reckless]**: +3 but -1 Defense first round
+- **[Tactical]**: May adjust initiative by ±2 after seeing order
 
-2. **Results**:
-   - Success: Act normally
-   - Failure: Surprised (-5 initiative, no actions first round)
-   - Critical Success: Act first regardless of initiative
-   - Critical Failure: Frozen in shock (no actions for 2 rounds)
+Environmental tag effects:
+- **[Ambush]** environment: Attackers gain +5
+- **[Chaotic]** environment: Reroll initiative each round
+- **[Ritualized]** combat: Fixed order by status/honor
 
-## Making Attacks (Balanced System)
+### Action Economy Enhanced
 
-### Attack Formula
+Standard actions gain tag options:
 
-**Basic Attack**: 2d10 + Attribute + (Combat Skill ÷ 2) + Equipment + Modifiers
+**Tagged Attack**: Describe how your tags apply
+- "My [Precise] training guides my [Accurate] rifle shot"
+- "I channel my [Brutal] nature through this [Heavy] swing"
+- Gain dice equal to matching tags
 
-The balanced system divides Combat skill by 2, preventing excessive bonuses at high levels while maintaining skill relevance.
+**Tagged Movement**: Movement reflects style
+- **[Agile]**: +2m when dodging between cover
+- **[Stalking]**: Half speed but maintain stealth
+- **[Reckless]**: +5m but enemies gain +1 to hit
 
-### Melee Combat
+**Tagged Defense**: Active protection choices
+- **[Defensive]**: Trade attack for +2 Defense
+- **[Evasive]**: Double dodge distance
+- **[Stalwart]**: Cannot be moved/knocked down
 
-**Standard Melee Attack**: 2d10 + Might + (Combat ÷ 2) + Weapon
+### Surprise and Ambush
 
-**Finesse Weapons**: May use Coordination instead of Might
-- Knives, rapiers, energy blades
-- Usually lower damage but more accurate
+Tags dramatically affect surprise:
 
-**Reach**:
-- Unarmed: 1 meter
-- Standard weapons: 1-2 meters  
-- Pole weapons: 3 meters
-- Whips/chains: 4 meters
+**Setting Ambush** with tags:
+- **[Patient]** + **[Hidden]**: +3 to ambush setup
+- **[Trap-Maker]**: Create environmental advantages
+- **[Predator]**: Enemies suffer -2 to detect
 
-**Melee Damage**: Weapon damage + Equipment bonus
-- Might bonus only with two-handed weapons
-- Combat skill training improves accuracy, not damage
+**Avoiding Ambush** with tags:
+- **[Paranoid]**: Never fully surprised
+- **[Veteran]**: +3 to Awareness vs ambush
+- **[Sixth Sense]**: Feel danger approaching
 
-### Ranged Combat
+## 6.3 Making Attacks
 
-**Standard Ranged Attack**: 2d10 + Coordination + (Combat ÷ 2) + Weapon
+### Attack Formula with Tags
 
-**Range Categories**:
-- **Point Blank** (0-3m): +2 to hit
-- **Short** (to listed range): Normal
-- **Medium** (to 2× range): -2 to hit
-- **Long** (to 4× range): -4 to hit
-- **Extreme** (to 8× range): -6 to hit
+**Tagged Attack**: 2d10 + Attribute + (Combat ÷ 2) + Weapon + Tag Synergies + Modifiers
 
-**Common Weapon Ranges**:
-- Pistol: 30m
-- Rifle: 150m
-- Sniper: 500m
-- Heavy weapons: Varies
+### Melee Combat Tags
 
-**Ammunition**: Track for dramatic tension
-- Standard magazines: 10-30 rounds
-- Energy cells: 50-100 shots
-- Reload: Move action (Quick with specialization)
+**Attack Approaches**:
+- **[Precise]** strikes: Target weak points, +1 to hit
+- **[Brutal]** swings: +1 damage, intimidate on hit
+- **[Defensive]** counters: Attack after successful defense
+- **[Flowing]** combinations: Chain attacks at -1 per extra
 
-## Defense (Balanced System)
+**Weapon Synergies**:
+- **[Balanced]** weapon + **[Trained]** fighter = +1 attack and defense
+- **[Heavy]** weapon + **[Strong]** character = Add Might to damage
+- **[Quick]** weapon + **[Agile]** character = Extra attack at -2
+
+**Environmental Exploitation**:
+- **[Confined]** space + **[Close Fighter]** = +2 to melee
+- **[Cluttered]** area + **[Improviser]** = Grab weapons anywhere
+- **[Elevated]** position + **[Gravity Fighter]** = Knockdown on hit
+
+### Ranged Combat Tags
+
+**Shooting Styles**:
+- **[Sniper]**: No range penalties with aim action
+- **[Gunslinger]**: Quick draw and fire as one action
+- **[Suppressive]**: Force morale checks with auto-fire
+- **[Trick Shot]**: Ricochet attacks around cover
+
+**Ammunition Tags** (match with weapon/character):
+- **[Explosive]** rounds: Area damage but loud
+- **[Penetrating]** rounds: Ignore 2 armor
+- **[Tracer]** rounds: +1 to hit but reveals position
+- **[Special]** rounds: Match character specialty
+
+**Environmental Factors**:
+- **[Windy]** conditions + **[Calculated]** = Compensate perfectly
+- **[Dark]** environment + **[Night Fighter]** = No penalties
+- **[Zero-G]** + **[Space Marine]** = Manage recoil perfectly
+
+## 6.4 Defense with Tags
 
 ### Defense Calculation
 
-**Physical Defense**: 10 + Coordination + (Combat Skill ÷ 2) + Cover + Armor
-
-The balanced system ensures combat training improves both offense and defense equally.
-
-**Defense Components**:
-- **Base**: Always 10
-- **Coordination**: Natural agility and reflexes
-- **Combat Training**: (Combat ÷ 2) from experience
-- **Cover**: +1 to +4 from environment
-- **Armor**: +0 to +3 from equipment
-- **Shields**: +1 to +2 when actively used
+**Tagged Defense**: 10 + Coordination + (Combat ÷ 2) + Armor + Tag Synergies + Cover
 
-### Situational Defenses
-
-**Full Defense** (Standard action): +4 Defense until next turn
-- Cannot attack
-- Can still move half Speed
-
-**Fighting Defensively**: -2 attack, +1 Defense
-
-**Flat-Footed**: 10 + Armor only
-- When surprised or unaware
-- Loses Coordination and Combat bonuses
+### Defensive Styles
 
-**Touch Attacks**: 10 + Coordination + (Combat ÷ 2)
-- Ignores armor
-- Used for certain special attacks
+**Character Defense Tags**:
+- **[Evasive]**: +1 Defense, +2 vs ranged
+- **[Stalwart]**: +1 Defense, +2 vs melee
+- **[Unpredictable]**: Enemies suffer -1 to hit
+- **[Armored Fighter]**: Reduce armor penalties
 
-## Attack Resolution
+**Armor Synergies**:
+- **[Light]** armor + **[Agile]** = No defense penalties
+- **[Heavy]** armor + **[Enduring]** = Damage reduction +1
+- **[Powered]** armor + **[Technical]** = Unlock special modes
 
-### Attack Modifiers
+**Environmental Defense**:
+- **[Smoke]** + **[Blind Fighter]** = Defense bonus, no attack penalty
+- **[Debris]** + **[Scavenger]** = Instant cover anywhere
+- **[Narrow]** + **[Guardian]** = Cannot be flanked
 
-**Common Modifiers**:
+### Active Defense Options
 
-| Situation | Attack Modifier |
-|-----------|----------------|
-| Target prone (melee) | +2 |
-| Target prone (ranged) | -2 |
-| Higher ground | +1 |
-| Flanking target | +2 |
-| Target in light cover | -2 |
-| Target in heavy cover | -4 |
-| Target concealed | -2 to -4 |
-| Aimed shot (full round) | +3 |
-| Called shot (specific location) | -2 to -4 |
-| Multiple attacks | -2 per extra |
+**Full Defense** with tags:
+- **[Defensive Master]**: +5 instead of +4
+- **[Counter-Fighter]**: Free attack if missed by 5+
+- **[Shield Expert]**: Protect adjacent ally
 
-### Critical Hits and Fumbles
+**Dodge** with tags:
+- **[Acrobatic]**: Move through enemy spaces
+- **[Parkour]**: Use vertical surfaces
+- **[Phase Dancer]**: Brief intangibility (cosmic tech)
 
-**Critical Success** (Natural 20 - two 10s):
-- Automatic hit regardless of Defense
-- Roll on critical effect table or choose:
-  1. Maximum damage
-  2. Bypass armor
-  3. Inflict condition
-  4. Damage equipment
-  5. Severe injury
+## 6.5 Special Combat Actions
 
-**Critical Failure** (Natural 2 - two 1s):
-- Automatic miss regardless of modifiers
-- Roll on fumble table or choose:
-  1. Drop weapon
-  2. Hit ally
-  3. Weapon jams/breaks
-  4. Fall prone
-  5. Provide opening (+2 to next attacker)
+### Tagged Combat Maneuvers
 
-### Damage
+Every special action can be enhanced with tags:
 
-**Damage Roll**: Weapon die + Equipment bonus
+#### Charge
+**Base**: Move + attack, +2 damage, -2 Defense
 
-**Damage Types**:
-- **Kinetic**: Bullets, blades, impacts (standard)
-- **Energy**: Lasers, plasma, fire (may ignore armor)
-- **Explosive**: Area effect (damages multiple targets)
-- **Stun**: Nonlethal (maximum Injured state)
+**Tagged Variations**:
+- **[Devastating] Charge**: +3 damage, knock prone on hit
+- **[Flying] Charge**: Ignore terrain, attack from above
+- **[Terrifying] Charge**: Force morale check
+- **[Calculated] Charge**: No defense penalty
 
-**Armor**: Reduces damage by armor value
-- Light armor: 1-2 points
-- Medium armor: 2-3 points  
-- Heavy armor: 3 points
-- Does not stack with natural armor
+#### Grapple
+**Base**: Might + (Combat ÷ 2) vs Defense
 
-## Special Combat Actions
+**Tagged Grappling**:
+- **[Wrestler]**: +3 to grapple checks
+- **[Submission Expert]**: Deal damage while maintaining
+- **[Throw Master]**: Hurl grappled foes as weapons
+- **[Crushing]**: Auto-damage each round
 
-### Charge
+#### Disarm
+**Base**: -2 to attack roll
 
-**Requirements**: Move at least 4 meters in straight line
+**Tagged Disarming**:
+- **[Precise]**: No penalty to disarm
+- **[Magnetic]** gear: Pull metal weapons to you
+- **[Destroyer]**: Break weapon instead
+- **[Redirect]**: Turn weapon on another foe
 
-**Effects**:
-- Combine Full Move + Attack
-- +2 damage on hit
-- -2 Defense until next turn
+### Environmental Combat Maneuvers
 
-### Grapple
+Use environment tags for special actions:
 
-**Initiate**: Might + (Combat ÷ 2) vs Defense
-- Success: Target grappled
-- Both characters considered grappled
+**[Explosive] Environment**:
+- Shoot volatile objects for area damage
+- Chain reaction possibilities
+- **[Demolitions]** tag maximizes effect
 
-**While Grappled**:
-- Move together at half speed
-- -2 to all actions
-- Only light weapons usable
+**[Vertical] Environment**:
+- Death from above attacks
+- Knock enemies off edges
+- **[3D Fighter]** tag grants bonuses
 
-**Each Round**: Opposed Might checks
-- Winner chooses: Damage, pin, or escape
-- Pin: Target helpless (additional success)
+**[Aquatic] Environment**:
+- Reduced visibility and movement
+- Special weapons required
+- **[Amphibious]** tag negates penalties
 
-### Disarm
+## 6.6 Damage and Consequences
 
-**Attack Roll**: -2 penalty
-- Success: Weapon knocked 1d6 meters away
-- Critical: You catch the weapon
-- Failure by 5+: You drop your weapon
+### Tagged Damage Effects
 
-**Modifiers**:
-- Two-handed weapon: +2 to resist
-- Locked gauntlet: +4 to resist
+Damage can have additional effects based on tags:
 
-### Trip
+**Weapon Damage Tags**:
+- **[Burning]**: Ongoing fire damage
+- **[Shocking]**: Stun chance
+- **[Toxic]**: Poison effects
+- **[Dimensional]**: Ignores armor
 
-**Attack**: Might or Coordination vs Defense
-- Success: Target knocked prone
-- Can combine with attack at -2
-- Size matters: +/-2 per size category
+**Character Damage Tags**:
+- **[Cruel]**: Inflict lasting injuries
+- **[Merciful]**: Always option for non-lethal
+- **[Surgical]**: Target specific systems
+- **[Overwhelming]**: Damage morale too
 
-### Overwatch
+### Critical Hits with Tags
 
-**Ready Action**: Specify trigger
-- "Shoot anyone coming through door"
-- "Attack if they draw weapon"
+**Critical Success** gains extra effects from tags:
 
-**Resolution**: Interrupt and act when triggered
-- Normal attack roll
-- Can abort to avoid friendly fire
+**Attacker Tags**:
+- **[Lucky]**: Expand critical range to 19-20
+- **[Devastating]**: Triple damage instead of double
+- **[Precise]**: Choose exact effect
+- **[Legendary]**: Instant kill on perfect critical
 
-### Called Shots
+**Weapon Tags**:
+- **[Keen]**: More frequent criticals
+- **[Brutal]**: Horrific injury effects
+- **[Stunning]**: Auto-knockout
+- **[Piercing]**: Damage internal systems
 
-Target specific locations for special effects:
+### Injury Tags
 
-**Head** (-4 to hit):
-- Critical range 19-20
-- Stun on any critical
+Serious injuries can add temporary tags:
 
-**Arms** (-2 to hit):
-- Disarm on critical
-- -2 to target's attacks
+**Physical Injuries**:
+- **[Bleeding]**: Ongoing HP loss
+- **[Crippled]**: Movement halved
+- **[Concussed]**: -2 to mental actions
+- **[Scarred]**: Social effects
 
-**Legs** (-2 to hit):
-- Half movement on critical
-- Trip on maximum damage
+**Mental Trauma**:
+- **[Shell-Shocked]**: -2 vs loud noises
+- **[Paranoid]**: Cannot be surprised (but stressed)
+- **[Berserker]**: +2 damage but -2 defense
+- **[Broken]**: Morale shattered
 
-**Vitals** (-4 to hit):
-- +2 damage
-- Bleeding on critical
+## 6.7 Combat Flow Example
 
-## Movement in Combat
-
-### Basic Movement
-
-**Speed**: 5 + Coordination meters per Move action
-
-**Movement Options**:
-- **Normal Move**: Up to Speed
-- **Full Move**: Double Speed, no Standard action
-- **Sprint**: Triple Speed, straight line, -2 Defense
-- **5-Foot Step**: 1 meter, doesn't provoke, no other movement
-
-### Difficult Terrain
-
-**Types**:
-- Water, mud, rubble, stairs
-- Costs double movement
-- No sprinting
-- -2 Defense while moving
-
-### Tactical Movement
-
-**Positioning Benefits**:
-- **Higher Ground**: +1 attack, +10m range
-- **Flanking**: +2 when opposite an ally
-- **Behind**: Target loses Coordination to Defense
-
-**Cover**:
-- **Light** (+1 Defense): Tables, foliage
-- **Medium** (+2 Defense): Low walls, vehicles
-- **Heavy** (+3 Defense): Stone walls, bulkheads
-- **Total**: Cannot be targeted directly
-
-## Damage and Injury
-
-### Hit Points
-
-**Calculation**: 40 + (Might × 8) + (Resolve × 4)
-
-Hit Points represent stamina, luck, and minor injuries. Only the last portion represents serious wounds.
-
-### Health States
-
-Track current HP as percentage of maximum:
-
-**Healthy** (75-100% HP):
-- No penalties
-- Minor scrapes only
-
-**Wounded** (50-74% HP):
-- -1 to all actions
-- Visible injuries
-- Bleeding likely
-
-**Injured** (25-49% HP):
-- -2 to all actions
-- Serious wounds
-- Movement -2 meters
-
-**Critical** (1-24% HP):
-- -3 to all actions
-- Life-threatening
-- Movement halved
-- Might save TN 14 or fall unconscious
-
-**Dying** (0 or less HP):
-- Unconscious
-- Dying (lose 1 HP/round)
-- Might save TN 17 to stabilize
-- Death at negative Might score
-
-### Instant Death
-
-Character dies immediately if:
-- Single attack exceeds HP + Might
-- Certain critical hits
-- Failed death save by 10+
-- Specific hazards (decapitation, etc.)
-
-## Conditions
-
-### Common Combat Conditions
-
-**Bleeding**: 1 HP per round
-- Medicine TN 11 to stop
-- Pressure bandage: Move action
-- Multiple wounds stack
-
-**Blinded**: Cannot see
-- -4 to attacks
-- No Coordination to Defense
-- Half movement
-
-**Dazed**: Disoriented
-- Single action per round
-- -2 Defense
-
-**Entangled**: Partially restrained
-- Half movement
-- -2 attacks
-- -2 Defense
-
-**Frightened**: Afraid
-- Must retreat from source
-- -2 to all actions
-- Resolve save to act normally
-
-**Prone**: On ground
-- Move action to stand
-- -2 Defense vs melee
-- +2 Defense vs ranged
-- Crawl at 1/4 Speed
-
-**Stunned**: Severely dazed
-- Lose next turn
-- -2 Defense
-- Drop held items
-
-### Applying Conditions
-
-Conditions typically result from:
-- Critical hits
-- Special weapons (stun, web, etc.)
-- Environmental effects
-- Failed saves
-- Special abilities
-
-Duration varies:
-- Instantaneous (stunned)
-- Persistent (bleeding)
-- Save ends (frightened)
-- Time-based (dazed for 3 rounds)
-
-## Healing and Recovery
-
-### Natural Healing
-
-**Daily Healing Rate**:
-- Light activity: 1 HP
-- Full rest: 2 HP  
-- Medical care: 3 HP
-- Advanced medical: 5 HP
-
-**Healing Thresholds**: Must reach percentage to improve state
-- 25% to exit Critical
-- 50% to exit Injured
-- 75% to exit Wounded
-
-### Medical Treatment
-
-**First Aid** (Medicine TN 11):
-- Stops bleeding
-- Stabilizes dying character
-- Restores 1d6 HP (once per day)
-
-**Field Medicine** (Medicine TN 14):
-- Requires medical kit
-- Restores 2d6 HP
-- Removes one condition
-- Once per injury
-
-**Surgery** (Medicine TN 17):
-- Requires medical facility
-- Restores 3d6 HP
-- Repairs serious damage
-- Patient incapacitated for hours
-
-### Combat Drugs
-
-Temporary boosts with consequences:
-
-**Stimulants**: +2 Initiative, ignore Wounded
-- Crash: Fatigued for hour after
-
-**Pain Blockers**: Ignore one wound penalty
-- Risk: May not notice serious injury
-
-**Combat Enhancers**: +1 attack or Defense
-- Side effect: -2 to social skills
-
-**Berserker**: +2 damage, -2 Defense
-- Aftermath: Exhausted, must rest
-
-## Combat Example
-
-**Setup**: Zara (pilot) and Marcus (soldier) ambushed by two pirates
-
-**Initiative**:
-- Zara: 7 (AWA) + 6 (COO) + 8 (roll) = 21
-- Marcus: 5 (AWA) + 4 (COO) + 5 (roll) = 14  
-- Pirate 1: 4 + 4 + 7 = 15
-- Pirate 2: 4 + 4 + 3 = 11
+**Setup**: Vera [Precise] [Patient] [Sniper] with [Accurate] [Silent] rifle faces two thugs in [Dark] [Cluttered] warehouse.
 
 **Round 1**:
+- Vera's tags ([Patient] + [Sniper] + [Dark] environment) = +3 to initiative
+- She waits for perfect shot (Patient lets her act when she wants)
+- Thugs move through clutter, unaware
+- Vera fires: 2d10 + 6 (COO) + 3 (Combat 6 ÷ 2) + 2 (Accurate rifle) + 3 (tag synergy: Precise + Patient + Silent weapon in Dark) = devastating first strike
 
-*Zara (21)*: Draws pistol (Move), shoots Pirate 1 (Standard)
-- Attack: 2d10 + 7 (COO) + 2 (Combat 3 ÷ 2) + 1 (weapon) = 19
-- Pirate 1 Defense: 10 + 4 + 1 + 2 (cover) = 17
-- Hit! Damage: 1d8+1 = 6
+**Round 2**:
+- Remaining thug panics in [Cluttered] [Dark] space
+- Vera's [Sniper] tag: No penalties for poor visibility
+- She relocates (Silent + Dark = undetectable)
+- Sets up for next perfect shot
 
-*Pirate 1 (15)*: Charges Marcus
-- Move + Attack: 2d10 + 5 + 2 + 2 (charge) = 18
-- Marcus Defense: 10 + 4 + 2 = 16  
-- Hit! Damage: 1d10+2 = 8
-- Marcus now Wounded (92 → 84 HP)
+The combat feels cinematic and true to character concepts!
 
-*Marcus (14)*: Attacks with rifle
-- Attack: 2d10 + 4 + 3 + 2 = 22
-- Critical hit! (rolled 20)
-- Maximum damage: 10 + 2 = 12
-- Pirate 1 down
+## 6.8 Scale Integration
 
-*Pirate 2 (11)*: Shoots at Zara
-- Attack: 15 vs Defense 19
-- Miss!
+Combat tags scale with scope:
 
-Combat continues with tactical choices, movement, and special actions...
+### Personal Scale (Ranks 1-3)
+- **[Brawler]**: Bar fights and street combat
+- **[Soldier]**: Squad-level tactics
+- Tags focus on individual actions
 
-## Environmental Hazards
+### Vehicle Scale (Ranks 4-5)
+- **[Ace Gunner]**: Vehicle weapon mastery
+- **[Tank Commander]**: Coordinate vehicle crew
+- Tags affect vehicle performance
 
-### Common Hazards
+### Starship Scale (Ranks 6-7)
+- **[Fleet Gunnery]**: Command weapon batteries
+- **[Battle Coordinator]**: Direct fighter screens
+- Tags influence entire ship sections
 
-**Falling**:
-- 1d6 per 3 meters
-- Max 20d6
-- Coordination save to halve
-- Water/soft landing reduces
+### Fleet Scale (Ranks 8-10)
+- **[Strategic Genius]**: Battlefield-wide effects
+- **[Legendary Admiral]**: Inspire entire fleets
+- Tags shape entire engagements
 
-**Fire**:
-- 1d6 per round in flames
-- Spreads on critical failure
-- Stop/drop/roll to extinguish
-- Armor may not protect
+## 6.9 Combat Options Quick Reference
 
-**Electricity**:
-- Touch: 2d6 + stun
-- Arc: 3d6 in line
-- Water conducts
-- Metal armor worse
+### Attack Options by Tag
 
-**Radiation**:
-- Slow death
-- Resolve saves
-- Permanent damage
-- Medicine to treat
+**[Aggressive]** Options:
+- All-out attack: +2 hit, -2 defense
+- Charge: Move + attack + damage
+- Overwhelm: Force morale check
 
-**Toxic Atmosphere**:
-- Might saves
-- Damage or conditions
-- Filters help
-- Time limits
+**[Defensive]** Options:
+- Full defense: +4 Defense
+- Counter-attack: Strike when missed
+- Guard ally: Share defense bonus
 
-### Hazard Navigation
+**[Precise]** Options:
+- Called shot: Target specific location
+- Disarm: Remove enemy weapon
+- Bypass armor: Find weak points
 
-**Detecting**: Awareness + Survival
-**Avoiding**: Coordination + Athletics  
-**Enduring**: Might/Resolve + Survival
-**Escaping**: Varies by hazard
+**[Tactical]** Options:
+- Coordinate allies: Grant bonus actions
+- Exploit weakness: Study then strike
+- Control battlefield: Force movement
 
-### Environmental Protection
+### Environmental Tag Exploitation
 
-**Basic Suits**: 4 hours protection
-**Advanced Suits**: 24 hours
-**Power Armor**: Days to weeks
-**Vehicle/Ship**: Indefinite
+**[High Ground]**: +1 attack, +10m range
+**[Cover]**: +1 to +4 Defense
+**[Concealment]**: Force miss chances
+**[Hazardous]**: Use environment as weapon
+**[Confined]**: Melee advantages
+**[Open]**: Ranged advantages
 
-## Zero-G and Extreme Environments
+### Combo Possibilities
 
-### Zero-G Movement
+**The Perfect Storm** (5+ tag combo):
+[Legendary] warrior + [Master] skill + [Perfect] weapon + [Ideal] position + [Destined] moment = Automatic critical success
 
-**Controlled**: Push off surfaces
-- Move 3m per push
-- Coordination to change direction
-- Magnetic boots negate
-
-**Uncontrolled**: Drift helplessly
-- 1m per round momentum
-- Can't change direction
-- Throw objects to move
-
-**Combat in Zero-G**:
-- No grounding for melee
-- Recoil moves shooter
-- Blood/debris floats
-- Disorientation common
-
-### Other Environments
-
-**Underwater**:
-- Half movement
-- -4 to attacks
-- Special weapons only
-- Pressure concerns
-
-**Heavy Weather**:
-- Wind: Movement and ranged penalties
-- Rain: Visibility penalties
-- Lightning: Random strikes
-- Storms: Multiple effects
-
-**Alien Environments**:
-- Psychotropic atmospheres
-- Predatory plant life
-- Sentient weather
-- Reality distortions
-
-## Quick Combat Reference
-
-### Attack Formula
-2d10 + Attribute + (Combat ÷ 2) + Weapon + Modifiers
-
-### Defense Formula  
-10 + Coordination + (Combat ÷ 2) + Cover + Armor
-
-### Common Modifiers
-- Aim (full round): +3
-- Multiple attacks: -2 each
-- Flanking: +2
-- Higher ground: +1
-- Cover: -2 to -4
-
-### Health States
-- Healthy (75%+): No penalty
-- Wounded (50-74%): -1 all
-- Injured (25-49%): -2 all
-- Critical (1-24%): -3 all
-- Dying (0 or less): Unconscious
+**The Synergy Chain**:
+Each matching tag adds +1 die, creating cascading advantages that reward players for building coherent character concepts and seeking ideal circumstances.
 
 ---
 
-*Continue to Chapter 7: Equipment and Gear for weapons, armor, and equipment...*
+*Continue to Chapter 7: Equipment and Gear to see how weapon and armor tags create combat synergies...*
