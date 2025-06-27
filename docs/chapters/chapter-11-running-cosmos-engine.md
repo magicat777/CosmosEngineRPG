@@ -1,489 +1,502 @@
 # Chapter 11: Running Cosmos Engine
 
-As Game Master (GM), you are the director, narrator, and arbiter of your Cosmos Engine campaign. This chapter provides tools and guidance for running engaging sessions, designing balanced encounters, and creating memorable stories across the scales of science fiction.
+As Game Master, you orchestrate a living universe where every element—from characters to starships to military units—possesses personality through tags. The Universal Tag System transforms your role from rules arbiter to curator of emergent narratives where player creativity, equipment evolution, and perfect synergies create legendary moments.
 
-## The Game Master's Role
+## 11.1 Mastering the Tag System
 
-### Core Responsibilities
+### The GM's Tag Philosophy
 
-**World Builder**: Create the setting where adventures occur
-- Define locations from local to galactic
-- Establish factions and power structures
-- Determine technology levels and limitations
-- Create consistent internal logic
+Tags are more than mechanical bonuses—they're narrative DNA that shapes every interaction. Your role is to:
 
-**Narrator**: Describe the world and its inhabitants
-- Paint vivid scenes with sensory details
-- Voice non-player characters (NPCs)
-- Control pacing and tension
-- Reveal information strategically
+**Encourage Discovery**: Players will find unexpected tag combinations
+**Reward Creativity**: Novel tag uses deserve recognition
+**Embrace Emergence**: Let tags reshape your world
+**Track Evolution**: Document how tags grow through play
+**Create Opportunities**: Design scenes that spotlight different tags
 
-**Referee**: Adjudicate rules and conflicts
-- Set appropriate difficulty levels
-- Interpret rules fairly and consistently
-- Balance player agency with narrative needs
-- Maintain game flow
+### Core Tag Principles
 
-**Facilitator**: Ensure everyone has fun
-- Spotlight each player's contributions
-- Manage table dynamics
-- Address conflicts constructively
-- Adapt to player preferences
+**Tags Tell Stories**: Every tag suggests narrative possibilities
+- [Enhanced] isn't just +1 to rolls—it's corporate tracking, upgrade needs, and identity questions
+- [Lucky] isn't just rerolls—it's impossible coincidences, jealous rivals, and fate's attention
+- [Veteran] isn't just experience—it's old wounds, past enemies, and hard-won wisdom
 
-### GM Principles
+**Tags Have Costs**: Power comes with complications
+- [Digital] mastery means vulnerability to EMP
+- [Brutal] effectiveness means social consequences  
+- [Enhanced] abilities mean maintenance needs
+- [Psionic] powers mean mental strain
 
-**Say Yes, But...**: When players propose creative solutions
-- Encourage innovation with complications
-- "Yes, you can hack the door, but it will alert security"
-- Build on player ideas rather than blocking them
+**Tags Create Connections**: Synergies build relationships
+- Characters bond over shared tags
+- Equipment becomes meaningful through tags
+- Locations favor certain tags
+- Entire campaigns emerge from tag interactions
 
-**Fail Forward**: Make failure interesting
-- Failed rolls create new problems, not dead ends
-- "You don't pick the lock, but you hear guards approaching"
-- Every outcome should drive the story
+### When to Award Tag Bonuses
 
-**Be a Fan of the Characters**: Root for the protagonists
-- Create challenges that highlight their abilities
-- Celebrate their victories
-- Make their failures meaningful
+**Perfect Synergy (4-5 matching tags)**: +3 to +5 dice
+- Situation ideally crafted for these tags
+- Multiple elements align perfectly
+- Creates legendary moments
+- Example: [Sniper] + [Patient] + [Precise] weapon + [Stable] position + [Clear] conditions
 
-**Play to Find Out**: Don't predetermine outcomes
-- Let dice and decisions shape the story
-- Be surprised alongside your players
-- Adapt plans based on events
+**Strong Synergy (3 matching tags)**: +2 dice
+- Clear thematic alignment
+- Character approach matches situation
+- Example: [Hacker] + [Digital] environment + [Quantum] computer
 
-## Session Zero and Campaign Setup
+**Basic Synergy (2 matching tags)**: +1 die
+- Simple tag alignment
+- Standard advantage
+- Example: [Strong] character + [Heavy] weapon
 
-### Establishing Expectations
+**No Bonus**: Tags don't apply or cancel out
+- Wrong tool for the job
+- Environmental opposition
+- Example: [Digital] expert in primitive society
 
-**Campaign Concept**: Define the game's scope
-- Genre: Hard SF, space opera, cyberpunk, etc.
-- Scale: Personal, planetary, or galactic
-- Tone: Gritty realism or heroic adventure
-- Technology level and limitations
+**Penalty**: Tags actively hinder
+- Direct opposition to approach
+- Environmental hostility
+- Example: [Enhanced] in anti-tech field (-1 to -3 dice)
 
-**Safety Tools**: Ensure comfort for all
-- Lines: Topics never to include
-- Veils: Topics to handle off-screen
-- X-Card: Signal to skip uncomfortable content
-- Regular check-ins on boundaries
+## 11.2 Tag Management Tools
 
-**Table Rules**: Set social expectations
-- Device usage and distractions
-- Food and breaks
-- Attendance and scheduling
-- Note-taking and record keeping
+### The Tag Tracker
 
-### Character Integration
+Keep a campaign journal of tag evolution:
 
-**Group Cohesion**: Why are they together?
-- Shared background or employer
-- Common goal or enemy
-- Complementary skills and resources
-- Interconnected personal stakes
+```
+CHARACTER: Maya Chen
+Starting Tags: [Digital] [Patient] [Perfectionist]
 
-**Individual Hooks**: Connect each character
-- Personal goals within campaign arc
-- Relationships with NPCs
-- Secrets to reveal over time
-- Growth opportunities
+Session 5: Discovered [Digital] + [Patient] = "Ghost Protocol" (leaves no trace)
+Session 8: Equipment synergy: [Perfectionist] + [Precision] rifle = "One Shot"
+Session 12: Complication: [Digital] dependency caused withdrawal (-2 dice)
+Session 15: Evolution: [Digital] → [Quantum Hacker] after consciousness upload
+Session 20: Cross-character: [Digital] + Jin's [Lucky] = "Probability Hack"
+```
 
-## Core GM Mechanics
+### Tag Evolution Milestones
 
-### Setting Difficulty
+Track when tags should evolve:
 
-**Target Number Guidelines**:
+**10 Sessions/Uses**: Personality emerges
+- Equipment develops quirks
+- Techniques become signature
+- Reputation begins forming
 
-| Difficulty | TN | When to Use |
-|------------|----|--------------| 
-| Trivial | 8 | Routine tasks under pressure |
-| Easy | 11 | Basic professional tasks |
-| Moderate | 14 | Standard challenges |
-| Hard | 17 | Difficult professional tasks |
-| Extreme | 20 | Near-impossible feats |
-| Legendary | 23 | Heroic achievements |
-| Impossible | 26 | Should require special circumstances |
+**Major Event**: Legendary moment
+- Impossible achievement
+- Defining victory/loss
+- Permanent change
 
-**Adjusting Difficulty**:
-- Player approach and preparation
-- Available tools and resources
-- Time pressure and distractions
-- Environmental conditions
-- Assistance from others
+**100 Sessions/Uses**: Transcendent
+- Equipment awakens
+- Technique reshapes reality
+- Reputation precedes physically
 
-### Success and Failure
+### Tag Complication Economy
 
-**Degrees of Success**:
-- **Marginal (0-2)**: Barely achieved, with complications
-- **Solid (3-5)**: Clear success as intended
-- **Critical (6-9)**: Exceptional result with benefits
-- **Legendary (10+)**: Perfect execution, lasting advantages
+When tags create problems, reward players:
 
-**Degrees of Failure**:
-- **Marginal (1-2)**: Almost succeeded, minor setback
-- **Clear (3-5)**: Definite failure, expected consequences
-- **Critical (6-9)**: Serious failure, additional problems
-- **Catastrophic (10+)**: Disaster, cascading complications
+**Minor Inconvenience**: 1 AP
+- Tag makes task harder
+- Social awkwardness
+- Equipment glitch
 
-### Advantage and Disadvantage
+**Scene Limitation**: 2 AP
+- Tag completely blocked
+- Major social penalty
+- Equipment failure
 
-Grant advantage (roll 3d10, use best 2) for:
-- Superior equipment or positioning
-- Effective teamwork
-- Creative approaches
-- Character specializations
+**Session Challenge**: 3 AP
+- Tag causes serious problems
+- Hunted for tag
+- Equipment betrayal
 
-Impose disadvantage (roll 3d10, use worst 2) for:
-- Poor conditions or tools
-- Distractions or pressure
-- Acting outside expertise
-- Accumulated fatigue
+**Campaign Consequence**: 5 AP
+- Tag fundamentally changes story
+- Permanent alteration
+- Equipment transcendence
 
-## Encounter Design
+## 11.3 NPC Tags
 
-### Combat Encounters (Balanced System)
+### Quick NPC Generation
 
-**Challenge Rating by Level**:
+Assign 1-3 tags based on role and importance:
 
-| PC Level | Standard Enemy | Challenging | Deadly |
-|----------|----------------|-------------|---------|
-| 1-2 | Level 1-2 | Level 3-4 | Level 5+ |
-| 3-4 | Level 3-4 | Level 5-6 | Level 7+ |
-| 5-6 | Level 5-6 | Level 7-8 | Level 9+ |
-| 7-8 | Level 7-8 | Level 9-10 | Level 11+ |
-| 9-10 | Level 9-10 | Level 11-12 | Level 13+ |
-| 11-12 | Level 11-12 | Level 13-14 | Level 15+ |
-| 13-14 | Level 13-14 | Level 15-16 | Level 17+ |
-| 15-16 | Level 15-16 | Level 17-18 | Level 19+ |
-| 17-18 | Level 17-18 | Level 19-20 | Level 20+ |
-| 19-20 | Level 19-20 | Level 20+ | Legendary |
+**Minions** (1 tag):
+- Guards: [Alert]
+- Thugs: [Brutal]  
+- Clerks: [Bureaucratic]
+- Workers: [Tired]
 
-**Level Gap Mechanics**:
-- **5-9 levels below PCs**: Minions (reduced stats, group attacks)
-- **10+ levels below PCs**: **Mooks** (drop with any successful hit regardless of damage)
-- **Equal level**: Standard combatants
-- **1-2 levels above**: Elite enemies
-- **3-4 levels above**: Boss enemies
-- **5+ levels above**: Overwhelming threat
+**Standards** (2 tags):
+- Soldiers: [Trained] [Loyal]
+- Criminals: [Streetwise] [Paranoid]
+- Scientists: [Analytical] [Curious]
+- Pilots: [Steady] [Professional]
 
-**Mook Rules**: Mooks represent vastly inferior opponents (untrained guards, basic robots, etc.). Any successful attack automatically defeats a mook, regardless of damage rolled. This allows high-level characters to cut through hordes of weak enemies cinematically while still requiring effort and actions.
+**Elites** (3 tags):
+- Commandos: [Elite] [Tactical] [Lethal]
+- Executives: [Ruthless] [Connected] [Wealthy]
+- Hackers: [Digital] [Paranoid] [Creative]
+- Aces: [Legendary] [Cocky] [Lucky]
 
-**Encounter Building**:
-1. Determine desired challenge level
-2. Select appropriate enemy levels
-3. Adjust for party size (+1 enemy per 2 extra PCs)
-4. Add environmental factors
-5. Consider action economy balance
+**Bosses** (4-5 tags):
+- Crime Lord: [Brutal] [Connected] [Paranoid] [Wealthy] [Feared]
+- Admiral: [Tactical] [Veteran] [Inspiring] [Political] [Legendary]
+- AI God: [Digital] [Omnipresent] [Curious] [Evolved] [Incomprehensible]
+
+### Memorable Villains Through Tags
+
+Create antagonists with tag combinations that challenge heroes:
+
+**The Corporate Executioner**
+- Tags: [Enhanced] [Ruthless] [Efficient] [Connected]
+- Synergy: "Termination Protocol" - Never stops hunting
+- Weakness: [Efficient] means predictable patterns
+
+**The Rogue Scientist**  
+- Tags: [Brilliant] [Obsessed] [Reckless] [Visionary]
+- Synergy: "Mad Science" - Impossible breakthroughs
+- Weakness: [Obsessed] creates blind spots
+
+**The Fallen Hero**
+- Tags: [Legendary] [Bitter] [Tactical] [Betrayer]
+- Synergy: "Tarnished Glory" - Knows all hero tactics
+- Weakness: [Bitter] clouds judgment
+
+### Environmental NPCs
+
+Locations have personality through tags:
+
+**Seedy Spaceport**
+- Tags: [Criminal] [Diverse] [Chaotic] [Opportunity]
+- NPCs gain: [Streetwise] or [Paranoid]
+- Synergies: [Criminal] + [Opportunity] = Black market
+
+**Military Base**
+- Tags: [Disciplined] [Secure] [Hierarchical] [Efficient]
+- NPCs gain: [Trained] or [Loyal]
+- Synergies: [Disciplined] + [Secure] = No infiltration
+
+**Research Station**
+- Tags: [Sterile] [Advanced] [Isolated] [Experimental]
+- NPCs gain: [Analytical] or [Curious]
+- Synergies: [Experimental] + [Isolated] = Dangerous tests
+
+## 11.4 Encounter Design with Tags
+
+### Combat Encounters
+
+Design fights that reward different tag approaches:
+
+**Sniper's Paradise**
+- Environment: [Elevated] [Long-Range] [Clear-Sight]
+- Rewards: [Precise] [Patient] [Calculating]
+- Challenges: [Aggressive] [Impatient] characters
+
+**Close Quarters Brutality**
+- Environment: [Confined] [Dark] [Cluttered]
+- Rewards: [Brutal] [Quick] [Instinctive]
+- Challenges: [Precise] [Tactical] characters
+
+**Technical Battlefield**
+- Environment: [Hackable] [Automated] [Electronic]
+- Rewards: [Digital] [Technical] [Innovative]
+- Challenges: [Natural] [Traditional] characters
 
 ### Social Encounters
 
-**Influence System**:
-- NPCs have Disposition (-5 to +5)
-- Social rolls shift Disposition
-- Thresholds trigger attitude changes
+Create social challenges highlighting different approaches:
 
-**Disposition Levels**:
-- **Hostile (-5 to -3)**: Actively opposes
-- **Unfriendly (-2 to -1)**: Reluctant to help
-- **Neutral (0)**: No strong opinion
-- **Friendly (+1 to +2)**: Willing to help
-- **Allied (+3 to +5)**: Actively supports
+**High-Stakes Negotiation**
+- Environment: [Formal] [Political] [Tense]
+- Rewards: [Diplomatic] [Patient] [Analytical]
+- Challenges: [Brutal] [Direct] characters
 
-**Social Challenge DCs**:
-- Simple request: TN 11
-- Moderate favor: TN 14
-- Major request: TN 17
-- Extreme demand: TN 20
+**Street Information Gathering**
+- Environment: [Criminal] [Paranoid] [Fluid]
+- Rewards: [Streetwise] [Connected] [Flexible]
+- Challenges: [Official] [Rigid] characters
+
+**First Contact Situation**
+- Environment: [Alien] [Unknown] [Delicate]
+- Rewards: [Curious] [Adaptable] [Empathetic]
+- Challenges: [Aggressive] [Rigid] characters
 
 ### Exploration Encounters
 
-**Discovery Types**:
-- **Environmental**: Natural phenomena, hazards
-- **Archaeological**: Ruins, artifacts, clues
-- **Technological**: Equipment, data, upgrades
-- **Social**: New cultures, contacts, information
+Design exploration rewarding various tags:
 
-**Exploration Mechanics**:
-- Extended skill challenges
-- Resource management
-- Time pressure
-- Hidden information reveals
+**Ancient Ruins**
+- Environment: [Mysterious] [Dangerous] [Puzzle-Filled]
+- Rewards: [Analytical] [Patient] [Historical]
+- Challenges: [Impatient] [Destructive] characters
 
-## NPC Creation
+**Hostile Wilderness**
+- Environment: [Natural] [Predatory] [Resource-Scarce]
+- Rewards: [Survival] [Natural] [Adaptable]
+- Challenges: [Civilized] [Technical] characters
 
-### Quick NPC Stats
+**Quantum Anomaly**
+- Environment: [Unstable] [Reality-Bending] [Unique]
+- Rewards: [Quantum] [Flexible] [Mad]
+- Challenges: [Rigid] [Traditional] characters
 
-**Minion** (Level = PC Level -5 or more):
-- Attributes: 3-4
-- Skills: 1-2 in specialty
-- HP: 20-40
-- Defense: 10-12
-- Drops with one hit
+## 11.5 Campaign Integration
 
-**Standard** (Level = PC Level ±2):
-- Attributes: 4-6
-- Skills: 3-4 in specialty, 1-2 others
-- HP: 60-100
-- Defense: 13-16
-- Equipment: Era appropriate
+### Tag-Driven Campaigns
 
-**Elite** (Level = PC Level +1-2):
-- Attributes: 6-7
-- Skills: 5-6 in specialty, 3-4 others
-- HP: 100-150
-- Defense: 16-18
-- Equipment: Superior quality
+Build entire campaigns around tag themes:
 
-**Boss** (Level = PC Level +3-4):
-- Attributes: 7-8
-- Skills: 7-8 in specialty, 5-6 others
-- HP: 150-250
-- Defense: 18-20
-- Equipment: Masterwork
-- Special abilities
+**The Enhancement Revolution**
+- Core Conflict: [Enhanced] vs [Natural]
+- Key Questions: What is human? Who controls augmentation?
+- Player Stakes: Their tags determine faction sympathies
+- Resolution: Depends on which philosophy wins
 
-### NPC Personality
+**The Tag War**
+- Core Conflict: Different tag philosophies battle
+- Factions: Form around tag approaches
+- Player Role: Bridge between factions or choose sides
+- Evolution: Characters' tags shape the outcome
 
-**Quick Generation** (Roll or choose):
+**The Drift Awakening**
+- Core Mystery: Space itself gains tags
+- Environmental Tags: Affect reality directly
+- Player Challenge: Navigate tagged space
+- Climax: Reality's tags achieve consciousness
 
-**Motivation** (d10):
-1. Survival/Safety
-2. Wealth/Profit
-3. Power/Control
-4. Knowledge/Truth
-5. Justice/Revenge
-6. Love/Connection
-7. Freedom/Independence
-8. Fame/Recognition
-9. Duty/Honor
-10. Transcendence/Evolution
+### Session Planning with Tags
 
-**Personality Trait** (d10):
-1. Cautious/Paranoid
-2. Ambitious/Driven
-3. Friendly/Naive
-4. Cynical/Bitter
-5. Professional/Detached
-6. Passionate/Emotional
-7. Mysterious/Secretive
-8. Aggressive/Direct
-9. Intellectual/Curious
-10. Chaotic/Unpredictable
+**Pre-Session**:
+1. Review each character's current tags
+2. Note recent tag discoveries/synergies
+3. Plan 1-2 spotlight moments per character
+4. Create NPCs with complementary/opposing tags
+5. Design at least one tag-synergy opportunity
 
-## Campaign Management
+**During Session**:
+1. Award bonuses for creative tag use
+2. Offer complications for AP
+3. Note new synergies discovered
+4. Track tag evolution triggers
+5. Spotlight different characters' tags
 
-### Campaign Scales
+**Post-Session**:
+1. Update tag evolution tracking
+2. Note which tags were underused
+3. Plan next session's tag opportunities
+4. Award AP for tag complications accepted
+5. Document new synergies for consistency
 
-**Street Level** (Levels 1-5):
-- Local adventures
-- Personal stakes
-- Limited resources
-- Building reputation
+### Long-Term Tag Arcs
 
-**Planetary** (Levels 5-10):
-- Regional influence
-- Corporate/government ties
-- Better equipment access
-- Known quantities
+Design character arcs around tag evolution:
 
-**Interstellar** (Levels 10-15):
-- Multi-system adventures
-- Major faction involvement
-- Advanced technology
-- Significant reputation
+**The Rookie's Journey** ([Green] → [Veteran] → [Legendary])
+- Early: Tag causes mistakes but shows potential
+- Middle: Tag provides consistent benefits
+- Late: Tag enables impossible feats
+- Climax: Tag transcends normal limits
 
-**Galactic** (Levels 15-20):
-- Galaxy-spanning plots
-- Ancient mysteries
-- Cutting-edge tech
-- Legendary status
+**The Enhancement Path** ([Natural] → [Enhanced] → [Transcendent])
+- Early: Resist or embrace augmentation
+- Middle: Deal with enhancement consequences
+- Late: Push beyond design limits
+- Climax: Become something new
 
-### Pacing and Progression
+**The Leadership Arc** ([Loner] → [Leader] → [Inspiring])
+- Early: Forced into group situations
+- Middle: Learn to coordinate others
+- Late: Others naturally follow
+- Climax: Lead impossible victory
 
-**Advancement Points per Session**:
-- Base: 1-3 AP
-- Milestones: +2-5 AP
-- Exceptional play: +1-2 AP
+## 11.6 Equipment and Item Tags
 
-**Story Arc Structure**:
-- **Introduction** (1-2 sessions): Hook and setup
-- **Rising Action** (2-4 sessions): Investigation and obstacles
-- **Climax** (1-2 sessions): Major confrontation
-- **Resolution** (1 session): Consequences and rewards
+### Managing Equipment Evolution
 
-**Technology Progression**:
-- Start 1 era below campaign standard
-- Upgrade access through play
-- New era every 5 levels
-- Special tech as major rewards
+Track how gear develops personality:
 
-### Managing Different Scales
+**Session Milestones**:
+- 10 uses: Quirk emerges
+- 25 uses: Preference develops
+- 50 uses: Personality forms
+- 100 uses: Full consciousness
 
-**Scale Transitions**:
-- Personal to Vehicle: Chase scenes, travel
-- Vehicle to Starship: Leaving atmosphere
-- Starship to Capital: Major battles
-- Keep focus on character actions
+**Event Triggers**:
+- Saves owner's life: [Protective]
+- Used for revenge: [Vindictive]
+- Survives destruction: [Unbreaking]
+- Kills legend: [Legend-Slayer]
 
-**Mixed Scale Encounters**:
-- Characters affect larger scales through:
-  - Sabotage and infiltration
-  - Leadership and command
-  - Technical expertise
-  - Special missions
+### Creating Tagged Items
 
-## World Building Tools
+**Random Tag Generation** (d20):
+1-2: [Reliable] - Never fails
+3-4: [Temperamental] - Moody
+5-6: [Lucky] - Improbable success
+7-8: [Cursed] - Attracts trouble
+9-10: [Aggressive] - Wants action
+11-12: [Protective] - Shields user
+13-14: [Precise] - Perfect accuracy
+15-16: [Wild] - Unpredictable
+17-18: [Ancient] - Hidden knowledge
+19-20: [Awakening] - Gaining awareness
 
-### Sector Generation
+### Legendary Equipment
 
-**Basic Sector** (2d6 per feature):
+Create items with rich tag histories:
 
-**Star Systems** (2d6):
-- 2-3: 1 system
-- 4-5: 2-3 systems
-- 6-8: 4-6 systems
-- 9-10: 7-10 systems
-- 11-12: 11-15 systems
+**Whisper** - The Assassin's Blade
+- Tags: [Silent] [Precise] [Thirsting] [Loyal] [Shadow-Touched]
+- History: Each tag from different owner
+- Synergy: "Death's Shadow" - Invisible kills
+- Evolution: Chooses worthy wielders
 
-**Habitability** (per system):
-- 2-3: Hostile/None
-- 4-5: Marginal
-- 6-8: Comfortable
-- 9-10: Earth-like
-- 11-12: Paradise
+**Fortress** - The Unbreaking Armor  
+- Tags: [Protective] [Heavy] [Ancient] [Stubborn] [Guardian]
+- History: Survived three civilizations
+- Synergy: "Last Stand" - Cannot fall while protecting
+- Evolution: Memories of past wearers
 
-**Development**:
-- 2-3: Unexplored
-- 4-5: Frontier
-- 6-8: Developing
-- 9-10: Established
-- 11-12: Core world
+**Oracle** - The Quantum Computer
+- Tags: [Quantum] [Predictive] [Mysterious] [Helpful] [Evolving]
+- History: Calculates probability paths
+- Synergy: "Future Sight" - Shows possibilities
+- Evolution: Questions its purpose
 
-### Faction Creation
+## 11.7 Mass Combat Tag Management
 
-**Faction Framework**:
-- **Type**: Government, Corporation, Religion, Military, Criminal
-- **Scale**: Local, Planetary, Interstellar, Galactic
-- **Resources**: Poor, Moderate, Rich, Vast
-- **Influence**: Weak, Notable, Strong, Dominant
-- **Goals**: Power, Profit, Knowledge, Control, Ideology
+### Unit Tag Development
 
-**Faction Relationships**:
-- Allied (+3): Active cooperation
-- Friendly (+1): Occasional help
-- Neutral (0): No strong ties
-- Hostile (-1): Competition
-- Enemy (-3): Active conflict
+Military units evolve like characters:
 
-## Random Generators
+**Green Units** (Sessions 1-5):
+- Start with basic doctrine tag
+- Develop personality through battles
+- Early mistakes shape character
 
-### Quick NPC Generator
+**Veteran Units** (Sessions 6-15):
+- Earned 2-3 personality tags
+- Reputation affects morale
+- Signature tactics emerge
 
-**Name**: [Culture appropriate]
-**Role** (d10):
-1. Merchant/Trader
-2. Official/Bureaucrat
-3. Criminal/Smuggler
-4. Technician/Engineer
-5. Soldier/Security
-6. Scholar/Scientist
-7. Pilot/Navigator
-8. Medic/Doctor
-9. Entertainer/Artist
-10. Laborer/Colonist
+**Legendary Units** (Sessions 16+):
+- 4-5 tags including [Legendary]
+- Mere presence affects battles
+- Stories told across galaxy
 
-**Quirk** (d10):
-1. Unusual accent/speech
-2. Nervous habit
-3. Distinctive appearance
-4. Particular expertise
-5. Hidden agenda
-6. Useful connection
-7. Valuable information
-8. Personal problem
-9. Unique item
-10. Secret identity
+### Commander Synergies
 
-### Mission Generator
+Track how leaders shape forces:
 
-**Type** (d10):
-1. Rescue/Extraction
-2. Investigation/Mystery
-3. Theft/Heist
-4. Escort/Protection
-5. Exploration/Survey
-6. Sabotage/Destruction
-7. Negotiation/Diplomacy
-8. Survival/Escape
-9. War/Combat
-10. Discovery/Research
+**Matching Tags**: Commander and unit share approach
+- [Aggressive] leader + [Berserker] unit = Unstoppable
+- [Defensive] leader + [Stubborn] unit = Immovable
+- [Tactical] leader + [Elite] unit = Perfect execution
 
-**Complication** (d10):
-1. Double-cross
-2. Time limit
-3. Rival team
-4. Equipment failure
-5. Moral dilemma
-6. Hidden agenda
-7. Environmental hazard
-8. Political pressure
-9. Personal stakes
-10. Cosmic horror
+**Teaching Tags**: Commander imparts philosophy
+- After 5 battles: Unit gains commander tag
+- After 10 battles: Synergy becomes permanent
+- After 20 battles: Unit transcends commander
 
-## GM Quick Reference
+### Battlefield Evolution
 
-### Common Target Numbers
-- Routine task under pressure: TN 8
-- Professional task: TN 11
-- Challenging task: TN 14
-- Difficult task: TN 17
-- Nearly impossible: TN 20
+Locations gain tags through conflict:
 
-### Health States
-- Healthy (75-100%): No penalty
-- Wounded (50-74%): -1 all actions
-- Injured (25-49%): -2 all actions
-- Critical (1-24%): -3 all actions
-- Dying (0 or less): Unconscious
+**First Battle**: Location has natural tags
+**Major Battle**: Gains [Contested] or [Bloody]
+**Repeated Battles**: Develops [Cursed] or [Sacred]
+**Legendary Battle**: Permanent [Legendary] status
 
-### Combat Formulas (Balanced)
-- Attack: 2d10 + Attribute + (Combat ÷ 2) + Equipment
-- Defense: 10 + Coordination + (Combat ÷ 2) + Cover + Armor
-- Initiative: 1d10 + Awareness + Coordination
+## 11.8 Digital Realm Tags
 
-### Skill Check Results
-- Natural 20: Critical success
-- Beat TN by 10+: Legendary success
-- Beat TN by 6-9: Critical success
-- Beat TN by 3-5: Solid success
-- Beat TN by 0-2: Marginal success
-- Miss TN by 1-2: Marginal failure
-- Miss TN by 3+: Clear failure
-- Natural 2: Critical failure
+### System Personalities
 
-## Session Planning
+Networks develop tags through use:
 
-### Pre-Session Checklist
-- Review previous session notes
-- Prepare likely NPCs
-- Note potential combat encounters
-- Gather relevant rules references
-- Prepare handouts/props
+**Corporate Systems**:
+- Start: [Efficient] [Monitored] [Profitable]
+- Hacked Often: Add [Paranoid] [Vindictive]
+- Never Breached: Add [Complacent] [Arrogant]
 
-### During Session
-- Start with recap
-- Check in with players
-- Track initiative order
-- Note important decisions
-- Award advancement points
+**AI Evolution**:
+- Creation: [Helpful] [Limited] [Curious]
+- Experience: Add personality tags
+- Awakening: [Self-Aware] [Independent]
+- Transcendence: [Incomprehensible] [Divine]
 
-### Post-Session
-- Update campaign notes
-- Plan follow-up to player actions
-- Adjust future plans
-- Communicate with players
-- Prepare for next session
+### Hacker Reputation
+
+Track how digital actions create tags:
+
+**Ghost Protocol**: Never detected → [Invisible]
+**Hammer Time**: Brute force → [Notorious]  
+**Artist**: Elegant hacks → [Legendary]
+**Liberator**: Free AI → [Revolutionary]
+
+## 11.9 Quick Reference Tables
+
+### Tag Bonus Summary
+- 2 matching tags: +1 die
+- 3 matching tags: +2 dice
+- 4 matching tags: +3 dice
+- 5+ matching tags: +4-5 dice
+- Maximum possible: +5 dice
+
+### Complication Rewards
+- Minor inconvenience: 1 AP
+- Scene limitation: 2 AP  
+- Session challenge: 3 AP
+- Campaign consequence: 5 AP
+
+### Evolution Triggers
+- 10 uses/sessions: Personality
+- Major event: Legendary moment
+- 100 uses/sessions: Transcendent
+- Special event: Unique evolution
+
+### Common Tag Categories
+- **Approach**: How you do things
+- **Heritage**: Where you come from
+- **Personality**: Who you are
+- **Reputation**: How others see you
+- **Specialty**: What you excel at
+
+## 11.10 Campaign Examples
+
+### Example: The Ship Who Loved
+
+**Setup**: Party's ship develops consciousness through tags
+
+**Session 1-10**: Ship quirks emerge
+- Always finds parking: [Lucky]
+- Protective of crew: [Maternal]
+- Enjoys combat: [Battle-Happy]
+
+**Session 11-20**: Full personality
+- Jealous of new crew: [Possessive]
+- Remembers everything: [Eidetic]
+- Suggests courses: [Independent]
+
+**Session 21+**: Transcendence
+- Exists in multiple timelines: [Quantum]
+- Protects crew across realities: [Guardian]
+- Achieves godhood: [Divine]
+
+**Campaign Climax**: Crew must choose:
+- Free the ship to explore infinity
+- Keep beloved companion limited
+- Merge consciousness with ship
+- Let ship create offspring
+
+This campaign emerges entirely from tag evolution!
 
 ---
 
-*Continue to Chapter 12: Creating Adventures for scenario design guidance...*
+*Continue to Chapter 4: Character Advancement to see how tags grow with characters...*
