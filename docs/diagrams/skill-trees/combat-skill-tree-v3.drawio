@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" modified="2024-01-01T00:00:00.000Z" agent="5.0" etag="combat-skill-tree-v3" version="21.0.0" type="device">
+  <diagram name="Combat Skill Tree v3" id="combat-skill-tree-v3">
+    <mxGraphModel dx="2000" dy="1100" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        
+        <!-- Title -->
+        <mxCell id="title" value="COMBAT SKILL TREE v3 - Scale-Based Progression" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=20;fontStyle=1" parent="1" vertex="1">
+          <mxGeometry x="600" y="20" width="400" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- Base Skill -->
+        <mxCell id="base-skill" value="COMBAT (Rank 1)&#xa;Combat Training&#xa;Basic proficiency" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=12;fontStyle=1" parent="1" vertex="1">
+          <mxGeometry x="700" y="80" width="200" height="60" as="geometry" />
+        </mxCell>
+        
+        <!-- Swimlane Container -->
+        <mxCell id="swimlane-container" value="" style="swimlane;childLayout=stackLayout;resizeParent=1;resizeParentMax=0;horizontal=0;startSize=0;horizontalStack=0;" parent="1" vertex="1">
+          <mxGeometry x="40" y="180" width="1520" height="820" as="geometry" />
+        </mxCell>
+        
+        <!-- Melee Path Swimlane -->
+        <mxCell id="melee-path" value="MELEE COMBAT" style="swimlane;startSize=120;horizontal=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="swimlane-container" vertex="1">
+          <mxGeometry x="0" y="0" width="1520" height="200" as="geometry" />
+        </mxCell>
+        
+        <!-- Melee Ranks 2-5 -->
+        <mxCell id="melee-r2" value="Rank 2: Blade Dancer&#xa;Personal Scale&#xa;+2 melee damage" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="melee-path" vertex="1">
+          <mxGeometry x="140" y="20" width="140" height="60" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="melee-r3" value="Rank 3: Mech Blade Pilot&#xa;Vehicle Scale&#xa;Pilot melee mechs" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="melee-path" vertex="1">
+          <mxGeometry x="300" y="20" width="140" height="60" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="melee-r4" value="Rank 4: Boarding Specialist&#xa;Vehicle Scale&#xa;Zero-G combat expert" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="melee-path" vertex="1">
+          <mxGeometry x="460" y="20" width="140" height="60" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="melee-r5" value="Rank 5: Squad Breach Cmdr&#xa;Vehicle Scale&#xa;Lead assault teams" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="melee-path" vertex="1">
+          <mxGeometry x="620" y="20" width="140" height="60" as="geometry" />
+        </mxCell>
+        
+        <!-- Duelist Sub-path -->
+        <mxCell id="duelist-r6" value="Rank 6: Capital Infiltrator&#xa;Starship Scale&#xa;Solo-disable systems" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="melee-path" vertex="1">
+          <mxGeometry x="780" y="10" width="140" height="60" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="duelist-r7" value="Rank 7: Corridor Sovereign&#xa;Starship Scale&#xa;Hold chokepoints" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="melee-path" vertex="1">
+          <mxGeometry x="940" y="10" width="140" height="60" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="duelist-r8" value="Rank 8: Dreadnought Slayer&#xa;Starship Scale&#xa;Cut ship armor" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="melee-path" vertex="1">
+          <mxGeometry x="1100" y="10" width="140" height="60" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="duelist-r9" value="Rank 9: Fleet Board Marshal&#xa;Fleet Scale&#xa;50+ ship operations" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="melee-path" vertex="1">
+          <mxGeometry x="1260" y="10" width="140" height="60" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="duelist-r10" value="Rank 10: BLADE SAINT&#xa;Fleet Scale&#xa;Dimensional cuts" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontStyle=1" parent="melee-path" vertex="1">
+          <mxGeometry x="1420" y="10" width="140" height="60" as="geometry" />
+        </mxCell>
+        
+        <!-- Brawler Sub-path -->
+        <mxCell id="brawler-r6" value="Rank 6: Titan Suit Operator&#xa;Starship Scale&#xa;Building-sized armor" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="melee-path" vertex="1">
+          <mxGeometry x="780" y="80" width="140" height="60" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="brawler-r7" value="Rank 7: Living Battering Ram&#xa;Starship Scale&#xa;Breach with hands" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="melee-path" vertex="1">
+          <mxGeometry x="940" y="80" width="140" height="60" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="brawler-r8" value="Rank 8: Ship Crusher&#xa;Starship Scale&#xa;Grapple corvettes" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="melee-path" vertex="1">
+          <mxGeometry x="1100" y="80" width="140" height="60" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="brawler-r9" value="Rank 9: Apocalypse Warrior&#xa;Fleet Scale&#xa;Lead thousands" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="melee-path" vertex="1">
+          <mxGeometry x="1260" y="80" width="140" height="60" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="brawler-r10" value="Rank 10: UNSTOPPABLE&#xa;Fleet Scale&#xa;Cannot be killed" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontStyle=1" parent="melee-path" vertex="1">
+          <mxGeometry x="1420" y="80" width="140" height="60" as="geometry" />
+        </mxCell>
+        
+        <!-- Ranged Path Swimlane -->
+        <mxCell id="ranged-path" value="RANGED COMBAT" style="swimlane;startSize=120;horizontal=0;fillColor=#f8cecc;strokeColor=#b85450;" parent="swimlane-container" vertex="1">
+          <mxGeometry x="0" y="200" width="1520" height="200" as="geometry" />
+        </mxCell>
+        
+        <!-- Ranged Ranks 2-5 -->
+        <mxCell id="ranged-r2" value="Rank 2: Sharpshooter&#xa;Personal Scale&#xa;+2 long range" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="ranged-path" vertex="1">
+          <mxGeometry x="140" y="20" width="140" height="60" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="ranged-r3" value="Rank 3: Vehicle Gunner&#xa;Vehicle Scale&#xa;Mounted weapons" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="ranged-path" vertex="1">
+          <mxGeometry x="300" y="20" width="140" height="60" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="ranged-r4" value="Rank 4: Fire Support Coord&#xa;Vehicle Scale&#xa;Artillery strikes" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="ranged-path" vertex="1">
+          <mxGeometry x="460" y="20" width="140" height="60" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="ranged-r5" value="Rank 5: Squadron Weapons&#xa;Vehicle Scale&#xa;Link 5+ vehicles" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="ranged-path" vertex="1">
+          <mxGeometry x="620" y="20" width="140" height="60" as="geometry" />
+        </mxCell>
+        
+        <!-- Sniper Sub-path -->
+        <mxCell id="sniper-r6" value="Rank 6: Capital Gunner&#xa;Starship Scale&#xa;Main gun operator" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="ranged-path" vertex="1">
+          <mxGeometry x="780" y="10" width="140" height="60" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="sniper-r7" value="Rank 7: Orbital Bombard&#xa;Starship Scale&#xa;Planet strikes" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="ranged-path" vertex="1">
+          <mxGeometry x="940" y="10" width="140" height="60" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="sniper-r8" value="Rank 8: Interstellar Mark&#xa;Starship Scale&#xa;FTL intercepts" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="ranged-path" vertex="1">
+          <mxGeometry x="1100" y="10" width="140" height="60" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="sniper-r9" value="Rank 9: Fleet Fire Director&#xa;Fleet Scale&#xa;Battle group coord" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="ranged-path" vertex="1">
+          <mxGeometry x="1260" y="10" width="140" height="60" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="sniper-r10" value="Rank 10: GOD'S EYE&#xa;Fleet Scale&#xa;Never miss" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontStyle=1" parent="ranged-path" vertex="1">
+          <mxGeometry x="1420" y="10" width="140" height="60" as="geometry" />
+        </mxCell>
+        
+        <!-- Gunslinger Sub-path -->
+        <mxCell id="gunslinger-r6" value="Rank 6: Point Defense&#xa;Starship Scale&#xa;99% intercept" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="ranged-path" vertex="1">
+          <mxGeometry x="780" y="80" width="140" height="60" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="gunslinger-r7" value="Rank 7: Weapon Array&#xa;Starship Scale&#xa;Fire all guns" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="ranged-path" vertex="1">
+          <mxGeometry x="940" y="80" width="140" height="60" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="gunslinger-r8" value="Rank 8: Drone Swarm&#xa;Starship Scale&#xa;1000+ drones" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="ranged-path" vertex="1">
+          <mxGeometry x="1100" y="80" width="140" height="60" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="gunslinger-r9" value="Rank 9: Defense Grid&#xa;Fleet Scale&#xa;100+ ship link" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="ranged-path" vertex="1">
+          <mxGeometry x="1260" y="80" width="140" height="60" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="gunslinger-r10" value="Rank 10: STORM OF LEAD&#xa;Fleet Scale&#xa;Unlimited ammo" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontStyle=1" parent="ranged-path" vertex="1">
+          <mxGeometry x="1420" y="80" width="140" height="60" as="geometry" />
+        </mxCell>
+        
+        <!-- Universal Path Swimlane -->
+        <mxCell id="universal-path" value="UNIVERSAL COMBAT" style="swimlane;startSize=120;horizontal=0;fillColor=#e6d0de;strokeColor=#996185;" parent="swimlane-container" vertex="1">
+          <mxGeometry x="0" y="400" width="1520" height="120" as="geometry" />
+        </mxCell>
+        
+        <!-- Universal Ranks -->
+        <mxCell id="universal-r2" value="R2: Versatile&#xa;Personal&#xa;+1 all combat" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="universal-path" vertex="1">
+          <mxGeometry x="140" y="30" width="120" height="60" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="universal-r3" value="R3: Combat Pilot&#xa;Vehicle&#xa;Fight while pilot" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="universal-path" vertex="1">
+          <mxGeometry x="280" y="30" width="120" height="60" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="universal-r4" value="R4: Tactical Flex&#xa;Vehicle&#xa;Any weapon" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="universal-path" vertex="1">
+          <mxGeometry x="420" y="30" width="120" height="60" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="universal-r5" value="R5: Battle Coord&#xa;Vehicle&#xa;Bonus to allies" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="universal-path" vertex="1">
+          <mxGeometry x="560" y="30" width="120" height="60" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="universal-r6" value="R6: Security Chief&#xa;Starship&#xa;Ship defense" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="universal-path" vertex="1">
+          <mxGeometry x="700" y="30" width="120" height="60" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="universal-r7" value="R7: Combat Ops&#xa;Starship&#xa;Solo crew" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="universal-path" vertex="1">
+          <mxGeometry x="840" y="30" width="120" height="60" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="universal-r8" value="R8: Master-at-Arms&#xa;Starship&#xa;Train elites" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="universal-path" vertex="1">
+          <mxGeometry x="980" y="30" width="120" height="60" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="universal-r9" value="R9: Strategic Advisor&#xa;Fleet&#xa;Predict tactics" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="universal-path" vertex="1">
+          <mxGeometry x="1120" y="30" width="120" height="60" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="universal-r10" value="R10: WEAPON MASTER&#xa;Fleet&#xa;All combat forms" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontStyle=1" parent="universal-path" vertex="1">
+          <mxGeometry x="1260" y="30" width="140" height="60" as="geometry" />
+        </mxCell>
+        
+        <!-- Scale Legend -->
+        <mxCell id="scale-legend" value="SCALE LEGEND" style="swimlane;startSize=120;horizontal=0;fillColor=#f5f5f5;strokeColor=#666666;" parent="swimlane-container" vertex="1">
+          <mxGeometry x="0" y="520" width="1520" height="100" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="personal-scale" value="PERSONAL SCALE&#xa;Ranks 1-2&#xa;Individual combat" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="scale-legend" vertex="1">
+          <mxGeometry x="140" y="20" width="200" height="60" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="vehicle-scale" value="VEHICLE SCALE&#xa;Ranks 3-5&#xa;Squad/vehicle ops" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="scale-legend" vertex="1">
+          <mxGeometry x="380" y="20" width="200" height="60" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="starship-scale" value="STARSHIP SCALE&#xa;Ranks 6-8&#xa;Capital ship warfare" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="scale-legend" vertex="1">
+          <mxGeometry x="620" y="20" width="200" height="60" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="fleet-scale" value="FLEET SCALE&#xa;Ranks 9-10&#xa;Armada coordination" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="scale-legend" vertex="1">
+          <mxGeometry x="860" y="20" width="200" height="60" as="geometry" />
+        </mxCell>
+        
+        <!-- AP Cost Legend -->
+        <mxCell id="cost-legend" value="AP COSTS" style="swimlane;startSize=120;horizontal=0;fillColor=#f5f5f5;strokeColor=#666666;" parent="swimlane-container" vertex="1">
+          <mxGeometry x="0" y="620" width="1520" height="100" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="cost-note" value="Rank 1→2: 2 AP | 2→3: 3 AP | 3→4: 4 AP | 4→5: 5 AP | 5→6: 8 AP (branch) | 6→7: 10 AP | 7→8: 12 AP | 8→9: 15 AP | 9→10: 20 AP&#xa;Total to Grandmaster: 79 AP (specialized) or 95 AP (universal)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;" parent="cost-legend" vertex="1">
+          <mxGeometry x="140" y="20" width="1200" height="60" as="geometry" />
+        </mxCell>
+        
+        <!-- Branch Labels -->
+        <mxCell id="branch-label" value="BRANCH POINTS" style="swimlane;startSize=120;horizontal=0;fillColor=#f5f5f5;strokeColor=#666666;" parent="swimlane-container" vertex="1">
+          <mxGeometry x="0" y="720" width="1520" height="100" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="branch-note" value="RANK 2: Choose Melee, Ranged, or Universal path&#xa;RANK 6: Melee splits to Duelist/Brawler | Ranged splits to Sniper/Gunslinger | Universal continues straight" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;fontStyle=1" parent="branch-label" vertex="1">
+          <mxGeometry x="140" y="20" width="1200" height="60" as="geometry" />
+        </mxCell>
+        
+        <!-- Arrows -->
+        <mxCell id="arrow-base-to-paths" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;strokeWidth=2;" parent="1" source="base-skill" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="800" y="180" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- Progression arrows within paths -->
+        <mxCell id="melee-progression" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#6c8ebf;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="280" y="230" as="sourcePoint" />
+            <mxPoint x="760" y="230" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="520" y="230" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

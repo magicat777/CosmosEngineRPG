@@ -330,73 +330,203 @@ Military formations create tag combinations:
 
 ### Personal Scale Integration
 
-Heroes affect battles through tags:
+Heroes affect battles through their personal tags translating to battlefield effects:
 
-**Hero Actions**:
-- [Inspiring] speech: Grant [Inspired] to all units
-- [Tactical] genius: Add personal tags to unit
-- [Warrior] leading charge: Unit gains [Fearless]
-- [Technical] support: Enable special capabilities
+**Hero Actions with Concrete Examples**:
 
-**Heroic Moments**:
-- Single combat with enemy champion
-- Sabotage mission behind lines
-- Rally routing forces
-- Technological breakthrough
+**[Inspiring] Speech** - Grant morale to multiple units:
+- Captain Maria [Inspiring] [Veteran]: "Remember your training!" - All [Green] units become [Steady]
+- Commander Zhao [Legendary] [Orator]: Legendary speech grants [Unbreakable] to entire army
+- Priest Kofi [Faithful] [Charismatic]: Divine blessing makes units [Blessed] and [Fearless]
 
-**Risk and Reward**:
-- Heroes in unit combat face real danger
-- Success creates legendary moments
-- Failure may doom the battle
-- Tags earned affect future
+**[Tactical] Genius** - Personal combat tags enhance unit:
+- Colonel Nash [Tactical] [Patient] [Precise]: Artillery gains [Surgical Strike] for devastating barrage
+- Major Ito [Berserker] [Relentless]: Infantry unit gains [Blood Frenzy] and breaks enemy line
+- Captain Volkov [Defensive] [Unbreaking]: Hold position becomes [Immovable Object]
 
-### Special Missions
+**Leading the Charge** - Hero at unit's head:
+- Knight-Commander Elena [Devastating] [Fearless]: Cavalry charge auto-breaks first enemy unit
+- Warlord Ogun [Brutal] [Terrifying]: Enemy must pass morale or flee before contact
+- Champion Rex [Lucky] [Unstoppable]: Unit ignores first casualty result
 
-Heroes undertake missions that swing battles:
+**[Technical] Support** - Enable special capabilities:
+- Engineer Chen [Hacker] [Innovative]: Disables enemy [Coordinated] tag
+- Medic Santos [Healer] [Tireless]: Unit regenerates 1 step per turn
+- Psion Yuki [Mental] [Area-Effect]: Causes [Confusion] in 3 enemy units
+
+### Heroic Moments that Change Battles
+
+**Single Combat** - Personal duel affects armies:
+- Winner's army gains +2 morale, loser's suffers -2
+- [Duelist] heroes can force champions to accept
+- [Legendary] victory may cause immediate rout
+- Example: Samurai Kenji [Master Swordsman] [Honorable] defeats enemy general, their army loses [Coordinated] and [Disciplined]
+
+**Behind Enemy Lines** - Special operations:
+- [Infiltrator] + [Saboteur]: Destroy supply depot, enemy loses [Well-Supplied]
+- [Assassin] + [Ghost]: Kill enemy general, command structure collapses
+- [Hacker] + [Digital Phantom]: Turn enemy drones against them
+- Example: Agent Park [Invisible] [Precise] eliminates artillery crews, removing [Fire Support]
+
+**Rally the Broken** - Turn defeat to victory:
+- [Inspiring] + [Veteran]: Routing units return with [Desperate Courage]
+- [Legendary] + [Undefeated]: Mere presence stops all routing
+- [Berserker] + [Terrifying]: Routers become [Frenzied] instead
+- Example: General Morrison [Never Surrender] [Iron Will] turns 3 routing units into [Last Stand] formation
+
+**Technological Breakthrough** - Science wins battles:
+- [Genius] + [Inventor]: Create battlefield advantage mid-combat
+- [Hacker] + [AI-Whisperer]: Subvert enemy autonomous units
+- [Quantum] + [Reality-Bender]: Alter battlefield physics
+- Example: Dr. Singh [Quantum Physicist] [Mad Genius] creates localized time dilation, giving allies extra actions
+
+### Risk and Reward Mechanics
+
+**Hero Casualty Table** (2d10 when hero's unit destroyed):
+- 2-5: Hero killed (dramatic death scene)
+- 6-10: Hero wounded ([Injured] tag for campaign)
+- 11-15: Hero escapes but unit destroyed
+- 16-18: Hero rallies survivors (half unit remains)
+- 19-20: Heroic survival (unit reduced but [Legendary])
+
+**Tag modifiers**:
+- [Lucky]: +3 to survival roll
+- [Protected]: Bodyguards grant reroll
+- [Destiny]: Cannot die except in climactic battles
+- [Doomed]: -3 to survival roll
+
+### Special Missions with Full Integration
 
 **Decapitation Strike**:
-- Target: Enemy command
-- Success: Enemy units lose coordination
-- Tags Needed: [Infiltrator] [Elite] [Precise]
-- Risk: Deep behind enemy lines
+- Requirements: Hero with combat/infiltration tags
+- Approach Examples:
+  - [Sniper] + [Patient]: Long-range elimination
+  - [Infiltrator] + [Shapeshifter]: Replace enemy commander
+  - [Berserker] + [Jetpack]: Direct assault on command
+- Success: Enemy loses all coordination tags, -2 morale
+- Failure: Hero captured/killed, enemy gains [Vigilant]
 
 **Sabotage Mission**:
-- Target: Critical infrastructure
-- Success: Enemy capabilities reduced
-- Tags Needed: [Technical] [Stealth] [Demolitions]
-- Risk: Time pressure, heavy guards
+- Requirements: Hero with technical/stealth tags  
+- Target Examples:
+  - Supply depot: Enemy loses [Well-Supplied]
+  - Communications: Enemy loses [Coordinated]
+  - Weapons depot: Enemy loses heavy weapon tags
+- Success scales with hero tags (2 tags = minor, 4+ = devastating)
+- Example: Specialist Wong [Demolitions] [Invisible] [Lucky] [Precise] destroys fusion plant, three enemy units lose power
 
 **Diplomatic Intervention**:
-- Target: Enemy allies/neutrals
-- Success: Change battle dynamics
-- Tags Needed: [Diplomatic] [Charismatic] [Connected]
-- Risk: Political consequences
+- Requirements: Social/leadership tags
+- Approach Examples:
+  - [Diplomat] + [Empathetic]: Find common ground
+  - [Intimidating] + [Reputation]: Threaten consequences  
+  - [Wealthy] + [Connected]: Bribe key figures
+- Success: Neutral joins you OR enemy ally withdraws
+- Critical Success: Enemy ally switches sides mid-battle!
 
 ## 14.8 Fleet Combat
 
 ### Space Battle Tags
 
-Fleet combat uses three-dimensional tags:
+Fleet combat uses three-dimensional tags creating spectacular battles:
 
-**Fleet Doctrine Tags**:
-- **[Wall-of-Battle]**: Traditional line combat
-- **[Carrier-Centric]**: Fighter-based warfare
-- **[Wolf-Pack]**: Distributed raiders
-- **[Fortress-Fleet]**: Defensive supremacy
-- **[Surgical]**: Precision strikes
+**Fleet Doctrine Tags with Examples**:
 
-**Fleet Commander Tags**:
-- **[Admiral]**: Naval tradition
-- **[Commodore]**: Squadron specialist
-- **[Pirate-King]**: Irregular warfare
-- **[AI-Assisted]**: Quantum calculations
-- **[Psychic]**: Feels the flow
+**[Wall-of-Battle]** - Traditional line combat:
+- Ships: Battleships in formation lines
+- Tactics: Concentrated firepower, mutual support
+- Example: Admiral Chen's [Wall-of-Battle] [Disciplined] [Veteran] fleet creates impenetrable defense
+- Synergies: [Coordinated Fire] + [Shield Overlap] = Fortress formation
+- Weaknesses: [Flanking], [Fighters], limited mobility
 
-**Space Environment Tags**:
-- **[Open-Void]**: No terrain features
-- **[Asteroid-Field]**: Cover and hazards
-- **[Nebula]**: Sensor interference
-- **[Gravity-Well]**: Movement restrictions
+**[Carrier-Centric]** - Fighter-based warfare:
+- Ships: Carriers with fighter/bomber wings
+- Tactics: Stand-off engagement, swarm attacks
+- Example: Commodore Patel's [Carrier-Centric] [Flexible] fleet launches 500 fighters
+- Synergies: [Fighter Screen] + [Bomber Wings] = Combined arms
+- Weaknesses: [Point Defense], carrier vulnerability
+
+**[Wolf-Pack]** - Distributed raiders:
+- Ships: Fast destroyers, stealth corvettes
+- Tactics: Hit and run, convoy raiding
+- Example: Pirate Queen Vera's [Wolf-Pack] [Elusive] [Opportunistic] raiders
+- Synergies: [Independent] + [Coordinated] = Everywhere at once
+- Weaknesses: [Heavy Armor], sustained engagement
+
+**[Fortress-Fleet]** - Defensive supremacy:
+- Ships: Heavy cruisers, defense platforms
+- Tactics: System defense, siege warfare
+- Example: System Governor's [Fortress-Fleet] [Immovable] [Protective]
+- Synergies: [Overlapping Fields] + [Repair Docks] = Regenerating wall
+- Weaknesses: [Mobility], multi-vector attacks
+
+**Fleet Commander Tag Interactions**:
+
+**Admiral Nakamura** [Legendary] [Tactical] [Patient] [Inspiring]:
+- Fleet gains: All ships share [Coordinated] and [Disciplined]
+- Special: Can hold perfect formation under any stress
+- Signature Move: "Nakamura's Gambit" - Feigned retreat into perfect ambush
+
+**Commodore Zhang** [Aggressive] [Carrier Specialist] [Lucky]:
+- Fleet gains: Fighters get +1 to all actions
+- Special: Launch/recovery during combat maneuvers
+- Signature Move: "Zhang's Swarm" - Overwhelming fighter assault
+
+**Pirate King Roberts** [Cunning] [Unpredictable] [Void-Born]:
+- Fleet gains: All ships gain [Elusive] in asteroids/debris
+- Special: Ambush from "impossible" locations
+- Signature Move: "Ghost Fleet" - Appear from nowhere
+
+**AI-Admiral MAGNUS** [Calculating] [Instantaneous] [Evolving]:
+- Fleet gains: Perfect targeting data (+2 to hit)
+- Special: Adapts to enemy tactics in real-time
+- Signature Move: "Probability Cascade" - Forces worst-case for enemy
+
+**Space Environment Combat Examples**:
+
+**[Open-Void]** Battle:
+- No cover, pure tactics and firepower
+- Example: Battle of Empty Sigma - Two [Wall-of-Battle] fleets exchange devastating volleys
+- Tags matter: [Long-Range] weapons dominate, [Speed] for positioning
+
+**[Asteroid-Field]** Ambush:
+- Cover, hazards, limited sensors
+- Example: Massacre at Broken Belt - [Wolf-Pack] raiders destroy convoy in asteroids
+- Tags interact: [Maneuverable] ships gain +3, [Massive] ships suffer -2
+
+**[Nebula]** Hunt:
+- No long-range sensors, close combat
+- Example: Ghost Nebula Campaign - Month-long cat and mouse
+- Tags crucial: [Short-Range] weapons only, [Psychic] navigation helps
+
+**[Gravity-Well]** Siege:
+- Planet/star affects movement
+- Example: Siege of Kepler Station - [Fortress-Fleet] uses gravity against attackers
+- Physics tags: [Orbital Mechanics] knowledge critical
+
+### Fleet Combat Resolution
+
+**Fleet Clash Example**:
+Turn 1: 
+- Imperial [Wall-of-Battle] fleet fires coordinated volleys
+- Rebel [Wolf-Pack] scatters, taking minimal damage
+- Environmental [Asteroid-Field] provides cover
+
+Turn 2:
+- Rebels use [Hit-and-Run] through asteroids
+- Imperial [Predictive Targeting] compensates partially
+- One Imperial destroyer crippled by focused fire
+
+Turn 3:
+- Imperial Admiral uses [Tactical Genius] to trap raiders
+- Rebel Commodore's [Lucky] tag triggers - reinforcements arrive!
+- Battle dynamics completely change
+
+**Capital Ship Duels**:
+When flagships engage, commander tags combine with ship tags:
+- Ship [Legendary] + Commander [Undefeated] = Morale to all
+- Ship [Experimental] + Commander [Genius] = Surprise weapons
+- Ship [Ancient] + Commander [Traditional] = Perfect synergy
 - **[Hyperspace-Junction]**: Strategic chokepoint
 
 ### Fleet Synergies

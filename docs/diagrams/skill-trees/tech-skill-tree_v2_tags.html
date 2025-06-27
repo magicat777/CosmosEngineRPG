@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Skill Tree v2 - With Tags - Cosmos Engine RPG</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
+            color: #fff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .header {
+            text-align: center;
+            padding: 2rem;
+            width: 100%;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            text-shadow: 0 0 20px rgba(0, 255, 170, 0.5);
+        }
+
+        .header p {
+            margin: 0.5rem 0;
+            color: #00ffaa;
+            font-size: 1.1rem;
+        }
+
+        .tree-container {
+            width: 95%;
+            max-width: 1400px;
+            margin: 2rem auto;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 20px;
+            padding: 3rem;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .skill-tree {
+            display: flex;
+            flex-direction: column;
+            gap: 3rem;
+            position: relative;
+        }
+
+        .tier {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+        }
+
+        .tier-label {
+            font-size: 1.3rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #00ffaa;
+            text-shadow: 0 0 10px rgba(0, 255, 170, 0.5);
+        }
+
+        .skills-row {
+            display: flex;
+            gap: 2rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .skill {
+            background: rgba(255, 255, 255, 0.1);
+            border: 2px solid #4a5568;
+            border-radius: 15px;
+            padding: 1.5rem;
+            width: 320px;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .skill::before {
+            content: '';
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            right: -2px;
+            bottom: -2px;
+            background: linear-gradient(45deg, transparent, transparent);
+            border-radius: 15px;
+            z-index: -1;
+            transition: all 0.3s ease;
+        }
+
+        .skill:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Tier-specific colors */
+        .base-skill {
+            border-color: #00ffaa;
+        }
+        .base-skill::before {
+            background: linear-gradient(45deg, #00ffaa, #00cc88);
+        }
+
+        .journeyman-skill {
+            border-color: #00aaff;
+        }
+        .journeyman-skill::before {
+            background: linear-gradient(45deg, #00aaff, #0088cc);
+        }
+
+        .master-skill {
+            border-color: #aa00ff;
+        }
+        .master-skill::before {
+            background: linear-gradient(45deg, #aa00ff, #8800cc);
+        }
+
+        .grandmaster-skill {
+            border-color: #ff00aa;
+        }
+        .grandmaster-skill::before {
+            background: linear-gradient(45deg, #ff00aa, #cc0088);
+        }
+
+        .skill-rank {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: bold;
+        }
+
+        .skill-name {
+            font-size: 1.3rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+            color: #fff;
+        }
+
+        .skill-scale {
+            font-size: 0.9rem;
+            color: #00ffaa;
+            margin-bottom: 0.8rem;
+            font-style: italic;
+        }
+
+        .skill-effect {
+            font-size: 1rem;
+            line-height: 1.4;
+            margin-bottom: 0.8rem;
+            color: #e2e8f0;
+        }
+
+        .skill-description {
+            font-size: 0.9rem;
+            color: #a0aec0;
+            font-style: italic;
+            margin-bottom: 1rem;
+        }
+
+        /* Tag section styling */
+        .tag-section {
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 10px;
+            padding: 1rem;
+            margin-top: 1rem;
+        }
+
+        .tag-label {
+            font-size: 0.8rem;
+            color: #00ffaa;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 0.5rem;
+        }
+
+        .tag-options {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .tag {
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(0, 255, 170, 0.3);
+            border-radius: 15px;
+            padding: 0.3rem 0.8rem;
+            font-size: 0.85rem;
+            color: #00ffaa;
+            transition: all 0.2s ease;
+        }
+
+        .tag:hover {
+            background: rgba(0, 255, 170, 0.2);
+            border-color: rgba(0, 255, 170, 0.5);
+            transform: scale(1.05);
+        }
+
+        .tag-description {
+            font-size: 0.8rem;
+            color: #a0aec0;
+            font-style: italic;
+        }
+
+        .grandmaster-title {
+            margin-top: 0.5rem;
+            font-size: 0.85rem;
+            color: #ff00aa;
+            font-weight: bold;
+        }
+
+        /* Connection lines */
+        .tier:not(:last-child)::after {
+            content: '';
+            position: absolute;
+            bottom: -3rem;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 2px;
+            height: 3rem;
+            background: linear-gradient(to bottom, #4a5568, transparent);
+        }
+
+        /* Scale legend */
+        .scale-legend {
+            margin-top: 3rem;
+            padding: 1.5rem;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 10px;
+            border: 1px solid rgba(0, 255, 170, 0.1);
+        }
+
+        .scale-legend h3 {
+            margin-top: 0;
+            color: #00ffaa;
+            text-align: center;
+        }
+
+        .scale-items {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .scale-item {
+            text-align: center;
+            padding: 0.5rem 1rem;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 8px;
+        }
+
+        .scale-ranks {
+            font-weight: bold;
+            color: #00ffaa;
+        }
+
+        .scale-name {
+            font-size: 0.9rem;
+            color: #a0aec0;
+        }
+
+        /* Tag synergy hint */
+        .synergy-hint {
+            background: rgba(0, 170, 255, 0.1);
+            border: 1px solid rgba(0, 170, 255, 0.3);
+            border-radius: 8px;
+            padding: 0.5rem;
+            margin-top: 0.5rem;
+            font-size: 0.8rem;
+            color: #00aaff;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .tree-container {
+                padding: 1.5rem;
+            }
+            
+            .skill {
+                width: 100%;
+                max-width: 350px;
+            }
+            
+            .header h1 {
+                font-size: 2rem;
+            }
+        }
+
+        /* Glow animations */
+        @keyframes glow {
+            0% { box-shadow: 0 0 5px rgba(0, 255, 170, 0.2); }
+            50% { box-shadow: 0 0 20px rgba(0, 255, 170, 0.4), 0 0 30px rgba(0, 255, 170, 0.2); }
+            100% { box-shadow: 0 0 5px rgba(0, 255, 170, 0.2); }
+        }
+
+        .grandmaster-skill:hover {
+            animation: glow 2s infinite;
+        }
+
+        /* Tag glow effect */
+        .tag-glow {
+            animation: tagPulse 3s infinite;
+        }
+
+        @keyframes tagPulse {
+            0% { box-shadow: 0 0 5px rgba(255, 0, 170, 0.3); }
+            50% { box-shadow: 0 0 15px rgba(255, 0, 170, 0.6); }
+            100% { box-shadow: 0 0 5px rgba(255, 0, 170, 0.3); }
+        }
+
+        /* Digital matrix rain effect */
+        .digital-effect {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, #00ffaa, transparent);
+            animation: scan 3s linear infinite;
+        }
+
+        @keyframes scan {
+            0% { transform: translateY(0); }
+            100% { transform: translateY(100px); }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>TECH SKILL TREE v2</h1>
+        <p>Integrated Tag System - 7 Skills with Progressive Tags</p>
+    </div>
+
+    <div class="tree-container">
+        <div class="skill-tree">
+            <!-- Base Tier -->
+            <div class="tier">
+                <div class="tier-label">Base Skill</div>
+                <div class="skills-row">
+                    <div class="skill base-skill">
+                        <div class="digital-effect"></div>
+                        <div class="skill-rank">Rank 1</div>
+                        <div class="skill-name">Tech Use</div>
+                        <div class="skill-scale">Scale: Personal</div>
+                        <div class="skill-effect">Basic tech operation, +1 to all technology rolls</div>
+                        <div class="skill-description">You understand and operate standard technology</div>
+                        <div class="tag-section">
+                            <div class="tag-label">Choose Foundation Tag:</div>
+                            <div class="tag-options">
+                                <span class="tag">[Digital]</span>
+                                <span class="tag">[Mechanical]</span>
+                                <span class="tag">[Creative]</span>
+                                <span class="tag">[Systematic]</span>
+                            </div>
+                            <div class="tag-description">What's your technological approach?</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Journeyman Tier -->
+            <div class="tier">
+                <div class="tier-label">Journeyman Tier (Ranks 2-3)</div>
+                <div class="skills-row">
+                    <div class="skill journeyman-skill">
+                        <div class="skill-rank">Rank 2</div>
+                        <div class="skill-name">System Expert</div>
+                        <div class="skill-scale">Scale: Personal → Vehicle</div>
+                        <div class="skill-effect">+2 to hacking/repair, can interface with vehicle systems</div>
+                        <div class="skill-description">You excel at manipulating complex systems</div>
+                        <div class="tag-section">
+                            <div class="tag-label">Choose Approach Tag:</div>
+                            <div class="tag-options">
+                                <span class="tag">[Hacker]</span>
+                                <span class="tag">[Builder]</span>
+                                <span class="tag">[Analyzer]</span>
+                                <span class="tag">[Saboteur]</span>
+                            </div>
+                            <div class="synergy-hint">Synergy: [Digital] + [Hacker] = "Ghost in the Machine" (+2 dice)</div>
+                        </div>
+                    </div>
+                    <div class="skill journeyman-skill">
+                        <div class="skill-rank">Rank 3</div>
+                        <div class="skill-name">Tech Innovation</div>
+                        <div class="skill-scale">Scale: Vehicle</div>
+                        <div class="skill-effect">Can modify equipment, create custom gear (up to TL+1)</div>
+                        <div class="skill-description">You innovate beyond standard specifications</div>
+                        <div class="tag-section">
+                            <div class="tag-label">Choose Innovation Tag:</div>
+                            <div class="tag-options">
+                                <span class="tag">[Modifier]</span>
+                                <span class="tag">[Creator]</span>
+                                <span class="tag">[Optimizer]</span>
+                                <span class="tag">[Experimental]</span>
+                            </div>
+                            <div class="synergy-hint">Triple Synergy: [Creative] + [Builder] + [Experimental] = "Mad Genius" (+3 dice)</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Master Tier -->
+            <div class="tier">
+                <div class="tier-label">Master Tier (Ranks 4-6)</div>
+                <div class="skills-row">
+                    <div class="skill master-skill">
+                        <div class="skill-rank">Rank 4</div>
+                        <div class="skill-name">Cyber Warfare</div>
+                        <div class="skill-scale">Scale: Vehicle → Starship</div>
+                        <div class="skill-effect">Electronic attacks deal damage, immune to hacking</div>
+                        <div class="skill-description">You weaponize information and networks</div>
+                        <div class="tag-section">
+                            <div class="tag-label">Choose Warfare Tag:</div>
+                            <div class="tag-options">
+                                <span class="tag">[Cyber]</span>
+                                <span class="tag">[Physical]</span>
+                                <span class="tag">[Information]</span>
+                                <span class="tag">[Defensive]</span>
+                            </div>
+                            <div class="tag-description">How do you wage technological war?</div>
+                        </div>
+                    </div>
+                    <div class="skill master-skill">
+                        <div class="skill-rank">Rank 6</div>
+                        <div class="skill-name">Master Engineer</div>
+                        <div class="skill-scale">Scale: Starship</div>
+                        <div class="skill-effect">Can operate any tech, +3 to all tech-enhanced actions</div>
+                        <div class="skill-description">You understand technology at fundamental levels</div>
+                        <div class="tag-section">
+                            <div class="tag-label">Choose Systems Tag:</div>
+                            <div class="tag-options">
+                                <span class="tag">[Ship]</span>
+                                <span class="tag">[Network]</span>
+                                <span class="tag">[AI]</span>
+                                <span class="tag">[Quantum]</span>
+                            </div>
+                            <div class="synergy-hint">Cross-Skill: [AI] + Pilot [Technical] + Command [Digital] = "Fleet Network Consciousness" (+4 dice)</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Grandmaster Tier -->
+            <div class="tier">
+                <div class="tier-label">Grandmaster Tier (Ranks 7-10)</div>
+                <div class="skills-row">
+                    <div class="skill grandmaster-skill">
+                        <div class="skill-rank">Rank 8</div>
+                        <div class="skill-name">Technology Prophet</div>
+                        <div class="skill-scale">Scale: Starship → Fleet</div>
+                        <div class="skill-effect">Your tech transcends current limits, can affect technology one scale above</div>
+                        <div class="skill-description">You see technological evolution before it happens</div>
+                        <div class="tag-section">
+                            <div class="tag-label">Choose Prophet Tag:</div>
+                            <div class="tag-options">
+                                <span class="tag">[Inventor]</span>
+                                <span class="tag">[Visionary]</span>
+                                <span class="tag">[Revolutionary]</span>
+                                <span class="tag">[Singularity]</span>
+                            </div>
+                            <div class="synergy-hint">Legendary Chain: All previous tags harmonize at this level (+4 dice)</div>
+                        </div>
+                    </div>
+                    <div class="skill grandmaster-skill tag-glow">
+                        <div class="skill-rank">Rank 10</div>
+                        <div class="skill-name">TECHNOMANCER</div>
+                        <div class="skill-scale">Scale: Fleet</div>
+                        <div class="skill-effect">Technology obeys your will, +5 to all allied tech rolls in your presence</div>
+                        <div class="skill-description">You transcend the boundary between consciousness and code</div>
+                        <div class="tag-section">
+                            <div class="tag-label">Choose Archetype Tag:</div>
+                            <div class="tag-options">
+                                <span class="tag">[Technomancer]</span>
+                                <span class="tag">[Digital God]</span>
+                                <span class="tag">[The Architect]</span>
+                                <span class="tag">[Singularity Born]</span>
+                            </div>
+                            <div class="grandmaster-title">Titles: "The Architect" • "Digital God" • "Code Prophet"</div>
+                            <div class="synergy-hint">Ultimate: All tech tags unite into reality-defining mastery (+5 dice)</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scale Legend -->
+        <div class="scale-legend">
+            <h3>Scale Progression & Tag Evolution</h3>
+            <div class="scale-items">
+                <div class="scale-item">
+                    <div class="scale-ranks">Ranks 1-2</div>
+                    <div class="scale-name">Personal Tech</div>
+                    <div class="tag-description">Foundation & Approach</div>
+                </div>
+                <div class="scale-item">
+                    <div class="scale-ranks">Rank 3</div>
+                    <div class="scale-name">Vehicle Systems</div>
+                    <div class="tag-description">Innovation Tags</div>
+                </div>
+                <div class="scale-item">
+                    <div class="scale-ranks">Ranks 4-5</div>
+                    <div class="scale-name">Vehicle → Starship</div>
+                    <div class="tag-description">Warfare Tags</div>
+                </div>
+                <div class="scale-item">
+                    <div class="scale-ranks">Rank 6</div>
+                    <div class="scale-name">Capital Systems</div>
+                    <div class="tag-description">Systems Tags</div>
+                </div>
+                <div class="scale-item">
+                    <div class="scale-ranks">Ranks 7-9</div>
+                    <div class="scale-name">Fleet Networks</div>
+                    <div class="tag-description">Prophet Tags</div>
+                </div>
+                <div class="scale-item">
+                    <div class="scale-ranks">Rank 10</div>
+                    <div class="scale-name">Galactic Tech</div>
+                    <div class="tag-description">Archetype Tags</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

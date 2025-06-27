@@ -70,7 +70,7 @@ Skills work consistently across all scales:
 
 Your tags evolve in scope as you advance - [Precise] might mean "careful shot placement" at Rank 1 but "surgical orbital bombardment" at Rank 8.
 
-## 5.3 The Fifteen Core Skills
+## 5.3 The Eighteen Core Skills
 
 ### Combat Skills
 
@@ -1729,6 +1729,245 @@ Your tags evolve in scope as you advance - [Precise] might mean "careful shot pl
 - Vehicle: Mobile base in toxic wasteland
 - Starship: Generation ship through void
 - Fleet: Preserve species through galactic catastrophe
+
+### Creative Skills
+
+#### PERFORMANCE
+*The art of entertainment, cultural expression, and swaying masses through artistic means*
+
+**Primary Attributes**: Presence (live performance), Coordination (instruments), Intellect (composition)
+**Scale Progression**: Street performer → Local celebrity → System star → Galactic icon
+
+##### Performance Skill Progression
+
+**Basic (Rank 1)**
+- **Amateur Performer**: +1 to performance rolls, can earn modest income through performance
+- **Tag Options** (Choose 1):
+  - **[Musician]**: Instrumental mastery (+1 with chosen instrument type)
+  - **[Actor]**: Theatrical presence (+1 when playing roles)
+  - **[Dancer]**: Physical expression (+1 when movement involved)
+  - **[Singer]**: Vocal artistry (+1 for voice-based performance)
+
+**Journeyman (Ranks 2-3)**
+- **Rank 2 - Professional Entertainer**: +2 to performance rolls, can influence small crowds' emotions (up to 20 people)
+  - **Tag Options** (Choose 1):
+    - **[Charismatic]**: Natural stage presence (+1 to audience reactions)
+    - **[Versatile]**: Multiple performance styles (+1 when combining forms)
+    - **[Provocative]**: Controversial art (+1 impact, may cause backlash)
+    - **[Traditional]**: Classical training (+1 with educated audiences)
+
+- **Rank 3 - Rising Star**: +3 to performance rolls, performance can grant allies morale bonuses for one scene
+  - **Tag Options** (Choose 1):
+    - **[Inspiring]**: Uplift through art (+1 to ally morale checks)
+    - **[Viral]**: Social media mastery (+1 to spread influence digitally)
+    - **[Method]**: Become the role (+1 when maintaining character)
+    - **[Innovative]**: Push boundaries (+1 when trying new approaches)
+
+**Master (Ranks 4-6)**
+- **Rank 4 - Celebrity**: +4 to performance rolls, can use fame to open doors and gain favors
+  - **Tag Options** (Choose 1):
+    - **[Famous]**: Household name (+2 to social rolls with fans)
+    - **[Influencer]**: Shape public opinion (+1 to propaganda/PR)
+    - **[Virtuoso]**: Technical perfection (+1 to impress professionals)
+    - **[Controversial]**: Polarizing figure (double impact, positive or negative)
+
+- **Rank 6 - Galactic Sensation**: +6 to performance rolls, can perform for multiple worlds simultaneously
+  - **Tag Options** (Choose 1):
+    - **[Universal]**: Cross-species appeal (+1 with all audiences)
+    - **[Trendsetter]**: Define cultural movements (+2 to start new fashions)
+    - **[Mesmerizing]**: Hypnotic performances (may entrance viewers)
+    - **[Multimedia]**: Master all platforms (+1 across all media types)
+
+**Grandmaster (Ranks 7-10)**
+- **Rank 8 - Cultural Force**: +8 to performance rolls, performances can alter political landscapes
+  - **Tag Options** (Choose 1):
+    - **[Reality-Star]**: Life itself is performance (+1 to all public actions)
+    - **[Prophet]**: Art predicts/shapes future (+1 to influence events)
+    - **[Transcendent]**: Beyond mortal art (affect non-physical beings)
+    - **[Paradigm]**: Redefine what art means (+2 to revolutionary works)
+
+- **Rank 10 - Performance Incarnate**: +10 to performance rolls, reality bends to artistic vision
+  - **Tag Options** (Choose 1):
+    - **[Omnipresent]**: Perform everywhere at once
+    - **[Creation-Singer]**: Perform new realities into existence
+    - **[Final-Act]**: Each performance could end/begin universes
+    - **[Pure-Expression]**: Become living art itself
+
+**Tag Synergies**:
+- [Musician] + [Innovative] = New genres of music
+- [Actor] + [Method] = Become other people completely
+- [Famous] + [Controversial] = Unstoppable cultural force
+- [Icon] + [Prophet] = Shape civilization's path
+
+**Equipment Synergies**:
+- [Viral] + [Quantum] instruments = Multidimensional concerts
+- [Branded] + [Corporate] backing = Media empire
+- [Mesmerizing] + [Holographic] tech = Mind-bending shows
+- [Universal] + [Translation] matrix = True cross-species art
+
+**Scale Examples**:
+- Personal: Busking for credits in a spaceport
+- Vehicle: Mobile concert venue touring systems
+- Starship: Broadcasting to entire sectors
+- Fleet: Cultural invasion through entertainment
+
+#### CRAFT
+*The skill of creating physical objects, from weapons to art to consumables*
+
+**Primary Attributes**: Intellect (design), Coordination (precision work), Might (heavy crafting)
+**Scale Progression**: Personal items → Vehicle mods → Ship systems → Megastructures
+
+##### Craft Skill Progression
+
+**Basic (Rank 1)**
+- **Apprentice Crafter**: +1 to craft rolls, create simple items at 75% market cost
+- **Tag Options** (Choose 1):
+  - **[Weaponsmith]**: Forge weapons (+1 when crafting arms)
+  - **[Armorer]**: Shape protection (+1 when crafting defense)
+  - **[Artisan]**: Aesthetic focus (+1 for decorative items)
+  - **[Tinkerer]**: Modify existing items (+1 for upgrades)
+
+**Journeyman (Ranks 2-3)**
+- **Rank 2 - Skilled Craftsman**: +2 to craft rolls, add one tag to crafted items
+  - **Tag Options** (Choose 1):
+    - **[Efficient]**: Less waste (+1 to resource management)
+    - **[Quality]**: Superior work (items last 2x longer)
+    - **[Quick]**: Fast production (half time required)
+    - **[Inventive]**: Unique designs (+1 when creating new patterns)
+
+- **Rank 3 - Master Crafter**: +3 to craft rolls, craft items one tech level above current
+  - **Tag Options** (Choose 1):
+    - **[Renowned]**: Signature style (+1 to item value)
+    - **[Perfectionist]**: Flawless work (+1 to item effectiveness)
+    - **[Teacher]**: Train apprentices (grant +1 to assistants)
+    - **[Recycler]**: Use salvage effectively (+1 with scrap)
+
+**Master (Ranks 4-6)**
+- **Rank 4 - Expert Artisan**: +4 to craft rolls, items can evolve through use like found equipment
+  - **Tag Options** (Choose 1):
+    - **[Exotic-Worker]**: Handle impossible materials (+1 with alien/quantum materials)
+    - **[Soul-Forger]**: Items bond with users (+1 to evolution chance)
+    - **[Mass-Producer]**: Efficient scaling (craft multiple items simultaneously)
+    - **[Experimental]**: Push boundaries (+1 when trying theoretical designs)
+
+- **Rank 6 - Forge Master**: +6 to craft rolls, craft self-repairing/evolving items
+  - **Tag Options** (Choose 1):
+    - **[Starship-Wright]**: Build spacecraft components (+2 for ship systems)
+    - **[Reality-Shaper]**: Bend physics in creation (+1 to impossible items)
+    - **[Culture-Crafter]**: Items become cultural artifacts
+    - **[War-Forger]**: Military perfection (+2 for weapons/armor)
+
+**Grandmaster (Ranks 7-10)**
+- **Rank 8 - Reality Craftsman**: +8 to craft rolls, craft concepts into physical form
+  - **Tag Options** (Choose 1):
+    - **[Concept-Forge]**: Make ideas tangible
+    - **[Megastructure]**: Build ringworlds and Dyson spheres
+    - **[Soul-Smith]**: Craft with essence itself
+    - **[Time-Shaper]**: Items exist across timelines
+
+- **Rank 10 - Creator Incarnate**: +10 to craft rolls, no limits on creation
+  - **Tag Options** (Choose 1):
+    - **[Divine-Craftsman]**: Gods commission your work
+    - **[Universe-Sculptor]**: Craft realities
+    - **[Omega-Builder]**: Final creation before heat death
+    - **[Prime-Maker]**: First to create, template for all
+
+**Tag Synergies**:
+- [Weaponsmith] + [Soul-Forger] = Weapons choose wielders
+- [Efficient] + [Mass-Producer] = Industrial revolution
+- [Experimental] + [Reality-Shaper] = Impossible made real
+- [Mythic] + [Time-Shaper] = Artifacts across history
+
+**Equipment Synergies**:
+- [Nano-Sculptor] + [Quantum] tools = Probability crafting
+- [Living-Items] + [AI] assistant = Truly alive creations
+- [Star-Forge] + [Stellar] hammer = Cosmic smithing
+- [Divine-Craftsman] + [Reality] anvil = Creation itself
+
+**Scale Examples**:
+- Personal: Craft custom weapons and armor
+- Vehicle: Build unique vehicles and mods
+- Starship: Design new ship classes
+- Fleet: Construct ringworlds and megastructures
+
+#### COMMERCE
+*The art of trade, business manipulation, and economic warfare*
+
+**Primary Attributes**: Intellect (analysis), Presence (negotiation), Awareness (market sense)
+**Scale Progression**: Street vendor → Business owner → Megacorp executive → Trade baron
+
+##### Commerce Skill Progression
+
+**Basic (Rank 1)**
+- **Trader**: +1 to commerce rolls, buy low/sell high (10% better prices)
+- **Tag Options** (Choose 1):
+  - **[Haggler]**: Natural negotiator (+1 to price negotiations)
+  - **[Appraiser]**: Know true value (+1 to identify valuable items)
+  - **[Connected]**: Trade network (+1 to find buyers/sellers)
+  - **[Black-Market]**: Underworld ties (+1 with illegal goods)
+
+**Journeyman (Ranks 2-3)**
+- **Rank 2 - Merchant**: +2 to commerce rolls, predict market trends (1 week advance knowledge)
+  - **Tag Options** (Choose 1):
+    - **[Smuggler]**: Hidden compartments (+1 to conceal cargo)
+    - **[Legitimate]**: Clean reputation (+1 with authorities)
+    - **[Specialist]**: Focus market (+2 in chosen commodity)
+    - **[Opportunist]**: Exploit situations (+1 during crises)
+
+- **Rank 3 - Entrepreneur**: +3 to commerce rolls, create new markets for products
+  - **Tag Options** (Choose 1):
+    - **[Franchiser]**: Replicate success (+1 to expand operations)
+    - **[Investor]**: Spot opportunities (+1 to backing winners)
+    - **[Networker]**: Connections everywhere (+1 to find contacts)
+    - **[Risk-Taker]**: Big gambles (+2 on high-risk ventures)
+
+**Master (Ranks 4-6)**
+- **Rank 4 - Business Magnate**: +4 to commerce rolls, economic actions affect entire cities
+  - **Tag Options** (Choose 1):
+    - **[Corporate]**: Run major company (+1 to institutional power)
+    - **[Cartel]**: Control supply chains (+2 to monopoly actions)
+    - **[Patron]**: Back other ventures (+1 to influence through money)
+    - **[Raider]**: Hostile takeovers (+1 to aggressive business)
+
+- **Rank 6 - Sector Tycoon**: +6 to commerce rolls, create or destroy entire industries
+  - **Tag Options** (Choose 1):
+    - **[Megacorp-CEO]**: Interstellar corporation (+2 to corporate actions)
+    - **[Trade-Route-Baron]**: Control shipping (+1 to all transport)
+    - **[Financial-Wizard]**: Markets obey you (+1 to predictions)
+    - **[Economic-Puppeteer]**: Nations dance to your tune
+
+**Grandmaster (Ranks 7-10)**
+- **Rank 8 - Commerce Incarnate**: +8 to commerce rolls, rewrite economic laws of civilizations
+  - **Tag Options** (Choose 1):
+    - **[Post-Scarcity]**: Create abundance (+1 to eliminating want)
+    - **[Reality-Trader]**: Buy and sell concepts
+    - **[Probability-Merchant]**: Trade in possibilities
+    - **[Void-Banker]**: Fund impossible ventures
+
+- **Rank 10 - Trade Absolute**: +10 to commerce rolls, all exchange flows through your will
+  - **Tag Options** (Choose 1):
+    - **[Omega-Merchant]**: Final trade before heat death
+    - **[Alpha-Trader]**: First to define exchange
+    - **[Universal-Broker]**: Trade between realities
+    - **[Value-Incarnate]**: You ARE commerce
+
+**Tag Synergies**:
+- [Haggler] + [Black-Market] = Underworld kingpin
+- [Corporate] + [Economic-Warrior] = Hostile takeover master
+- [Shadow-Broker] + [Guild-Master] = Information empire
+- [Market-Maker] + [Reality-Trader] = Define new economies
+
+**Equipment Synergies**:
+- [Networker] + [Quantum] communicator = Instant galactic deals
+- [Financial-Wizard] + [Predictive] AI = Never lose
+- [Trade-Emperor] + [Fleet] assets = Mobile empire
+- [Universal-Broker] + [Dimensional] vault = Infinite inventory
+
+**Scale Examples**:
+- Personal: Haggle in bazaars and markets
+- Vehicle: Smuggling runs and trade caravans
+- Starship: Interstellar commerce and trade routes
+- Fleet: Economic warfare between civilizations
 
 ---
 

@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cosmos Engine RPG - Second Edition Prototype Documentation</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #0f1419 0%, #1e3c72 50%, #2a5298 100%);
+            color: #fff;
+            min-height: 100vh;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding: 2rem;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 3rem;
+            text-shadow: 0 0 30px rgba(255, 215, 0, 0.8);
+            background: linear-gradient(45deg, #ffd700, #ffb347, #ffd700);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .header p {
+            margin: 1rem 0 0 0;
+            font-size: 1.2rem;
+            color: #b8c5d4;
+        }
+
+        .section {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 15px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .section h2 {
+            margin-top: 0;
+            color: #ffd700;
+            font-size: 1.8rem;
+            border-bottom: 2px solid rgba(255, 215, 0, 0.3);
+            padding-bottom: 0.5rem;
+        }
+
+        .skill-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .skill-link {
+            display: block;
+            background: rgba(255, 255, 255, 0.1);
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+            padding: 1rem;
+            text-decoration: none;
+            color: #fff;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .skill-link::before {
+            content: '';
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            right: -2px;
+            bottom: -2px;
+            background: linear-gradient(45deg, transparent, rgba(255, 215, 0, 0.3), transparent);
+            border-radius: 10px;
+            z-index: -1;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .skill-link:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+            border-color: rgba(255, 215, 0, 0.5);
+        }
+
+        .skill-link:hover::before {
+            opacity: 1;
+        }
+
+        .skill-name {
+            font-size: 1.1rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+
+        .skill-description {
+            font-size: 0.9rem;
+            color: #b8c5d4;
+            font-style: italic;
+        }
+
+        .system-info {
+            background: rgba(76, 175, 80, 0.1);
+            border: 1px solid rgba(76, 175, 80, 0.3);
+            border-radius: 10px;
+            padding: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .system-info h3 {
+            margin-top: 0;
+            color: #81c784;
+        }
+
+        .highlight {
+            background: rgba(255, 215, 0, 0.1);
+            border: 1px solid rgba(255, 215, 0, 0.3);
+            border-radius: 8px;
+            padding: 1rem;
+            margin: 1rem 0;
+        }
+
+        .highlight strong {
+            color: #ffd700;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 3rem;
+            padding: 2rem;
+            color: #b8c5d4;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            .container {
+                padding: 1rem;
+            }
+            
+            .skill-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>COSMOS ENGINE RPG</h1>
+            <p>Second Edition Prototype Documentation</p>
+        </div>
+
+        <div class="system-info">
+            <h3>System Overview</h3>
+            <p>This prototype documentation represents the corrected and standardized version of the Cosmos Engine RPG skill system. All skill trees now follow the unified 7-rank progression with proper mastery tier organization.</p>
+        </div>
+
+        <div class="highlight">
+            <strong>Key System Changes:</strong>
+            <ul>
+                <li><strong>7-Rank Progression:</strong> Skills now have exactly 7 ranks at levels 1, 2, 3, 4, 6, 8, 10</li>
+                <li><strong>4 Mastery Tiers:</strong> Basic (1) → Journeyman (2-3) → Master (4-6) → Grandmaster (7-10)</li>
+                <li><strong>Universal Tag System:</strong> 4 tags per rank creating synergistic combinations</li>
+                <li><strong>18 Core Skills:</strong> Added Performance, Craft, and Commerce skills for 95%+ archetype coverage</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Interactive Skill Trees</h2>
+            <p>All 18 core skills with corrected 7-rank progression and integrated tag systems.</p>
+            
+            <div class="skill-grid">
+                <a href="reference/skill-trees/athletics-skill-tree_v2_tags.html" class="skill-link">
+                    <div class="skill-name">Athletics</div>
+                    <div class="skill-description">Physical prowess and body control</div>
+                </a>
+                
+                <a href="reference/skill-trees/combat-skill-tree_v2_tags.html" class="skill-link">
+                    <div class="skill-name">Combat</div>
+                    <div class="skill-description">Warfare and tactical fighting</div>
+                </a>
+                
+                <a href="reference/skill-trees/command-skill-tree_v2_tags.html" class="skill-link">
+                    <div class="skill-name">Command</div>
+                    <div class="skill-description">Leadership and strategic authority</div>
+                </a>
+                
+                <a href="reference/skill-trees/commerce-skill-tree_v2_tags.html" class="skill-link">
+                    <div class="skill-name">Commerce</div>
+                    <div class="skill-description">Trade and economic manipulation</div>
+                </a>
+                
+                <a href="reference/skill-trees/craft-skill-tree_v2_tags.html" class="skill-link">
+                    <div class="skill-name">Craft</div>
+                    <div class="skill-description">Creating physical objects and items</div>
+                </a>
+                
+                <a href="reference/skill-trees/deception-skill-tree_v2_tags.html" class="skill-link">
+                    <div class="skill-name">Deception</div>
+                    <div class="skill-description">Lies, misdirection, and concealment</div>
+                </a>
+                
+                <a href="reference/skill-trees/discipline-skill-tree_v2_tags.html" class="skill-link">
+                    <div class="skill-name">Discipline</div>
+                    <div class="skill-description">Mental fortitude and self-control</div>
+                </a>
+                
+                <a href="reference/skill-trees/intimidation-skill-tree_v2_tags.html" class="skill-link">
+                    <div class="skill-name">Intimidation</div>
+                    <div class="skill-description">Fear and psychological pressure</div>
+                </a>
+                
+                <a href="reference/skill-trees/knowledge-skill-tree_v2_tags.html" class="skill-link">
+                    <div class="skill-name">Knowledge</div>
+                    <div class="skill-description">Information and learning</div>
+                </a>
+                
+                <a href="reference/skill-trees/medical-skill-tree_v2_tags.html" class="skill-link">
+                    <div class="skill-name">Medical</div>
+                    <div class="skill-description">Healing and biological sciences</div>
+                </a>
+                
+                <a href="reference/skill-trees/perception-skill-tree_v2_tags.html" class="skill-link">
+                    <div class="skill-name">Perception</div>
+                    <div class="skill-description">Awareness and detection</div>
+                </a>
+                
+                <a href="reference/skill-trees/performance-skill-tree_v2_tags.html" class="skill-link">
+                    <div class="skill-name">Performance</div>
+                    <div class="skill-description">Art and cultural expression</div>
+                </a>
+                
+                <a href="reference/skill-trees/persuasion-skill-tree_v2_tags.html" class="skill-link">
+                    <div class="skill-name">Persuasion</div>
+                    <div class="skill-description">Influence and social manipulation</div>
+                </a>
+                
+                <a href="reference/skill-trees/pilot-skill-tree_v2_tags.html" class="skill-link">
+                    <div class="skill-name">Pilot</div>
+                    <div class="skill-description">Vehicle and starship operation</div>
+                </a>
+                
+                <a href="reference/skill-trees/psionics-skill-tree_v2_tags.html" class="skill-link">
+                    <div class="skill-name">Psionics</div>
+                    <div class="skill-description">Mental powers and psychic abilities</div>
+                </a>
+                
+                <a href="reference/skill-trees/stealth-skill-tree_v2_tags.html" class="skill-link">
+                    <div class="skill-name">Stealth</div>
+                    <div class="skill-description">Concealment and infiltration</div>
+                </a>
+                
+                <a href="reference/skill-trees/survival-skill-tree_v2_tags.html" class="skill-link">
+                    <div class="skill-name">Survival</div>
+                    <div class="skill-description">Wilderness and environmental adaptation</div>
+                </a>
+                
+                <a href="reference/skill-trees/tech-skill-tree_v2_tags.html" class="skill-link">
+                    <div class="skill-name">Technology</div>
+                    <div class="skill-description">Devices and digital systems</div>
+                </a>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>System Mechanics</h2>
+            <div class="highlight">
+                <h3>Skill Progression Pattern</h3>
+                <p><strong>7 Total Skills per Tree:</strong></p>
+                <ul>
+                    <li><strong>Rank 1:</strong> Basic - Foundation skill</li>
+                    <li><strong>Rank 2:</strong> Journeyman - Professional development</li>
+                    <li><strong>Rank 3:</strong> Journeyman - Advanced techniques</li>
+                    <li><strong>Rank 4:</strong> Master - Expert capability</li>
+                    <li><strong>Rank 6:</strong> Master - Scale transition</li>
+                    <li><strong>Rank 8:</strong> Grandmaster - Legendary ability</li>
+                    <li><strong>Rank 10:</strong> Grandmaster - Transcendent mastery</li>
+                </ul>
+            </div>
+            
+            <div class="highlight">
+                <h3>Tag System Integration</h3>
+                <p>Each skill rank offers 4 tag choices that create synergistic combinations:</p>
+                <ul>
+                    <li><strong>Single Tags:</strong> Basic bonuses (+1 die)</li>
+                    <li><strong>Double Synergies:</strong> Two related tags (+2 dice)</li>
+                    <li><strong>Triple Synergies:</strong> Three harmonizing tags (+3 dice)</li>
+                    <li><strong>Cross-Skill Synergies:</strong> Tags from different skills (+4 dice)</li>
+                    <li><strong>Ultimate Combinations:</strong> Archetype-level mastery (+5 dice)</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Character Archetypes Supported</h2>
+            <p>The 18-skill system now provides 95%+ coverage for science fiction character concepts:</p>
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; margin-top: 1rem;">
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Combat Archetypes</strong>
+                    <ul style="margin: 0.5rem 0; color: #b8c5d4;">
+                        <li>Melee Striker</li>
+                        <li>Ranged Striker</li>
+                        <li>Tactical Commander</li>
+                        <li>Elite Operative</li>
+                    </ul>
+                </div>
+                
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Social Archetypes</strong>
+                    <ul style="margin: 0.5rem 0; color: #b8c5d4;">
+                        <li>Face/Negotiator</li>
+                        <li>Galactic Pop Star</li>
+                        <li>Trade Baron</li>
+                        <li>Cultural Ambassador</li>
+                    </ul>
+                </div>
+                
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Technical Archetypes</strong>
+                    <ul style="margin: 0.5rem 0; color: #b8c5d4;">
+                        <li>Mechanic/Engineer</li>
+                        <li>Master Crafter</li>
+                        <li>Hacker/Technician</li>
+                        <li>Starship Designer</li>
+                    </ul>
+                </div>
+                
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Specialist Archetypes</strong>
+                    <ul style="margin: 0.5rem 0; color: #b8c5d4;">
+                        <li>Psionic Adept</li>
+                        <li>Explorer/Scout</li>
+                        <li>Corporate Executive</li>
+                        <li>Action Movie Star</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>Cosmos Engine RPG Second Edition Prototype • Updated with Universal Tag System Integration</p>
+            <p>All skill trees follow standardized 7-rank progression with 4 mastery tiers</p>
+        </div>
+    </div>
+</body>
+</html>

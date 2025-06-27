@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psionics Skill Tree - Cosmos Engine RPG</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            color: #fff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .header {
+            text-align: center;
+            padding: 2rem;
+            width: 100%;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            text-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+        }
+
+        .header p {
+            margin: 0.5rem 0;
+            color: #b8c5d4;
+            font-size: 1.1rem;
+        }
+
+        .tree-container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 2rem auto;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 20px;
+            padding: 3rem;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .skill-tree {
+            display: flex;
+            flex-direction: column;
+            gap: 3rem;
+            position: relative;
+        }
+
+        .tier {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+        }
+
+        .tier-label {
+            font-size: 1.3rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #ffd700;
+            text-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+        }
+
+        .skills-row {
+            display: flex;
+            gap: 2rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .skill {
+            background: rgba(255, 255, 255, 0.1);
+            border: 2px solid #4a5568;
+            border-radius: 15px;
+            padding: 1.5rem;
+            width: 280px;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .skill::before {
+            content: '';
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            right: -2px;
+            bottom: -2px;
+            background: linear-gradient(45deg, transparent, transparent);
+            border-radius: 15px;
+            z-index: -1;
+            transition: all 0.3s ease;
+        }
+
+        .skill:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Tier-specific colors - Special purple theme for psionics */
+        .base-skill {
+            border-color: #9f7aea;
+        }
+        .base-skill::before {
+            background: linear-gradient(45deg, #9f7aea, #6b46c1);
+        }
+
+        .journeyman-skill {
+            border-color: #b794f4;
+        }
+        .journeyman-skill::before {
+            background: linear-gradient(45deg, #b794f4, #9f7aea);
+        }
+
+        .master-skill {
+            border-color: #d6bcfa;
+        }
+        .master-skill::before {
+            background: linear-gradient(45deg, #d6bcfa, #b794f4);
+        }
+
+        .grandmaster-skill {
+            border-color: #e9d8fd;
+        }
+        .grandmaster-skill::before {
+            background: linear-gradient(45deg, #e9d8fd, #d6bcfa);
+        }
+
+        /* Psionic glow effect */
+        .skill {
+            box-shadow: 0 0 15px rgba(159, 122, 234, 0.3);
+        }
+
+        .skill:hover {
+            box-shadow: 0 0 30px rgba(159, 122, 234, 0.6), 0 10px 30px rgba(0, 0, 0, 0.5);
+        }
+
+        .skill-rank {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: bold;
+        }
+
+        .skill-name {
+            font-size: 1.3rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+            color: #fff;
+        }
+
+        .skill-scale {
+            font-size: 0.9rem;
+            color: #cbd5e0;
+            margin-bottom: 0.8rem;
+            font-style: italic;
+        }
+
+        .skill-effect {
+            font-size: 1rem;
+            line-height: 1.4;
+            margin-bottom: 0.8rem;
+            color: #e2e8f0;
+        }
+
+        .skill-description {
+            font-size: 0.9rem;
+            color: #a0aec0;
+            font-style: italic;
+        }
+
+        .grandmaster-title {
+            margin-top: 0.5rem;
+            font-size: 0.85rem;
+            color: #ffd700;
+            font-weight: bold;
+        }
+
+        /* Connection lines */
+        .tier:not(:last-child)::after {
+            content: '';
+            position: absolute;
+            bottom: -3rem;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 2px;
+            height: 3rem;
+            background: linear-gradient(to bottom, #9f7aea, transparent);
+        }
+
+        /* Scale legend */
+        .scale-legend {
+            margin-top: 3rem;
+            padding: 1.5rem;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .scale-legend h3 {
+            margin-top: 0;
+            color: #ffd700;
+            text-align: center;
+        }
+
+        .scale-items {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .scale-item {
+            text-align: center;
+            padding: 0.5rem 1rem;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 8px;
+        }
+
+        .scale-ranks {
+            font-weight: bold;
+            color: #e2e8f0;
+        }
+
+        .scale-name {
+            font-size: 0.9rem;
+            color: #a0aec0;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .tree-container {
+                padding: 1.5rem;
+            }
+            
+            .skill {
+                width: 100%;
+                max-width: 350px;
+            }
+            
+            .header h1 {
+                font-size: 2rem;
+            }
+        }
+
+        /* Psionic pulse animation */
+        @keyframes psionicPulse {
+            0% { 
+                box-shadow: 0 0 15px rgba(159, 122, 234, 0.3);
+                transform: scale(1);
+            }
+            50% { 
+                box-shadow: 0 0 30px rgba(159, 122, 234, 0.6), 0 0 50px rgba(159, 122, 234, 0.3);
+                transform: scale(1.02);
+            }
+            100% { 
+                box-shadow: 0 0 15px rgba(159, 122, 234, 0.3);
+                transform: scale(1);
+            }
+        }
+
+        .grandmaster-skill:hover {
+            animation: psionicPulse 2s infinite;
+        }
+
+        /* Special effect for psionics header */
+        .header h1 {
+            background: linear-gradient(45deg, #e9d8fd, #9f7aea, #e9d8fd);
+            background-size: 200% 200%;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: gradientShift 3s ease infinite;
+        }
+
+        @keyframes gradientShift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>PSIONICS SKILL TREE</h1>
+        <p>Unlock the Power of the Mind - 7 Skills Total</p>
+    </div>
+
+    <div class="tree-container">
+        <div class="skill-tree">
+            <!-- Base Tier -->
+            <div class="tier">
+                <div class="tier-label">Base Skill</div>
+                <div class="skills-row">
+                    <div class="skill base-skill">
+                        <div class="skill-rank">Rank 1</div>
+                        <div class="skill-name">Psionic Awakening</div>
+                        <div class="skill-scale">Scale: Personal</div>
+                        <div class="skill-effect">Basic telepathy (surface thoughts), +1 to mental rolls</div>
+                        <div class="skill-description">Your mind touches powers beyond the physical</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Journeyman Tier -->
+            <div class="tier">
+                <div class="tier-label">Journeyman Tier (Ranks 2-3)</div>
+                <div class="skills-row">
+                    <div class="skill journeyman-skill">
+                        <div class="skill-rank">Rank 2</div>
+                        <div class="skill-name">Mind Shield</div>
+                        <div class="skill-scale">Scale: Personal → Vehicle</div>
+                        <div class="skill-effect">+2 vs mental intrusion, project protective barriers to allies</div>
+                        <div class="skill-description">Your thoughts become an impenetrable fortress</div>
+                    </div>
+                    <div class="skill journeyman-skill">
+                        <div class="skill-rank">Rank 3</div>
+                        <div class="skill-name">Telekinetic Grasp</div>
+                        <div class="skill-scale">Scale: Vehicle</div>
+                        <div class="skill-effect">Move objects up to vehicle size, fine manipulation at distance</div>
+                        <div class="skill-description">Your will shapes the physical world</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Master Tier -->
+            <div class="tier">
+                <div class="tier-label">Master Tier (Ranks 4-6)</div>
+                <div class="skills-row">
+                    <div class="skill master-skill">
+                        <div class="skill-rank">Rank 4</div>
+                        <div class="skill-name">Psionic Network</div>
+                        <div class="skill-scale">Scale: Vehicle → Starship</div>
+                        <div class="skill-effect">Link minds across distances, coordinate groups telepathically</div>
+                        <div class="skill-description">You weave consciousness into unity</div>
+                    </div>
+                    <div class="skill master-skill">
+                        <div class="skill-rank">Rank 6</div>
+                        <div class="skill-name">Void Mind</div>
+                        <div class="skill-scale">Scale: Starship</div>
+                        <div class="skill-effect">Sense across star systems, influence ship-scale electronics with thought</div>
+                        <div class="skill-description">Your awareness spans the cosmos</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Grandmaster Tier -->
+            <div class="tier">
+                <div class="tier-label">Grandmaster Tier (Ranks 7-10)</div>
+                <div class="skills-row">
+                    <div class="skill grandmaster-skill">
+                        <div class="skill-rank">Rank 8</div>
+                        <div class="skill-name">Reality Shaper</div>
+                        <div class="skill-scale">Scale: Starship → Fleet</div>
+                        <div class="skill-effect">Alter probability, manifest thoughts into reality temporarily</div>
+                        <div class="skill-description">The universe bends to your imagination</div>
+                    </div>
+                    <div class="skill grandmaster-skill">
+                        <div class="skill-rank">Rank 10</div>
+                        <div class="skill-name">TRANSCENDENT</div>
+                        <div class="skill-scale">Scale: Fleet</div>
+                        <div class="skill-effect">Exist as pure consciousness, influence thousands simultaneously</div>
+                        <div class="skill-description">You are no longer bound by mere flesh</div>
+                        <div class="grandmaster-title">Titles: "The Awakened One" • "Mind of the Galaxy" • "Thought Incarnate"</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scale Legend -->
+        <div class="scale-legend">
+            <h3>Scale Progression</h3>
+            <div class="scale-items">
+                <div class="scale-item">
+                    <div class="scale-ranks">Ranks 1-2</div>
+                    <div class="scale-name">Personal Mind</div>
+                </div>
+                <div class="scale-item">
+                    <div class="scale-ranks">Rank 3</div>
+                    <div class="scale-name">Group Telepathy</div>
+                </div>
+                <div class="scale-item">
+                    <div class="scale-ranks">Ranks 4-5</div>
+                    <div class="scale-name">Vehicle → Starship</div>
+                </div>
+                <div class="scale-item">
+                    <div class="scale-ranks">Rank 6</div>
+                    <div class="scale-name">System-Wide</div>
+                </div>
+                <div class="scale-item">
+                    <div class="scale-ranks">Ranks 7-9</div>
+                    <div class="scale-name">Multi-System</div>
+                </div>
+                <div class="scale-item">
+                    <div class="scale-ranks">Rank 10</div>
+                    <div class="scale-name">Galactic Mind</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

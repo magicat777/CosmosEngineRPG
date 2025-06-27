@@ -1,55 +1,76 @@
 # Chapter 2: Core Mechanics
 
-## The 2d10 System
+> *"The universe doesn't care about your plans, kid. But if you've got the right combination of skill, guts, and a little cosmic luck? Well, that's when miracles happen."*
+> 
+> *—Master Engineer Kai Okafor, explaining probability to her apprentice*
+
+## Quick Start: The 2d10 System
+
+**New Players: This is all you need to start playing!**
 
 At the heart of Cosmos Engine lies a simple, unified resolution mechanic:
 
-**Basic Roll**: 2d10 + Attribute + Skill + Modifiers + Tag Bonuses vs Target Number (TN)
+### The Universal Formula
+**2d10 + Attribute + Skill + Tag Bonuses vs Target Number (TN)**
 
-When you attempt something with an uncertain outcome, the GM sets a Target Number based on the task's difficulty. You roll two ten-sided dice, add your relevant attribute and skill, apply any situational modifiers, and compare the total to the TN. Equal or exceed it, and you succeed. Fall short, and you fail.
+When attempting something with uncertain outcome, the GM sets a Target Number based on difficulty. You roll two ten-sided dice, add your character's relevant capabilities and any tag bonuses, then compare the total to the TN. Meet or exceed it for success; fall short for failure.
 
-### Reading the Dice
+**That's it. Everything else in this chapter explains how to make it amazing.**
 
-When you roll 2d10, you add both dice together for a result from 2 to 20. The probability curve means results cluster around 11, making average tasks achievable for competent characters while preserving dramatic swings for critical moments.
+### Reading the Cosmic Dice
 
-**Special Rolls**:
-- **Natural 20** (two 10s): Critical Success
-- **Natural 2** (two 1s): Critical Failure
-- **Doubles**: Extreme results (very good or very bad)
+**[INFOGRAPHIC: 2d10 Probability Bell Curve]**
+*Visual showing: Peak at 11 (9% chance), declining to edges at 2 and 20 (1% each)*
 
-## Attributes (PRIMAC)
+When you roll 2d10, you add both dice for a result from 2 to 20. The probability curve clusters around 11, making routine tasks achievable for competent characters while preserving dramatic uncertainty for critical moments.
 
-Every character possesses six primary attributes rated from 1 to 10:
+**Cosmic Resonance Events**:
+- **Natural 20** (dual 10s): **Critical Success** - Reality bends to accommodate your action
+- **Natural 2** (dual 1s): **Critical Failure** - Complications cascade beyond the immediate task  
+- **Doubles** (matching numbers): **Extreme Results** - Amplified success or memorable failure
 
-### Presence (PRE)
-Your force of personality, leadership capability, and social impact. Presence measures how well you influence others, project confidence, and navigate social situations.
-- **Key Uses**: Leadership, persuasion, intimidation, performance
-- **Saving Throw**: Resist social manipulation, maintain composure
+**Player Tip**: Critical results create story moments. A critical failure hacking a door might trigger security, while critical success could give you admin access to the entire facility.
 
-### Resolve (RES)
-Your mental fortitude, willpower, and determination. Resolve represents your ability to persevere through adversity and maintain focus under pressure.
-- **Key Uses**: Concentration, resistance to fear, mental endurance
-- **Saving Throw**: Resist mental effects, maintain sanity
+## The PRIMAC Matrix
 
-### Intellect (INT)
-Your reasoning ability, memory, and analytical thinking. Intellect measures how quickly you learn, solve problems, and understand complex concepts.
-- **Key Uses**: Investigation, technology, medicine, tactics
-- **Saving Throw**: Recognize illusions, solve puzzles quickly
+> *"Your body is your ship, your mind is your navigation system, and your spirit is your hyperdrive. Master all three, and you can reach any star."*
+> 
+> *—Void Monk teaching, translated from Ancient Luminos*
 
-### Might (MIG)
-Your physical strength and power. Might determines how much you can lift, how hard you hit, and your raw physical presence.
-- **Key Uses**: Melee combat, lifting, breaking objects, athletics
-- **Saving Throw**: Resist physical effects, break free from restraints
+Every character possesses six primary attributes rated from 1 to 10, collectively known as **PRIMAC** *(PRY-mack)*:
 
-### Awareness (AWA)
-Your perception, intuition, and connection to your surroundings. Awareness helps you notice details, react quickly, and sense danger.
-- **Key Uses**: Initiative, perception, ranged combat, piloting
-- **Saving Throw**: Avoid surprise, detect ambushes
+**[INFOGRAPHIC: PRIMAC Wheel]**
+*Visual showing six attributes arranged in a circle with connecting lines showing relationships*
 
-### Coordination (COO)
-Your agility, dexterity, and precise motor control. Coordination affects your accuracy, balance, and ability to perform delicate tasks.
-- **Key Uses**: Ranged attacks, defense, stealth, technical work
-- **Saving Throw**: Avoid physical hazards, maintain balance
+### Presence (PRE) - Social Gravity
+Your gravitational pull in social space—how reality bends around your personality. From inspiring loyalty in your crew to negotiating with alien ambassadors, Presence shapes how others perceive and respond to you.
+- **Key Applications**: Command corporate boardrooms, rally troops before battle, negotiate cease-fires, perform for galactic audiences
+- **Crisis Response**: Resist memetic weapons, maintain composure during interrogation, rally allies during despair
+
+### Resolve (RES) - Mental Fortress  
+Your consciousness's structural integrity when reality itself becomes hostile. The unshakeable core that maintains identity during mind-machine interface, resists cosmic horror, and perseveres when hope seems lost.
+- **Key Applications**: Concentrate during ship combat, resist fear from eldritch entities, maintain sanity during time dilation, endure torture without breaking
+- **Crisis Response**: Deflect psychic attacks, maintain personality during consciousness transfer, resist alien mental influence
+
+### Intellect (INT) - Cognitive Engine
+Your mind's computational capacity for analyzing, synthesizing, and extrapolating from incomplete data. From decoding alien languages to reverse-engineering hyperdrive technology, Intellect unlocks the universe's secrets.
+- **Key Applications**: Hack AI security systems, perform emergency surgery, decode ancient star maps, outthink artificial intelligences
+- **Crisis Response**: Penetrate holographic illusions, solve death-trap puzzles under pressure, recognize shapeshifter infiltrators
+
+### Might (MIG) - Kinetic Authority
+Your body's capacity to impose change upon physical reality through raw force. Whether crushing a bulkhead with augmented limbs or grappling in asteroid-belt zero-g, Might makes the material world bend.
+- **Key Applications**: Breach armored doors, survive high-g acceleration, wrestle aliens twice your size, throw plasma grenades accurately
+- **Crisis Response**: Resist biological toxins, escape gravitational restraints, survive explosive decompression
+
+### Awareness (AWA) - Perceptual Web
+Your consciousness's interface with environmental data streams. From spotting cloaked ships to sensing the mood of alien crowds, Awareness connects you to the universe's subtle currents.
+- **Key Applications**: Pilot through asteroid fields, detect hidden enemies, read alien body language, track prey across alien worlds
+- **Crisis Response**: Notice ambush preparations, react to surprise attacks, detect reality distortions, sense environmental dangers
+
+### Coordination (COO) - Precision Matrix
+Your nervous system's capacity for executing complex motor sequences with surgical precision. From disarming quantum bombs to performing zero-g acrobatics, Coordination turns thought into flawless action.
+- **Key Applications**: Pilot starfighters through debris fields, perform micro-surgery, disable security systems, dance at diplomatic galas
+- **Crisis Response**: Dodge plasma blasts, maintain balance on shifting surfaces, execute emergency piloting maneuvers
 
 ### Attribute Scale
 
@@ -335,23 +356,44 @@ Individual characters taking individual actions:
 - **Tags**: Represent individual abilities and approaches
 - **Tag Scope**: Limited to personal actions
 
+**Sci-Fi Context Examples**:
+- **Combat**: Laser pistol duels in space station corridors
+- **Stealth**: Infiltrating corporate data centers through ventilation systems
+- **Social**: Negotiating with alien customs officials at orbital ports
+- **Technical**: Jury-rigging life support systems during atmospheric breach
+- **Survival**: Maintaining oxygen supplies while stranded on hostile worlds
+
 ### Vehicle Scale (Rank 3)
 Ground and air vehicles:
 - 10 meters = 1 vehicle unit
-- Same time scale as personal
-- Vehicle weapons vs people: +6 damage
+- Same time scale as Personal Scale
+- Vehicle weapons vs Personal Scale: +6 damage
 - **Tags**: Expand to affect small teams and vehicles
 - **Tag Scope**: Begin influencing others through leadership or example
+
+**Sci-Fi Context Examples**:
+- **Combat**: Hoverbike chases through neon-lit cityscapes
+- **Exploration**: All-terrain rovers crossing crystalline desert planets
+- **Tactical**: Coordinating squad movements during orbital habitat breaches
+- **Transport**: Atmospheric shuttles navigating through asteroid debris fields
+- **Industrial**: Mining mechs extracting rare minerals from unstable asteroid cores
 
 ### Starship Scale (Ranks 4-7)
 Spacecraft and space stations:
 - 1 kilometer = 1 space unit
 - Same 6-second rounds
-- Starship weapons vs vehicles: +6 damage
+- Starship weapons vs Vehicle Scale: +6 damage
 - **Tags**: Affect entire ship crews and operations
 - **Tag Scope**: Reputation precedes character, influence organizations
 
-### Fleet Scale (Ranks 8-10)
+**Sci-Fi Context Examples**:
+- **Combat**: Frigate battles near gas giant mining platforms
+- **Diplomacy**: First contact negotiations aboard neutral space stations
+- **Engineering**: Coordinating repair crews during hyperdrive failures in deep space
+- **Command**: Leading multi-ship convoys through pirate-infested trade routes
+- **Exploration**: Deep space archaeological expeditions to ancient alien structures
+
+### Capital Scale (Ranks 8-10)
 Military units and fleet battles:
 - Abstract unit representation
 - 10-minute battle rounds
@@ -359,37 +401,74 @@ Military units and fleet battles:
 - **Tags**: Reshape entire theaters of operation
 - **Tag Scope**: Personal abilities scale to galactic significance
 
+**Sci-Fi Context Examples**:
+- **Strategic Warfare**: Coordinating thousand-ship armadas across multiple star systems
+- **Galactic Politics**: Decisions affecting entire species through interstellar treaties
+- **Economic Control**: Managing trade routes that span galactic sectors
+- **Reality Engineering**: Stellar-scale projects like artificial planet construction
+- **Cosmic Defense**: Organizing civilizations against reality-devouring entities
+
 ### Cross-Scale Interactions
 
 **Scale Difference Penalties**:
-- 1 scale difference: -3 to hit
-- 2 scale differences: -6 to hit
-- 3 scale differences: Generally impossible
+- 1 Scale difference: -3 to hit
+- 2 Scale differences: -6 to hit
+- 3 Scale differences: Generally impossible
 
 **Damage Scaling**:
-- Higher scale to lower: +6 damage per scale
-- Lower scale to higher: -6 damage per scale
+- Higher Scale to lower: +6 damage per Scale
+- Lower Scale to higher: -6 damage per Scale
 
 **Tag Evolution Across Scales**:
 As characters advance in rank, their tags evolve to work at higher scales:
 
-**Example - Combat [Enhanced] Tag**:
-- **Rank 1** (Personal): "Neural targeting implant provides HUD overlay"
-- **Rank 3** (Vehicle): "Squad coordination through shared neural link"
-- **Rank 6** (Starship): "Ship crew neural network enables perfect timing"
-- **Rank 10** (Fleet): "Fleet-wide tactical consciousness transcends distance"
+**Example - Combat [Enhanced] Tag Evolution**:
+- **Rank 1** (Personal Scale): "Neural targeting implant provides HUD overlay during firefights in asteroid mining stations"
+- **Rank 3** (Vehicle Scale): "Squad coordination through shared neural link enables perfect ambush timing in zero-gravity environments"
+- **Rank 6** (Starship Scale): "Ship crew neural network creates unified tactical consciousness during fleet engagements near nebula borders"
+- **Rank 10** (Capital Scale): "Fleet-wide tactical consciousness transcends distance, coordinating million-ship armadas across galactic sectors"
+
+**Additional Cross-Scale Tag Examples**:
+
+**Pilot [Intuitive] Tag Evolution**:
+- **Personal Scale**: "Feel the rhythm of ancient alien transport systems"
+- **Vehicle Scale**: "Navigate hoverbikes through corporate arcology traffic patterns"
+- **Starship Scale**: "Plot hyperspace routes through unstable quantum storm regions"
+- **Capital Scale**: "Coordinate fleet movements through dimensional gateways"
+
+**Technology [Digital] Tag Evolution**:
+- **Personal Scale**: "Interface directly with corporate security networks"
+- **Vehicle Scale**: "Override automated mining platform control systems"
+- **Starship Scale**: "Merge consciousness with AI shipboard networks"
+- **Capital Scale**: "Orchestrate galaxy-spanning information warfare campaigns"
 
 **Cross-Scale Tag Applications**:
-- **Lower Scale → Higher**: Tags provide +1 die when attempting actions above your scale
-- **Higher Scale → Lower**: Tags provide +2 dice when working at scales below your capability
+- **Lower Scale → Higher**: Tags provide +1 die when attempting actions above your Scale
+- **Higher Scale → Lower**: Tags provide +2 dice when working at Scales below your capability
 - **Same Scale**: Full tag bonuses apply normally
 
-**Scale-Specific Synergies**:
-Some tag combinations only work at specific scales:
-- Personal Scale: Individual synergies ([Enhanced] + [Precise])
-- Vehicle Scale: Team synergies ([Leadership] + [Tactical])
-- Starship Scale: Organization synergies ([Elite] + [Network])
-- Fleet Scale: Galactic synergies ([Legendary] + [Mythic])
+**Scale-Specific Synergies with Sci-Fi Context**:
+Some tag combinations only work at specific Scales:
+
+**Personal Scale - Individual Mastery**:
+- **[Enhanced] + [Precise]**: "Cyber-sniper targeting through space station viewport laser reflections"
+- **[Digital] + [Silent]**: "Ghost-hacking corporate mainframes without triggering AI watchdogs"
+- **[Adaptive] + [Survivor]**: "Thriving in alien environments that kill unaugmented humans"
+
+**Vehicle Scale - Team Coordination**:
+- **[Leadership] + [Tactical]**: "Orchestrating multi-vehicle raids on orbital manufacturing platforms"
+- **[Technical] + [Network]**: "Linking hover-tank targeting systems for perfect synchronized strikes"
+- **[Enhanced] + [Pilot]**: "Neural-linked squadron coordination through asteroid field combat"
+
+**Starship Scale - Organizational Unity**:
+- **[Elite] + [Network]**: "Ship crews operating as unified consciousness during deep space emergencies"
+- **[Command] + [Strategic]**: "Multi-ship task forces executing complex maneuvers across star systems"
+- **[Digital] + [Reality]**: "AI-human fusion controlling reality-warping starship technologies"
+
+**Capital Scale - Galactic Influence**:
+- **[Legendary] + [Mythic]**: "Personal reputation affecting interstellar politics and species-wide decisions"
+- **[Cosmic] + [Transcendent]**: "Individual consciousness reshaping fundamental laws across parallel dimensions"
+- **[Reality] + [Infinite]**: "Personal will manifesting as galaxy-spanning changes in physical constants"
 
 ## Assistance and Group Efforts
 
@@ -557,6 +636,139 @@ When in doubt:
 - [ ] Check for cross-skill synergies
 - [ ] Apply maximum +5 dice limit
 - [ ] Roll enhanced dice pool
+
+## Technology Era Integration
+
+> *"Every era's heroes are shaped by their tools. A knight with a laser sword fights differently than a knight with steel, but both share the same courage."*
+> 
+> *—Comparative Heroics Institute, "Technology and Character Development"*
+
+### Equipment-Character Synergies
+
+**[INFOGRAPHIC: Tech Era Synergy Matrix]**
+*Visual showing how character tags interact with equipment from different technological eras*
+
+The Universal Tag System creates natural synergies between character abilities and equipment across all technology levels:
+
+**Cross-Era Compatibility**:
+- **[Enhanced]** character tags work with any era's [Advanced] equipment
+- **[Precise]** combat skills synergize with [Accurate] weapons from Primitive to Cosmic eras
+- **[Technical]** knowledge applies to understanding and maintaining higher-tech equipment
+- **[Adaptive]** characters can learn to use equipment above their civilization's tech level
+
+**Technology Scaling Examples**:
+- **Primitive Era Fighter** with [Enhanced] cybernetics using a [Simple] sword = "Cyber-samurai" (+2 dice)
+- **Advanced Era Hacker** with [Digital] expertise using [Smart] Stellar Era systems = "System God" (+3 dice)
+- **Cosmic Era Reality Architect** with [Quantum] mastery using [Reality-Bending] artifacts = "Universe Editor" (+4 dice)
+
+### Campaign Technology Progression
+
+As campaigns evolve, characters encounter equipment from different eras:
+
+**Equipment Evolution Path**:
+1. **Start with Era-Appropriate Gear**: Characters begin with equipment matching their civilization's tech level
+2. **Encounter Higher Technology**: Discover artifacts, capture advanced equipment, or purchase from traders
+3. **Learn and Adapt**: Characters develop new tags to synergize with foreign technology
+4. **Master Integration**: Combine multiple tech levels for unique capabilities
+5. **Transcend Limitations**: Eventually wield equipment that reshapes reality itself
+
+**Technology Access Guidelines**:
+- **Same Era**: Standard availability and cost
+- **One Era Higher**: Expensive, requires [Technical] tags to maintain
+- **Two Eras Higher**: Rare artifacts, may have [Unstable] or [Temperamental] tags
+- **Three+ Eras Higher**: Legendary items with [Sentient] or [Dangerous] complications
+
+## Glossary of Key Terms
+
+> *"Precision in language creates precision in understanding. When everyone uses the same terms, everyone can work together."*
+> 
+> *—Communications Officer Yuki Tanaka, establishing Standard Galactic Terminology*
+
+**[INFOGRAPHIC: Cosmos Engine Terminology Map]**
+*Visual showing relationships between key game concepts and terminology*
+
+### Core System Terms
+
+**Universal Tag System**: The unified mechanic where both characters and equipment develop descriptive tags that provide mechanical bonuses and create synergies.
+
+**PRIMAC**: The six-attribute system (Presence, Resolve, Intellect, Might, Awareness, Coordination) that defines character capabilities.
+
+**tag synergy**: When matching or complementary tags from different sources combine to provide bonus dice (+1 to +5 dice).
+
+**tag evolution**: The process by which tags develop and change through use, story events, and character growth.
+
+### Scale and Technology Terms
+
+**Personal Scale**: Individual character actions and equipment (Scale 1).
+
+**Vehicle Scale**: Ground vehicles, aircraft, and small spacecraft operations (Scale 2).
+
+**Starship Scale**: Large spacecraft and space station operations (Scale 3).
+
+**Capital Scale**: Fleet battles and planetary-level operations (Scale 4).
+
+**Technology Era**: The five levels of technological advancement:
+- **Primitive Era**: Hand tools and simple machines
+- **Industrial Era**: Mass production and mechanization
+- **Advanced Era**: Computers and electronic systems
+- **Stellar Era**: Interstellar technology and AI
+- **Cosmic Era**: Reality manipulation and consciousness transfer
+
+### Combat and Action Terms
+
+**standard action**: Primary action each turn (attack, complex skill use).
+
+**move action**: Movement or simple manipulation (draw weapon, open door).
+
+**quick action**: Rapid actions that don't interfere with other activities (speak, gesture).
+
+**turn**: One character's actions within a round.
+
+**round**: Complete cycle where all participants take their turns (6 seconds).
+
+**Hit Points**: Personal Scale damage and health system.
+
+**Condition Track**: Vehicle+ Scale damage system using condition states.
+
+### Economic and Social Terms
+
+**credits**: Standard galactic currency unit.
+
+**Wealth Rating**: Abstract measure of character economic capability.
+
+**organization**: General term for any structured group (government, corporation, military unit).
+
+**faction**: Politically-aligned organization with specific goals and methods.
+
+**corporation**: Business entity operating for profit.
+
+### Equipment and Advancement Terms
+
+**specialization tree**: Character advancement paths within skills.
+
+**equipment evolution**: Process by which equipment gains personality and additional tags through use.
+
+**Masterwork**: Highest quality level for conventional equipment (below Legendary artifacts).
+
+**cross-scale effectiveness**: When equipment or abilities work across multiple operational scales.
+
+## Quick Reference Cross-Links
+
+**Character Creation**: See Chapter 3 for complete character building process  
+**Skills and Tags**: See Chapter 5 for detailed skill descriptions and tag progressions  
+**Equipment**: See Chapter 7 for weapons, armor, and gear with Technology Era integration  
+**Scale Combat**: See Chapter 8 for vehicle and starship combat rules  
+**Campaign Building**: See Chapter 13 for Technology Era campaign guidelines  
+**Organizations**: See Chapter 15 for faction mechanics and relationship systems  
+
+**Essential Mechanics References**:
+- Tag synergy examples: Chapter 2, Section 2.6
+- Technology Era progression: Chapter 7, Section 7.1
+- Scale transition rules: Chapter 2, Section 2.7
+- Skill advancement costs: Chapter 4, Section 4.2
+- Equipment evolution mechanics: Chapter 7, Section 7.1
+- Cross-scale tag applications: Chapter 2, Section 2.7
+- Campaign scale progression: Chapter 13, Section 13.1
 
 ---
 

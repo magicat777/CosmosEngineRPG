@@ -1,22 +1,43 @@
 # Chapter 1: Welcome to Cosmos Engine
 
+> *"Captain, we've got incoming fighters and our hyperdrive is offline. What are your orders?"*
+> 
+> *Marcus's cybernetic implants flared as targeting data flooded his vision. Time to show these pirates why they called him 'Wire.' [Enhanced] + [Tactical] synergy in action.*
+
 ## What is Cosmos Engine?
 
-Cosmos Engine is a science fiction tabletop roleplaying game that scales seamlessly from intimate character-driven stories to galaxy-spanning conflicts. Using a unified 2d10 resolution system, players can explore any type of science fiction narrative - from the crew of a small trading vessel navigating political intrigue to massive fleets clashing in wars that determine the fate of civilizations.
+Cosmos Engine is a science fiction tabletop roleplaying game that scales seamlessly from intimate character-driven stories to galaxy-spanning conflicts. Using a unified 2d10 resolution system enhanced by the revolutionary **Universal Tag System**, players can explore any type of science fiction narrative - from the crew of a small trading vessel navigating political intrigue to massive fleets clashing in wars that determine the fate of civilizations.
 
-### Core Features
+### New to RPGs? Start Here!
 
-**Unified Mechanics**: Every action, from picking a lock to commanding a fleet, uses the same core 2d10 + Attribute + Skill system.
+**First Time Playing?** You need to know three things:
+1. **Roll 2d10** + your character's relevant abilities
+2. **Beat the difficulty number** the GM sets
+3. **Tags** make your character unique and give bonus dice
+
+*Everything else builds on these basics. Don't worry about the complex stuff yet!*
+
+### Revolutionary Features
+
+**[INFOGRAPHIC: 2d10 Bell Curve]**
+*Visual showing probability distribution: 11 is most common result, 2 and 20 are rare*
+
+**Unified Mechanics**: Every action, from bypassing a mag-sealed airlock to commanding a fleet, uses the same core 2d10 + Attribute + Skill system.
+
+**Universal Tag System**: Characters develop unique approaches that grow more powerful through play. Your [Enhanced] cybernetics start as targeting assistance and evolve into reality-bending computational power.
+
+**[INFOGRAPHIC: Scale Comparison]**
+*Visual diagram showing relative sizes: Person → Hoverbike → Starfighter → Dreadnought → Fleet*
 
 **Scalable Gameplay**: Four integrated scales of play:
-- **Personal Scale**: Individual characters and their actions
-- **Vehicle Scale**: Ground and atmospheric vehicles
-- **Starship Scale**: Spacecraft and their crews
-- **Mass Combat Scale**: Armies, fleets, and massive conflicts
+- **Personal Scale**: Individual characters infiltrating corporate towers
+- **Vehicle Scale**: Hoverbike chases through neon-lit cityscapes  
+- **Starship Scale**: Spacecraft dogfights in asteroid fields
+- **Fleet Scale**: Armadas clashing across star systems
 
-**Modular Design**: Use only the scales you need. Run a personal-scale game like Firefly, add starships for The Expanse-style adventures, or include everything for epic Star Wars-scale campaigns.
+**Genre Flexibility**: Run a personal-scale game like *Firefly*, add starships for *The Expanse*-style adventures, or include everything for epic *Star Wars*-scale campaigns.
 
-**Player Agency**: Characters remain meaningful at every scale. A single hero can influence the outcome of massive battles through leadership, special missions, or crucial actions.
+**Hero Agency**: Characters remain meaningful at every scale. A single pilot can turn the tide of massive space battles through perfect timing, tactical brilliance, or desperate heroism.
 
 ## What is Roleplaying?
 
@@ -56,52 +77,83 @@ This book is organized to teach you Cosmos Engine step by step:
 
 **Part VI (Chapters 14-16)** presents optional systems like mass combat and cosmic horror. Add these when they enhance your story.
 
-### Icons and Terminology
+### Visual Guide & Accessibility
 
-Throughout this book, you'll encounter these helpful symbols:
+**Icons Throughout This Book:**
 
-📖 **Example**: Demonstrates rules in action
+**Example**: Demonstrates rules in action  
+**Important Rule**: Critical information to remember  
+**GM Tip**: Advice for Game Masters  
+**Player Tip**: Advice for players  
+**Optional Rule**: Variant or additional system  
+**New Player**: Essential info for beginners  
+**Infographic**: Visual element described for accessibility  
+**Cross-Reference**: See page XX for related rules  
 
-⚠️ **Important Rule**: Critical information to remember
+**Accessibility Features:**
+- All visual elements include text descriptions
+- Color-coding is supplemented with symbols
+- Text-only rules summary in Appendix C
+- Digital tools available at [website] for vision assistance
 
-💡 **GM Tip**: Advice for Game Masters
+**Pronunciation Guide:**
+- **PRIMAC** *(PRY-mack)*: The six attributes
+- **tag** *(tag)*: Descriptive trait that grants mechanical bonuses
+- **synergy** *(SIN-er-jee)*: Bonus dice from matching tags
 
-🎭 **Player Tip**: Advice for players
+**Standardized Terminology Guide:**
 
-🛠️ **Optional Rule**: Variant or additional system
+Cosmos Engine uses precise terminology to ensure clear communication. Key standardizations include:
 
-### What You Need to Play
+- **Technology Era** (not "tech level"): The five levels of technological advancement
+- **Personal/Vehicle/Starship/Capital Scale** (capitalized): The four operational scales
+- **Hit Points** (capitalized): Personal Scale health system
+- **Condition Track** (capitalized): Vehicle+ Scale damage system
+- **credits** (lowercase): Standard galactic currency
+- **tag synergy** (lowercase): Mechanical bonus from matching tags
+- **organization** vs **faction**: General groups vs politically-aligned groups
+- **standard/move/quick action** (lowercase): Combat action types
 
-To play Cosmos Engine, you'll need:
-- **Dice**: Two ten-sided dice (2d10) per player, plus a full polyhedral set (d4, d6, d8, d12, d20) for damage and special rolls
-- **Character Sheets**: One per player (available at [website])
-- **Writing Materials**: Pencils and paper for notes
-- **Tokens**: Coins, poker chips, or similar markers for tracking resources
-- **Friends**: 3-6 people total (one GM and 2-5 players) works best
+### Mission Equipment
+
+To begin your cosmic adventures, you'll need:
+
+**Essential Gear:**
+- **Dice**: Two ten-sided dice (2d10) per player for core resolution
+- **Damage Dice**: One set of polyhedral dice (d4, d6, d8, d12, d20) for weapons and special effects
+- **Character Sheets**: Individual crew records (downloadable at [website] with auto-calculating tag synergies)
+- **Note-Taking**: Digital device or paper for tracking tag evolution and story developments
+
+**Optional Enhancements:**
+- **Tokens**: Physical markers for tracking resources, conditions, and initiative
+- **Digital Tools**: QR codes throughout this book link to online probability calculators and synergy builders
+- **Safety Tools**: X-Card, lines and veils discussion (see Chapter 11 for modern consent tools)
+
+**Crew Size**: 3-6 total operatives (one Mission Commander/GM and 2-5 Specialists/Players) for optimal team dynamics
 
 ## Example of Play
 
 *Sarah (GM), Alex (playing Captain Chen), Brook (playing Dr. Vasquez), and Casey (playing Zara the pilot) are exploring a derelict space station.*
 
-**Sarah (GM)**: The airlock hisses open, revealing a corridor lit only by emergency strips along the floor. The walls are covered in what looks like frost, but it glimmers with an oily sheen. What do you do?
+**Sarah (GM)**: The airlock cycles open with a pneumatic hiss, revealing a corridor lit only by emergency photoluminescent strips. The walls are covered in what looks like frost, but it pulses with an oily, bio-luminescent sheen. Environmental hazard tags: [Mysterious] [Contaminated]. What do you do?
 
-**Alex (Captain Chen)**: I motion for the team to hold position while I scan with my multi-spectrum analyzer. Any life signs or energy readings?
+**Alex (Captain Chen)**: I motion for the team to hold position while I sweep with my military-grade multi-spectrum analyzer. Any life signs or energy signatures? My [Military-Training] and [Enhanced] targeting implants should work well together here.
 
-**Sarah**: Roll your Awareness plus Tech.
+**Sarah**: Excellent synergy! Your [Military-Training] discipline combined with [Enhanced] implants creates "Tactical Scan Protocol" - that's +2 dice. Roll Awareness plus Technology with your synergy bonus.
 
-**Alex**: *rolls 2d10* I got a 7 and a 4, plus my Awareness of 6 and Tech skill of 3... that's 20 total.
+**Alex**: *rolls 2d10 + 2 synergy dice* I got 8 and 7 on my main dice, plus my Awareness of 6 and Tech skill of 3... that's 24 total!
 
-**Sarah**: Your scanner goes haywire for a moment, displaying impossible readings - energy signatures that exist in eleven dimensions. Then it stabilizes. You detect faint power in the station's core and... something moving three sections ahead. The signature doesn't match anything in your database.
+**Sarah**: Your military scanner initially glitches from the [Mysterious] environment, but your [Enhanced] implants compensate, stabilizing the readings. You detect minimal power in the station's core and... something large moving three sections ahead. The bio-signature doesn't match any known species in your implant's xenobiology database. Your scanner gains the [Alien-Touched] tag from this encounter.
 
-**Brook (Dr. Vasquez)**: "Captain, that frost... may I?" I want to carefully collect a sample without touching it directly.
+**Brook (Dr. Vasquez)**: "Captain, that bio-luminescent matrix... I need a sample." I'm using my containment-field sampler - no direct contact. My [Scientific-Method] training and [Xenobiology] specialization should apply here.
 
-**Casey (Zara)**: While the doc does that, I'm checking our six and looking for alternate routes. This corridor feels like a killbox.
+**Casey (Zara)**: While doc works, I'm running threat assessment. This corridor screams ambush point - no cover, funnel design. My [Paranoid] pilot instincts are triggering hard.
 
-**Sarah**: Good instincts. Zara, roll Awareness plus Survival to assess tactical threats.
+**Sarah**: Perfect roleplay of your tags! Zara, your [Paranoid] nature gives you +1 die for threat recognition. Roll Awareness plus Survival with your paranoia bonus.
 
-**Casey**: *rolls* 15 total.
+**Casey**: *rolls with bonus* 16 total.
 
-**Sarah**: You notice the corridor has no cover and the emergency lighting creates regular blind spots. Worse, you spot scratch marks on the ceiling - something with claws has been moving through here, and recently. Dr. Vasquez, roll Intellect plus Science for your sample collection.
+**Sarah**: Your [Paranoid] assessment immediately identifies multiple tactical nightmares: zero cover, emergency lighting creating blind spots, and fresh bio-mechanical scoring marks on the ceiling - something with molecular-disruption claws was here recently. The corridor gains the [Predator-Territory] tag. Dr. Vasquez, your [Scientific-Method] and [Xenobiology] tags create "Field Research Protocol" (+2 dice). Roll Intellect plus Medical with your research synergy.
 
 **Brook**: *rolls* That's... a critical failure. Two 1s.
 
@@ -115,28 +167,61 @@ To play Cosmos Engine, you'll need:
 
 **Sarah**: As you start to retreat, the movement on your scanner suddenly shifts direction - heading toward you at increasing speed. The station's lights flicker and die. In the darkness, you hear a sound like breaking glass mixed with whale song. Roll for initiative...
 
-*This example demonstrates core mechanics (2d10 + Attribute + Skill), multiple skill applications, critical failures creating complications, and how player choices drive the narrative forward.*
+*This example demonstrates:*
+- *Core mechanics (2d10 + Attribute + Skill vs Target Number)*
+- *Tag synergies providing bonus dice ([Military-Training] + [Enhanced] = +2)*
+- *Environmental tags affecting gameplay ([Mysterious], [Contaminated], [Predator-Territory])*
+- *Equipment gaining personality through use (scanner becomes [Alien-Touched])*
+- *How science fiction context replaces generic examples throughout Cosmos Engine*
 
-## Your First Session
+## Your First Mission Brief
 
-When you sit down for your first game of Cosmos Engine:
+### Session Zero Protocol
 
-1. **Discuss the Campaign**: What kind of science fiction story excites everyone? Establish boundaries and expectations using the safety tools in Chapter 11.
+Before launching your cosmic adventure:
 
-2. **Create Characters**: Work through Chapter 3 together. Build connections between characters - why are they working together?
+1. **Establish Mission Parameters**: What kind of science fiction story excites your crew? Hard science exploration? Space opera heroics? Cyberpunk corporate intrigue? Use the safety tools in Chapter 11 to discuss boundaries for themes like:
+   - Body horror and technological augmentation
+   - AI consciousness and digital existence
+   - Cosmic horror and existential threats
+   - Violence levels and character mortality
 
-3. **Start Small**: Begin with personal-scale adventures. You can always add starships and larger conflicts later.
+2. **Forge Your Crew**: Work through Chapter 3 together, building both individual heroes and team connections. Why do these specific people trust each other enough to face the unknown together?
 
-4. **Learn Together**: Don't worry about getting every rule right. The core mechanic (2d10 + Attribute + Skill vs Target Number) will carry you through most situations.
+3. **Start Personal, Scale Up**: Begin with character-focused adventures in space stations, colonies, or starships. The Universal Tag System ensures personal moments become the foundation for epic legends.
 
-5. **Embrace the Unknown**: Science fiction thrives on discovery. Let your curiosity drive the story forward.
+4. **Learn Through Discovery**: Master the basics (2d10 + Attribute + Skill + Tag bonuses vs Target Number) first. Advanced systems like fleet combat and cosmic horror can wait until your characters are ready.
 
-## Welcome to the Cosmos
+5. **Embrace Emergent Evolution**: Science fiction thrives on discovery and transformation. Let your characters' tags evolve naturally through play, creating unique stories that belong to your table.
 
-Whether you're smuggling cargo past imperial blockades, uncovering conspiracies that span star systems, fighting to preserve humanity against cosmic horrors, or exploring the mysteries of the universe, Cosmos Engine provides the tools to tell your story.
+### Player Tip: Document the Journey
+Keep notes about how your tags develop and equipment gains personality. These details become the foundation of your campaign's unique mythology.
 
-The cosmos awaits. What will you discover among the stars?
+## Welcome to Your Cosmos
+
+> *"Every great space opera starts with a simple choice: Do you reach for the stars, or do they reach for you?"*
+> 
+> *— Commander Sarah Chen, first graduating class of the Titan Naval Academy*
+
+Whether you're smuggling humanitarian supplies past corporate blockades, unraveling conspiracies that threaten galactic civilization, fighting to preserve consciousness itself against reality-warping entities, or pioneering contact with incomprehensible alien intelligence, Cosmos Engine provides the revolutionary tools to craft legends that evolve with every decision.
+
+The Universal Tag System ensures your adventures transcend mere statistics—they become living mythologies where every weapon remembers its victories, every ship develops a soul, every character grows beyond their origins, and every choice echoes across the cosmos.
+
+**The universe is vast, dangerous, and full of wonders beyond imagination.**
+
+***What legends will you forge among the infinite stars?***
 
 ---
 
-*Continue to Chapter 2: Core Mechanics to learn how to play...*
+### Navigation Aid
+
+**New Players:** Jump to the "Quick Start" section in Chapter 2 for immediate play  
+**Experienced GMs:** Review Chapter 11 for advanced campaign management  
+**Character Builders:** Chapter 3 has everything you need to create cosmic legends
+**Terminology Reference:** Chapter 2 includes a complete glossary of standardized game terms
+
+**Next:** Continue to Chapter 2: Core Mechanics to master the Universal Tag System...
+
+---
+
+*Page 1-XX*

@@ -469,6 +469,229 @@ Different vehicle tags create tactical options:
 - [Interceptor] protects [Bomber]
 - [Command] coordinates all units
 
+## 8.11 Advanced Vehicle Rules
+
+### Vehicle Tag Complications
+
+Tags don't just provide benefits—they create story:
+
+**[Temperamental] Complications**:
+- Won't start at worst moment (AP reward: 1)
+- Develops unexpected quirk mid-chase (AP reward: 2)
+- Refuses to work for other pilots (AP reward: 1)
+- Requires specific maintenance ritual (ongoing)
+
+**[Lucky] Complications**:
+- Attracts unwanted attention from gamblers (AP reward: 1)
+- Luck runs out spectacularly once (AP reward: 3)
+- Other vehicles get jealous (social complication)
+- Develops superstitions (must follow for luck)
+
+**[Military] Complications**:
+- Tracked by original owners (AP reward: 2)
+- Contains classified systems (discovery problems)
+- Requires military codes to fully operate
+- Veterans recognize and have opinions
+
+**[Legendary] Complications**:
+- Everyone wants to race/fight you (AP reward: 1)
+- Theft attempts constant (security costs)
+- Documentary crews follow you
+- Previous owner's enemies remember
+
+### Vehicle Relationships
+
+Vehicles develop relationships with characters and each other:
+
+**Pilot-Vehicle Bonds**:
+- **[Synchronized]**: After 50+ hours together
+  - Vehicle anticipates pilot needs
+  - +1 die to all pilot checks
+  - Others suffer -2 when piloting
+  - Vehicle may refuse other pilots
+
+- **[Soul-Bonded]**: After saving each other
+  - Mystical connection forms
+  - Share damage (pilot feels vehicle pain)
+  - Can find each other across distances
+  - Death of one affects the other
+
+**Vehicle-Vehicle Relationships**:
+- **[Rivals]**: Competing vehicles
+  - Always trying to outperform
+  - +1 die when racing against rival
+  - May sabotage each other
+  - Creates excellent story hooks
+
+- **[Partners]**: Vehicles that work together
+  - Coordinate without communication
+  - Share tag benefits when together
+  - Protect each other in combat
+  - May develop group consciousness
+
+### Environmental Adaptation
+
+Vehicles adapt to their regular environments:
+
+**After 10 sessions in environment**:
+- Desert use: Gain [Sand-Adapted]
+- Arctic use: Gain [Cold-Resistant]
+- Urban use: Gain [Street-Smart]
+- Space use: Gain [Void-Touched]
+
+**Environmental Evolution Benefits**:
+- Ignore terrain penalties
+- +1 die in familiar environment
+- Develop specialized capabilities
+- May refuse to leave preferred environment
+
+### Vehicle Personalities by Origin
+
+**Racing Heritage**:
+- Common tags: [Fast] [Temperamental] [Proud]
+- Quirks: Hates going slow, shows off
+- Evolution: Becomes [Record-Breaker] or [Has-Been]
+- Relationships: Competitive with all vehicles
+
+**Military Service**:
+- Common tags: [Reliable] [Tough] [Disciplined]
+- Quirks: Maintains routines, expects maintenance
+- Evolution: Becomes [Veteran] or [War-Weary]
+- Relationships: Protective of "squad"
+
+**Custom Built**:
+- Common tags: [Unique] [Experimental] [Personal]
+- Quirks: Only builder truly understands
+- Evolution: Becomes [Masterwork] or [Frankenstein]
+- Relationships: Deeply personal to creator
+
+**Salvaged/Found**:
+- Common tags: [Mysterious] [Damaged] [Secretive]
+- Quirks: Hidden compartments, unknown features
+- Evolution: Reveals [Dark Past] or [Noble Heritage]
+- Relationships: Slow to trust
+
+## 8.12 Chase Complications
+
+### Dynamic Chase Events
+
+Roll d10 when dramatically appropriate:
+
+1. **Innocent Bystanders**: Moral choice required
+   - Save them and lose ground
+   - Tag interactions: [Heroic] must save, [Ruthless] doesn't
+
+2. **Environmental Shift**: Conditions suddenly change
+   - Weather arrives, gravity fluctuates, crowd appears
+   - New environmental tags apply immediately
+
+3. **Vehicle Malfunction**: Something goes wrong
+   - [Reliable] vehicles get reroll
+   - [Temperamental] vehicles fail spectacularly
+   - Creates new obstacles
+
+4. **Unexpected Shortcut**: New route appears
+   - [Local] or [Lucky] pilots spot it first
+   - High risk, high reward option
+
+5. **Third Party Interference**: Someone else joins
+   - Police, rivals, random racers
+   - May help or hinder either side
+
+6. **Structural Collapse**: Environment becomes hazard
+   - Bridge collapses, building falls
+   - [Sturdy] vehicles can ram through
+
+7. **System Failure**: City infrastructure problems
+   - Traffic control dies, lights fail
+   - [Hacker] can manipulate
+
+8. **Livestock/Wildlife**: Animals complicate chase
+   - Herd crossing, flying creatures
+   - [Natural] pilots handle better
+
+9. **Previous Damage Consequences**: Earlier hits matter
+   - Leaking fuel, failing brakes
+   - [Self-Repairing] vehicles recover
+
+10. **Perfect Moment**: Everything aligns
+    - All positive tags activate
+    - Legendary action possible
+    - Once per chase maximum
+
+### Multi-Vehicle Chases
+
+When multiple vehicles pursue/flee:
+
+**Formation Flying**:
+- Vehicles with [Coordinated] tag share benefits
+- Lead vehicle's tags affect followers
+- Single roll for group maneuvers
+- Break formation loses benefits
+
+**Tag Chains**:
+- [Scout] spots for [Hunter]
+- [Blocker] creates openings for [Racer]
+- [Technical] hacks for [Assault]
+- Creative combinations rewarded
+
+**Sacrificial Actions**:
+- Vehicle can "spend" tags to help another
+- [Protective] takes hit for ally
+- [Explosive] blocks pursuit permanently
+- Creates memorable moments
+
+## 8.13 Vehicle Quick Rules
+
+### Rapid Vehicle Creation
+
+**Step 1: Choose Base Type**
+- Bike/Mount: Speed +10m, Handling +2, Armor 0-1
+- Car/Truck: Speed +0m, Handling +0, Armor 2-3
+- Aircraft: Speed +50m, Handling +1, Armor 2-4
+- Military: Speed -10m, Handling -1, Armor 4-8
+
+**Step 2: Add 2-3 Tags**
+- Performance tag ([Fast], [Agile], [Tough])
+- Personality tag ([Reliable], [Temperamental], [Lucky])
+- History tag ([Military], [Racing], [Custom])
+
+**Step 3: Note Evolution Potential**
+- What tags might develop?
+- What triggers evolution?
+- Who might bond with it?
+
+### Quick Chase Resolution
+
+For simple chases:
+
+**Dramatic Chase** (3 rolls):
+1. Opening: Establish lead/lag
+2. Complication: Environment or event
+3. Resolution: Escape or capture
+
+Each roll uses:
+- Pilot skill + Vehicle handling + Tag synergies
+- Winner narrates outcome
+- Ties create complications
+
+### Vehicle Tag Reference
+
+**Positive Performance**:
+[Fast] [Agile] [Responsive] [Stable] [Efficient]
+
+**Negative Performance**:
+[Slow] [Sluggish] [Unstable] [Fuel-Hungry] [Fragile]
+
+**Personality Traits**:
+[Loyal] [Protective] [Aggressive] [Cautious] [Show-Off]
+
+**History/Heritage**:
+[Military] [Racing] [Luxury] [Workhorse] [Experimental]
+
+**Evolution Goals**:
+[Awakening] [Legendary] [Cursed] [Transcendent] [Bonded]
+
 ---
 
 *Continue to Chapter 9: Starships and Space Travel for interstellar vessels with soul...*

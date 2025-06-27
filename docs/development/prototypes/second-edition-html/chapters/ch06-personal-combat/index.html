@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 6: Personal Combat - Cosmos Engine RPG</title>
+    <link rel="stylesheet" href="../../assets/css/cosmos-engine.css">
+    <meta name="description" content="Fast, deadly, and tactical combat with the Universal Tag System creating dynamic narrative encounters">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav-primary glass-panel">
+        <div class="container">
+            <div class="nav-content">
+                <div class="nav-brand">
+                    <a href="../../rulebook-index.html" class="brand-link" style="display: flex; align-items: center; gap: 1rem; text-decoration: none;">
+                        <img src="../../assets/images/cosmos-engine-logo.png" alt="Cosmos Engine" style="width: 40px; height: 40px; filter: drop-shadow(0 0 10px rgba(0, 255, 255, 0.4));">
+                        <div>
+                        <h3 style="margin: 0; color: var(--accent-gold);">Cosmos Engine RPG</h3>
+                        <small style="color: var(--text-muted); font-size: 0.8rem;">Chapter 6: Personal Combat</small>
+                    </div>
+                    </a>
+                </div>
+                <div class="nav-utils">
+                    <div id="search-container" class="search-container"></div>
+                    <a href="../../rulebook-index.html" class="btn btn-secondary">← Rulebook</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <!-- Breadcrumbs -->
+        <nav class="breadcrumb">
+            <a href="../../rulebook-index.html">Home</a>
+            <span class="breadcrumb-separator">›</span>
+            <a href="../index.html">Chapters</a>
+            <span class="breadcrumb-separator">›</span>
+            <span>Chapter 6: Personal Combat</span>
+        </nav>
+
+        <!-- Chapter Header -->
+        <header class="glass-panel p-xl text-center mb-xl">
+            <h1>Chapter 6: Personal Combat</h1>
+            <p style="font-size: 1.1rem; color: var(--text-secondary); margin: 1rem 0;">
+                Fast, deadly combat resolved in seconds. Same 2d10 mechanics as everything else.
+            </p>
+        </header>
+
+        <!-- Table of Contents -->
+        <div class="glass-panel p-lg mb-xl">
+            <h2>Chapter Contents</h2>
+            <ul style="list-style: none; margin: 0;">
+                <li><a href="#combat-basics">Combat Basics</a></li>
+                <li><a href="#initiative-actions">Initiative and Actions</a></li>
+                <li><a href="#movement-positioning">Movement and Positioning</a></li>
+                <li><a href="#combat-dynamics">Combat Dynamics</a></li>
+                <li><a href="#quick-reference">Quick Reference</a></li>
+            </ul>
+        </div>
+
+        <!-- Main Content -->
+        <main>
+            <!-- Section 1: Combat Basics -->
+            <section id="combat-basics" class="mb-xl">
+                <h2>Combat Basics</h2>
+                
+                <div class="glass-card p-lg mb-lg">
+                    <h3>How Combat Works</h3>
+                    <ol>
+                        <li><strong>Determine Initiative:</strong> Roll Awareness + Coordination</li>
+                        <li><strong>Act in order:</strong> Highest to lowest</li>
+                        <li><strong>Make attack roll:</strong> 2d10 + Attribute + Combat + modifiers vs target's Defense</li>
+                        <li><strong>Roll damage:</strong> If hit, roll weapon damage</li>
+                        <li><strong>Apply damage:</strong> Reduce target's Health</li>
+                        <li><strong>Check defeat:</strong> At 0 Health, target is incapacitated</li>
+                    </ol>
+                </div>
+
+                <!-- Attack Resolution -->
+                <div class="glass-card p-lg mb-lg">
+                    <h3>Making Attacks</h3>
+                    <div class="grid grid-2">
+                        <div>
+                            <h4 style="color: var(--accent-gold);">Melee Attacks</h4>
+                            <p><strong>Roll:</strong> 2d10 + Might + Combat vs Defense</p>
+                            <p><strong>Range:</strong> Adjacent (within 2 meters)</p>
+                            <p><strong>Damage:</strong> Weapon damage + Might</p>
+                        </div>
+                        <div>
+                            <h4 style="color: var(--accent-blue);">Ranged Attacks</h4>
+                            <p><strong>Roll:</strong> 2d10 + Coordination + Combat vs Defense</p>
+                            <p><strong>Range:</strong> Weapon dependent</p>
+                            <p><strong>Damage:</strong> Weapon damage only</p>
+                        </div>
+                    </div>
+                    
+                    <div class="rule-block" style="background: rgba(255, 0, 0, 0.1); padding: 1rem; border-radius: 8px; margin-top: 1rem;">
+                        <h4 style="color: var(--accent-red);">Critical Hits</h4>
+                        <ul>
+                            <li><strong>Natural 20:</strong> Automatic hit, roll damage twice and add</li>
+                            <li><strong>Beat Defense by 10+:</strong> Add +1d6 to damage</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Defense and Armor -->
+                <div class="glass-card p-lg mb-lg">
+                    <h3>Defense and Armor</h3>
+                    <table style="width: 100%;">
+                        <thead>
+                            <tr>
+                                <th>Defense Type</th>
+                                <th>Calculation</th>
+                                <th>Typical Range</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Base Defense</strong></td>
+                                <td>10 + Coordination</td>
+                                <td>11-18</td>
+                            </tr>
+                            <tr>
+                                <td><strong>With Light Armor</strong></td>
+                                <td>Base Defense + 2</td>
+                                <td>13-20</td>
+                            </tr>
+                            <tr>
+                                <td><strong>With Heavy Armor</strong></td>
+                                <td>Base Defense + 4 (max Coord 4)</td>
+                                <td>14-18</td>
+                            </tr>
+                            <tr>
+                                <td><strong>With Shield</strong></td>
+                                <td>+2 vs melee, +1 vs ranged</td>
+                                <td>+1 to +2</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                    <p style="margin-top: 1rem;"><strong>Armor also provides Damage Reduction (DR):</strong></p>
+                    <ul>
+                        <li>Light armor: DR 1-2</li>
+                        <li>Medium armor: DR 3-4</li>
+                        <li>Heavy armor: DR 5-6</li>
+                    </ul>
+                </div>
+
+                <!-- Health and Defeat -->
+                <div class="glass-card p-lg mb-lg">
+                    <h3>Health and Defeat</h3>
+                    
+                    <div class="rule-block" style="background: rgba(255, 215, 0, 0.1); padding: 1rem; border-radius: 8px;">
+                        <h4 style="color: var(--accent-gold);">Health Levels</h4>
+                        <ul>
+                            <li><strong>Full Health:</strong> No penalties</li>
+                            <li><strong>Half Health:</strong> -1 to all rolls (optional rule)</li>
+                            <li><strong>0 Health:</strong> Incapacitated (unconscious or dying)</li>
+                            <li><strong>-10 Health:</strong> Dead</li>
+                        </ul>
+                    </div>
+                    
+                    <h4 style="margin-top: 1rem;">Recovery</h4>
+                    <ul>
+                        <li><strong>First Aid (TN 14):</strong> Stabilize dying character</li>
+                        <li><strong>Medical treatment:</strong> Restore 1d6 Health</li>
+                        <li><strong>Natural healing:</strong> 1 Health per day of rest</li>
+                        <li><strong>Advanced medical:</strong> Full recovery in hours</li>
+                    </ul>
+                </div>
+
+                <!-- Damage -->
+                <div class="glass-card p-lg">
+                    <h3>Weapon Damage</h3>
+                    <table style="width: 100%;">
+                        <thead>
+                            <tr>
+                                <th>Weapon Type</th>
+                                <th>Damage</th>
+                                <th>Properties</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Unarmed</td>
+                                <td>1d4 + Might</td>
+                                <td>Always available</td>
+                            </tr>
+                            <tr>
+                                <td>Light Melee</td>
+                                <td>1d6 + Might</td>
+                                <td>[Quick], [Concealable]</td>
+                            </tr>
+                            <tr>
+                                <td>Heavy Melee</td>
+                                <td>1d10 + Might</td>
+                                <td>[Two-handed], [Devastating]</td>
+                            </tr>
+                            <tr>
+                                <td>Pistol</td>
+                                <td>2d6</td>
+                                <td>[Accurate], range 50m</td>
+                            </tr>
+                            <tr>
+                                <td>Rifle</td>
+                                <td>3d6</td>
+                                <td>[Two-handed], range 200m</td>
+                            </tr>
+                            <tr>
+                                <td>Heavy Weapon</td>
+                                <td>4d6</td>
+                                <td>[Devastating], [Slow]</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p style="margin-top: 0.5rem; font-size: 0.9rem; color: var(--text-muted);"><em>Full weapon list in Chapter 7: Equipment</em></p>
+                </div>
+            </section>
+
+            <!-- Section 2: Initiative and Actions -->
+            <section id="initiative-actions" class="mb-xl">
+                <h2>Initiative and Actions</h2>
+                
+                <div class="glass-card p-lg mb-lg">
+                    <h3>Initiative Order</h3>
+                    
+                    <div class="rule-block" style="background: rgba(0, 128, 255, 0.1); padding: 1rem; border-radius: 8px;">
+                        <p style="font-size: 1.2rem; text-align: center;"><strong>Initiative = Awareness + Coordination</strong></p>
+                    </div>
+                    
+                    <h4 style="margin-top: 1rem;">Turn Order</h4>
+                    <ol>
+                        <li>All participants roll initiative once at combat start</li>
+                        <li>Act in order from highest to lowest</li>
+                        <li>Ties act simultaneously (or compare Awareness)</li>
+                        <li>Initiative order remains fixed unless special abilities intervene</li>
+                    </ol>
+                    
+                    <h4>Initiative Modifiers</h4>
+                    <ul>
+                        <li><strong>Surprised:</strong> -5 to initiative (or skip first turn)</li>
+                        <li><strong>Ready for combat:</strong> +2 to initiative</li>
+                        <li><strong>[Quick Reflexes] tag:</strong> +1 die to initiative</li>
+                        <li><strong>[Combat Veteran] tag:</strong> Reroll initiative once per combat</li>
+                    </ul>
+                </div>
+
+                <!-- Complete Action Economy -->
+                <div class="glass-card p-lg mb-lg">
+                    <h3>Action Economy</h3>
+                    <p><strong>Each turn you get: 1 Standard Action + 1 Move Action + Unlimited Free Actions</strong></p>
+                    
+                    <div class="grid grid-3" style="margin-top: 1rem;">
+                        <div>
+                            <h4 style="color: var(--accent-gold);">Standard Actions</h4>
+                            <ul style="font-size: 0.9rem;">
+                                <li>Attack (melee or ranged)</li>
+                                <li>Full defense (+4 Defense)</li>
+                                <li>Charge (move + attack)</li>
+                                <li>Aid another (+2 to ally)</li>
+                                <li>Complex skill use</li>
+                                <li>Activate device</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 style="color: var(--accent-blue);">Move Actions</h4>
+                            <ul style="font-size: 0.9rem;">
+                                <li>Move your Speed</li>
+                                <li>Stand from prone</li>
+                                <li>Draw/sheathe weapon</li>
+                                <li>Reload weapon</li>
+                                <li>Open door</li>
+                                <li>Pick up item</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 style="color: var(--accent-green);">Free Actions</h4>
+                            <ul style="font-size: 0.9rem;">
+                                <li>Speak</li>
+                                <li>Drop item</li>
+                                <li>Fall prone</li>
+                                <li>5-foot step</li>
+                                <li>Simple gestures</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <p style="margin-top: 1rem;"><strong>Special:</strong> You can trade your standard action for an extra move action.</p>
+                </div>
+
+                <!-- Combat Maneuvers -->
+                <div class="glass-card p-lg">
+                    <h3>Basic Combat Maneuvers</h3>
+                    <div class="grid grid-2">
+                        <div>
+                            <h4 style="color: var(--accent-gold);">Aim</h4>
+                            <p>Spend move action: +2 to next attack this turn</p>
+                            
+                            <h4 style="color: var(--accent-gold);">All-Out Attack</h4>
+                            <p>+2 to attack, -2 to Defense until next turn</p>
+                            
+                            <h4 style="color: var(--accent-gold);">Defensive Fighting</h4>
+                            <p>-2 to attacks, +2 to Defense</p>
+                        </div>
+                        <div>
+                            <h4 style="color: var(--accent-blue);">Disarm</h4>
+                            <p>Attack vs Defense +2, success knocks weapon away</p>
+                            
+                            <h4 style="color: var(--accent-blue);">Grapple</h4>
+                            <p>Might + Combat vs Defense, restricts movement</p>
+                            
+                            <h4 style="color: var(--accent-blue);">Overwatch</h4>
+                            <p>Ready action to shoot first enemy that moves</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Movement and Positioning -->
+                <h2>6.1 Movement and Positioning</h2>
+                
+                <div class="glass-card p-lg mb-lg">
+                    <h3 style="color: var(--accent-blue);">Basic Movement with Tags</h3>
+                    <div style="background: var(--glass-bg); padding: 1rem; border-radius: 8px; margin: 1rem 0;">
+                        <strong style="color: var(--accent-gold);">Speed:</strong> Each character has a Speed in meters equal to 5 + Coordination
+                    </div>
+
+                    <h4 style="color: var(--accent-gold); margin-top: 2rem;">Movement Types Enhanced by Tags</h4>
+                    
+                    <div class="grid grid-2" style="gap: 1rem; margin: 1rem 0;">
+                        <div class="movement-type">
+                            <h5 style="color: var(--accent-blue);">Move Action</h5>
+                            <p>Move up to Speed</p>
+                            <ul style="font-size: 0.9rem;">
+                                <li><strong>[Agile]:</strong> +2m when avoiding obstacles</li>
+                                <li><strong>[Heavy]:</strong> -2m but cannot be knocked prone</li>
+                            </ul>
+                        </div>
+                        <div class="movement-type">
+                            <h5 style="color: var(--accent-blue);">Full Move</h5>
+                            <p>Move double Speed, no other actions</p>
+                            <ul style="font-size: 0.9rem;">
+                                <li><strong>[Runner]:</strong> No defense penalty when using Full Move</li>
+                                <li><strong>[Reckless]:</strong> +5m extra but -1 Defense</li>
+                            </ul>
+                        </div>
+                        <div class="movement-type">
+                            <h5 style="color: var(--accent-blue);">Sprint</h5>
+                            <p>Triple Speed in straight line, -2 Defense</p>
+                            <ul style="font-size: 0.9rem;">
+                                <li><strong>[Athletic]:</strong> Reduce Defense penalty to -1</li>
+                                <li><strong>[Parkour]:</strong> Can change direction once during sprint</li>
+                            </ul>
+                        </div>
+                        <div class="movement-type">
+                            <h5 style="color: var(--accent-blue);">Careful Movement</h5>
+                            <p>Half Speed, no Defense penalty</p>
+                            <ul style="font-size: 0.9rem;">
+                                <li><strong>[Stealthy]:</strong> Remain hidden while moving carefully</li>
+                                <li><strong>[Tactical]:</strong> Assess threats while moving</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass-card p-lg mb-lg" id="terrain-environment">
+                    <h3 style="color: var(--accent-blue);">Terrain and Environmental Tags</h3>
+                    
+                    <div class="example-block mb-lg">
+                        <h4>📊 [INFOGRAPHIC: Terrain Types and Movement]</h4>
+                        <p style="font-style: italic;">Visual showing how different terrains affect movement and combat</p>
+                    </div>
+
+                    <h4 style="color: var(--accent-red);">Difficult Terrain</h4>
+                    <p><strong>Base effect:</strong> Movement costs double, no sprinting, -2 Defense while moving</p>
+                    
+                    <div class="terrain-examples">
+                        <h5 style="color: var(--accent-gold);">Examples with tag interactions:</h5>
+                        <div class="grid grid-3" style="gap: 0.5rem; margin: 1rem 0;">
+                            <div class="terrain-example">
+                                <strong>Asteroid debris field</strong> + [Zero-G Training] = Normal movement
+                            </div>
+                            <div class="terrain-example">
+                                <strong>Swamp terrain</strong> + [Environmental Adaptation] = Half penalty
+                            </div>
+                            <div class="terrain-example">
+                                <strong>Icy corridors</strong> + [Cryogenic Native] = Movement advantage
+                            </div>
+                        </div>
+                    </div>
+
+                    <h4 style="color: var(--accent-red);">Hazardous Terrain</h4>
+                    <p><strong>Base:</strong> Difficult terrain plus environmental damage/saves</p>
+                    
+                    <div class="hazard-types">
+                        <h5 style="color: var(--accent-gold);">Sci-fi hazards with tag synergies:</h5>
+                        <div class="grid grid-2" style="gap: 1rem; margin: 1rem 0;">
+                            <div class="hazard-type">
+                                <strong style="color: var(--accent-red);">Radiation zones:</strong><br>
+                                Might save TN 14, [Radiation Resistant] ignores
+                            </div>
+                            <div class="hazard-type">
+                                <strong style="color: var(--accent-blue);">Zero gravity:</strong><br>
+                                Athletics checks, [Void Born] gains +3 dice
+                            </div>
+                            <div class="hazard-type">
+                                <strong style="color: var(--accent-orange);">Plasma vents:</strong><br>
+                                2d6 damage, [Heat Shielded] reduces by half
+                            </div>
+                            <div class="hazard-type">
+                                <strong style="color: var(--accent-purple);">Quantum instability:</strong><br>
+                                Reality saves, [Dimensional Anchor] immune
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass-card p-lg mb-lg" id="tactical-positioning">
+                    <h3 style="color: var(--accent-blue);">Tactical Positioning</h3>
+                    
+                    <h4 style="color: var(--accent-green);">Cover in sci-fi combat</h4>
+                    <div class="cover-types">
+                        <div class="grid grid-2" style="gap: 1rem; margin: 1rem 0;">
+                            <div class="cover-type">
+                                <h5 style="color: var(--accent-blue);">Light Cover (+2 Defense)</h5>
+                                <p>Holo-displays, thin bulkheads, energy fields</p>
+                                <ul style="font-size: 0.9rem;">
+                                    <li><strong>[Tactical]:</strong> Maximize benefit to +3</li>
+                                </ul>
+                            </div>
+                            <div class="cover-type">
+                                <h5 style="color: var(--accent-green);">Heavy Cover (+4 Defense)</h5>
+                                <p>Blast doors, hull plating, fortified positions</p>
+                                <ul style="font-size: 0.9rem;">
+                                    <li><strong>[Sniper]:</strong> Can shoot from heavy cover without penalty</li>
+                                </ul>
+                            </div>
+                            <div class="cover-type">
+                                <h5 style="color: var(--accent-red);">Total Cover</h5>
+                                <p>Behind sealed bulkheads—Cannot be targeted directly</p>
+                                <ul style="font-size: 0.9rem;">
+                                    <li><strong>[Phasing]:</strong> Can attack through total cover with appropriate tech</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h4 style="color: var(--accent-purple);">Concealment with technology</h4>
+                    <div class="concealment-types">
+                        <ul>
+                            <li><strong>Light (-2 to hit):</strong> Holo-camouflage, smoke grenades, steam vents</li>
+                            <li><strong>Heavy (-4 to hit):</strong> Cloaking fields, sensor jamming, thick nebula gas</li>
+                            <li><strong>Total:</strong> Complete invisibility—Must guess location (50% miss chance)</li>
+                        </ul>
+                        
+                        <h5 style="color: var(--accent-gold); margin-top: 1rem;">Tag interactions:</h5>
+                        <div class="grid grid-3" style="gap: 0.5rem; margin: 0.5rem 0;">
+                            <div class="tag-interaction">
+                                <strong>[Enhanced Optics]:</strong> Reduce concealment penalties by one step
+                            </div>
+                            <div class="tag-interaction">
+                                <strong>[Predator Vision]:</strong> Ignore heat-based concealment
+                            </div>
+                            <div class="tag-interaction">
+                                <strong>[Quantum Sight]:</strong> See through dimensional cloaking
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Combat with Tags -->
+            <section id="combat-tags" class="mb-xl">
+                <h2>6.2 Combat with Tags</h2>
+                
+                <div class="glass-card p-lg mb-lg">
+                    <h3 style="color: var(--accent-blue);">Understanding Combat Tags</h3>
+                    <p>Combat is where the tag system truly shines. Every element—your character's fighting style, your weapon's properties, the environment, even your emotional state—uses tags that interact to create unique combat experiences.</p>
+                    
+                    <div class="tag-categories">
+                        <div class="grid grid-3" style="gap: 1rem; margin: 2rem 0;">
+                            <div class="tag-category">
+                                <h4 style="color: var(--accent-gold);">Character Combat Tags</h4>
+                                <p style="font-size: 0.9rem; color: var(--text-muted);">Describe your fighting approach:</p>
+                                <ul style="font-size: 0.9rem; line-height: 1.6;">
+                                    <li><strong>[Precise]:</strong> Careful shot placement, surgical strikes</li>
+                                    <li><strong>[Brutal]:</strong> Overwhelming force, intimidation through violence</li>
+                                    <li><strong>[Defensive]:</strong> Protection-focused, counter-fighting</li>
+                                    <li><strong>[Aggressive]:</strong> Relentless assault, pressure tactics</li>
+                                    <li><strong>[Tactical]:</strong> Battlefield control, exploiting weaknesses</li>
+                                </ul>
+                            </div>
+                            <div class="tag-category">
+                                <h4 style="color: var(--accent-blue);">Weapon Tags</h4>
+                                <p style="font-size: 0.9rem; color: var(--text-muted);">Define equipment behavior:</p>
+                                <ul style="font-size: 0.9rem; line-height: 1.6;">
+                                    <li><strong>[Accurate]:</strong> Enhanced hit probability</li>
+                                    <li><strong>[Heavy]:</strong> High damage, slower use</li>
+                                    <li><strong>[Rapid]:</strong> Multiple attack capability</li>
+                                    <li><strong>[Silent]:</strong> Minimal noise signature</li>
+                                    <li><strong>[Devastating]:</strong> Extreme damage potential</li>
+                                </ul>
+                            </div>
+                            <div class="tag-category">
+                                <h4 style="color: var(--accent-green);">Environmental Tags</h4>
+                                <p style="font-size: 0.9rem; color: var(--text-muted);">Create battlefield dynamics:</p>
+                                <ul style="font-size: 0.9rem; line-height: 1.6;">
+                                    <li><strong>[Confined]:</strong> Close quarters favor melee</li>
+                                    <li><strong>[Elevated]:</strong> High ground provides advantage</li>
+                                    <li><strong>[Unstable]:</strong> Shifting terrain disrupts movement</li>
+                                    <li><strong>[Dark]:</strong> Shadows enable stealth</li>
+                                    <li><strong>[Chaotic]:</strong> Confusion aids misdirection</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass-card p-lg mb-lg">
+                    <h3 style="color: var(--accent-blue);">Tag Synergies in Combat</h3>
+                    <p>When tags align, they create powerful synergies:</p>
+                    
+                    <div class="synergy-levels">
+                        <div class="grid grid-2" style="gap: 1rem; margin: 2rem 0;">
+                            <div class="synergy-level">
+                                <h4 style="color: var(--accent-gold);">Basic Synergy (2 matching tags): +1 die</h4>
+                                <ul style="font-size: 0.9rem;">
+                                    <li>[Precise] character + [Accurate] weapon</li>
+                                    <li>[Aggressive] fighter + [Brutal] environment</li>
+                                </ul>
+                            </div>
+                            <div class="synergy-level">
+                                <h4 style="color: var(--accent-blue);">Strong Synergy (3 matching tags): +2 dice</h4>
+                                <ul style="font-size: 0.9rem;">
+                                    <li>[Silent] character + [Silent] weapon + [Dark] environment</li>
+                                    <li>[Defensive] fighter + [Cover] + [Patient] approach</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div style="background: var(--glass-bg); padding: 1.5rem; border-radius: 12px; text-align: center; margin: 1rem 0;">
+                            <h4 style="color: var(--accent-red); margin-bottom: 1rem;">Perfect Synergy (4+ matching tags): +3 to +5 dice</h4>
+                            <p style="font-size: 0.9rem;">[Tactical] + [High Ground] + [Prepared] + [Superior Equipment]</p>
+                            <p style="font-size: 0.9rem; color: var(--accent-gold);">Creates moments of legendary performance</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass-card p-lg mb-lg">
+                    <h3 style="color: var(--accent-blue);">Combat Tag Evolution</h3>
+                    <p>Your combat approach evolves through experience:</p>
+                    
+                    <div class="evolution-stages">
+                        <div class="grid grid-3" style="gap: 1rem; margin: 1rem 0;">
+                            <div class="evolution-stage">
+                                <h4 style="color: var(--accent-gold);">10 Battles</h4>
+                                <p>Gain reputation tag ([Feared], [Honorable], [Survivor])</p>
+                            </div>
+                            <div class="evolution-stage">
+                                <h4 style="color: var(--accent-blue);">Legendary Victory</h4>
+                                <p>Gain achievement tag ([Dragonslayer], [Duelist])</p>
+                            </div>
+                            <div class="evolution-stage">
+                                <h4 style="color: var(--accent-red);">100 Fights</h4>
+                                <p>Master synergy unlocks unique combat abilities</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Action Economy -->
+            <section id="action-economy" class="mb-xl">
+                <h2>6.3 Action Economy</h2>
+                
+                <div class="glass-card p-lg mb-lg">
+                    <h3 style="color: var(--accent-blue);">Types of Actions with Tag Enhancement</h3>
+                    
+                    <div class="action-types">
+                        <div class="action-type mb-lg">
+                            <h4 style="color: var(--accent-gold);">Standard Actions</h4>
+                            <p>Represent your primary effort each turn:</p>
+                            <ul>
+                                <li>Make an attack (with tag bonuses)</li>
+                                <li>Full skill use (apply skill tags)</li>
+                                <li>Complex maneuver (described by tags)</li>
+                                <li>Activate complex device (Tech tags apply)</li>
+                                <li>First aid (Medicine tags enhance)</li>
+                                <li>Rally shaken ally (Leadership tags)</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="action-type mb-lg">
+                            <h4 style="color: var(--accent-blue);">Move Actions</h4>
+                            <p>Handle positioning and simple tasks:</p>
+                            <ul>
+                                <li>Move your Speed (movement tags apply)</li>
+                                <li>Stand from prone ([Quick Recovery] = free action)</li>
+                                <li>Draw/sheathe weapon ([Fast Draw] = free action)</li>
+                                <li>Activate simple device</li>
+                                <li>Open/close door</li>
+                                <li>Reload weapon ([Combat Reload] reduces time)</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="action-type mb-lg">
+                            <h4 style="color: var(--accent-green);">Free Actions</h4>
+                            <p>Quick actions that don't impede other activities:</p>
+                            <ul>
+                                <li>Speak ([Inspiring Words] can grant bonuses)</li>
+                                <li>Drop held item</li>
+                                <li>Fall prone ([Tactical Drop] gains cover)</li>
+                                <li>Activate mental powers ([Instant Cast])</li>
+                                <li>Use enhanced reflexes ([Lightning Fast])</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Combat Examples -->
+            <section id="combat-examples" class="mb-xl">
+                <h2>6.4 Combat Examples</h2>
+                
+                <div class="glass-card p-lg mb-lg">
+                    <h3 style="color: var(--accent-blue);">Example: Asteroid Mining Station Firefight</h3>
+                    
+                    <div class="combat-scenario">
+                        <h4 style="color: var(--accent-gold);">The Setup</h4>
+                        <p>Corporate security raids an illegal mining operation. The asteroid's low gravity and industrial hazards create a three-dimensional battlefield.</p>
+                        
+                        <div class="participants">
+                            <h5 style="color: var(--accent-blue);">Participants:</h5>
+                            <div class="grid grid-2" style="gap: 1rem; margin: 1rem 0;">
+                                <div class="participant">
+                                    <strong style="color: var(--accent-green);">Elena "Ghost" Vasquez</strong><br>
+                                    <small>Combat 4 [Precise] [Tactical], Stealth 3 [Shadow]</small><br>
+                                    <small>Equipment: [Silent] smart rifle, [Adaptive] stealth suit</small>
+                                </div>
+                                <div class="participant">
+                                    <strong style="color: var(--accent-red);">CorpSec Heavy Trooper</strong><br>
+                                    <small>Combat 3 [Aggressive] [Heavy], Athletics 2 [Enhanced]</small><br>
+                                    <small>Equipment: [Devastating] plasma cannon, [Armored] assault suit</small>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="environment">
+                            <h5 style="color: var(--accent-purple);">Environment Tags:</h5>
+                            <div class="grid grid-3" style="gap: 0.5rem; margin: 1rem 0;">
+                                <div class="env-tag">[Low Gravity] - Triple jump distances</div>
+                                <div class="env-tag">[Industrial] - Machinery provides cover</div>
+                                <div class="env-tag">[Hazardous] - Plasma vents and exposed conduits</div>
+                            </div>
+                        </div>
+                        
+                        <div class="combat-round">
+                            <h5 style="color: var(--accent-gold);">Round 1: Initiative and Positioning</h5>
+                            <div class="initiative-order">
+                                <p><strong>Elena's Turn:</strong></p>
+                                <ul style="font-size: 0.9rem;">
+                                    <li><strong>Move:</strong> Uses [Low Gravity] + [Shadow] to leap between maintenance platforms</li>
+                                    <li><strong>Standard:</strong> Aims [Silent] rifle from [Heavy Cover] behind industrial processor</li>
+                                    <li><strong>Tag Synergy:</strong> [Precise] + [Tactical] + [Silent] + [Heavy Cover] = +3 dice</li>
+                                    <li><strong>Result:</strong> Perfect positioning for ambush next round</li>
+                                </ul>
+                                
+                                <p><strong>Trooper's Turn:</strong></p>
+                                <ul style="font-size: 0.9rem;">
+                                    <li><strong>Move:</strong> [Enhanced] athletices + [Low Gravity] to leap toward Elena's last position</li>
+                                    <li><strong>Standard:</strong> [Devastating] plasma cannon sweeps the area</li>
+                                    <li><strong>Tag Synergy:</strong> [Aggressive] + [Heavy] + [Devastating] = +2 dice</li>
+                                    <li><strong>Result:</strong> Massive damage to cover, but Elena already moved</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="combat-outcome">
+                            <h5 style="color: var(--accent-red);">Outcome</h5>
+                            <p>Elena's superior positioning and tag synergies overcome the trooper's raw firepower. The environment's [Hazardous] tag comes into play when plasma fire ignites coolant lines, forcing both combatants to adapt their tactics.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Quick Reference -->
+            <section id="quick-reference" class="mb-xl">
+                <h2>6.5 Quick Reference</h2>
+                
+                <div class="glass-card p-lg mb-lg">
+                    <h3 style="color: var(--accent-blue);">Combat Tag Synergy Quick Reference</h3>
+                    <div class="grid grid-2" style="gap: 1rem;">
+                        <div style="background: var(--glass-bg); padding: 1rem; border-radius: 8px;">
+                            <strong style="color: var(--accent-gold);">2 matching tags: +1 die</strong><br>
+                            <small style="color: var(--text-muted);">Basic synergy - common combinations</small>
+                        </div>
+                        <div style="background: var(--glass-bg); padding: 1rem; border-radius: 8px;">
+                            <strong style="color: var(--accent-blue);">3 matching tags: +2 dice</strong><br>
+                            <small style="color: var(--text-muted);">Strong synergy - specialized setups</small>
+                        </div>
+                        <div style="background: var(--glass-bg); padding: 1rem; border-radius: 8px;">
+                            <strong style="color: var(--accent-green);">4 matching tags: +3 dice</strong><br>
+                            <small style="color: var(--text-muted);">Perfect synergy - ideal conditions</small>
+                        </div>
+                        <div style="background: var(--glass-bg); padding: 1rem; border-radius: 8px;">
+                            <strong style="color: var(--accent-red);">5+ matching tags: +4-5 dice</strong><br>
+                            <small style="color: var(--text-muted);">Legendary synergy - reality bends</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass-card p-lg">
+                    <h3 style="color: var(--accent-blue);">Movement Summary</h3>
+                    <table style="width: 100%; border-collapse: collapse; font-size: 0.9rem;">
+                        <thead>
+                            <tr style="background: var(--glass-bg); color: var(--accent-gold);">
+                                <th style="padding: 0.5rem; border: 1px solid var(--glass-border);">Movement Type</th>
+                                <th style="padding: 0.5rem; border: 1px solid var(--glass-border);">Distance</th>
+                                <th style="padding: 0.5rem; border: 1px solid var(--glass-border);">Defense Penalty</th>
+                                <th style="padding: 0.5rem; border: 1px solid var(--glass-border);">Other Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td style="padding: 0.5rem; border: 1px solid var(--glass-border);"><strong>Move Action</strong></td>
+                                <td style="padding: 0.5rem; border: 1px solid var(--glass-border);">Speed</td>
+                                <td style="padding: 0.5rem; border: 1px solid var(--glass-border);">None</td>
+                                <td style="padding: 0.5rem; border: 1px solid var(--glass-border);">Standard + Free actions</td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 0.5rem; border: 1px solid var(--glass-border);"><strong>Full Move</strong></td>
+                                <td style="padding: 0.5rem; border: 1px solid var(--glass-border);">2 × Speed</td>
+                                <td style="padding: 0.5rem; border: 1px solid var(--glass-border);">-1</td>
+                                <td style="padding: 0.5rem; border: 1px solid var(--glass-border);">Free actions only</td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 0.5rem; border: 1px solid var(--glass-border);"><strong>Sprint</strong></td>
+                                <td style="padding: 0.5rem; border: 1px solid var(--glass-border);">3 × Speed (straight)</td>
+                                <td style="padding: 0.5rem; border: 1px solid var(--glass-border);">-2</td>
+                                <td style="padding: 0.5rem; border: 1px solid var(--glass-border);">Free actions only</td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 0.5rem; border: 1px solid var(--glass-border);"><strong>Careful</strong></td>
+                                <td style="padding: 0.5rem; border: 1px solid var(--glass-border);">Speed ÷ 2</td>
+                                <td style="padding: 0.5rem; border: 1px solid var(--glass-border);">None</td>
+                                <td style="padding: 0.5rem; border: 1px solid var(--glass-border);">Standard + Free actions</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </main>
+
+        <!-- Chapter Navigation -->
+        <nav class="chapter-nav glass-panel p-lg">
+            <div class="nav-links">
+                <a href="../ch05-actions-and-skills/index.html" class="nav-prev">
+                    ← Chapter 5: Actions and Skills
+                </a>
+                <a href="../ch07-equipment-and-gear/index.html" class="nav-next">
+                    Chapter 7: Equipment and Gear →
+                </a>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Scripts -->
+    <script src="../../assets/js/cosmos-engine.js"></script>
+    
+    <style>
+        .movement-type, .tag-category, .action-type, .cover-type, .hazard-type {
+            background: var(--glass-bg);
+            padding: 1rem;
+            border-radius: 8px;
+            border: 1px solid var(--glass-border);
+        }
+        
+        .terrain-example, .tag-interaction, .synergy-level, .evolution-stage {
+            background: var(--glass-bg);
+            padding: 0.8rem;
+            border-radius: 6px;
+            border: 1px solid var(--glass-border);
+            font-size: 0.9rem;
+        }
+        
+        .participant, .env-tag {
+            background: var(--glass-bg);
+            padding: 0.8rem;
+            border-radius: 6px;
+            border: 1px solid var(--glass-border);
+            font-size: 0.9rem;
+        }
+        
+        .combat-scenario {
+            background: rgba(255, 215, 0, 0.05);
+            padding: 1.5rem;
+            border-radius: 12px;
+            border: 1px solid var(--accent-gold);
+        }
+        
+        .chapter-nav {
+            margin-top: 3rem;
+        }
+        
+        .nav-links {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .nav-prev, .nav-next {
+            color: var(--accent-blue);
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 6px;
+            transition: background-color 0.3s ease;
+        }
+        
+        .nav-prev:hover, .nav-next:hover {
+            background: var(--glass-bg);
+        }
+    </style>
+</body>
+</html>

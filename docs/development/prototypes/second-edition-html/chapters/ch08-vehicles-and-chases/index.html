@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 8: Vehicles and Chases - Cosmos Engine RPG</title>
+    <link rel="stylesheet" href="../../assets/css/cosmos-engine.css">
+    <meta name="description" content="Vehicle operation and chase mechanics with Universal Tag System integration">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav-primary glass-panel">
+        <div class="container">
+            <div class="nav-content">
+                <div class="nav-brand">
+                    <a href="../../rulebook-index.html" class="brand-link" style="display: flex; align-items: center; gap: 1rem; text-decoration: none;">
+                        <img src="../../assets/images/cosmos-engine-logo.png" alt="Cosmos Engine" style="width: 40px; height: 40px; filter: drop-shadow(0 0 10px rgba(0, 255, 255, 0.4));">
+                        <div>
+                        <h3 style="margin: 0; color: var(--accent-gold);">Cosmos Engine RPG</h3>
+                        <small style="color: var(--text-muted); font-size: 0.8rem;">Chapter 8: Vehicles and Chases</small>
+                    </div>
+                    </a>
+                </div>
+                <div class="nav-utils">
+                    <div id="search-container" class="search-container"></div>
+                    <a href="../../rulebook-index.html" class="btn btn-secondary">← Rulebook</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <!-- Breadcrumbs -->
+        <nav class="breadcrumb">
+            <a href="../../rulebook-index.html">Home</a>
+            <span class="breadcrumb-separator">›</span>
+            <a href="../index.html">Chapters</a>
+            <span class="breadcrumb-separator">›</span>
+            <span>Chapter 8: Vehicles and Chases</span>
+        </nav>
+
+        <!-- Chapter Header -->
+        <header class="glass-panel p-xl text-center mb-xl">
+            <h1>Chapter 8: Vehicles and Chases</h1>
+            <p style="font-size: 1.1rem; color: var(--text-secondary); margin: 2rem 0;">
+                Vehicles in Cosmos Engine are more than transportation—they're characters in their own right, with tags that define their personality and capabilities. From groundcars racing through neon-lit cities to starfighters dancing between asteroids, the <strong style="color: var(--accent-gold);">Universal Tag System</strong> creates dynamic, narrative-driven vehicle encounters that scale from personal racing to fleet operations.
+            </p>
+        </header>
+
+        <!-- Table of Contents -->
+        <div class="glass-panel p-lg mb-xl">
+            <h2>Chapter Contents</h2>
+            <div class="grid grid-3">
+                <div>
+                    <h4 style="color: var(--accent-gold); margin-bottom: 1rem;">Vehicle Fundamentals</h4>
+                    <ul style="list-style: none; margin: 0;">
+                        <li><a href="#vehicle-tags">Vehicle Tag System</a></li>
+                        <li><a href="#vehicle-types">Vehicle Types and Categories</a></li>
+                        <li><a href="#pilot-bonding">Pilot-Vehicle Bonding</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 style="color: var(--accent-blue); margin-bottom: 1rem;">Operations</h4>
+                    <ul style="list-style: none; margin: 0;">
+                        <li><a href="#basic-operation">Basic Vehicle Operation</a></li>
+                        <li><a href="#chase-mechanics">Chase Mechanics</a></li>
+                        <li><a href="#vehicle-combat">Vehicle Combat</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 style="color: var(--accent-red); margin-bottom: 1rem;">Advanced</h4>
+                    <ul style="list-style: none; margin: 0;">
+                        <li><a href="#modifications">Vehicle Modifications</a></li>
+                        <li><a href="#environmental-hazards">Environmental Hazards</a></li>
+                        <li><a href="#legendary-vehicles">Legendary Vehicles</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <main>
+            <!-- Vehicle Tag System -->
+            <section id="vehicle-tags" class="mb-xl">
+                <h2>8.1 Vehicle Tag System</h2>
+                
+                <div class="glass-card p-lg mb-lg">
+                    <h3 style="color: var(--accent-blue);">Understanding Vehicle Tags</h3>
+                    <p>Every vehicle has tags that describe its capabilities, limitations, and personality. These tags interact with pilot abilities and environmental conditions to create emergent gameplay.</p>
+                    
+                    <div class="vehicle-tag-categories">
+                        <div class="grid grid-2" style="gap: 1rem; margin: 2rem 0;">
+                            <div class="tag-category">
+                                <h4 style="color: var(--accent-gold);">Performance Tags</h4>
+                                <ul style="font-size: 0.9rem; line-height: 1.6;">
+                                    <li><strong>[Fast]:</strong> High top speed, acceleration</li>
+                                    <li><strong>[Agile]:</strong> Superior maneuverability</li>
+                                    <li><strong>[Stable]:</strong> Excellent control, hard to crash</li>
+                                    <li><strong>[Durable]:</strong> Can take damage and keep going</li>
+                                    <li><strong>[Efficient]:</strong> Extended range, low fuel consumption</li>
+                                </ul>
+                            </div>
+                            <div class="tag-category">
+                                <h4 style="color: var(--accent-blue);">Design Tags</h4>
+                                <ul style="font-size: 0.9rem; line-height: 1.6;">
+                                    <li><strong>[Sleek]:</strong> Aerodynamic design, stylish</li>
+                                    <li><strong>[Rugged]:</strong> Built for harsh conditions</li>
+                                    <li><strong>[Luxury]:</strong> Comfort and status features</li>
+                                    <li><strong>[Military]:</strong> Combat-optimized systems</li>
+                                    <li><strong>[Stealth]:</strong> Low sensor signature</li>
+                                </ul>
+                            </div>
+                            <div class="tag-category">
+                                <h4 style="color: var(--accent-green);">Capability Tags</h4>
+                                <ul style="font-size: 0.9rem; line-height: 1.6;">
+                                    <li><strong>[Armed]:</strong> Weapon systems installed</li>
+                                    <li><strong>[Shielded]:</strong> Energy defense systems</li>
+                                    <li><strong>[Jump-Capable]:</strong> FTL travel ability</li>
+                                    <li><strong>[Atmospheric]:</strong> Can operate in atmosphere</li>
+                                    <li><strong>[Amphibious]:</strong> Water and land operation</li>
+                                </ul>
+                            </div>
+                            <div class="tag-category">
+                                <h4 style="color: var(--accent-red);">Personality Tags</h4>
+                                <ul style="font-size: 0.9rem; line-height: 1.6;">
+                                    <li><strong>[Temperamental]:</strong> Quirky, requires special handling</li>
+                                    <li><strong>[Loyal]:</strong> Responds best to bonded pilot</li>
+                                    <li><strong>[Proud]:</strong> Performs better when respected</li>
+                                    <li><strong>[Haunted]:</strong> Previous pilot's influence remains</li>
+                                    <li><strong>[Awakened]:</strong> True AI consciousness</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass-card p-lg mb-lg">
+                    <h3 style="color: var(--accent-blue);">Vehicle-Pilot Synergies</h3>
+                    <p>When pilot and vehicle tags align, extraordinary performance emerges:</p>
+                    
+                    <div class="synergy-examples">
+                        <div class="grid grid-2" style="gap: 1rem; margin: 1rem 0;">
+                            <div class="synergy-example">
+                                <h4 style="color: var(--accent-gold);">Speed Demon</h4>
+                                <p><strong>Pilot:</strong> [Daredevil] [Fast] [Reckless]</p>
+                                <p><strong>Vehicle:</strong> [Fast] [Agile] [Temperamental]</p>
+                                <p><strong>Result:</strong> +3 dice to speed-based maneuvers</p>
+                            </div>
+                            <div class="synergy-example">
+                                <h4 style="color: var(--accent-blue);">Precision Driver</h4>
+                                <p><strong>Pilot:</strong> [Precise] [Calculating] [Patient]</p>
+                                <p><strong>Vehicle:</strong> [Stable] [Responsive] [Reliable]</p>
+                                <p><strong>Result:</strong> +2 dice, cannot fumble driving rolls</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Vehicle Economics -->
+            <section id="vehicle-economics" class="mb-xl">
+                <h2>8.2 Vehicle Economy and Acquisition</h2>
+                
+                <div class="glass-card p-lg mb-lg">
+                    <h3 style="color: var(--accent-gold);">Vehicle Wealth Categories</h3>
+                    <p>Vehicles represent significant investments beyond personal equipment. The wealth system scales differently for vehicle purchases:</p>
+                    
+                    <div class="wealth-scale" style="margin-top: 1.5rem;">
+                        <table style="width: 100%; border-collapse: collapse; font-size: 0.9rem; margin-top: 1rem;">
+                            <thead>
+                                <tr style="background: var(--glass-bg); color: var(--accent-gold);">
+                                    <th style="padding: 0.5rem; border: 1px solid var(--glass-border);">Vehicle Category</th>
+                                    <th style="padding: 0.5rem; border: 1px solid var(--glass-border);">Credit Range</th>
+                                    <th style="padding: 0.5rem; border: 1px solid var(--glass-border);">Typical Access</th>
+                                    <th style="padding: 0.5rem; border: 1px solid var(--glass-border);">Examples</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td style="padding: 0.5rem; border: 1px solid var(--glass-border);"><strong>Personal Transport</strong></td>
+                                    <td style="padding: 0.5rem; border: 1px solid var(--glass-border);">5,000-50,000 cr</td>
+                                    <td style="padding: 0.5rem; border: 1px solid var(--glass-border);">[Comfortable] to [Wealthy]</td>
+                                    <td style="padding: 0.5rem; border: 1px solid var(--glass-border);">Groundcars, hoverbikes</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 0.5rem; border: 1px solid var(--glass-border);"><strong>Professional Vehicles</strong></td>
+                                    <td style="padding: 0.5rem; border: 1px solid var(--glass-border);">50,000-500,000 cr</td>
+                                    <td style="padding: 0.5rem; border: 1px solid var(--glass-border);">[Rich] or Corporate</td>
+                                    <td style="padding: 0.5rem; border: 1px solid var(--glass-border);">Cargo trucks, work vehicles</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 0.5rem; border: 1px solid var(--glass-border);"><strong>Atmospheric Craft</strong></td>
+                                    <td style="padding: 0.5rem; border: 1px solid var(--glass-border);">500,000-5M cr</td>
+                                    <td style="padding: 0.5rem; border: 1px solid var(--glass-border);">Corporate/Military</td>
+                                    <td style="padding: 0.5rem; border: 1px solid var(--glass-border);">Shuttles, fighters</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 0.5rem; border: 1px solid var(--glass-border);"><strong>Specialty Vehicles</strong></td>
+                                    <td style="padding: 0.5rem; border: 1px solid var(--glass-border);">5M+ cr</td>
+                                    <td style="padding: 0.5rem; border: 1px solid var(--glass-border);">Exclusive contracts</td>
+                                    <td style="padding: 0.5rem; border: 1px solid var(--glass-border);">Racing craft, custom builds</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    <div class="acquisition-methods" style="margin-top: 2rem;">
+                        <h4 style="color: var(--accent-blue);">Vehicle Acquisition Methods</h4>
+                        <div class="grid grid-2" style="gap: 1rem; margin: 1rem 0;">
+                            <div style="background: var(--glass-bg); padding: 1rem; border-radius: 8px;">
+                                <h5 style="color: var(--accent-gold);">Individual Ownership</h5>
+                                <ul style="font-size: 0.9rem;">
+                                    <li>Direct purchase with credits</li>
+                                    <li>Financing (20% down, monthly payments)</li>
+                                    <li>Salvage and repair</li>
+                                    <li>Mission rewards</li>
+                                </ul>
+                            </div>
+                            <div style="background: var(--glass-bg); padding: 1rem; border-radius: 8px;">
+                                <h5 style="color: var(--accent-blue);">Organizational Access</h5>
+                                <ul style="font-size: 0.9rem;">
+                                    <li>Corporate fleet vehicles</li>
+                                    <li>Military requisition</li>
+                                    <li>Crew shares on larger vessels</li>
+                                    <li>Patron-provided transport</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Vehicle Types -->
+            <section id="vehicle-types" class="mb-xl">
+                <h2>8.3 Vehicle Types and Categories</h2>
+                
+                <div class="glass-card p-lg mb-lg">
+                    <h3 style="color: var(--accent-blue);">Ground Vehicles</h3>
+                    
+                    <div class="vehicle-examples">
+                        <div class="grid grid-2" style="gap: 1rem; margin: 1rem 0;">
+                            <div class="vehicle-example">
+                                <h4 style="color: var(--accent-gold);">Sport Groundcar</h4>
+                                <ul style="font-size: 0.9rem;">
+                                    <li><strong>Tags:</strong> [Fast], [Agile], [Sleek], [Luxury]</li>
+                                    <li><strong>Speed:</strong> 300 kph</li>
+                                    <li><strong>Handling:</strong> +3</li>
+                                    <li><strong>Cost:</strong> 45,000 credits <span style="color: var(--accent-gold);">[Wealthy]</span></li>
+                                    <li><strong>Special:</strong> Heads turn when you drive by</li>
+                                </ul>
+                            </div>
+                            <div class="vehicle-example">
+                                <h4 style="color: var(--accent-blue);">Military APC</h4>
+                                <ul style="font-size: 0.9rem;">
+                                    <li><strong>Tags:</strong> [Durable], [Armed], [Military], [Intimidating]</li>
+                                    <li><strong>Speed:</strong> 120 kph</li>
+                                    <li><strong>Armor:</strong> +6</li>
+                                    <li><strong>Cost:</strong> 250,000 credits <span style="color: var(--accent-gold);">[Rich]</span></li>
+                                    <li><strong>Special:</strong> Can carry squad of soldiers</li>
+                                </ul>
+                            </div>
+                            <div class="vehicle-example">
+                                <h4 style="color: var(--accent-green);">Exploration Rover</h4>
+                                <ul style="font-size: 0.9rem;">
+                                    <li><strong>Tags:</strong> [Rugged], [Efficient], [All-Terrain], [Self-Repairing]</li>
+                                    <li><strong>Speed:</strong> 80 kph</li>
+                                    <li><strong>Range:</strong> 2000 km</li>
+                                    <li><strong>Cost:</strong> 75,000 credits <span style="color: var(--accent-gold);">[Rich]</span></li>
+                                    <li><strong>Special:</strong> Can survive in any environment</li>
+                                </ul>
+                            </div>
+                            <div class="vehicle-example">
+                                <h4 style="color: var(--accent-red);">Hoverbike</h4>
+                                <ul style="font-size: 0.9rem;">
+                                    <li><strong>Tags:</strong> [Fast], [Agile], [Personal], [Exposed]</li>
+                                    <li><strong>Speed:</strong> 200 kph</li>
+                                    <li><strong>Handling:</strong> +4</li>
+                                    <li><strong>Cost:</strong> 12,000 credits <span style="color: var(--accent-gold);">[Wealthy]</span></li>
+                                    <li><strong>Special:</strong> Can hover over any terrain</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass-card p-lg mb-lg">
+                    <h3 style="color: var(--accent-blue);">Atmospheric Craft</h3>
+                    
+                    <div class="vehicle-examples">
+                        <div class="grid grid-2" style="gap: 1rem; margin: 1rem 0;">
+                            <div class="vehicle-example">
+                                <h4 style="color: var(--accent-gold);">Civilian Shuttle</h4>
+                                <ul style="font-size: 0.9rem;">
+                                    <li><strong>Tags:</strong> [Reliable], [Safe], [Passenger], [Comfortable]</li>
+                                    <li><strong>Speed:</strong> Mach 2</li>
+                                    <li><strong>Capacity:</strong> 20 passengers</li>
+                                    <li><strong>Cost:</strong> 500,000 credits <span style="color: var(--accent-red);">[Corporation]</span></li>
+                                    <li><strong>Special:</strong> Automated safety systems</li>
+                                </ul>
+                            </div>
+                            <div class="vehicle-example">
+                                <h4 style="color: var(--accent-red);">Combat Fighter</h4>
+                                <ul style="font-size: 0.9rem;">
+                                    <li><strong>Tags:</strong> [Fast], [Agile], [Armed], [Military], [Deadly]</li>
+                                    <li><strong>Speed:</strong> Mach 5</li>
+                                    <li><strong>Weapons:</strong> Plasma cannons, missiles</li>
+                                    <li><strong>Cost:</strong> 2,500,000 credits <span style="color: var(--accent-red);">[Military]</span></li>
+                                    <li><strong>Special:</strong> Combat AI assistance</li>
+                                </ul>
+                            </div>
+                            <div class="vehicle-example">
+                                <h4 style="color: var(--accent-blue);">Cargo Hauler</h4>
+                                <ul style="font-size: 0.9rem;">
+                                    <li><strong>Tags:</strong> [Durable], [Cargo], [Efficient], [Workhorse]</li>
+                                    <li><strong>Speed:</strong> Mach 1</li>
+                                    <li><strong>Cargo:</strong> 500 tons</li>
+                                    <li><strong>Cost:</strong> 1,200,000 credits <span style="color: var(--accent-red);">[Corporation]</span></li>
+                                    <li><strong>Special:</strong> Can land anywhere</li>
+                                </ul>
+                            </div>
+                            <div class="vehicle-example">
+                                <h4 style="color: var(--accent-purple);">Racing Craft</h4>
+                                <ul style="font-size: 0.9rem;">
+                                    <li><strong>Tags:</strong> [Fast], [Agile], [Sleek], [Temperamental], [Legendary]</li>
+                                    <li><strong>Speed:</strong> Mach 8</li>
+                                    <li><strong>Handling:</strong> +5</li>
+                                    <li><strong>Cost:</strong> 5,000,000+ credits <span style="color: var(--accent-purple);">[Exclusive]</span></li>
+                                    <li><strong>Special:</strong> Built for one purpose: speed</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Chase Mechanics -->
+            <section id="chase-mechanics" class="mb-xl">
+                <h2>8.4 Chase Mechanics</h2>
+                
+                <div class="glass-card p-lg mb-lg">
+                    <h3 style="color: var(--accent-blue);">The Chase Structure</h3>
+                    <p>Chases in Cosmos Engine use a combination of narrative description and mechanical resolution, with tags determining the flow of action.</p>
+                    
+                    <div class="chase-phases">
+                        <h4 style="color: var(--accent-gold);">Chase Phases</h4>
+                        <div class="grid grid-3" style="gap: 1rem; margin: 1rem 0;">
+                            <div class="chase-phase">
+                                <h5 style="color: var(--accent-blue);">Opening</h5>
+                                <p>Establish starting positions, goals, and terrain. Determine who has advantage.</p>
+                            </div>
+                            <div class="chase-phase">
+                                <h5 style="color: var(--accent-green);">Pursuit</h5>
+                                <p>Series of contested rolls with complications and opportunities.</p>
+                            </div>
+                            <div class="chase-phase">
+                                <h5 style="color: var(--accent-red);">Resolution</h5>
+                                <p>Final dramatic moment that determines chase outcome.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass-card p-lg mb-lg">
+                    <h3 style="color: var(--accent-blue);">Chase Complications</h3>
+                    <p>Each round, failed rolls or GM decisions introduce complications:</p>
+                    
+                    <div class="complications">
+                        <div class="grid grid-2" style="gap: 1rem; margin: 1rem 0;">
+                            <div class="complication-category">
+                                <h4 style="color: var(--accent-red);">Traffic/Obstacles</h4>
+                                <ul style="font-size: 0.9rem;">
+                                    <li>Civilian vehicles block the path</li>
+                                    <li>Construction zones force detours</li>
+                                    <li>Emergency responders converge</li>
+                                    <li>Weather conditions worsen</li>
+                                </ul>
+                            </div>
+                            <div class="complication-category">
+                                <h4 style="color: var(--accent-blue);">Vehicle Problems</h4>
+                                <ul style="font-size: 0.9rem;">
+                                    <li>Engine overheating from stress</li>
+                                    <li>Tire/repulsor failure</li>
+                                    <li>Fuel/power running low</li>
+                                    <li>Systems malfunction</li>
+                                </ul>
+                            </div>
+                            <div class="complication-category">
+                                <h4 style="color: var(--accent-green);">Environmental</h4>
+                                <ul style="font-size: 0.9rem;">
+                                    <li>Dangerous terrain ahead</li>
+                                    <li>Sudden gravity changes</li>
+                                    <li>Electromagnetic interference</li>
+                                    <li>Hostile wildlife appears</li>
+                                </ul>
+                            </div>
+                            <div class="complication-category">
+                                <h4 style="color: var(--accent-purple);">Third Parties</h4>
+                                <ul style="font-size: 0.9rem;">
+                                    <li>Additional pursuers join</li>
+                                    <li>Authority forces intervene</li>
+                                    <li>Rival gang interferes</li>
+                                    <li>Innocent bystanders in danger</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass-card p-lg mb-lg">
+                    <h3 style="color: var(--accent-blue);">Example Chase: Asteroid Mining Station</h3>
+                    
+                    <div class="chase-example">
+                        <div style="background: rgba(255, 215, 0, 0.1); padding: 1.5rem; border-radius: 12px; border: 1px solid var(--accent-gold);">
+                            <h4 style="color: var(--accent-gold);">The Setup</h4>
+                            <p>Corporate security pursues smugglers through an active mining operation. Low gravity and industrial hazards create a three-dimensional chase through spinning machinery and plasma cutters.</p>
+                            
+                            <h5 style="color: var(--accent-blue);">Participants:</h5>
+                            <p><strong>Smuggler:</strong> [Fast] [Agile] hoverbike, pilot with [Daredevil] [Lucky] tags</p>
+                            <p><strong>Security:</strong> [Armed] [Durable] patrol craft, pilot with [Military] [Precise] tags</p>
+                            
+                            <h5 style="color: var(--accent-red);">Round 1: The Opening</h5>
+                            <p>Smuggler uses [Agile] + [Daredevil] to thread between plasma cutters (+2 dice). Security craft's [Armed] tag allows shooting while pursuing.</p>
+                            
+                            <h5 style="color: var(--accent-green);">Round 2: Complication</h5>
+                            <p>Failed roll triggers "Mining Equipment Activation" - massive ore processor begins rotating, creating moving obstacles. Smuggler's [Lucky] tag helps avoid being crushed.</p>
+                            
+                            <h5 style="color: var(--accent-purple);">Resolution</h5>
+                            <p>Smuggler attempts desperate leap through closing blast doors. [Fast] + [Agile] + [Daredevil] + [Lucky] = +4 dice for this legendary maneuver!</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Vehicle Combat -->
+            <section id="vehicle-combat" class="mb-xl">
+                <h2>8.5 Vehicle Combat</h2>
+                
+                <div class="glass-card p-lg mb-lg">
+                    <h3 style="color: var(--accent-blue);">Combat Between Vehicles</h3>
+                    <p>Vehicle combat combines piloting skill, weapon systems, and tactical positioning. Tags determine both vulnerability and advantage.</p>
+                    
+                    <div class="combat-factors">
+                        <h4 style="color: var(--accent-gold);">Key Combat Factors</h4>
+                        <div class="grid grid-2" style="gap: 1rem; margin: 1rem 0;">
+                            <div class="combat-factor">
+                                <h5 style="color: var(--accent-blue);">Speed vs Accuracy</h5>
+                                <p>[Fast] vehicles are harder to hit but have difficulty targeting. [Stable] vehicles can aim better but are easier targets.</p>
+                            </div>
+                            <div class="combat-factor">
+                                <h5 style="color: var(--accent-red);">Armor vs Maneuverability</h5>
+                                <p>[Durable] vehicles can absorb damage but are less agile. [Agile] craft avoid hits but are fragile when struck.</p>
+                            </div>
+                            <div class="combat-factor">
+                                <h5 style="color: var(--accent-green);">Range vs Environment</h5>
+                                <p>[Long-Range] weapons dominate open space. [Close-Combat] weapons excel in asteroids and city environments.</p>
+                            </div>
+                            <div class="combat-factor">
+                                <h5 style="color: var(--accent-purple);">Pilot Skill Integration</h5>
+                                <p>Pilot tags combine with vehicle capabilities. [Tactical] pilots maximize [Armed] vehicle potential.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass-card p-lg mb-lg">
+                    <h3 style="color: var(--accent-blue);">Vehicle Damage and Consequences</h3>
+                    
+                    <div class="damage-system">
+                        <h4 style="color: var(--accent-red);">Damage Tracks</h4>
+                        <p>Vehicles use condition tracks rather than hit points:</p>
+                        
+                        <div class="grid grid-3" style="gap: 1rem; margin: 1rem 0;">
+                            <div class="damage-track">
+                                <h5 style="color: var(--accent-green);">Light Damage</h5>
+                                <ul style="font-size: 0.9rem;">
+                                    <li>Minor system glitches</li>
+                                    <li>Cosmetic damage</li>
+                                    <li>-1 to one type of roll</li>
+                                </ul>
+                            </div>
+                            <div class="damage-track">
+                                <h5 style="color: var(--accent-orange);">Moderate Damage</h5>
+                                <ul style="font-size: 0.9rem;">
+                                    <li>System failures</li>
+                                    <li>Performance degradation</li>
+                                    <li>-2 to affected systems</li>
+                                </ul>
+                            </div>
+                            <div class="damage-track">
+                                <h5 style="color: var(--accent-red);">Critical Damage</h5>
+                                <ul style="font-size: 0.9rem;">
+                                    <li>Major system failure</li>
+                                    <li>Dangerous conditions</li>
+                                    <li>Risk of total shutdown</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Legendary Vehicles -->
+            <section id="legendary-vehicles" class="mb-xl">
+                <h2>8.6 Legendary Vehicles</h2>
+                
+                <div class="glass-card p-lg mb-lg">
+                    <h3 style="color: var(--accent-purple);">Vehicles of Legend</h3>
+                    <p>Some vehicles transcend mere transportation, becoming legendary through their deeds, their pilots, or their unique capabilities.</p>
+                    
+                    <div class="legendary-examples">
+                        <div class="legendary-vehicle mb-lg">
+                            <h4 style="color: var(--accent-gold);">The Phoenix</h4>
+                            <div style="background: rgba(255, 215, 0, 0.1); padding: 1.5rem; border-radius: 12px; border: 1px solid var(--accent-gold);">
+                                <p><strong>Type:</strong> Modified Racing Craft</p>
+                                <p><strong>Tags:</strong> [Legendary], [Fast], [Agile], [Phoenix-Heart], [Reborn], [Unstoppable]</p>
+                                <p><strong>History:</strong> Crashed and rebuilt seven times, each time emerging faster and more beautiful. The AI pilot "Echo" refuses to stay dead.</p>
+                                <p><strong>Special Abilities:</strong></p>
+                                <ul>
+                                    <li>Can literally rise from its own wreckage</li>
+                                    <li>Speed increases each time it's rebuilt</li>
+                                    <li>Pilot and ship share consciousness</li>
+                                    <li>Cannot be permanently destroyed</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="legendary-vehicle mb-lg">
+                            <h4 style="color: var(--accent-blue);">The Wanderer</h4>
+                            <div style="background: rgba(100, 149, 237, 0.1); padding: 1.5rem; border-radius: 12px; border: 1px solid var(--accent-blue);">
+                                <p><strong>Type:</strong> Explorer Vessel</p>
+                                <p><strong>Tags:</strong> [Ancient], [Self-Repairing], [Dimensional], [Wise], [Protective], [Home]</p>
+                                <p><strong>History:</strong> This ship has been exploring for centuries, its original crew long dead. It chooses its own pilots now.</p>
+                                <p><strong>Special Abilities:</strong></p>
+                                <ul>
+                                    <li>Can travel between dimensions</li>
+                                    <li>Repairs itself from available matter</li>
+                                    <li>Provides guidance through unknown space</li>
+                                    <li>Protects crew like family</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Quick Reference -->
+            <section id="quick-reference" class="mb-xl">
+                <h2>8.7 Quick Reference</h2>
+                
+                <div class="glass-card p-lg">
+                    <h3 style="color: var(--accent-blue);">Vehicle Tag Synergy Summary</h3>
+                    <div class="grid grid-2" style="gap: 1rem;">
+                        <div style="background: var(--glass-bg); padding: 1rem; border-radius: 8px;">
+                            <strong style="color: var(--accent-gold);">Pilot + Vehicle tags: +1-3 dice</strong><br>
+                            <small style="color: var(--text-muted);">Based on thematic alignment</small>
+                        </div>
+                        <div style="background: var(--glass-bg); padding: 1rem; border-radius: 8px;">
+                            <strong style="color: var(--accent-blue);">Environmental tags: +1-2 dice</strong><br>
+                            <small style="color: var(--text-muted);">When vehicle suits conditions</small>
+                        </div>
+                        <div style="background: var(--glass-bg); padding: 1rem; border-radius: 8px;">
+                            <strong style="color: var(--accent-green);">Perfect synergy: +4-5 dice</strong><br>
+                            <small style="color: var(--text-muted);">Legendary pilot-vehicle bond</small>
+                        </div>
+                        <div style="background: var(--glass-bg); padding: 1rem; border-radius: 8px;">
+                            <strong style="color: var(--accent-red);">Tag conflicts: -1 to -2 dice</strong><br>
+                            <small style="color: var(--text-muted);">When approach doesn't match vehicle</small>
+                        </div>
+                    </div>
+                    
+                    <h4 style="color: var(--accent-blue); margin-top: 2rem;">Chase Difficulty Guidelines</h4>
+                    <table style="width: 100%; border-collapse: collapse; font-size: 0.9rem; margin-top: 1rem;">
+                        <thead>
+                            <tr style="background: var(--glass-bg); color: var(--accent-gold);">
+                                <th style="padding: 0.5rem; border: 1px solid var(--glass-border);">Difficulty</th>
+                                <th style="padding: 0.5rem; border: 1px solid var(--glass-border);">Target Number</th>
+                                <th style="padding: 0.5rem; border: 1px solid var(--glass-border);">Vehicle Example</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td style="padding: 0.5rem; border: 1px solid var(--glass-border);"><strong>Trivial</strong></td>
+                                <td style="padding: 0.5rem; border: 1px solid var(--glass-border);">8</td>
+                                <td style="padding: 0.5rem; border: 1px solid var(--glass-border);">Routine driving, highway travel</td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 0.5rem; border: 1px solid var(--glass-border);"><strong>Easy</strong></td>
+                                <td style="padding: 0.5rem; border: 1px solid var(--glass-border);">11</td>
+                                <td style="padding: 0.5rem; border: 1px solid var(--glass-border);">Evasive maneuvers, avoiding pursuit</td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 0.5rem; border: 1px solid var(--glass-border);"><strong>Moderate</strong></td>
+                                <td style="padding: 0.5rem; border: 1px solid var(--glass-border);">14</td>
+                                <td style="padding: 0.5rem; border: 1px solid var(--glass-border);">Dangerous stunts, jumping gaps</td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 0.5rem; border: 1px solid var(--glass-border);"><strong>Hard</strong></td>
+                                <td style="padding: 0.5rem; border: 1px solid var(--glass-border);">17</td>
+                                <td style="padding: 0.5rem; border: 1px solid var(--glass-border);">Movie-style heroics, extreme maneuvers</td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 0.5rem; border: 1px solid var(--glass-border);"><strong>Extreme</strong></td>
+                                <td style="padding: 0.5rem; border: 1px solid var(--glass-border);">20</td>
+                                <td style="padding: 0.5rem; border: 1px solid var(--glass-border);">Threading asteroid field at high speed</td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 0.5rem; border: 1px solid var(--glass-border);"><strong>Legendary</strong></td>
+                                <td style="padding: 0.5rem; border: 1px solid var(--glass-border);">23</td>
+                                <td style="padding: 0.5rem; border: 1px solid var(--glass-border);">Piloting through quantum storm</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </main>
+
+        <!-- Chapter Navigation -->
+        <nav class="chapter-nav glass-panel p-lg">
+            <div class="nav-links">
+                <a href="../ch07-equipment-and-gear/index.html" class="nav-prev">
+                    ← Chapter 7: Equipment and Gear
+                </a>
+                <a href="../ch09-starships-and-space-travel/index.html" class="nav-next">
+                    Chapter 9: Starships and Space Travel →
+                </a>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Scripts -->
+    <script src="../../assets/js/cosmos-engine.js"></script>
+    
+    <style>
+        .tag-category, .synergy-example, .chase-phase, .complication-category, .combat-factor, .damage-track, .vehicle-example, .legendary-vehicle {
+            background: var(--glass-bg);
+            padding: 1rem;
+            border-radius: 8px;
+            border: 1px solid var(--glass-border);
+        }
+        
+        .chase-example {
+            margin: 2rem 0;
+        }
+        
+        .chapter-nav {
+            margin-top: 3rem;
+        }
+        
+        .nav-links {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .nav-prev, .nav-next {
+            color: var(--accent-blue);
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 6px;
+            transition: background-color 0.3s ease;
+        }
+        
+        .nav-prev:hover, .nav-next:hover {
+            background: var(--glass-bg);
+        }
+    </style>
+</body>
+</html>
