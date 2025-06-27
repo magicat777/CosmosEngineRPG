@@ -4,7 +4,7 @@
 
 At the heart of Cosmos Engine lies a simple, unified resolution mechanic:
 
-**Basic Roll**: 2d10 + Attribute + Skill + Modifiers vs Target Number (TN)
+**Basic Roll**: 2d10 + Attribute + Skill + Modifiers + Tag Bonuses vs Target Number (TN)
 
 When you attempt something with an uncertain outcome, the GM sets a Target Number based on the task's difficulty. You roll two ten-sided dice, add your relevant attribute and skill, apply any situational modifiers, and compare the total to the TN. Equal or exceed it, and you succeed. Fall short, and you fail.
 
@@ -71,13 +71,16 @@ Attributes provide the foundation for all actions:
 
 Skills represent specialized training and experience. Unlike attributes, skills start at 0 and improve through advancement points.
 
-### Skill Ratings
-- **0**: Untrained (rely on attribute alone)
-- **1-2**: Novice (basic training)
-- **3-4**: Professional (competent practitioner)
-- **5-6**: Expert (highly skilled)
-- **7-8**: Master (renowned specialist)
-- **9-10**: Legendary (best in the galaxy)
+### Skill Progression (10 Ranks, 7 Tiers)
+- **Rank 1**: Apprentice-I (Basic competency)
+- **Rank 2**: Apprentice-II (Developing expertise)
+- **Rank 3**: Journeyman-I (Professional level)
+- **Ranks 4-5**: Journeyman-II (Exceptional ability)
+- **Ranks 6-7**: Master-I (Sector-renowned)
+- **Ranks 8-9**: Master-II (Legendary mastery)
+- **Rank 10**: Grandmaster (Reality-defining)
+
+Each skill rank grants one **tag** that describes how your abilities manifest, creating unique character differentiation and cross-skill synergies.
 
 ### Core Skills
 
@@ -90,7 +93,81 @@ Skills represent specialized training and experience. Unlike attributes, skills 
 **Medicine** (Intellect): Healing and biological sciences
 **Investigation** (Intellect or Awareness): Research and deduction
 
-*Full skill descriptions appear in Chapter 6*
+*Full skill descriptions and tag progressions appear in Chapter 5*
+
+## Tags and Synergies
+
+### What Are Tags?
+
+**Tags** are narrative descriptors that define *how* your skills manifest in the world. They provide both mechanical benefits and rich storytelling opportunities:
+
+- **Mechanical Bonuses**: +1 to +5 dice when circumstances match your tags
+- **Character Differentiation**: Same skills, completely different characters through tags
+- **Story Hooks**: Pre-built complications and spotlight moments for GMs
+- **Cross-Skill Synergies**: Tags from different skills combine for emergent effects
+
+### Tag Categories
+
+**Style Tags** - How you approach tasks:
+- [Precise]: Surgical accuracy, measured approach
+- [Brutal]: Overwhelming force, intimidating presence
+- [Subtle]: Hidden action, misdirection
+- [Aggressive]: Forward momentum, taking initiative
+
+**Source Tags** - Where abilities come from:
+- [Enhanced]: Technological augmentation
+- [Trained]: Dedicated learning and practice
+- [Innate]: Natural talent or genetic gift
+- [Experimental]: Untested methods or prototypes
+
+**Domain Tags** - What your skills affect:
+- [Digital]: Computer systems, networks, data
+- [Social]: Interpersonal, cultural, emotional
+- [Environmental]: Natural world, survival, adaptation
+- [Mechanical]: Physical devices, engineering
+
+### Tag Bonuses in Resolution
+
+Tags modify dice rolls when circumstances align with your character's approach:
+
+**Tag Bonus Formula**: +1 to +5 dice based on narrative fit
+- **Perfect Match** (+3 dice): Circumstances ideal for your tag
+- **Strong Match** (+2 dice): Tag clearly applies to situation
+- **Partial Match** (+1 die): Tag tangentially relevant
+
+**Example**: Marcus has Combat [Enhanced] from neural targeting implants
+- In full daylight with clear sight lines: +3 dice (perfect conditions for targeting system)
+- During normal combat: +2 dice (enhanced reflexes help)
+- In EMP-affected area: +0 dice (implants non-functional)
+
+### Synergy System
+
+When tags from different skills work together, they create **synergies**:
+
+**Perfect Synergy** (+3 dice):
+- [Precise] + [Patient] = "Perfect Moment" - Time seems to slow for ideal timing
+- [Digital] + [Technical] = "Technomancy" - Technology bends to your will
+
+**Strong Synergy** (+2 dice):
+- [Enhanced] + [Trained] = "Optimized Performance" - Augmentation meets discipline
+- [Social] + [Leadership] = "Natural Authority" - People instinctively follow
+
+**Basic Synergy** (+1 die):
+- Compatible tags that complement without conflict
+- Minor coordination benefits
+
+**Tag Conflicts** (-1 to -2 dice):
+- [Brutal] vs [Subtle] = Must choose force or finesse
+- [Reckless] vs [Patient] = Internal tension between approaches
+
+### Tag Usage Guidelines
+
+**Per Scene Limits**:
+- **Perfect Synergies**: Once per scene free, then costs 1 Advancement Point
+- **Strong/Basic Synergies**: Always available when applicable
+- **Multiple Tags**: Maximum +5 dice total from all tag sources
+
+**GM Discretion**: Tags require narrative justification - players must describe how tags apply to receive bonuses.
 
 ## Basic Task Resolution
 
@@ -108,15 +185,18 @@ The GM sets Target Numbers based on task difficulty:
 | Legendary | 23 | Outsmart an AI |
 | Impossible | 26 | Bend reality through will alone |
 
-### Resolution Process
+### Tag-Enhanced Resolution Process
 
 1. **Player Declares Intent**: "I want to hack into the security system"
 2. **GM Sets Difficulty**: "That's a Hard task, TN 17"
 3. **Determine Attribute + Skill**: Intellect + Tech
 4. **Apply Modifiers**: +2 for specialized tools
-5. **Roll 2d10**: Results: 6 and 5 = 11
-6. **Calculate Total**: 11 + 6 (INT) + 4 (Tech) + 2 (tools) = 23
-7. **Compare to TN**: 23 vs 17 = Success by 6
+5. **Identify Applicable Tags**: Tech [Digital] + Stealth [Patient] = "Ghost Protocol" synergy
+6. **Apply Tag Bonuses**: +3 dice for Perfect Synergy (invisible electronic infiltration)
+7. **Roll Dice Pool**: 2d10 + 3 bonus dice = Roll 5 dice, use best 2
+8. **Dice Results**: Best two dice: 8 and 7 = 15
+9. **Calculate Total**: 15 + 6 (INT) + 4 (Tech) + 2 (tools) = 27
+10. **Compare to TN**: 27 vs 17 = Success by 10 (Legendary Success!)
 
 ### Margins of Success and Failure
 
@@ -134,26 +214,42 @@ The difference between your result and the TN determines the degree of success o
 - **6-9**: Critical Failure - Things go wrong
 - **10+**: Catastrophic Failure - Disaster strikes
 
-## Advantage & Disadvantage
+## Dice Pool Modifiers
 
-Sometimes circumstances make tasks easier or harder:
+### Tag Bonuses (Primary Modifier)
+**Bonus Dice**: Add dice to your pool based on applicable tags:
+- **Perfect Match**: +3 dice
+- **Strong Match**: +2 dice  
+- **Partial Match**: +1 die
+- **Synergy Bonus**: +1 to +3 additional dice
+- **Maximum Total**: +5 dice from all tag sources
 
-### Advantage
-Roll 3d10 and use the best two dice:
-- Superior equipment
+### Advantage & Disadvantage (Secondary Modifiers)
+When circumstances beyond tags affect difficulty:
+
+**Advantage** - Roll 3d10 and use the best two dice:
+- Superior equipment beyond character tags
 - Assistance from others
-- Ideal conditions
-- Spending resources
+- Exceptionally ideal conditions
+- Spending significant resources
 
-### Disadvantage
-Roll 3d10 and use the worst two dice:
-- Inferior tools
-- Environmental hazards
-- Distractions
-- Working under pressure
+**Disadvantage** - Roll 3d10 and use the worst two dice:
+- Inferior tools or broken equipment
+- Severe environmental hazards
+- Major distractions or interference
+- Working under extreme pressure
 
-### Multiple Factors
-Advantages and disadvantages cancel each other out. If multiple factors apply, use the strongest single effect.
+### Combining Modifiers
+**Priority Order**:
+1. **Tag Bonuses**: Always apply first (up to +5 dice total)
+2. **Advantage/Disadvantage**: Applies to final dice pool
+3. **Static Bonuses**: Equipment, assistance (+1 to +3 to result)
+
+**Example**: Character with +3 tag bonus dice and Advantage
+- Base: 2d10
+- Tags: +3 dice = 5d10 total
+- Advantage: Roll 6d10, use best 2 dice
+- Final: 2 dice + static bonuses vs TN
 
 ## Critical Success & Failure
 
@@ -229,32 +325,39 @@ During round time, each character can take:
 
 ## Scale System
 
-Cosmos Engine uses four interconnected scales:
+Cosmos Engine uses four interconnected scales with **tag evolution** across each:
 
-### Personal Scale
+### Personal Scale (Ranks 1-2)
 Individual characters taking individual actions:
 - Base scale for all mechanics
 - 1 meter = 1 meter
 - 1 round = 6 seconds
-- Damage affects individuals
+- **Tags**: Represent individual abilities and approaches
+- **Tag Scope**: Limited to personal actions
 
-### Vehicle Scale
+### Vehicle Scale (Rank 3)
 Ground and air vehicles:
 - 10 meters = 1 vehicle unit
 - Same time scale as personal
 - Vehicle weapons vs people: +6 damage
+- **Tags**: Expand to affect small teams and vehicles
+- **Tag Scope**: Begin influencing others through leadership or example
 
-### Starship Scale  
+### Starship Scale (Ranks 4-7)
 Spacecraft and space stations:
 - 1 kilometer = 1 space unit
 - Same 6-second rounds
 - Starship weapons vs vehicles: +6 damage
+- **Tags**: Affect entire ship crews and operations
+- **Tag Scope**: Reputation precedes character, influence organizations
 
-### Mass Combat Scale
+### Fleet Scale (Ranks 8-10)
 Military units and fleet battles:
 - Abstract unit representation
 - 10-minute battle rounds
 - Strategic rather than tactical
+- **Tags**: Reshape entire theaters of operation
+- **Tag Scope**: Personal abilities scale to galactic significance
 
 ### Cross-Scale Interactions
 
@@ -266,6 +369,27 @@ Military units and fleet battles:
 **Damage Scaling**:
 - Higher scale to lower: +6 damage per scale
 - Lower scale to higher: -6 damage per scale
+
+**Tag Evolution Across Scales**:
+As characters advance in rank, their tags evolve to work at higher scales:
+
+**Example - Combat [Enhanced] Tag**:
+- **Rank 1** (Personal): "Neural targeting implant provides HUD overlay"
+- **Rank 3** (Vehicle): "Squad coordination through shared neural link"
+- **Rank 6** (Starship): "Ship crew neural network enables perfect timing"
+- **Rank 10** (Fleet): "Fleet-wide tactical consciousness transcends distance"
+
+**Cross-Scale Tag Applications**:
+- **Lower Scale → Higher**: Tags provide +1 die when attempting actions above your scale
+- **Higher Scale → Lower**: Tags provide +2 dice when working at scales below your capability
+- **Same Scale**: Full tag bonuses apply normally
+
+**Scale-Specific Synergies**:
+Some tag combinations only work at specific scales:
+- Personal Scale: Individual synergies ([Enhanced] + [Precise])
+- Vehicle Scale: Team synergies ([Leadership] + [Tactical])
+- Starship Scale: Organization synergies ([Elite] + [Network])
+- Fleet Scale: Galactic synergies ([Legendary] + [Mythic])
 
 ## Assistance and Group Efforts
 
@@ -332,9 +456,10 @@ When reacting to danger, make a saving throw:
 - **Hard Save**: TN 17
 - **Extreme Save**: TN 20
 
-## Skill Synergies
+## Skill and Tag Synergies
 
-Sometimes multiple skills apply to a situation. Rather than stacking bonuses, use the most advantageous combination:
+### Traditional Skill Synergies
+When multiple skills apply to a situation:
 
 **Primary + Supporting**: Use the higher skill as primary, gain +1 if supporting skill is 3+
 
@@ -343,6 +468,28 @@ Sometimes multiple skills apply to a situation. Rather than stacking bonuses, us
 - Pilot + Combat: Fighter dogfighting
 - Social + Investigation: Interrogation
 - Stealth + Tech: Security system bypass
+
+### Tag-Based Synergies (Primary System)
+Tags create more dynamic synergies than traditional skill combinations:
+
+**Cross-Skill Tag Synergies**:
+- Combat [Enhanced] + Tech [Digital] = "Cyber-Warrior" (+2 dice)
+- Pilot [Intuitive] + Perception [Tactical] = "Spatial Awareness" (+2 dice)
+- Social [Leadership] + Command [Natural] = "Born Leader" (+3 dice)
+
+**Single-Character Multi-Tag Chains**:
+- [Enhanced] + [Digital] + [Tactical] = "Perfect weapon platform" (+4 dice)
+- [Subtle] + [Patient] + [Precise] = "Invisible perfection" (+4 dice)
+
+**Team Tag Synergies**:
+When multiple characters coordinate complementary tags:
+- Marcus [Enhanced] + Sarah [Digital] + Chen [Tactical] = "Hive Mind Protocol" (+3 dice to coordinated actions)
+
+### Synergy Discovery
+Players discover new synergies through:
+- **Creative Application**: Trying new tag combinations in play
+- **Narrative Description**: Explaining how tags work together
+- **GM Reward**: 1-3 Advancement Points for innovative discoveries
 
 ## Extended Tasks
 
@@ -361,14 +508,55 @@ Some tasks require multiple successes over time:
 
 **Complications**: Critical failures remove one success or add complications
 
+## Tag Synergy Quick Reference
+
+### Perfect Synergy Examples (+3 dice)
+| Tag Combination | Synergy Name | Effect Description |
+|-----------------|--------------|-------------------|
+| [Precise] + [Patient] | "Perfect Moment" | Time seems to slow for ideal timing |
+| [Digital] + [Technical] | "Technomancy" | Technology bends to your will |
+| [Social] + [Leadership] | "Natural Authority" | People instinctively follow |
+| [Brutal] + [Aggressive] | "Overwhelming Force" | Unstoppable physical assault |
+| [Enhanced] + [Digital] | "Cyber-Fusion" | Man-machine synthesis |
+
+### Strong Synergy Examples (+2 dice)
+| Tag Combination | Synergy Name | Effect Description |
+|-----------------|--------------|-------------------|
+| [Enhanced] + [Trained] | "Optimized Performance" | Augmentation meets discipline |
+| [Subtle] + [Creative] | "Misdirection Master" | Unexpected approaches |
+| [Tactical] + [Technical] | "Systems Optimization" | Maximum efficiency |
+| [Leadership] + [Inspiring] | "Rally Point" | Coordinate and motivate |
+
+### Common Tag Conflicts (-1 to -2 dice)
+| Opposing Tags | Conflict Type | Resolution Required |
+|---------------|---------------|-------------------|
+| [Brutal] vs [Subtle] | Force vs Finesse | Choose approach dominance |
+| [Reckless] vs [Patient] | Speed vs Caution | Internal tension |
+| [Digital] vs [Environmental] | Tech vs Nature | System conflicts |
+| [Aggressive] vs [Defensive] | Attack vs Protect | Tactical paradox |
+
+### Fibonacci Progression Applications
+
+**Advancement Costs**: 1, 2, 3, 5, 8, 13, 21, 34, 55, 89 AP
+**Synergy Discovery Rewards**: 1, 2, 3, 5, 8 AP (by significance)
+**Training Time Costs**: 1 week, 2 weeks, 1 month, 2 months, 3 months... (scaled by Fibonacci)
+
 ## Quick Resolution Guidelines
 
 When in doubt:
 1. **Is success uncertain?** If not, don't roll
 2. **What's the approach?** Determine attribute + skill
-3. **How hard is it?** Set TN (default to Moderate: 14)
-4. **What are the stakes?** Know consequences before rolling
-5. **How well did they do?** Use margin for narrative color
+3. **Which tags apply?** Identify relevant tags and synergies
+4. **How hard is it?** Set TN (default to Moderate: 14)
+5. **What are the stakes?** Know consequences before rolling
+6. **How well did they do?** Use margin for narrative color
+
+**Tag Integration Checklist**:
+- [ ] Player describes how tags apply narratively
+- [ ] GM confirms tag bonus level (+1 to +3)
+- [ ] Check for cross-skill synergies
+- [ ] Apply maximum +5 dice limit
+- [ ] Roll enhanced dice pool
 
 ---
 

@@ -8,8 +8,8 @@ Creating a character in Cosmos Engine involves making choices that define who yo
 2. **Choose Species/Origin**: Where do they come from?
 3. **Generate Attributes**: Determine natural capabilities
 4. **Select Skills**: Choose areas of training
-5. **Calculate Derived Values**: Hit points, defense, etc.
-6. **Choose Specializations**: Pick initial focus
+5. **Select Initial Tags**: Define how your skills manifest
+6. **Calculate Derived Values**: Hit points, defense, etc.
 7. **Purchase Equipment**: Select starting gear
 8. **Define Motivations**: Why do they adventure?
 9. **Establish Connections**: How do you know the other PCs?
@@ -365,6 +365,22 @@ For faster character creation, use these preset arrays:
 
 ## Step 4: Select Skills
 
+### The 15-Skill System
+
+Cosmos Engine uses **15 base skills** across **10 possible ranks** with **7 distinct tiers**:
+
+| Ranks | Tier | Scale | Description |
+|-------|------|-------|-------------|
+| 1 | Apprentice-I | Personal | Basic competency |
+| 2 | Apprentice-II | Personal → Vehicle | Developing expertise |
+| 3 | Journeyman-I | Vehicle | Professional level |
+| 4-5 | Journeyman-II | Vehicle → Starship | Exceptional ability |
+| 6-7 | Master-I | Starship | Sector-renowned |
+| 8-9 | Master-II | Starship → Fleet | Legendary mastery |
+| 10 | Grandmaster | Fleet | Reality-defining |
+
+**Character Creation Limit**: Maximum starting skill rank is **3** (Journeyman-I)
+
 ### Starting Skill Points
 
 All characters receive skill points based on background:
@@ -372,88 +388,141 @@ All characters receive skill points based on background:
 - **High Intellect**: +2 points per INT above 5
 - **Background Bonus**: +3 points in career skills
 
-### Skill Costs
+### Skill Costs (Fibonacci-Based)
 
-| Rating | Total Cost | Advancement Cost |
-|--------|------------|------------------|
+| Rank | Total Cost | Advancement Cost |
+|------|------------|------------------|
 | 1 | 1 | 1 |
 | 2 | 3 | 2 |
 | 3 | 6 | 3 |
-| 4 | 10 | 4 |
-| 5 | 15 | 5 |
 
-**Starting Limit**: No skill above 5 at creation
+**Note**: Ranks 4+ can only be gained through advancement (see Chapter 4)
 
-### Core Skills
+### The 15 Base Skills
 
-**Combat** (Might/Coordination)
-- Melee: Close combat, weapons, unarmed
-- Ranged: Firearms, thrown weapons
-- Defense: Avoiding attacks, using cover
+**Combat Skills**:
+- **Combat**: Armed and unarmed fighting across all scales
 
-**Pilot** (Awareness/Coordination)
-- Ground: Cars, bikes, hover vehicles
-- Aircraft: Atmospheric flight
-- Spacecraft: Starships, shuttles
-- Navigation: Plotting courses, astrogation
+**Technical Skills**:
+- **Technology**: Computers, engineering, and technical systems
+- **Pilot**: Vehicle operation from personal to fleet scale
+- **Medical**: Healing, diagnosis, and biological sciences
 
-**Tech** (Intellect)
-- Computers: Programming, hacking
-- Electronics: Devices, security systems
-- Engineering: Repair, modification
-- Cybernetics: Neural interfaces, augmentations
+**Social Skills**:
+- **Persuasion**: Influencing others through words and presence
+- **Deception**: Misdirection, subterfuge, and information warfare
+- **Command**: Leadership and coordination from squad to galactic authority
+- **Intimidation**: Using fear and psychological pressure as tools
 
-**Medicine** (Intellect)
-- First Aid: Stabilize, basic treatment
-- Surgery: Major procedures
-- Forensics: Cause of death, evidence
-- Xenobiology: Alien life forms
+**Mental Skills**:
+- **Knowledge**: Information, analysis, and understanding across all fields
+- **Perception**: Awareness and detection across all sensory spectrums
+- **Discipline**: Mental strength and willpower across all challenges
+- **Psionics**: Mental powers and consciousness manipulation (if available)
 
-**Science** (Intellect)
-- Physics: Energy, motion, spacetime
-- Chemistry: Materials, reactions
-- Biology: Life sciences, genetics
-- Planetology: Worlds, environments
+**Physical Skills**:
+- **Stealth**: Moving unseen and avoiding detection across all scales
+- **Athletics**: Physical performance and capability across all environments
+- **Survival**: Thriving in hostile environments and creating life from nothing
 
-**Social** (Presence)
-- Persuasion: Convince, negotiate
-- Deception: Lies, disguise, misdirection
-- Intimidation: Threats, fear
-- Leadership: Command, inspire
-
-**Investigation** (Intellect/Awareness)
-- Research: Find information
-- Analysis: Connect clues
-- Forensics: Physical evidence
-- Interview: Question witnesses
-
-**Survival** (Awareness/Resolve)
-- Navigation: Find your way
-- Foraging: Food and water
-- Shelter: Protection from elements
-- Hazards: Avoid natural dangers
-
-**Stealth** (Coordination)
-- Sneak: Move quietly
-- Hide: Concealment
-- Disguise: Blend in
-- Security: Bypass systems
-
-**Athletics** (Might/Coordination)
-- Climbing: Vertical movement
-- Swimming: Aquatic movement
-- Running: Speed and endurance
-- Jumping: Leaping obstacles
+*For complete skill descriptions with tag progressions, see Chapter 5: Actions and Skills*
 
 ### Skill Packages by Background
 
-**Military**: Combat 3, Pilot 2, Athletics 2, Survival 1
-**Academic**: Science 3, Investigation 2, Tech 2, Medicine 1
-**Criminal**: Stealth 3, Tech 2, Social 2, Combat 1
-**Explorer**: Survival 3, Pilot 2, Science 2, Athletics 1
-**Corporate**: Social 3, Tech 2, Investigation 2, Pilot 1
+**Military**: Combat 3, Command 2, Athletics 2, Survival 1
+**Academic**: Knowledge 3, Perception 2, Technology 2, Medical 1
+**Criminal**: Stealth 3, Technology 2, Deception 2, Combat 1
+**Explorer**: Survival 3, Pilot 2, Perception 2, Athletics 1
+**Corporate**: Persuasion 3, Technology 2, Knowledge 2, Pilot 1
 
-## Step 5: Calculate Derived Values
+## Step 5: Select Initial Tags
+
+### What Are Tags?
+
+**Tags** are narrative descriptors that define *how* your skills manifest. Each skill rank grants one tag that creates unique character differentiation even among characters with identical mechanical skills.
+
+### Tag Selection Process
+
+For each skill rank you possess, select **one tag** from the available options for that skill and rank:
+
+**Rank 1 Tags**: Choose foundational approach from 4 options
+**Rank 2 Tags**: Choose style refinement from 4 options  
+**Rank 3 Tags**: Choose specialization focus from 4 options
+
+### Tag Categories
+
+**Style Tags** - How you approach tasks:
+- [Precise]: Surgical accuracy, measured approach
+- [Brutal]: Overwhelming force, intimidating presence
+- [Subtle]: Hidden action, misdirection
+- [Aggressive]: Forward momentum, taking initiative
+
+**Source Tags** - Where abilities come from:
+- [Enhanced]: Technological augmentation
+- [Trained]: Dedicated learning and practice
+- [Innate]: Natural talent or genetic gift
+- [Experimental]: Untested methods or prototypes
+
+**Domain Tags** - What your skills affect:
+- [Digital]: Computer systems, networks, data
+- [Social]: Interpersonal, cultural, emotional
+- [Environmental]: Natural world, survival, adaptation
+- [Mechanical]: Physical devices, engineering
+
+### Tag Manifestation Documentation
+
+For each tag, document:
+- **Source**: How you gained this approach
+- **Manifestation**: How it appears in the world
+- **Weakness**: When it doesn't work
+- **Personality**: How it affects your behavior
+
+**Example Tag Documentation**:
+```
+CHARACTER: Marcus "Wire" Chen
+COMBAT [Enhanced]: "Dragon Protocol" 
+- Source: Military neural combat implant
+- Manifestation: HUD shows threat assessments and targeting data
+- Weakness: EMP fields, power drain, hacking
+- Personality: Sees everything as a tactical problem to solve
+```
+
+### Common Starting Tag Combinations
+
+**The Cyber-Warrior**:
+- Combat [Enhanced]: Neural targeting systems
+- Technology [Digital]: Direct computer interface
+- Pilot [Technical]: Ship integration systems
+
+**The Natural Leader**:
+- Command [Natural]: Born to lead others
+- Persuasion [Charismatic]: Inspiring presence
+- Perception [Tactical]: Read battlefield dynamics
+
+**The Shadow Operative**:
+- Stealth [Silent]: Perfect noise suppression
+- Deception [Actor]: Master of false identities  
+- Technology [Hacker]: Electronic infiltration
+
+**The Frontier Explorer**:
+- Survival [Hunter]: Track and provide for group
+- Pilot [Intuitive]: Feel the ship's movements
+- Perception [Environmental]: Read natural signs
+
+### Tag Synergy Planning
+
+Consider how your tags might work together:
+
+**Perfect Synergies** (+3 dice):
+- [Enhanced] + [Digital] = "Cyber-Fusion" - Technology integration
+- [Precise] + [Patient] = "Perfect Moment" - Time manipulation
+- [Social] + [Leadership] = "Natural Authority" - Instinctive following
+
+**Strong Synergies** (+2 dice):
+- [Enhanced] + [Trained] = "Optimized Performance" - Tech meets skill
+- [Tactical] + [Technical] = "Systems Optimization" - Maximum efficiency
+
+## Step 6: Calculate Derived Values
 
 ### Hit Points
 **Formula**: 40 + (Might × 8) + (Resolve × 4)
@@ -507,27 +576,6 @@ Based on attributes:
 - **Intellect Save**: 2d10 + Intellect vs TN
 - **Resolve Save**: 2d10 + Resolve vs TN
 - **Presence Save**: 2d10 + Presence vs TN
-
-## Step 6: Choose Specializations
-
-Starting characters may select one basic specialization from their highest skill. See Chapter 6 for full specialization trees.
-
-### Example Starting Specializations
-
-**Combat Specializations**:
-- Marksman: +2 damage with aimed shots
-- Brawler: Unarmed attacks deal lethal damage
-- Defender: +1 Defense when using shield/cover
-
-**Tech Specializations**:
-- Hacker: +2 to breach security systems
-- Mechanic: Repair without proper tools
-- Cybertech: Interface with cybernetics
-
-**Social Specializations**:
-- Diplomat: Reroll failed negotiations
-- Spy: +2 to disguise and false identities
-- Commander: Allies gain +1 to morale
 
 ## Step 7: Purchase Equipment
 
@@ -651,14 +699,54 @@ Discuss as group:
 - Total spent: 21 points (9 points saved for skills)
 
 **Skills** (27 + 9 saved = 36 points):
-- Pilot: 5 (15 points) - Primary skill
+- Pilot: 3 (6 points) - Primary skill, maximum at creation
 - Combat: 3 (6 points) - Military training
-- Tech: 3 (6 points) - Ship maintenance
+- Technology: 3 (6 points) - Ship maintenance systems
 - Athletics: 2 (3 points) - Acrobatic in zero-G
 - Survival: 2 (3 points) - Military training
 - Stealth: 2 (3 points) - Small size helps
-- Investigation: 0 (0 points)
-- Social: 0 (0 points)
+- Command: 2 (3 points) - Squadron leader experience
+- Remaining skills: 0 (0 points each)
+
+**Tags Selected**:
+- **Pilot 1**: [Intuitive] - "Natural feel for ship movement"
+- **Pilot 2**: [Lightning] - "Enhanced reaction speed in vehicles"
+- **Pilot 3**: [Aerospace] - "Atmospheric and space craft mastery"
+- **Combat 1**: [Trained] - "Military discipline and formal instruction"
+- **Combat 2**: [Precise] - "Surgical strikes, calculated attacks"
+- **Combat 3**: [Lone Wolf] - "Work alone, maximum efficiency"
+- **Technology 1**: [Technical] - "Systems mastery, by-the-book"
+- **Technology 2**: [Analyzer] - "Understand systems, diagnostic expert"
+- **Technology 3**: [Modifier] - "Improve existing technology"
+- **Athletics 1**: [Fast] - "Speed and quick movement"
+- **Athletics 2**: [Acrobatic] - "Agility and gymnastic skill"
+- **Survival 1**: [Scout] - "Exploration and pathfinding"
+- **Survival 2**: [Void] - "Space environment adaptation"
+- **Stealth 1**: [Quick] - "Speed and rapid movement"
+- **Stealth 2**: [Urban] - "City environment specialist"
+- **Command 1**: [Trained] - "Military academy, formal education"
+- **Command 2**: [Strategic] - "Lead through planning and intelligence"
+
+**Tag Manifestations**:
+```
+PILOT [Intuitive]: "Ship Whisperer"
+- Source: Natural spatial awareness enhanced by Synaptic genetics
+- Manifestation: Can "feel" ship's condition through controls
+- Weakness: Fails with unfamiliar alien technology
+- Personality: Talks to ships as if they're alive
+
+COMBAT [Precise]: "Surgical Strike Protocol"
+- Source: Military sniper training combined with enhanced reflexes
+- Manifestation: Time seems to slow during aimed shots
+- Weakness: Close quarters chaos disrupts focus
+- Personality: Methodical, prefers planned engagement
+
+TECHNOLOGY [Modifier]: "System Optimization"
+- Source: Field engineering experience maintaining aging military ships
+- Manifestation: Improves any system she works with
+- Weakness: Tendency to over-complicate simple solutions
+- Personality: Can't resist "improving" perfectly functional equipment
+```
 
 **Derived Values** (Balanced System):
 - HP: 40 + (1×8) + (4×4) = 64 (fragile but quick)
@@ -674,7 +762,10 @@ Discuss as group:
 - Can take one extra Quick action per round
 - High metabolism: Requires double food intake
 
-**Specialization**: Ace Pilot (reroll failed Pilot checks once per scene)
+**Tag Synergies Discovered**:
+- [Intuitive] + [Lightning] = "Perfect Reflex Pilot" (+2 dice to vehicle maneuvers)
+- [Precise] + [Technical] = "Systems Optimization" (+2 dice when using technology for combat)
+- [Fast] + [Quick] = "Synaptic Blur" (+2 dice to speed-based actions)
 
 **Equipment**: Gear package
 - Light combat armor (fitted for small frame)
@@ -698,13 +789,23 @@ Zara's quick reflexes and fearless piloting make her invaluable to any crew will
 
 Before play, ensure you have:
 - [ ] Character concept and background
+- [ ] Species selected with attribute modifiers applied
 - [ ] Attributes totaling proper points
-- [ ] Skills purchased with all points
+- [ ] Skills purchased with all points (max Rank 3)
+- [ ] **Tags selected for each skill rank**
+- [ ] **Tag manifestations documented**
+- [ ] **Potential synergies identified**
 - [ ] Hit points and defenses calculated  
 - [ ] Basic equipment selected
 - [ ] Motivation and goals defined
 - [ ] Connections with other PCs
 - [ ] Name and description
+
+### Tag System Checklist
+- [ ] One tag selected per skill rank
+- [ ] Tag manifestations include source, appearance, weakness, personality
+- [ ] Potential cross-skill synergies noted
+- [ ] Synergy names and effects documented
 
 ## Quick Character Generation
 
@@ -712,10 +813,19 @@ For faster creation:
 1. Choose concept and background
 2. Use preset attribute array
 3. Take skill package plus 10 points
-4. Calculate derived values
-5. Select gear package
-6. Define one motivation and connection
+4. **Quick-select tags using suggested combinations**
+5. Calculate derived values
+6. Select gear package
+7. Define one motivation and connection
+
+### Quick Tag Selection
+
+**Combat Focused**: [Enhanced], [Aggressive], [Veteran]
+**Tech Specialist**: [Digital], [Hacker], [Creator]
+**Social Leader**: [Charismatic], [Inspiring], [Natural]
+**Pilot Ace**: [Intuitive], [Lightning], [Aerospace]
+**Stealth Operative**: [Silent], [Patient], [Electronic]
 
 ---
 
-*Continue to Chapter 4: Character Advancement to learn how your character grows...*
+*Continue to Chapter 4: Character Advancement to learn how your character grows through the 10-rank progression system...*
