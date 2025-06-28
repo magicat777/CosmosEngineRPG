@@ -85,6 +85,21 @@
                         </ol>
                         <p style="font-style: italic; margin-top: 1rem;"><strong>PRIMAC</strong> = Presence, Resolve, Intellect, Might, Awareness, Coordination</p>
                     </div>
+                    
+                    <!-- Core Resolution System Clarification -->
+                    <div class="rule-block" style="background: rgba(255, 165, 0, 0.1); border: 2px solid #ffa500; margin-top: 2rem;">
+                        <h3 style="color: #ffa500; margin-bottom: 1rem;">⚠️ Core Resolution System</h3>
+                        <div class="grid grid-2" style="gap: 1rem;">
+                            <div>
+                                <p><strong>Basic Roll:</strong> 2d10 + Attribute (0-5) + Skill (0-5) + Equipment (0-5) + Situation (-3 to +3)</p>
+                                <p style="font-size: 0.9rem; margin-top: 0.5rem;"><strong>Maximum Total Modifiers:</strong> +8 (minimum -6)</p>
+                            </div>
+                            <div>
+                                <p><strong>Tag Synergy Bonus:</strong> When tags match the action, roll extra d10s, keep best 2</p>
+                                <p style="font-size: 0.9rem; margin-top: 0.5rem;">This <strong>REPLACES</strong> the normal modifier cap when using tag synergies</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 
                 <!-- What Makes Cosmos Engine Different? Sidebar -->
@@ -107,6 +122,24 @@
                         </div>
                     </div>
                 </div>
+                
+                <!-- PRIMAC Attributes Preview -->
+                <div class="glass-card p-lg" style="background: linear-gradient(135deg, rgba(0, 128, 255, 0.1), rgba(0, 0, 0, 0.8)); border: 2px solid var(--accent-blue); margin-top: 2rem;">
+                    <h3 style="color: var(--accent-blue); text-align: center; margin-bottom: 1.5rem;">📊 The PRIMAC Attributes</h3>
+                    <p style="text-align: center; margin-bottom: 1.5rem;">Every character is defined by six core attributes (0-5 range):</p>
+                    <div class="grid grid-2" style="gap: 1rem;">
+                        <div>
+                            <p><strong>🎭 Presence</strong> - Leadership and influence</p>
+                            <p><strong>🧠 Resolve</strong> - Willpower and mental fortitude</p>
+                            <p><strong>📚 Intellect</strong> - Reasoning and knowledge</p>
+                        </div>
+                        <div>
+                            <p><strong>💪 Might</strong> - Physical strength and endurance</p>
+                            <p><strong>👁️ Awareness</strong> - Perception and intuition</p>
+                            <p><strong>🎯 Coordination</strong> - Dexterity and precision</p>
+                        </div>
+                    </div>
+                </div>
             </section>
 
             <!-- Novel Mechanics -->
@@ -121,15 +154,15 @@
                     
                     <!-- Dice System Clarification Box -->
                     <div style="background: rgba(255, 215, 0, 0.1); padding: 1.5rem; border-radius: 8px; border: 1px solid var(--accent-gold); margin: 1.5rem 0;">
-                        <h4 style="color: var(--accent-gold); margin-bottom: 1rem;">🎲 How Cosmos Engine Dice Work</h4>
+                        <h4 style="color: var(--accent-gold); margin-bottom: 1rem;">🎲 Two Ways to Roll</h4>
                         <div class="grid grid-2" style="gap: 1rem;">
                             <div>
-                                <p><strong>Basic Roll:</strong> 2d10 + PRIMAC Attribute + Skill + Equipment + Situation</p>
-                                <p style="font-size: 0.9rem; margin-top: 0.5rem;">This is your standard roll for any action, modified by circumstances.</p>
+                                <p><strong>Standard Method:</strong> 2d10 + modifiers (max +8/-6)</p>
+                                <p style="font-size: 0.9rem; margin-top: 0.5rem;">Add PRIMAC + Skill + Equipment + Situation, apply caps, compare to TN.</p>
                             </div>
                             <div>
-                                <p><strong>Tag Synergy:</strong> When tags match the action, roll extra d10s, keep best 2</p>
-                                <p style="font-size: 0.9rem; margin-top: 0.5rem;">Maximum +5 bonus dice (7d10k2). [Enhanced] + [Tactical] = roll 4d10, keep highest 2.</p>
+                                <p><strong>Tag Synergy Method:</strong> Extra dice when tags apply</p>
+                                <p style="font-size: 0.9rem; margin-top: 0.5rem;">Roll 2d10 + bonus dice (max 7d10), keep best 2, add normal modifiers.</p>
                             </div>
                         </div>
                     </div>
@@ -921,13 +954,13 @@
                     <p style="font-style: italic; margin-bottom: 2rem;">Sarah (GM), Alex (playing Captain Chen), Brook (playing Dr. Vasquez), and Casey (playing Zara the pilot) are exploring a derelict space station.</p>
 
                     <div class="example-block mb-lg">
-                        <p><strong>Sarah (GM):</strong> The airlock cycles open with a pneumatic hiss, revealing a corridor lit only by emergency photoluminescent strips. The walls are covered in what looks like frost, but it pulses with an oily, bio-luminescent sheen. Environmental hazard tags: <span style="color: var(--accent-gold);">[Mysterious] [Contaminated]</span>. What do you do?</p>
+                        <p><strong>Sarah (GM):</strong> The airlock cycles open with a pneumatic hiss, revealing a corridor lit only by emergency photoluminescent strips. The walls are covered in what looks like frost, but it pulses with an oily, bioluminescent sheen. Environmental hazard tags: <span style="color: var(--accent-gold);">[Mysterious] [Contaminated]</span>. What do you do?</p>
 
                         <p><strong>Alex (Captain Chen):</strong> I motion for the team to hold position while I sweep with my military-grade multi-spectrum analyzer. Any life signs or energy signatures? My <span style="color: var(--accent-gold);">[Military-Training]</span> and <span style="color: var(--accent-gold);">[Enhanced]</span> targeting implants should work well together here.</p>
 
                         <p><strong>Sarah:</strong> Excellent synergy! Your <span style="color: var(--accent-gold);">[Military-Training]</span> discipline combined with <span style="color: var(--accent-gold);">[Enhanced]</span> implants creates "Tactical Scan Protocol" - that's +2 dice. Roll Awareness plus Technology with your synergy bonus.</p>
 
-                        <p><strong>Alex:</strong> <em>rolls 2d10 + 2 synergy dice</em> I got 8 and 7 on my main dice, plus my Awareness of 6 and Tech skill of 3... that's 24 total!</p>
+                        <p><strong>Alex:</strong> <em>rolls 4d10 (2d10 + 2 synergy dice)</em> I got 8, 7, 6, and 4. Keeping the best 2 gives me 15, plus my Awareness of 4 and Tech skill of 3... that's 22 total!</p>
 
                         <p><strong>Sarah:</strong> Your military scanner initially glitches from the <span style="color: var(--accent-gold);">[Mysterious]</span> environment, but your <span style="color: var(--accent-gold);">[Enhanced]</span> implants compensate, stabilizing the readings. You detect minimal power in the station's core and... something large moving three sections ahead. The bio-signature doesn't match any known species in your implant's xenobiology database. Your scanner gains the <span style="color: var(--accent-gold);">[Alien-Touched]</span> tag from this encounter.</p>
                     </div>
@@ -989,6 +1022,47 @@
                     <div class="example-block mt-lg">
                         <h4>👤 Player Tip: Document the Journey</h4>
                         <p>Keep notes about how your tags develop and equipment gains personality. These details become the foundation of your campaign's unique mythology.</p>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Putting It All Together Reference -->
+            <section class="mb-xl">
+                <div class="glass-card p-lg" style="background: linear-gradient(135deg, rgba(255, 215, 0, 0.1), rgba(0, 0, 0, 0.9)); border: 3px solid var(--accent-gold);">
+                    <h2 style="color: var(--accent-gold); text-align: center; margin-bottom: 2rem;">🎲 Putting It All Together</h2>
+                    <p style="text-align: center; margin-bottom: 2rem; font-size: 1.1rem;">Here's how all the pieces of Cosmos Engine work together:</p>
+                    
+                    <div class="grid grid-2" style="gap: 2rem;">
+                        <div>
+                            <h3 style="color: var(--accent-blue);">📊 Standard Resolution</h3>
+                            <ol style="margin-left: 1rem;">
+                                <li><strong>Base Roll:</strong> 2d10 + PRIMAC Attribute (0-5)</li>
+                                <li><strong>Add Skill:</strong> Skill rank (0-5)</li>
+                                <li><strong>Add Equipment:</strong> Tech Era bonus (0-5)</li>
+                                <li><strong>Add Situation:</strong> GM modifier (-3 to +3)</li>
+                                <li><strong>Apply Caps:</strong> Max +8, minimum -6</li>
+                                <li><strong>Compare to TN:</strong> Target Number (8-20)</li>
+                            </ol>
+                        </div>
+                        
+                        <div>
+                            <h3 style="color: var(--accent-gold);">🏷️ Tag Synergy Alternative</h3>
+                            <ol style="margin-left: 1rem;">
+                                <li><strong>Base Roll:</strong> 2d10 + PRIMAC + Skill</li>
+                                <li><strong>Count Tag Matches:</strong> How many tags apply?</li>
+                                <li><strong>Roll Bonus Dice:</strong> +1d10 per matching tag (max +5)</li>
+                                <li><strong>Keep Best 2:</strong> From all dice rolled</li>
+                                <li><strong>Add Equipment/Situation:</strong> Normal modifiers</li>
+                                <li><strong>Compare to TN:</strong> Same Target Numbers</li>
+                            </ol>
+                        </div>
+                    </div>
+                    
+                    <div style="border-top: 2px solid var(--accent-gold); margin-top: 2rem; padding-top: 1.5rem;">
+                        <h3 style="color: var(--accent-gold); text-align: center; margin-bottom: 1rem;">🎯 Key Principle</h3>
+                        <p style="text-align: center; font-size: 1.1rem; font-style: italic;">
+                            Tag synergies <strong>replace</strong> the +8/-6 modifier caps, not add to them. When you have matching tags, roll extra dice instead of stacking bonuses.
+                        </p>
                     </div>
                 </div>
             </section>
