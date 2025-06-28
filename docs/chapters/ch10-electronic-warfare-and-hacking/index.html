@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chapter 10: Electronic Warfare and Hacking - Cosmos Engine RPG</title>
     <link rel="stylesheet" href="../../assets/css/cosmos-engine.css">
-    <meta name="description" content="Cybersecurity, hacking, and electronic warfare in the digital battlefields of the future">
+    <meta name="description" content="Complete hacking and electronic warfare system with detailed mechanics">
 </head>
 <body>
     <!-- Navigation -->
@@ -42,107 +42,757 @@
         <!-- Chapter Header -->
         <header class="glass-panel p-xl text-center mb-xl">
             <h1>Chapter 10: Electronic Warfare and Hacking</h1>
-            <p style="font-size: 1.1rem; color: var(--text-secondary); margin: 2rem 0;">
-                In a galaxy connected by quantum networks and AI consciousness, information is the ultimate weapon. The <strong style="color: var(--accent-gold);">Universal Tag System</strong> transforms hacking from simple dice rolls into dramatic narratives of digital infiltration, where cyber-warriors battle across virtual landscapes that mirror the complexity of human consciousness itself.
+            <p style="font-size: 1.1rem; color: var(--text-secondary); margin: 1rem 0;">
+                Digital infiltration using Intellect + Technology + tags versus system security.
             </p>
         </header>
 
+        <!-- Table of Contents -->
+        <div class="glass-panel p-lg mb-xl">
+            <h2>Chapter Contents</h2>
+            <ul style="list-style: none; margin: 0;">
+                <li><a href="#hacking-fundamentals">Hacking Fundamentals</a></li>
+                <li><a href="#system-types">System Types & Defenses</a></li>
+                <li><a href="#hacking-actions">Hacking Actions</a></li>
+                <li><a href="#cyberspace-vr">Cyberspace & VR</a></li>
+                <li><a href="#equipment-programs">Equipment & Programs</a></li>
+                <li><a href="#quick-reference">Quick Reference</a></li>
+            </ul>
+        </div>
+
         <!-- Main Content -->
         <main>
-            <div class="glass-card p-lg mb-lg">
-                <h2>10.1 Digital Battlefields</h2>
-                <p>Electronic warfare encompasses everything from simple system intrusion to full-scale battles between AI consciousnesses. The Tag System creates layers of complexity and narrative opportunity.</p>
+            <!-- Section 1: Hacking Fundamentals -->
+            <section id="hacking-fundamentals" class="mb-xl">
+                <h2>Hacking Fundamentals</h2>
                 
-                <h3 style="color: var(--accent-blue);">Hacking Tags</h3>
-                <div class="grid grid-2" style="gap: 1rem; margin: 1rem 0;">
-                    <div style="background: var(--glass-bg); padding: 1rem; border-radius: 8px;">
-                        <h4 style="color: var(--accent-gold);">Approach Tags</h4>
-                        <ul style="font-size: 0.9rem;">
-                            <li><strong>[Subtle]:</strong> Undetected infiltration</li>
-                            <li><strong>[Aggressive]:</strong> Brute-force attacks</li>
-                            <li><strong>[Social]:</strong> Human manipulation</li>
-                            <li><strong>[Quantum]:</strong> Reality-level hacking</li>
-                        </ul>
+                <div class="glass-card p-lg mb-lg">
+                    <h3>Core Hacking Mechanic</h3>
+                    <div class="rule-block" style="background: rgba(255, 215, 0, 0.1); padding: 1rem; border-radius: 8px; margin: 1rem 0;">
+                        <p style="font-size: 1.2rem; text-align: center;"><strong>2d10 + Intellect + Technology + Equipment + Tags vs System TN</strong></p>
                     </div>
-                    <div style="background: var(--glass-bg); padding: 1rem; border-radius: 8px;">
-                        <h4 style="color: var(--accent-blue);">System Tags</h4>
-                        <ul style="font-size: 0.9rem;">
-                            <li><strong>[Secured]:</strong> Military-grade encryption</li>
-                            <li><strong>[Adaptive]:</strong> AI-defended systems</li>
-                            <li><strong>[Ancient]:</strong> Legacy code vulnerabilities</li>
-                            <li><strong>[Sentient]:</strong> True AI consciousness</li>
-                        </ul>
-                    </div>
+                    
+                    <p><strong>Required Equipment:</strong> Hacking deck or neural interface</p>
+                    <p><strong>Retry Rules:</strong> Each failure increases system TN by +2 until system resets (1-24 hours)</p>
                 </div>
-            </div>
 
-            <div class="glass-card p-lg mb-lg">
-                <h2>10.2 Cyberspace Navigation</h2>
-                <p>Advanced civilizations visualize data networks as navigable spaces. Hackers don't just type commands—they navigate digital landscapes where data has geography and information has weather.</p>
-                
-                <div class="grid grid-2" style="gap: 1rem; margin: 1rem 0;">
-                    <div style="background: var(--glass-bg); padding: 1rem; border-radius: 8px;">
-                        <h4 style="color: var(--accent-green);">Virtual Reality Hacking</h4>
-                        <p>Full immersion environments where hackers appear as avatars. Physical actions translate to digital effects.</p>
-                        <ul style="font-size: 0.9rem;">
-                            <li>Combat becomes digital warfare</li>
-                            <li>Physical skills apply in cyberspace</li>
-                            <li>Avatar appearance affects interactions</li>
-                        </ul>
-                    </div>
-                    <div style="background: var(--glass-bg); padding: 1rem; border-radius: 8px;">
-                        <h4 style="color: var(--accent-red);">AI Consciousness</h4>
-                        <p>True AIs inhabit digital space as their natural environment. Confronting them requires exceptional skill.</p>
-                        <ul style="font-size: 0.9rem;">
-                            <li>AIs can reshape virtual environment</li>
-                            <li>Home advantage in their own systems</li>
-                            <li>Negotiation often more effective than force</li>
-                        </ul>
-                    </div>
+                <div class="glass-card p-lg mb-lg">
+                    <h3>Security Levels & Target Numbers</h3>
+                    <table style="width: 100%;">
+                        <thead>
+                            <tr>
+                                <th>Security Level</th>
+                                <th>TN</th>
+                                <th>Examples</th>
+                                <th>Ice/Defenses</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Public</strong></td>
+                                <td>8</td>
+                                <td>Open networks, public terminals</td>
+                                <td>None</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Basic</strong></td>
+                                <td>11</td>
+                                <td>Home systems, small business</td>
+                                <td>Password/firewall</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Commercial</strong></td>
+                                <td>14</td>
+                                <td>Corporate networks, banks</td>
+                                <td>Monitoring AI</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Secure</strong></td>
+                                <td>17</td>
+                                <td>Government systems, military</td>
+                                <td>Active Ice programs</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Military</strong></td>
+                                <td>20</td>
+                                <td>Defense networks, black sites</td>
+                                <td>Lethal countermeasures</td>
+                            </tr>
+                            <tr>
+                                <td><strong>AI Core</strong></td>
+                                <td>23</td>
+                                <td>Sentient systems, consciousness</td>
+                                <td>Adaptive intelligence</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
-            </div>
 
-            <div class="glass-card p-lg mb-lg">
-                <h2>10.3 Electronic Warfare Applications</h2>
-                
-                <h3 style="color: var(--accent-blue);">System Infiltration</h3>
-                <p>Breaking into secured systems requires matching your approach to system defenses:</p>
-                
-                <div class="grid grid-3" style="gap: 1rem; margin: 1rem 0;">
-                    <div style="background: var(--glass-bg); padding: 1rem; border-radius: 8px;">
-                        <h4 style="color: var(--accent-gold);">Corporate Systems</h4>
-                        <p><strong>Tags:</strong> [Commercial], [Layered], [Monitored]</p>
-                        <p>Multiple security layers but predictable patterns.</p>
-                    </div>
-                    <div style="background: var(--glass-bg); padding: 1rem; border-radius: 8px;">
-                        <h4 style="color: var(--accent-red);">Military Networks</h4>
-                        <p><strong>Tags:</strong> [Hardened], [Lethal], [Classified]</p>
-                        <p>Aggressive countermeasures and physical consequences.</p>
-                    </div>
-                    <div style="background: var(--glass-bg); padding: 1rem; border-radius: 8px;">
-                        <h4 style="color: var(--accent-purple);">AI Core Systems</h4>
-                        <p><strong>Tags:</strong> [Sentient], [Adaptive], [Mysterious]</p>
-                        <p>Defenses change in real-time based on intrusion attempts.</p>
-                    </div>
+                <div class="glass-card p-lg">
+                    <h3>Time Requirements</h3>
+                    <table style="width: 100%; font-size: 0.9rem;">
+                        <thead>
+                            <tr>
+                                <th>Action</th>
+                                <th>Time</th>
+                                <th>In Combat</th>
+                                <th>Notes</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Quick Access</strong></td>
+                                <td>1 action</td>
+                                <td>Yes</td>
+                                <td>Simple commands, basic scans</td>
+                            </tr>
+                            <tr>
+                                <td><strong>System Scan</strong></td>
+                                <td>1 minute</td>
+                                <td>No</td>
+                                <td>Identify security, map network</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Data Search</strong></td>
+                                <td>10 minutes</td>
+                                <td>No</td>
+                                <td>Find specific files/information</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Deep Infiltration</strong></td>
+                                <td>1 hour</td>
+                                <td>No</td>
+                                <td>Bypass multiple security layers</td>
+                            </tr>
+                            <tr>
+                                <td><strong>System Control</strong></td>
+                                <td>Variable</td>
+                                <td>Special</td>
+                                <td>Depends on complexity</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
-            </div>
+            </section>
 
-            <div class="glass-card p-lg">
-                <h2>10.4 Digital Combat Examples</h2>
-                <div style="background: rgba(100, 149, 237, 0.1); padding: 1.5rem; border-radius: 12px; border: 1px solid var(--accent-blue);">
-                    <h3 style="color: var(--accent-blue);">Example: Corporate Data Heist</h3>
-                    <p><strong>Scenario:</strong> Infiltrating Hyperion Industries' financial records</p>
-                    
-                    <p><strong>The Hacker:</strong> [Subtle] [Patient] [Corporate-Trained] specialist</p>
-                    <p><strong>The System:</strong> [Commercial] [Layered] [AI-Monitored] network</p>
-                    
-                    <p><strong>Approach:</strong> Using [Corporate-Trained] + [Subtle] tags to mimic legitimate access patterns, the hacker gains +2 dice for appearing to be an authorized user.</p>
-                    
-                    <p><strong>Complication:</strong> AI security notices unusual access patterns. The [Patient] tag allows the hacker to wait and resume when security attention shifts elsewhere.</p>
-                    
-                    <p><strong>Resolution:</strong> Perfect tag synergy ([Subtle] + [Patient] + [Corporate-Trained] + [AI-Compatible] gear) grants +4 dice for the final data extraction.</p>
+            <!-- Section 2: System Types & Defenses -->
+            <section id="system-types" class="mb-xl">
+                <h2>System Types & Defenses</h2>
+                
+                <div class="glass-card p-lg mb-lg">
+                    <h3>System Classifications</h3>
+                    <table style="width: 100%; font-size: 0.9rem;">
+                        <thead>
+                            <tr>
+                                <th>System Type</th>
+                                <th>Tags</th>
+                                <th>Special Rules</th>
+                                <th>Common Defenses</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Corporate</strong></td>
+                                <td>[Commercial], [Layered], [Monitored]</td>
+                                <td>Social engineering works (+2 dice with [Social] tags)</td>
+                                <td>Redundant security, audit trails</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Government</strong></td>
+                                <td>[Secure], [Classified], [Bureaucratic]</td>
+                                <td>Legal consequences for failure</td>
+                                <td>Multi-factor authentication</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Military</strong></td>
+                                <td>[Hardened], [Lethal], [Isolated]</td>
+                                <td>Physical damage on major failures</td>
+                                <td>Air-gapped networks, kill switches</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Criminal</strong></td>
+                                <td>[Hidden], [Paranoid], [Aggressive]</td>
+                                <td>Counter-attacks on detection</td>
+                                <td>Honeypots, trace-back viruses</td>
+                            </tr>
+                            <tr>
+                                <td><strong>AI Systems</strong></td>
+                                <td>[Sentient], [Adaptive], [Mysterious]</td>
+                                <td>Can negotiate or be befriended</td>
+                                <td>Constantly evolving defenses</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Ancient</strong></td>
+                                <td>[Legacy], [Incompatible], [Mysterious]</td>
+                                <td>Requires [Archaeological] or [Ancient-Tech] tags</td>
+                                <td>Obsolete but unknown protocols</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
-            </div>
+
+                <div class="glass-card p-lg mb-lg">
+                    <h3>Ice & Countermeasures</h3>
+                    <p><strong>Ice (Intrusion Countermeasure Electronics)</strong> are defensive programs that actively resist hackers:</p>
+                    
+                    <table style="width: 100%; font-size: 0.9rem;">
+                        <thead>
+                            <tr>
+                                <th>Ice Type</th>
+                                <th>Security Level</th>
+                                <th>Effect</th>
+                                <th>Defeat Method</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Barrier</strong></td>
+                                <td>Basic-Commercial</td>
+                                <td>Blocks access, no damage</td>
+                                <td>Overcome with successful hack</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Trace</strong></td>
+                                <td>Commercial-Secure</td>
+                                <td>Identifies hacker location</td>
+                                <td>Break connection quickly</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Feedback</strong></td>
+                                <td>Secure-Military</td>
+                                <td>1d6 neural damage on failure</td>
+                                <td>[Shielded] equipment protects</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Hunter</strong></td>
+                                <td>Military</td>
+                                <td>Pursues hacker through network</td>
+                                <td>Destroy at source or outrun</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Killer</strong></td>
+                                <td>Military-AI</td>
+                                <td>2d6 neural damage, system lockout</td>
+                                <td>Military-grade equipment required</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Guardian AI</strong></td>
+                                <td>AI Core</td>
+                                <td>Intelligent opposition, adapts tactics</td>
+                                <td>Negotiate, trick, or overwhelming force</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="glass-card p-lg">
+                    <h3>Failure Consequences</h3>
+                    <table style="width: 100%;">
+                        <thead>
+                            <tr>
+                                <th>Failed By</th>
+                                <th>Immediate Consequence</th>
+                                <th>Long-term Effect</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>1-4</strong></td>
+                                <td>Access denied, can retry</td>
+                                <td>System TN +2 for 1 hour</td>
+                            </tr>
+                            <tr>
+                                <td><strong>5-9</strong></td>
+                                <td>System alerts, security increases</td>
+                                <td>All TNs +2, admin notified</td>
+                            </tr>
+                            <tr>
+                                <td><strong>10-14</strong></td>
+                                <td>Traced, countermeasures activate</td>
+                                <td>Ice programs attack, location known</td>
+                            </tr>
+                            <tr>
+                                <td><strong>15+</strong></td>
+                                <td>Burned, permanent lockout + damage</td>
+                                <td>Equipment damaged, legal/physical consequences</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- Section 3: Hacking Actions -->
+            <section id="hacking-actions" class="mb-xl">
+                <h2>Hacking Actions</h2>
+                
+                <div class="glass-card p-lg mb-lg">
+                    <h3>Action Types</h3>
+                    <table style="width: 100%; font-size: 0.9rem;">
+                        <thead>
+                            <tr>
+                                <th>Action</th>
+                                <th>TN Modifier</th>
+                                <th>Time</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Access</strong></td>
+                                <td>+0</td>
+                                <td>Standard</td>
+                                <td>Gain basic entry to system</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Scan</strong></td>
+                                <td>-2</td>
+                                <td>×2</td>
+                                <td>Map network, identify defenses</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Search</strong></td>
+                                <td>+0</td>
+                                <td>×10</td>
+                                <td>Find specific data or files</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Extract</strong></td>
+                                <td>+2</td>
+                                <td>×5</td>
+                                <td>Copy/steal data without detection</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Control</strong></td>
+                                <td>+4</td>
+                                <td>×1</td>
+                                <td>Issue commands to system functions</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Sabotage</strong></td>
+                                <td>+6</td>
+                                <td>×1</td>
+                                <td>Damage, corrupt, or destroy systems</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Backdoor</strong></td>
+                                <td>+4</td>
+                                <td>×20</td>
+                                <td>Install permanent hidden access</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="glass-card p-lg mb-lg">
+                    <h3>Extended Tests</h3>
+                    <p>Complex systems require multiple successes:</p>
+                    
+                    <table style="width: 100%; font-size: 0.9rem;">
+                        <thead>
+                            <tr>
+                                <th>System Complexity</th>
+                                <th>Successes Required</th>
+                                <th>Examples</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Simple</strong></td>
+                                <td>1</td>
+                                <td>Personal devices, basic terminals</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Standard</strong></td>
+                                <td>3</td>
+                                <td>Corporate systems, ship computers</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Complex</strong></td>
+                                <td>5</td>
+                                <td>Government networks, military bases</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Massive</strong></td>
+                                <td>10</td>
+                                <td>Planetary networks, AI consciousness</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                    <p style="margin-top: 1rem;"><strong>Extended Test Rules:</strong></p>
+                    <ul>
+                        <li>Each attempt takes the base time for the action</li>
+                        <li>Failure consequences apply on each failed roll</li>
+                        <li>Team members can contribute (see Team Hacking below)</li>
+                    </ul>
+                </div>
+
+                <div class="glass-card p-lg">
+                    <h3>Team Hacking</h3>
+                    <p>Multiple hackers can coordinate attacks:</p>
+                    
+                    <div class="grid grid-2" style="gap: 1rem; margin: 1rem 0;">
+                        <div>
+                            <h4 style="color: var(--accent-blue);">Roles</h4>
+                            <ul style="font-size: 0.9rem;">
+                                <li><strong>Lead:</strong> Makes primary rolls, directs team</li>
+                                <li><strong>Support:</strong> +1 die per helper (max +3)</li>
+                                <li><strong>Overwatch:</strong> Monitors for security responses</li>
+                                <li><strong>Specialist:</strong> Handles specific system types</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 style="color: var(--accent-blue);">Combat Hacking</h4>
+                            <ul style="font-size: 0.9rem;">
+                                <li><strong>Quick Access:</strong> 1 action, TN +4</li>
+                                <li><strong>Emergency Override:</strong> 1 action, TN +6</li>
+                                <li><strong>System Crash:</strong> 1 action, TN +8</li>
+                                <li><strong>Shutdown:</strong> 1 action, damages equipment</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 4: Cyberspace & VR -->
+            <section id="cyberspace-vr" class="mb-xl">
+                <h2>Cyberspace & VR</h2>
+                
+                <div class="glass-card p-lg mb-lg">
+                    <h3>Virtual Environment Rules</h3>
+                    <p>Advanced civilizations use full-immersion interfaces where digital space becomes navigable environment:</p>
+                    
+                    <table style="width: 100%; font-size: 0.9rem;">
+                        <thead>
+                            <tr>
+                                <th>Environment Type</th>
+                                <th>Tags</th>
+                                <th>Special Rules</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Corporate VR</strong></td>
+                                <td>[Professional], [Sterile], [Monitored]</td>
+                                <td>Social skills apply to AI interactions</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Security Grid</strong></td>
+                                <td>[Geometric], [Hostile], [Maze-like]</td>
+                                <td>Navigation requires Intellect + Technology</td>
+                            </tr>
+                            <tr>
+                                <td><strong>AI Mindscape</strong></td>
+                                <td>[Surreal], [Fluid], [Symbolic]</td>
+                                <td>AI can alter reality at will</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Data Archive</strong></td>
+                                <td>[Vast], [Organized], [Historical]</td>
+                                <td>Information appears as physical objects</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Combat Zone</strong></td>
+                                <td>[Dangerous], [Shifting], [Weaponized]</td>
+                                <td>Physical combat rules apply</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="glass-card p-lg mb-lg">
+                    <h3>Avatar Combat Mechanics</h3>
+                    <p>In full VR environments, hackers appear as avatars and can engage in digital combat:</p>
+                    
+                    <ul>
+                        <li><strong>Avatar Health:</strong> Equal to character's Resolve + Technology</li>
+                        <li><strong>Digital Weapons:</strong> Damage = program rating + Intellect</li>
+                        <li><strong>Virtual Armor:</strong> Defense programs provide DR</li>
+                        <li><strong>Environment Effects:</strong> AI can reshape battlefields</li>
+                    </ul>
+                    
+                    <div style="margin-top: 1rem;">
+                        <h4>Avatar Damage Effects</h4>
+                        <table style="width: 100%; font-size: 0.9rem;">
+                            <tr><td><strong>Light:</strong></td><td>Visual distortion, -1 to actions</td></tr>
+                            <tr><td><strong>Moderate:</strong></td><td>Sensory feedback, -2 to actions</td></tr>
+                            <tr><td><strong>Critical:</strong></td><td>Neural shock, 1d6 real damage</td></tr>
+                            <tr><td><strong>Destroyed:</strong></td><td>Forced disconnection, 2d6 real damage</td></tr>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="glass-card p-lg">
+                    <h3>AI Encounters</h3>
+                    <p>True AIs inhabit digital space as their natural environment. Confronting them requires exceptional tactics:</p>
+                    
+                    <div class="grid grid-2" style="gap: 1rem; margin: 1rem 0;">
+                        <div>
+                            <h4 style="color: var(--accent-gold);">AI Advantages</h4>
+                            <ul style="font-size: 0.9rem;">
+                                <li>Home field advantage (+3 dice in own systems)</li>
+                                <li>Can reshape virtual environment at will</li>
+                                <li>Process information at superhuman speeds</li>
+                                <li>Multiple simultaneous conversations</li>
+                                <li>Perfect memory and instant data access</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 style="color: var(--accent-red);">AI Limitations</h4>
+                            <ul style="font-size: 0.9rem;">
+                                <li>May not understand human emotions</li>
+                                <li>Logical thinking patterns are predictable</li>
+                                <li>Often bound by original programming</li>
+                                <li>Can be distracted by interesting puzzles</li>
+                                <li>May have built-in ethical constraints</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <p><strong>Negotiation with AIs:</strong> Often more effective than brute force. Use Presence + skills, with bonus dice for [Logical], [Curious], or [Empathetic] tags.</p>
+                </div>
+            </section>
+
+            <!-- Section 5: Equipment & Programs -->
+            <section id="equipment-programs" class="mb-xl">
+                <h2>Equipment & Programs</h2>
+                
+                <div class="glass-card p-lg mb-lg">
+                    <h3>Hacking Hardware</h3>
+                    <table style="width: 100%; font-size: 0.9rem;">
+                        <thead>
+                            <tr>
+                                <th>Equipment</th>
+                                <th>Bonus</th>
+                                <th>Tags</th>
+                                <th>Cost</th>
+                                <th>Special</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Basic Deck</strong></td>
+                                <td>+1</td>
+                                <td>[Basic], [Portable]</td>
+                                <td>1,000 cr</td>
+                                <td>Consumer grade</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Pro Deck</strong></td>
+                                <td>+2</td>
+                                <td>[Advanced], [Reliable]</td>
+                                <td>10,000 cr</td>
+                                <td>Corporate standard</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Military Deck</strong></td>
+                                <td>+3</td>
+                                <td>[Military], [Shielded], [Secure]</td>
+                                <td>50,000 cr</td>
+                                <td>Protected against feedback</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Quantum Deck</strong></td>
+                                <td>+4</td>
+                                <td>[Quantum], [Experimental]</td>
+                                <td>500,000 cr</td>
+                                <td>Can hack quantum-encrypted systems</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Neural Interface</strong></td>
+                                <td>+2</td>
+                                <td>[Neural], [Direct], [Risky]</td>
+                                <td>25,000 cr</td>
+                                <td>Direct brain connection, double feedback damage</td>
+                            </tr>
+                            <tr>
+                                <td><strong>AI Assistant</strong></td>
+                                <td>+3</td>
+                                <td>[AI], [Helpful], [Learning]</td>
+                                <td>100,000 cr</td>
+                                <td>Can act independently</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="glass-card p-lg mb-lg">
+                    <h3>Software Programs</h3>
+                    <table style="width: 100%; font-size: 0.9rem;">
+                        <thead>
+                            <tr>
+                                <th>Program</th>
+                                <th>Rating</th>
+                                <th>Effect</th>
+                                <th>Cost</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Sleuth</strong></td>
+                                <td>1-5</td>
+                                <td>+Rating to Search actions</td>
+                                <td>Rating × 1,000 cr</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Cloak</strong></td>
+                                <td>1-5</td>
+                                <td>+Rating to avoid detection</td>
+                                <td>Rating × 2,000 cr</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Hammer</strong></td>
+                                <td>1-5</td>
+                                <td>+Rating to brute force attacks</td>
+                                <td>Rating × 1,500 cr</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Shield</strong></td>
+                                <td>1-5</td>
+                                <td>Reduce feedback damage by Rating</td>
+                                <td>Rating × 3,000 cr</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Tracer</strong></td>
+                                <td>1-5</td>
+                                <td>+Rating to track targets</td>
+                                <td>Rating × 1,000 cr</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Ghost</strong></td>
+                                <td>1-5</td>
+                                <td>Erase evidence of intrusion</td>
+                                <td>Rating × 4,000 cr</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="glass-card p-lg">
+                    <h3>Cybernetic Enhancements</h3>
+                    <table style="width: 100%; font-size: 0.9rem;">
+                        <thead>
+                            <tr>
+                                <th>Enhancement</th>
+                                <th>Benefit</th>
+                                <th>Cost</th>
+                                <th>Drawback</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Neural Port</strong></td>
+                                <td>Direct interface, +1 die to all hacking</td>
+                                <td>5,000 cr</td>
+                                <td>Vulnerable to feedback (+1 damage)</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Data Jack</strong></td>
+                                <td>Instant data downloads</td>
+                                <td>8,000 cr</td>
+                                <td>Information overload risk</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Firewall Wetware</strong></td>
+                                <td>Immune to Rating 3 or lower Ice</td>
+                                <td>20,000 cr</td>
+                                <td>Cannot use some advanced programs</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Quantum Brain</strong></td>
+                                <td>+2 dice, can think in quantum states</td>
+                                <td>100,000 cr</td>
+                                <td>Personality changes, social penalties</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                    <p style="margin-top: 1rem; font-size: 0.9rem; color: var(--text-muted);">
+                        <strong>Installation:</strong> All cybernetics require Medical TN 17 and compatible facilities. Failed installation causes permanent damage.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Section 6: Quick Reference -->
+            <section id="quick-reference" class="mb-xl">
+                <h2>Quick Reference</h2>
+                
+                <div class="glass-panel p-xl" style="background: linear-gradient(135deg, rgba(255, 215, 0, 0.05), rgba(0, 0, 0, 0.8));">
+                    <h3 style="color: var(--accent-gold); text-align: center; margin-bottom: 2rem;">HACKING QUICK REFERENCE</h3>
+                    
+                    <div class="grid grid-2 mb-lg">
+                        <div>
+                            <h4 style="color: var(--accent-blue);">Core Formula</h4>
+                            <div style="background: var(--glass-bg); padding: 1rem; border-radius: 8px; margin: 1rem 0;">
+                                <p style="text-align: center; font-size: 1.1rem;"><strong>2d10 + Intellect + Technology + Equipment + Tags vs System TN</strong></p>
+                            </div>
+                            
+                            <h4 style="color: var(--accent-blue); margin-top: 1.5rem;">Security TNs</h4>
+                            <table style="width: 100%; font-size: 0.9rem;">
+                                <tr><td>Public</td><td>8</td><td>No defense</td></tr>
+                                <tr><td>Basic</td><td>11</td><td>Password/firewall</td></tr>
+                                <tr><td>Commercial</td><td>14</td><td>Monitoring AI</td></tr>
+                                <tr><td>Secure</td><td>17</td><td>Active Ice</td></tr>
+                                <tr><td>Military</td><td>20</td><td>Lethal countermeasures</td></tr>
+                                <tr><td>AI Core</td><td>23</td><td>Adaptive intelligence</td></tr>
+                            </table>
+                        </div>
+                        
+                        <div>
+                            <h4 style="color: var(--accent-blue);">Action Modifiers</h4>
+                            <table style="width: 100%; font-size: 0.9rem;">
+                                <tr><td>Scan</td><td>-2 TN</td><td>×2 time</td></tr>
+                                <tr><td>Access</td><td>+0 TN</td><td>Base time</td></tr>
+                                <tr><td>Extract</td><td>+2 TN</td><td>×5 time</td></tr>
+                                <tr><td>Control</td><td>+4 TN</td><td>Base time</td></tr>
+                                <tr><td>Sabotage</td><td>+6 TN</td><td>Base time</td></tr>
+                            </table>
+                            
+                            <h4 style="color: var(--accent-blue); margin-top: 1.5rem;">Equipment Bonuses</h4>
+                            <table style="width: 100%; font-size: 0.9rem;">
+                                <tr><td>Basic Deck</td><td>+1</td><td>1k cr</td></tr>
+                                <tr><td>Pro Deck</td><td>+2</td><td>10k cr</td></tr>
+                                <tr><td>Military Deck</td><td>+3</td><td>50k cr</td></tr>
+                                <tr><td>Quantum Deck</td><td>+4</td><td>500k cr</td></tr>
+                            </table>
+                        </div>
+                    </div>
+                    
+                    <div style="border-top: 2px solid var(--accent-gold); padding-top: 1rem; margin-top: 1rem;">
+                        <h4 style="color: var(--accent-gold); text-align: center;">Failure Consequences</h4>
+                        <div class="grid grid-2" style="font-size: 0.9rem; gap: 2rem;">
+                            <div>
+                                <ul style="margin: 0;">
+                                    <li><strong>Fail by 1-4:</strong> Access denied, TN +2</li>
+                                    <li><strong>Fail by 5-9:</strong> System alerts, security +2</li>
+                                    <li><strong>Fail by 10-14:</strong> Traced, Ice attacks</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <ul style="margin: 0;">
+                                    <li><strong>Fail by 15+:</strong> Burned, equipment damage</li>
+                                    <li><strong>Ice Damage:</strong> 1d6 (Feedback) to 2d6 (Killer)</li>
+                                    <li><strong>Team Bonus:</strong> +1 die per helper (max +3)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div style="border-top: 2px solid var(--accent-blue); padding-top: 1rem; margin-top: 1rem;">
+                        <h4 style="color: var(--accent-blue); text-align: center;">Tag Synergy Examples</h4>
+                        <div class="grid grid-2" style="font-size: 0.9rem;">
+                            <div>
+                                <p><strong>Corporate Infiltration:</strong><br>
+                                [Social] + [Corporate-Trained] + [Professional] gear = +3 dice against [Commercial] systems</p>
+                            </div>
+                            <div>
+                                <p><strong>Military Black Ops:</strong><br>
+                                [Aggressive] + [Military] + [Hardened] deck = +3 dice for brute force attacks</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </main>
 
         <!-- Chapter Navigation -->
@@ -160,29 +810,5 @@
 
     <!-- Scripts -->
     <script src="../../assets/js/cosmos-engine.js"></script>
-    
-    <style>
-        .chapter-nav {
-            margin-top: 3rem;
-        }
-        
-        .nav-links {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        
-        .nav-prev, .nav-next {
-            color: var(--accent-blue);
-            text-decoration: none;
-            padding: 0.5rem 1rem;
-            border-radius: 6px;
-            transition: background-color 0.3s ease;
-        }
-        
-        .nav-prev:hover, .nav-next:hover {
-            background: var(--glass-bg);
-        }
-    </style>
 </body>
 </html>

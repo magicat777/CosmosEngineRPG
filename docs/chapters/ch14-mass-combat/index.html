@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chapter 14: Mass Combat - Cosmos Engine RPG</title>
     <link rel="stylesheet" href="../../assets/css/cosmos-engine.css">
-    <meta name="description" content="Large-scale fleet battles and mass combat using the Universal Tag System">
+    <meta name="description" content="Complete mass combat system for fleet battles and army warfare">
 </head>
 <body>
+    <!-- Navigation -->
     <nav class="nav-primary glass-panel">
         <div class="container">
             <div class="nav-content">
@@ -29,6 +30,7 @@
     </nav>
 
     <div class="container">
+        <!-- Breadcrumbs -->
         <nav class="breadcrumb">
             <a href="../../index.html">Home</a>
             <span class="breadcrumb-separator">›</span>
@@ -37,123 +39,623 @@
             <span>Chapter 14: Mass Combat</span>
         </nav>
 
+        <!-- Chapter Header -->
         <header class="glass-panel p-xl text-center mb-xl">
             <h1>Chapter 14: Mass Combat</h1>
-            <p style="font-size: 1.1rem; color: var(--text-secondary); margin: 2rem 0;">
-                When individual heroes command fleets and armies, the Universal Tag System scales seamlessly to handle epic conflicts that reshape star systems and topple galactic empires.
+            <p style="font-size: 1.1rem; color: var(--text-secondary); margin: 1rem 0;">
+                Fleet battles and army warfare using commander skills and unit statistics.
             </p>
         </header>
 
+        <!-- Table of Contents -->
+        <div class="glass-panel p-lg mb-xl">
+            <h2>Chapter Contents</h2>
+            <ul style="list-style: none; margin: 0;">
+                <li><a href="#mass-combat-basics">Mass Combat Basics</a></li>
+                <li><a href="#force-composition">Force Composition</a></li>
+                <li><a href="#battle-resolution">Battle Resolution</a></li>
+                <li><a href="#pc-integration">PC Integration</a></li>
+                <li><a href="#quick-reference">Quick Reference</a></li>
+            </ul>
+        </div>
+
+        <!-- Main Content -->
         <main>
-            <div class="glass-card p-lg mb-lg">
-                <h2>14.1 Fleet Combat</h2>
-                <p>Fleet battles use the same core mechanics as personal combat, but with tags representing entire ship groups and strategic doctrines.</p>
+            <!-- Section 1: Mass Combat Basics -->
+            <section id="mass-combat-basics" class="mb-xl">
+                <h2>Mass Combat Basics</h2>
                 
-                <h3 style="color: var(--accent-blue);">Fleet Tags</h3>
-                <div class="grid grid-2" style="gap: 1rem; margin: 1rem 0;">
-                    <div style="background: var(--glass-bg); padding: 1rem; border-radius: 8px;">
-                        <h4 style="color: var(--accent-gold);">Composition Tags</h4>
-                        <ul style="font-size: 0.9rem;">
-                            <li><strong>[Balanced]:</strong> Mix of ship types</li>
-                            <li><strong>[Heavy]:</strong> Capital ship focused</li>
-                            <li><strong>[Fast]:</strong> Fighter and corvette swarm</li>
-                            <li><strong>[Carrier]:</strong> Fighter screen tactics</li>
-                        </ul>
+                <div class="glass-card p-lg mb-lg">
+                    <h3>Core Mass Combat Mechanic</h3>
+                    <div class="rule-block" style="background: rgba(255, 215, 0, 0.1); padding: 1rem; border-radius: 8px; margin: 1rem 0;">
+                        <p style="font-size: 1.2rem; text-align: center;"><strong>2d10 + Commander Presence + Command + Unit Quality + Tags vs TN</strong></p>
                     </div>
-                    <div style="background: var(--glass-bg); padding: 1rem; border-radius: 8px;">
-                        <h4 style="color: var(--accent-red);">Doctrine Tags</h4>
-                        <ul style="font-size: 0.9rem;">
-                            <li><strong>[Aggressive]:</strong> Close-range assault</li>
-                            <li><strong>[Defensive]:</strong> Standoff engagement</li>
-                            <li><strong>[Tactical]:</strong> Coordinated maneuvers</li>
-                            <li><strong>[Elite]:</strong> Superior training</li>
-                        </ul>
-                    </div>
+                    
+                    <p><strong>Strategic Rounds:</strong> 1 hour of real time per round</p>
+                    <p><strong>Unit Actions:</strong> Each unit can move and attack once per round</p>
+                    <p><strong>Commander Actions:</strong> Limited to 1-3 special actions per round based on skill</p>
                 </div>
-            </div>
 
-            <div class="glass-card p-lg mb-lg">
-                <h2>14.2 Strategic Scale</h2>
-                <p>Mass combat operates on multiple scales simultaneously:</p>
+                <div class="glass-card p-lg mb-lg">
+                    <h3>Unit Statistics</h3>
+                    <p>All military units use the same stat block format:</p>
+                    
+                    <table style="width: 100%; font-size: 0.9rem;">
+                        <thead>
+                            <tr>
+                                <th>Statistic</th>
+                                <th>Range</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Size</strong></td>
+                                <td>Squad (10) / Company (100) / Battalion (1000) / Division (10,000)</td>
+                                <td>Number of individuals or ships</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Quality</strong></td>
+                                <td>Green (0) / Regular (+1) / Veteran (+2) / Elite (+3)</td>
+                                <td>Training and experience level</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Morale</strong></td>
+                                <td>3-15 (like health for units)</td>
+                                <td>Unit cohesion and fighting spirit</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Equipment</strong></td>
+                                <td>Poor (0) / Standard (+1) / Advanced (+2) / Cutting-Edge (+3)</td>
+                                <td>Gear and technology level</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Tags</strong></td>
+                                <td>3-5 tags per unit</td>
+                                <td>[Unit type], [Doctrine], [Special abilities]</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="glass-card p-lg">
+                    <h3>Time Scales</h3>
+                    <table style="width: 100%;">
+                        <thead>
+                            <tr>
+                                <th>Scale</th>
+                                <th>Duration</th>
+                                <th>Use Case</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Tactical Round</strong></td>
+                                <td>6 seconds</td>
+                                <td>Individual PC actions within battle</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Operational Round</strong></td>
+                                <td>10 minutes</td>
+                                <td>Squad/ship coordination</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Strategic Round</strong></td>
+                                <td>1 hour</td>
+                                <td>Mass combat resolution</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Campaign Turn</strong></td>
+                                <td>1 day</td>
+                                <td>Multi-theater warfare</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- Section 2: Force Composition -->
+            <section id="force-composition" class="mb-xl">
+                <h2>Force Composition</h2>
                 
-                <div class="grid grid-3" style="gap: 1rem; margin: 1rem 0;">
-                    <div style="background: var(--glass-bg); padding: 1rem; border-radius: 8px;">
-                        <h4 style="color: var(--accent-blue);">Individual Scale</h4>
-                        <p>PC actions within the larger battle</p>
-                        <ul style="font-size: 0.9rem;">
-                            <li>Heroic moments</li>
-                            <li>Key ship duels</li>
-                            <li>Critical objectives</li>
-                        </ul>
-                    </div>
-                    <div style="background: var(--glass-bg); padding: 1rem; border-radius: 8px;">
-                        <h4 style="color: var(--accent-green);">Squadron Scale</h4>
-                        <p>Small unit tactics and coordination</p>
-                        <ul style="font-size: 0.9rem;">
-                            <li>Wing formations</li>
-                            <li>Coordinated strikes</li>
-                            <li>Tactical maneuvers</li>
-                        </ul>
-                    </div>
-                    <div style="background: var(--glass-bg); padding: 1rem; border-radius: 8px;">
-                        <h4 style="color: var(--accent-red);">Fleet Scale</h4>
-                        <p>Grand strategic movements</p>
-                        <ul style="font-size: 0.9rem;">
-                            <li>Battle lines</li>
-                            <li>Strategic objectives</li>
-                            <li>Victory conditions</li>
-                        </ul>
-                    </div>
+                <div class="glass-card p-lg mb-lg">
+                    <h3>Space Force Units</h3>
+                    <table style="width: 100%; font-size: 0.9rem;">
+                        <thead>
+                            <tr>
+                                <th>Unit Type</th>
+                                <th>Size</th>
+                                <th>Quality</th>
+                                <th>Morale</th>
+                                <th>Equipment</th>
+                                <th>Cost (VP)</th>
+                                <th>Tags</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Fighter Squadron</strong></td>
+                                <td>Squad (12)</td>
+                                <td>Regular (+1)</td>
+                                <td>8</td>
+                                <td>Standard (+1)</td>
+                                <td>3</td>
+                                <td>[Fast], [Agile], [Short-Range]</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Corvette Division</strong></td>
+                                <td>Company (24)</td>
+                                <td>Regular (+1)</td>
+                                <td>10</td>
+                                <td>Standard (+1)</td>
+                                <td>8</td>
+                                <td>[Fast], [Armed], [Patrol]</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Frigate Task Force</strong></td>
+                                <td>Battalion (8)</td>
+                                <td>Veteran (+2)</td>
+                                <td>12</td>
+                                <td>Advanced (+2)</td>
+                                <td>15</td>
+                                <td>[Versatile], [Long-Range], [Reliable]</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Cruiser Squadron</strong></td>
+                                <td>Company (4)</td>
+                                <td>Veteran (+2)</td>
+                                <td>13</td>
+                                <td>Advanced (+2)</td>
+                                <td>25</td>
+                                <td>[Heavy], [Armed], [Command]</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Dreadnought Group</strong></td>
+                                <td>Squad (2)</td>
+                                <td>Elite (+3)</td>
+                                <td>15</td>
+                                <td>Cutting-Edge (+3)</td>
+                                <td>50</td>
+                                <td>[Massive], [Devastating], [Flagship]</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
-            </div>
 
-            <div class="glass-card p-lg mb-lg">
-                <h2>14.3 Command and Control</h2>
-                <p>High-ranking PCs influence mass combat through their Command skill and leadership tags:</p>
+                <div class="glass-card p-lg mb-lg">
+                    <h3>Ground Force Units</h3>
+                    <table style="width: 100%; font-size: 0.9rem;">
+                        <thead>
+                            <tr>
+                                <th>Unit Type</th>
+                                <th>Size</th>
+                                <th>Quality</th>
+                                <th>Morale</th>
+                                <th>Equipment</th>
+                                <th>Cost (VP)</th>
+                                <th>Tags</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Infantry Company</strong></td>
+                                <td>Company (100)</td>
+                                <td>Regular (+1)</td>
+                                <td>9</td>
+                                <td>Standard (+1)</td>
+                                <td>2</td>
+                                <td>[Infantry], [Flexible], [Dug-In]</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Armor Battalion</strong></td>
+                                <td>Battalion (50)</td>
+                                <td>Veteran (+2)</td>
+                                <td>11</td>
+                                <td>Advanced (+2)</td>
+                                <td>8</td>
+                                <td>[Armor], [Mobile], [Heavy]</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Artillery Regiment</strong></td>
+                                <td>Battalion (200)</td>
+                                <td>Regular (+1)</td>
+                                <td>8</td>
+                                <td>Advanced (+2)</td>
+                                <td>5</td>
+                                <td>[Artillery], [Long-Range], [Support]</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Marine Division</strong></td>
+                                <td>Division (2000)</td>
+                                <td>Elite (+3)</td>
+                                <td>13</td>
+                                <td>Cutting-Edge (+3)</td>
+                                <td>20</td>
+                                <td>[Elite], [Assault], [Combined-Arms]</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Mech Company</strong></td>
+                                <td>Company (20)</td>
+                                <td>Elite (+3)</td>
+                                <td>12</td>
+                                <td>Cutting-Edge (+3)</td>
+                                <td>15</td>
+                                <td>[Mech], [Assault], [Elite]</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="glass-card p-lg">
+                    <h3>Combined Arms Synergies</h3>
+                    <p>Units fighting together can provide bonuses:</p>
+                    
+                    <table style="width: 100%; font-size: 0.9rem;">
+                        <thead>
+                            <tr>
+                                <th>Combination</th>
+                                <th>Bonus</th>
+                                <th>Requirements</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Air Support</strong></td>
+                                <td>+2 dice to ground attack</td>
+                                <td>Fighters + Ground units in same hex</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Artillery Barrage</strong></td>
+                                <td>+1 die, enemy -1 die</td>
+                                <td>Artillery within range of target</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Combined Fleet</strong></td>
+                                <td>+1 die per unit type</td>
+                                <td>Fighters, Corvettes, Capital ships together</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Elite Spearhead</strong></td>
+                                <td>+3 dice first round</td>
+                                <td>Elite unit leads attack</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- Section 3: Battle Resolution -->
+            <section id="battle-resolution" class="mb-xl">
+                <h2>Battle Resolution</h2>
                 
-                <div class="grid grid-2" style="gap: 1rem; margin: 1rem 0;">
-                    <div style="background: var(--glass-bg); padding: 1rem; border-radius: 8px;">
-                        <h4 style="color: var(--accent-gold);">Admiral Actions</h4>
-                        <ul style="font-size: 0.9rem;">
-                            <li><strong>Fleet Maneuvers:</strong> Reposition entire battle lines</li>
-                            <li><strong>Tactical Orders:</strong> Grant bonuses to allied units</li>
-                            <li><strong>Strategic Insight:</strong> Exploit enemy weaknesses</li>
-                            <li><strong>Inspire Forces:</strong> Boost morale and performance</li>
-                        </ul>
-                    </div>
-                    <div style="background: var(--glass-bg); padding: 1rem; border-radius: 8px;">
-                        <h4 style="color: var(--accent-blue);">Squadron Leader Actions</h4>
-                        <ul style="font-size: 0.9rem;">
-                            <li><strong>Wing Coordination:</strong> Synchronize attacks</li>
-                            <li><strong>Target Priority:</strong> Focus fire effectively</li>
-                            <li><strong>Evasive Patterns:</strong> Reduce incoming damage</li>
-                            <li><strong>Combat Adaptation:</strong> Counter enemy tactics</li>
-                        </ul>
-                    </div>
+                <div class="glass-card p-lg mb-lg">
+                    <h3>Battle Phases</h3>
+                    <ol>
+                        <li><strong>Strategic Phase (1 hour):</strong> Positioning, reconnaissance, initial maneuvers</li>
+                        <li><strong>Engagement Phase (2-4 hours):</strong> Main combat with multiple strategic rounds</li>
+                        <li><strong>Resolution Phase (1 hour):</strong> Pursuit, withdrawal, or occupation</li>
+                    </ol>
                 </div>
-            </div>
 
-            <div class="glass-card p-lg">
-                <h2>14.4 Example: The Battle of Kepler's Gate</h2>
-                <div style="background: rgba(220, 20, 60, 0.1); padding: 1.5rem; border-radius: 12px; border: 1px solid var(--accent-red);">
-                    <h3 style="color: var(--accent-red);">Scenario Setup</h3>
-                    <p><strong>Federal Fleet:</strong> [Balanced], [Tactical], [Experienced] - 200 ships</p>
-                    <p><strong>Pirate Alliance:</strong> [Fast], [Aggressive], [Desperate] - 300 ships</p>
-                    <p><strong>Objective:</strong> Control of the Kepler Gate hyperspace junction</p>
-                    
-                    <h4 style="color: var(--accent-gold);">PC Admiral's Decisions</h4>
-                    <p>Admiral Sarah Chen ([Tactical] [Inspiring] [Federation-Trained]) commands the Federal Fleet.</p>
-                    
-                    <p><strong>Round 1:</strong> Uses [Tactical] + Fleet [Balanced] to form defensive screen</p>
-                    <p><strong>Round 2:</strong> [Inspiring] tag rallies wavering cruiser squadron</p>
-                    <p><strong>Round 3:</strong> Perfect synergy: [Tactical] + [Experienced] fleet + [Defensive] formation grants +4 dice for devastating counter-attack</p>
-                    
-                    <h4 style="color: var(--accent-blue);">Outcome</h4>
-                    <p>Federal tactical superiority defeats pirate numbers. Admiral Chen's reputation gains [Victor of Kepler] tag.</p>
+                <div class="glass-card p-lg mb-lg">
+                    <h3>Command Actions</h3>
+                    <table style="width: 100%;">
+                        <thead>
+                            <tr>
+                                <th>Action</th>
+                                <th>Effect</th>
+                                <th>TN</th>
+                                <th>Duration</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Rally</strong></td>
+                                <td>Restore 1d6 Morale to one unit</td>
+                                <td>11</td>
+                                <td>1 action</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Maneuver</strong></td>
+                                <td>Reposition units, gain advantage</td>
+                                <td>14</td>
+                                <td>1 round</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Focused Fire</strong></td>
+                                <td>+2 damage to one target this round</td>
+                                <td>14</td>
+                                <td>1 action</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Inspiring Speech</strong></td>
+                                <td>All units +1 die next round</td>
+                                <td>17</td>
+                                <td>1 action</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Tactical Genius</strong></td>
+                                <td>Gain one extra command action</td>
+                                <td>20</td>
+                                <td>Special</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Strategic Withdrawal</strong></td>
+                                <td>Organized retreat with minimal losses</td>
+                                <td>17</td>
+                                <td>1 round</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
-            </div>
+
+                <div class="glass-card p-lg mb-lg">
+                    <h3>Combat Resolution</h3>
+                    <p><strong>Initiative:</strong> 2d10 + Commander Awareness + Command + Fleet/Army tags</p>
+                    <p><strong>Attack:</strong> 2d10 + Unit Quality + Equipment + Situational tags vs enemy Defense TN</p>
+                    <p><strong>Defense TN:</strong> 10 + Target Unit Quality + Equipment + Defensive tags</p>
+                    
+                    <h4 style="margin-top: 1.5rem;">Damage Resolution</h4>
+                    <table style="width: 100%; font-size: 0.9rem;">
+                        <thead>
+                            <tr>
+                                <th>Attack Success</th>
+                                <th>Morale Damage</th>
+                                <th>Additional Effect</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Success by 1-3</strong></td>
+                                <td>1 point</td>
+                                <td>Unit shaken (loses next action)</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Success by 4-6</strong></td>
+                                <td>2 points</td>
+                                <td>5% casualties, -1 Quality until rally</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Success by 7-9</strong></td>
+                                <td>3 points</td>
+                                <td>10% casualties, -2 to all rolls</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Success by 10+</strong></td>
+                                <td>4 points</td>
+                                <td>25% casualties, must make morale check</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="glass-card p-lg">
+                    <h3>Victory Conditions</h3>
+                    <table style="width: 100%;">
+                        <thead>
+                            <tr>
+                                <th>Condition</th>
+                                <th>Victory Points</th>
+                                <th>Effect</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Rout Enemy Unit</strong></td>
+                                <td>1 VP</td>
+                                <td>Unit flees battlefield</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Destroy Enemy Unit</strong></td>
+                                <td>2 VP</td>
+                                <td>Unit eliminated</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Control Strategic Objective</strong></td>
+                                <td>3 VP</td>
+                                <td>Control key terrain/station</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Break Enemy Army Morale</strong></td>
+                                <td>5 VP</td>
+                                <td>Mass retreat begins</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Achieve Strategic Goal</strong></td>
+                                <td>10 VP</td>
+                                <td>Campaign objective completed</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                    <p style="margin-top: 1rem;"><strong>Winning:</strong> First side to 15 VP or control all objectives wins the battle.</p>
+                </div>
+            </section>
+
+            <!-- Section 4: PC Integration -->
+            <section id="pc-integration" class="mb-xl">
+                <h2>PC Integration</h2>
+                
+                <div class="glass-card p-lg mb-lg">
+                    <h3>Hero Actions</h3>
+                    <p>PCs can take special actions within mass combat that affect the larger battle:</p>
+                    
+                    <table style="width: 100%; font-size: 0.9rem;">
+                        <thead>
+                            <tr>
+                                <th>Action</th>
+                                <th>Scale</th>
+                                <th>TN</th>
+                                <th>Effect</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Duel Enemy Champion</strong></td>
+                                <td>Personal</td>
+                                <td>Enemy's skill +5</td>
+                                <td>Win = +2 army morale, lose = -1 morale</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Sabotage Key Asset</strong></td>
+                                <td>Squad</td>
+                                <td>17</td>
+                                <td>Enemy unit -2 dice next round</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Rally Broken Unit</strong></td>
+                                <td>Personal</td>
+                                <td>14</td>
+                                <td>Restore routed unit to 1 Morale</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Assassination</strong></td>
+                                <td>Personal</td>
+                                <td>20</td>
+                                <td>Remove enemy commander from battle</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Hold the Line</strong></td>
+                                <td>Squad</td>
+                                <td>17</td>
+                                <td>One unit becomes unbreakable for 3 rounds</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Tactical Strike</strong></td>
+                                <td>Squadron</td>
+                                <td>14</td>
+                                <td>Deal morale damage as if successful attack</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="glass-card p-lg mb-lg">
+                    <h3>Command Roles</h3>
+                    <div class="grid grid-2" style="gap: 1rem;">
+                        <div>
+                            <h4 style="color: var(--accent-gold);">Supreme Commander</h4>
+                            <ul style="font-size: 0.9rem;">
+                                <li>Can use all command actions</li>
+                                <li>Gets 3 actions per strategic round</li>
+                                <li>Can coordinate multiple theaters</li>
+                                <li>Presence affects entire army morale</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 style="color: var(--accent-blue);">Unit Commander</h4>
+                            <ul style="font-size: 0.9rem;">
+                                <li>Affects only assigned units</li>
+                                <li>Gets 1-2 actions per round</li>
+                                <li>Can take personal hero actions</li>
+                                <li>Adds skills to unit performance</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass-card p-lg">
+                    <h3>Scaling Between Combat Types</h3>
+                    <p>Transitioning from mass combat to personal combat:</p>
+                    
+                    <ul>
+                        <li><strong>Boarding Actions:</strong> Personal combat during space battles</li>
+                        <li><strong>Commando Raids:</strong> Squad missions affecting army outcomes</li>
+                        <li><strong>Duels of Honor:</strong> Single combat with mass morale effects</li>
+                        <li><strong>Critical Objectives:</strong> Personal missions determining battle victory</li>
+                    </ul>
+                    
+                    <p style="margin-top: 1rem;"><strong>Time Compression:</strong> Personal rounds (6 seconds) can occur within strategic rounds (1 hour) for dramatic moments.</p>
+                </div>
+            </section>
+
+            <!-- Section 5: Quick Reference -->
+            <section id="quick-reference" class="mb-xl">
+                <h2>Quick Reference</h2>
+                
+                <div class="glass-panel p-xl" style="background: linear-gradient(135deg, rgba(255, 215, 0, 0.05), rgba(0, 0, 0, 0.8));">
+                    <h3 style="color: var(--accent-gold); text-align: center; margin-bottom: 2rem;">MASS COMBAT QUICK REFERENCE</h3>
+                    
+                    <div class="grid grid-2 mb-lg">
+                        <div>
+                            <h4 style="color: var(--accent-blue);">Core Formula</h4>
+                            <div style="background: var(--glass-bg); padding: 1rem; border-radius: 8px; margin: 1rem 0;">
+                                <p style="text-align: center; font-size: 1.1rem;"><strong>2d10 + Commander + Command + Unit Quality + Tags vs TN</strong></p>
+                            </div>
+                            
+                            <h4 style="color: var(--accent-blue); margin-top: 1.5rem;">Unit Statistics</h4>
+                            <ul style="font-size: 0.9rem;">
+                                <li><strong>Size:</strong> Squad(10)/Company(100)/Battalion(1000)/Division(10000)</li>
+                                <li><strong>Quality:</strong> Green(0)/Regular(+1)/Veteran(+2)/Elite(+3)</li>
+                                <li><strong>Morale:</strong> 3-15 (like HP for units)</li>
+                                <li><strong>Equipment:</strong> Poor(0)/Standard(+1)/Advanced(+2)/Cutting-Edge(+3)</li>
+                            </ul>
+                        </div>
+                        
+                        <div>
+                            <h4 style="color: var(--accent-blue);">Command Actions</h4>
+                            <table style="width: 100%; font-size: 0.9rem;">
+                                <tr><td>Rally</td><td>TN 11</td><td>+1d6 Morale</td></tr>
+                                <tr><td>Maneuver</td><td>TN 14</td><td>Reposition</td></tr>
+                                <tr><td>Focus Fire</td><td>TN 14</td><td>+2 damage</td></tr>
+                                <tr><td>Inspire</td><td>TN 17</td><td>+1 die all units</td></tr>
+                                <tr><td>Genius</td><td>TN 20</td><td>Extra action</td></tr>
+                            </table>
+                            
+                            <h4 style="color: var(--accent-blue); margin-top: 1.5rem;">Victory Points</h4>
+                            <table style="width: 100%; font-size: 0.9rem;">
+                                <tr><td>Rout Unit</td><td>1 VP</td></tr>
+                                <tr><td>Destroy Unit</td><td>2 VP</td></tr>
+                                <tr><td>Control Objective</td><td>3 VP</td></tr>
+                                <tr><td>Break Army Morale</td><td>5 VP</td></tr>
+                                <tr><td>Strategic Goal</td><td>10 VP</td></tr>
+                            </table>
+                        </div>
+                    </div>
+                    
+                    <div style="border-top: 2px solid var(--accent-gold); padding-top: 1rem; margin-top: 1rem;">
+                        <h4 style="color: var(--accent-gold); text-align: center;">Example Forces</h4>
+                        <div class="grid grid-2" style="font-size: 0.9rem;">
+                            <div>
+                                <p><strong>Standard Fleet (50 VP):</strong><br>
+                                2× Fighter Squadron (6 VP)<br>
+                                2× Corvette Division (16 VP)<br>
+                                2× Frigate Task Force (30 VP)</p>
+                            </div>
+                            <div>
+                                <p><strong>Assault Army (60 VP):</strong><br>
+                                3× Infantry Company (6 VP)<br>
+                                2× Armor Battalion (16 VP)<br>
+                                1× Artillery Regiment (5 VP)<br>
+                                1× Marine Division (20 VP)<br>
+                                1× Mech Company (15 VP)</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div style="border-top: 2px solid var(--accent-red); padding-top: 1rem; margin-top: 1rem;">
+                        <h4 style="color: var(--accent-red); text-align: center;">Battle of Kepler's Gate</h4>
+                        <div class="grid grid-2" style="font-size: 0.9rem;">
+                            <div>
+                                <p><strong>Federal Fleet (45 VP):</strong><br>
+                                Admiral Chen: [Tactical][Inspiring][Federation]<br>
+                                Quality: Veteran (+2), Morale: 12<br>
+                                Tags: [Balanced][Experienced][Defensive]</p>
+                            </div>
+                            <div>
+                                <p><strong>Pirate Alliance (55 VP):</strong><br>
+                                Warlord Kross: [Aggressive][Ruthless][Pirate]<br>
+                                Quality: Regular (+1), Morale: 9<br>
+                                Tags: [Fast][Desperate][Swarm]</p>
+                            </div>
+                        </div>
+                        <p style="text-align: center; margin-top: 1rem;"><strong>Result:</strong> Federal tactical superiority defeats pirate numbers. Chen gains [Victor of Kepler] tag.</p>
+                    </div>
+                </div>
+            </section>
         </main>
 
+        <!-- Chapter Navigation -->
         <nav class="chapter-nav glass-panel p-lg">
             <div class="nav-links">
                 <a href="../ch13-campaign-building/index.html" class="nav-prev">
@@ -166,12 +668,7 @@
         </nav>
     </div>
 
+    <!-- Scripts -->
     <script src="../../assets/js/cosmos-engine.js"></script>
-    <style>
-        .chapter-nav { margin-top: 3rem; }
-        .nav-links { display: flex; justify-content: space-between; align-items: center; }
-        .nav-prev, .nav-next { color: var(--accent-blue); text-decoration: none; padding: 0.5rem 1rem; border-radius: 6px; transition: background-color 0.3s ease; }
-        .nav-prev:hover, .nav-next:hover { background: var(--glass-bg); }
-    </style>
 </body>
 </html>
