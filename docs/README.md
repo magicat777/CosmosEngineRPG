@@ -27,7 +27,7 @@ This is the full Second Edition rulebook featuring the Universal Tag System, str
 ## Directory Structure
 
 ```
-cosmos-engine-html/
+docs/
 ├── index.html                    # Main rulebook index (entry point)
 ├── chapters/                     # All 16 core chapters
 │   ├── ch01-introduction/
@@ -61,7 +61,7 @@ cosmos-engine-html/
 2. Go to Settings > Pages in your repository
 3. Select source: "Deploy from a branch"
 4. Select branch: "second-edition-html"
-5. Select folder: "/cosmos-engine-html"
+5. Select folder: "/docs"
 6. Save and wait for deployment
 
 Your rulebook will be available at:
@@ -71,7 +71,7 @@ Your rulebook will be available at:
 
 ```bash
 # Using Python 3
-cd cosmos-engine-html
+cd docs
 python -m http.server 8000
 
 # Using Node.js
