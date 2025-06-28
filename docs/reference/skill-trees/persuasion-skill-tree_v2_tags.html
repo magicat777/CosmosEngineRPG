@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Persuasion Skill Tree v2 - With Tags - Cosmos Engine RPG</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #2d1b69 0%, #0f3460 50%, #16213e 100%);
+            color: #fff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .header {
+            text-align: center;
+            padding: 2rem;
+            width: 100%;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            text-shadow: 0 0 20px rgba(218, 165, 32, 0.5);
+        }
+
+        .header p {
+            margin: 0.5rem 0;
+            color: #daa520;
+            font-size: 1.1rem;
+        }
+
+        .tree-container {
+            width: 95%;
+            max-width: 1400px;
+            margin: 2rem auto;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 20px;
+            padding: 3rem;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .skill-tree {
+            display: flex;
+            flex-direction: column;
+            gap: 3rem;
+            position: relative;
+        }
+
+        .tier {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+        }
+
+        .tier-label {
+            font-size: 1.3rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #daa520;
+            text-shadow: 0 0 10px rgba(218, 165, 32, 0.5);
+        }
+
+        .skills-row {
+            display: flex;
+            gap: 2rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .skill {
+            background: rgba(255, 255, 255, 0.1);
+            border: 2px solid #4a5568;
+            border-radius: 15px;
+            padding: 1.5rem;
+            width: 320px;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .skill::before {
+            content: '';
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            right: -2px;
+            bottom: -2px;
+            background: linear-gradient(45deg, transparent, transparent);
+            border-radius: 15px;
+            z-index: -1;
+            transition: all 0.3s ease;
+        }
+
+        .skill:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Tier-specific colors */
+        .base-skill {
+            border-color: #daa520;
+        }
+        .base-skill::before {
+            background: linear-gradient(45deg, #daa520, #b8860b);
+        }
+
+        .journeyman-skill {
+            border-color: #cd853f;
+        }
+        .journeyman-skill::before {
+            background: linear-gradient(45deg, #cd853f, #a0522d);
+        }
+
+        .master-skill {
+            border-color: #ff8c00;
+        }
+        .master-skill::before {
+            background: linear-gradient(45deg, #ff8c00, #ff7f50);
+        }
+
+        .grandmaster-skill {
+            border-color: #ff6347;
+        }
+        .grandmaster-skill::before {
+            background: linear-gradient(45deg, #ff6347, #ff4500);
+        }
+
+        .skill-rank {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: bold;
+        }
+
+        .skill-name {
+            font-size: 1.3rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+            color: #fff;
+        }
+
+        .skill-scale {
+            font-size: 0.9rem;
+            color: #daa520;
+            margin-bottom: 0.8rem;
+            font-style: italic;
+        }
+
+        .skill-effect {
+            font-size: 1rem;
+            line-height: 1.4;
+            margin-bottom: 0.8rem;
+            color: #e2e8f0;
+        }
+
+        .skill-description {
+            font-size: 0.9rem;
+            color: #a0aec0;
+            font-style: italic;
+            margin-bottom: 1rem;
+        }
+
+        /* Tag section styling */
+        .tag-section {
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 10px;
+            padding: 1rem;
+            margin-top: 1rem;
+        }
+
+        .tag-label {
+            font-size: 0.8rem;
+            color: #daa520;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 0.5rem;
+        }
+
+        .tag-options {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .tag {
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(218, 165, 32, 0.3);
+            border-radius: 15px;
+            padding: 0.3rem 0.8rem;
+            font-size: 0.85rem;
+            color: #daa520;
+            transition: all 0.2s ease;
+        }
+
+        .tag:hover {
+            background: rgba(218, 165, 32, 0.2);
+            border-color: rgba(218, 165, 32, 0.5);
+            transform: scale(1.05);
+        }
+
+        .tag-description {
+            font-size: 0.8rem;
+            color: #a0aec0;
+            font-style: italic;
+        }
+
+        .grandmaster-title {
+            margin-top: 0.5rem;
+            font-size: 0.85rem;
+            color: #ff6347;
+            font-weight: bold;
+        }
+
+        /* Connection lines */
+        .tier:not(:last-child)::after {
+            content: '';
+            position: absolute;
+            bottom: -3rem;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 2px;
+            height: 3rem;
+            background: linear-gradient(to bottom, #4a5568, transparent);
+        }
+
+        /* Scale legend */
+        .scale-legend {
+            margin-top: 3rem;
+            padding: 1.5rem;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 10px;
+            border: 1px solid rgba(218, 165, 32, 0.1);
+        }
+
+        .scale-legend h3 {
+            margin-top: 0;
+            color: #daa520;
+            text-align: center;
+        }
+
+        .scale-items {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .scale-item {
+            text-align: center;
+            padding: 0.5rem 1rem;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 8px;
+        }
+
+        .scale-ranks {
+            font-weight: bold;
+            color: #daa520;
+        }
+
+        .scale-name {
+            font-size: 0.9rem;
+            color: #a0aec0;
+        }
+
+        /* Tag synergy hint */
+        .synergy-hint {
+            background: rgba(205, 133, 63, 0.1);
+            border: 1px solid rgba(205, 133, 63, 0.3);
+            border-radius: 8px;
+            padding: 0.5rem;
+            margin-top: 0.5rem;
+            font-size: 0.8rem;
+            color: #cd853f;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .tree-container {
+                padding: 1.5rem;
+            }
+            
+            .skill {
+                width: 100%;
+                max-width: 350px;
+            }
+            
+            .header h1 {
+                font-size: 2rem;
+            }
+        }
+
+        /* Glow animations */
+        @keyframes glow {
+            0% { box-shadow: 0 0 5px rgba(218, 165, 32, 0.2); }
+            50% { box-shadow: 0 0 20px rgba(218, 165, 32, 0.4), 0 0 30px rgba(218, 165, 32, 0.2); }
+            100% { box-shadow: 0 0 5px rgba(218, 165, 32, 0.2); }
+        }
+
+        .grandmaster-skill:hover {
+            animation: glow 2s infinite;
+        }
+
+        /* Tag glow effect */
+        .tag-glow {
+            animation: tagPulse 3s infinite;
+        }
+
+        @keyframes tagPulse {
+            0% { box-shadow: 0 0 5px rgba(255, 99, 71, 0.3); }
+            50% { box-shadow: 0 0 15px rgba(255, 99, 71, 0.6); }
+            100% { box-shadow: 0 0 5px rgba(255, 99, 71, 0.3); }
+        }
+
+        /* Charisma sparkle effect */
+        .sparkle {
+            position: absolute;
+            width: 4px;
+            height: 4px;
+            background: #daa520;
+            border-radius: 50%;
+            animation: sparkle 3s linear infinite;
+        }
+
+        @keyframes sparkle {
+            0% { transform: translateY(0) scale(0); opacity: 0; }
+            20% { opacity: 1; }
+            80% { opacity: 1; }
+            100% { transform: translateY(-100px) scale(1); opacity: 0; }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>PERSUASION SKILL TREE v2</h1>
+        <p>Integrated Tag System - 7 Skills with Progressive Tags</p>
+    </div>
+
+    <div class="tree-container">
+        <div class="skill-tree">
+            <!-- Base Tier -->
+            <div class="tier">
+                <div class="tier-label">Base Skill</div>
+                <div class="skills-row">
+                    <div class="skill base-skill">
+                        <div class="sparkle" style="top: 20%; left: 10%; animation-delay: 0s;"></div>
+                        <div class="sparkle" style="top: 60%; left: 80%; animation-delay: 1s;"></div>
+                        <div class="sparkle" style="top: 40%; left: 50%; animation-delay: 2s;"></div>
+                        <div class="skill-rank">Rank 1</div>
+                        <div class="skill-name">Basic Persuasion</div>
+                        <div class="skill-scale">Scale: Personal</div>
+                        <div class="skill-effect">Social influence basics, +1 to all persuasion rolls</div>
+                        <div class="skill-description">You understand how to influence others</div>
+                        <div class="tag-section">
+                            <div class="tag-label">Choose Foundation Tag:</div>
+                            <div class="tag-options">
+                                <span class="tag">[Charming]</span>
+                                <span class="tag">[Logical]</span>
+                                <span class="tag">[Empathic]</span>
+                                <span class="tag">[Authoritative]</span>
+                            </div>
+                            <div class="tag-description">What's your persuasive foundation?</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Journeyman Tier -->
+            <div class="tier">
+                <div class="tier-label">Journeyman Tier (Ranks 2-3)</div>
+                <div class="skills-row">
+                    <div class="skill journeyman-skill">
+                        <div class="skill-rank">Rank 2</div>
+                        <div class="skill-name">Silver Tongue</div>
+                        <div class="skill-scale">Scale: Personal → Vehicle</div>
+                        <div class="skill-effect">+2 to negotiations, can influence small groups</div>
+                        <div class="skill-description">Your words carry weight and conviction</div>
+                        <div class="tag-section">
+                            <div class="tag-label">Choose Style Tag:</div>
+                            <div class="tag-options">
+                                <span class="tag">[Diplomatic]</span>
+                                <span class="tag">[Inspiring]</span>
+                                <span class="tag">[Manipulative]</span>
+                                <span class="tag">[Sincere]</span>
+                            </div>
+                            <div class="synergy-hint">Synergy: [Empathic] + [Sincere] = "Genuine Connection" (+2 dice)</div>
+                        </div>
+                    </div>
+                    <div class="skill journeyman-skill">
+                        <div class="skill-rank">Rank 3</div>
+                        <div class="skill-name">Group Dynamics</div>
+                        <div class="skill-scale">Scale: Vehicle</div>
+                        <div class="skill-effect">Can sway crowds (up to 50), read social currents</div>
+                        <div class="skill-description">You understand and influence group psychology</div>
+                        <div class="tag-section">
+                            <div class="tag-label">Choose Influence Tag:</div>
+                            <div class="tag-options">
+                                <span class="tag">[Orator]</span>
+                                <span class="tag">[Consensus]</span>
+                                <span class="tag">[Provocateur]</span>
+                                <span class="tag">[Mediator]</span>
+                            </div>
+                            <div class="synergy-hint">Triple Synergy: [Charming] + [Inspiring] + [Orator] = "Charismatic Leader" (+3 dice)</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Master Tier -->
+            <div class="tier">
+                <div class="tier-label">Master Tier (Ranks 4-6)</div>
+                <div class="skills-row">
+                    <div class="skill master-skill">
+                        <div class="skill-rank">Rank 4</div>
+                        <div class="skill-name">Master Negotiator</div>
+                        <div class="skill-scale">Scale: Vehicle → Starship</div>
+                        <div class="skill-effect">Reroll failed social rolls, immune to manipulation</div>
+                        <div class="skill-description">You navigate complex negotiations effortlessly</div>
+                        <div class="tag-section">
+                            <div class="tag-label">Choose Expertise Tag:</div>
+                            <div class="tag-options">
+                                <span class="tag">[Deal Maker]</span>
+                                <span class="tag">[Peace Broker]</span>
+                                <span class="tag">[Information]</span>
+                                <span class="tag">[Cultural]</span>
+                            </div>
+                            <div class="tag-description">What negotiations do you master?</div>
+                        </div>
+                    </div>
+                    <div class="skill master-skill">
+                        <div class="skill-rank">Rank 6</div>
+                        <div class="skill-name">Social Architect</div>
+                        <div class="skill-scale">Scale: Starship</div>
+                        <div class="skill-effect">Can influence entire organizations, +3 to mass persuasion</div>
+                        <div class="skill-description">You shape social structures and movements</div>
+                        <div class="tag-section">
+                            <div class="tag-label">Choose Network Tag:</div>
+                            <div class="tag-options">
+                                <span class="tag">[Political]</span>
+                                <span class="tag">[Corporate]</span>
+                                <span class="tag">[Underground]</span>
+                                <span class="tag">[Media]</span>
+                            </div>
+                            <div class="synergy-hint">Cross-Skill: [Political] + Command [Leadership] + Knowledge [Tactical] = "Kingmaker" (+4 dice)</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Grandmaster Tier -->
+            <div class="tier">
+                <div class="tier-label">Grandmaster Tier (Ranks 7-10)</div>
+                <div class="skills-row">
+                    <div class="skill grandmaster-skill">
+                        <div class="skill-rank">Rank 8</div>
+                        <div class="skill-name">Voice of Nations</div>
+                        <div class="skill-scale">Scale: Starship → Fleet</div>
+                        <div class="skill-effect">Your words shape civilizations, can end wars with speech</div>
+                        <div class="skill-description">You influence at planetary scales</div>
+                        <div class="tag-section">
+                            <div class="tag-label">Choose Legend Tag:</div>
+                            <div class="tag-options">
+                                <span class="tag">[Prophet]</span>
+                                <span class="tag">[Uniter]</span>
+                                <span class="tag">[Revolutionary]</span>
+                                <span class="tag">[Peacemaker]</span>
+                            </div>
+                            <div class="synergy-hint">Legendary Chain: All previous tags harmonize at this level (+4 dice)</div>
+                        </div>
+                    </div>
+                    <div class="skill grandmaster-skill tag-glow">
+                        <div class="skill-rank">Rank 10</div>
+                        <div class="skill-name">GALACTIC VOICE</div>
+                        <div class="skill-scale">Scale: Fleet</div>
+                        <div class="skill-effect">Entire species follow your words, +5 to all allied social rolls</div>
+                        <div class="skill-description">Your voice echoes across the galaxy, shaping history itself</div>
+                        <div class="tag-section">
+                            <div class="tag-label">Choose Archetype Tag:</div>
+                            <div class="tag-options">
+                                <span class="tag">[Galactic Voice]</span>
+                                <span class="tag">[Mind Shepherd]</span>
+                                <span class="tag">[The Convincer]</span>
+                                <span class="tag">[Truth Speaker]</span>
+                            </div>
+                            <div class="grandmaster-title">Titles: "The Galactic Voice" • "Mind Shepherd" • "Truth Speaker"</div>
+                            <div class="synergy-hint">Ultimate: All persuasion tags unite into reality-shaping influence (+5 dice)</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scale Legend -->
+        <div class="scale-legend">
+            <h3>Scale Progression & Tag Evolution</h3>
+            <div class="scale-items">
+                <div class="scale-item">
+                    <div class="scale-ranks">Ranks 1-2</div>
+                    <div class="scale-name">Personal Influence</div>
+                    <div class="tag-description">Foundation & Style</div>
+                </div>
+                <div class="scale-item">
+                    <div class="scale-ranks">Rank 3</div>
+                    <div class="scale-name">Group Dynamics</div>
+                    <div class="tag-description">Influence Tags</div>
+                </div>
+                <div class="scale-item">
+                    <div class="scale-ranks">Ranks 4-5</div>
+                    <div class="scale-name">Vehicle → Starship</div>
+                    <div class="tag-description">Expertise Tags</div>
+                </div>
+                <div class="scale-item">
+                    <div class="scale-ranks">Rank 6</div>
+                    <div class="scale-name">Organizations</div>
+                    <div class="tag-description">Network Tags</div>
+                </div>
+                <div class="scale-item">
+                    <div class="scale-ranks">Ranks 7-9</div>
+                    <div class="scale-name">Civilizations</div>
+                    <div class="tag-description">Legend Tags</div>
+                </div>
+                <div class="scale-item">
+                    <div class="scale-ranks">Rank 10</div>
+                    <div class="scale-name">Galactic Influence</div>
+                    <div class="tag-description">Archetype Tags</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

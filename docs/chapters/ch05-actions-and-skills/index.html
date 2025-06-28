@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 5: Actions and Skills - Cosmos Engine RPG</title>
+    <link rel="stylesheet" href="../../assets/css/cosmos-engine.css">
+    <meta name="description" content="How skills work in Cosmos Engine RPG - 18 core skills with tag-based progression">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav-primary glass-panel">
+        <div class="container">
+            <div class="nav-content">
+                <div class="nav-brand">
+                    <a href="../../index.html" class="brand-link" style="display: flex; align-items: center; gap: 1rem; text-decoration: none;">
+                        <img src="../../assets/images/cosmos-engine-logo.png" alt="Cosmos Engine" style="width: 40px; height: 40px; filter: drop-shadow(0 0 10px rgba(0, 255, 255, 0.4));">
+                        <div>
+                        <h3 style="margin: 0; color: var(--accent-gold);">Cosmos Engine RPG</h3>
+                        <small style="color: var(--text-muted); font-size: 0.8rem;">Chapter 5: Actions and Skills</small>
+                    </div>
+                    </a>
+                </div>
+                <div class="nav-utils">
+                    <div id="search-container" class="search-container"></div>
+                    <a href="../../index.html" class="btn btn-secondary">← Rulebook</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <!-- Breadcrumbs -->
+        <nav class="breadcrumb">
+            <a href="../../index.html">Home</a>
+            <span class="breadcrumb-separator">›</span>
+            <a href="../index.html">Chapters</a>
+            <span class="breadcrumb-separator">›</span>
+            <span>Chapter 5: Actions and Skills</span>
+        </nav>
+
+        <!-- Chapter Header -->
+        <header class="glass-panel p-xl text-center mb-xl">
+            <h1>Chapter 5: Actions and Skills</h1>
+            <p style="font-size: 1.1rem; color: var(--text-secondary); margin: 1rem 0;">
+                Cosmos Engine features 18 core skills that scale from personal actions to galactic operations. 
+                Each skill rank grants one tag that defines how you approach challenges.
+            </p>
+        </header>
+
+        <!-- Table of Contents -->
+        <div class="glass-panel p-lg mb-xl">
+            <h2>Chapter Contents</h2>
+            <ul style="list-style: none; margin: 0;">
+                <li><a href="#how-skills-work">How Skills Work</a></li>
+                <li><a href="#skill-overview">The 18 Core Skills</a></li>
+                <li><a href="#quick-reference">Quick Reference</a></li>
+            </ul>
+        </div>
+
+        <!-- Main Content -->
+        <main>
+            <!-- Section 1: How Skills Work -->
+            <section id="how-skills-work" class="mb-xl">
+                <h2>How Skills Work</h2>
+                
+                <!-- Basic Resolution -->
+                <div class="glass-card p-lg mb-lg">
+                    <h3>Basic Resolution</h3>
+                    <p style="font-size: 1.2rem; font-weight: bold; color: var(--accent-gold); text-align: center; margin: 1rem 0;">
+                        2d10 + Attribute + Skill + Tag Bonuses vs Target Number
+                    </p>
+                    <p><strong>When to Roll:</strong> Only when outcome is uncertain and both success and failure are interesting.</p>
+                    <p><strong>Attribute Pairing:</strong> GM selects most relevant attribute for the specific action:</p>
+                    <ul>
+                        <li>Combat + Might = Melee attacks</li>
+                        <li>Combat + Coordination = Ranged attacks</li>
+                        <li>Combat + Intellect = Tactical planning</li>
+                    </ul>
+                </div>
+
+                <!-- Tag System Reminder -->
+                <div class="glass-card p-lg mb-lg">
+                    <h3>Tag System Reminder</h3>
+                    <p>Tags represent HOW you do things, providing bonus dice when relevant.</p>
+                    <ul>
+                        <li>Each skill rank grants one tag</li>
+                        <li>Relevant tags provide +1 die each</li>
+                        <li>Maximum +5 dice from all tags combined</li>
+                    </ul>
+                    <p style="margin-top: 1rem;"><em>See Chapter 2 for complete tag rules and synergy mechanics.</em></p>
+                </div>
+
+                <!-- Scale and Skills -->
+                <div class="glass-card p-lg">
+                    <h3>Scale and Skills</h3>
+                    <p><strong>Skills work at all scales.</strong> As you advance, tags evolve in meaning:</p>
+                    
+                    <div class="example-block" style="margin-top: 1rem;">
+                        <h4>Example: Combat Across Scales</h4>
+                        <ul>
+                            <li><strong>Personal:</strong> Firefight in a space station corridor</li>
+                            <li><strong>Vehicle:</strong> Tank battle on planetary surface</li>
+                            <li><strong>Starship:</strong> Destroyer engagement in asteroid field</li>
+                            <li><strong>Capital:</strong> Fleet admiral coordinating sector assault</li>
+                        </ul>
+                        <p style="margin-top: 0.5rem;">Same skill, same mechanics, different narrative scope.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 2: Skill Overview -->
+            <section id="skill-overview" class="mb-xl">
+                <h2>The 18 Core Skills</h2>
+                
+                <!-- Combat & Physical Skills -->
+                <div class="glass-panel p-lg mb-lg">
+                    <h3 style="color: var(--accent-red);">Combat & Physical Skills</h3>
+                    
+                    <div class="skill-entry mb-lg">
+                        <h4>COMBAT - The Art of Warfare</h4>
+                        <p><strong>Primary Attributes:</strong> Might (melee), Coordination (ranged), Awareness (tactics)</p>
+                        <p><strong>Core Concept:</strong> Personal combat to fleet warfare using consistent mechanics.</p>
+                        <p><strong>Scale Evolution:</strong> Dueling → Squad tactics → Ship gunnery → Fleet command</p>
+                        <p><strong>Common Uses:</strong> Attack rolls, defensive maneuvers, tactical assessment, weapon mastery</p>
+                        <p><em>Full progression available in Cosmos Engine Skills Compendium</em></p>
+                    </div>
+                    
+                    <div class="skill-entry mb-lg">
+                        <h4>ATHLETICS - Physical Excellence</h4>
+                        <p><strong>Primary Attributes:</strong> Might (power), Coordination (agility), Resolve (endurance)</p>
+                        <p><strong>Core Concept:</strong> Movement, acrobatics, and physical feats across all environments.</p>
+                        <p><strong>Scale Evolution:</strong> Personal parkour → Vehicle stunts → EVA operations → Fleet formations</p>
+                        <p><strong>Common Uses:</strong> Climbing, jumping, swimming, zero-g maneuvering, endurance</p>
+                    </div>
+                    
+                    <div class="skill-entry">
+                        <h4>STEALTH - The Silent Art</h4>
+                        <p><strong>Primary Attributes:</strong> Coordination (physical), Awareness (timing), Intellect (planning)</p>
+                        <p><strong>Core Concept:</strong> Avoiding detection through physical and electronic means.</p>
+                        <p><strong>Scale Evolution:</strong> Personal infiltration → Vehicle cloaking → Ship silent running → Fleet concealment</p>
+                        <p><strong>Common Uses:</strong> Sneaking, hiding, shadowing, electronic warfare countermeasures</p>
+                    </div>
+                </div>
+
+                <!-- Technical & Mental Skills -->
+                <div class="glass-panel p-lg mb-lg">
+                    <h3 style="color: var(--accent-blue);">Technical & Mental Skills</h3>
+                    
+                    <div class="skill-entry mb-lg">
+                        <h4>TECHNOLOGY - Digital Mastery</h4>
+                        <p><strong>Primary Attributes:</strong> Intellect (programming), Coordination (hardware), Awareness (diagnostics)</p>
+                        <p><strong>Core Concept:</strong> Understanding and manipulating technology from personal to planetary scale.</p>
+                        <p><strong>Scale Evolution:</strong> Device hacking → System intrusion → Ship AI → Planetary networks</p>
+                        <p><strong>Common Uses:</strong> Hacking, repairs, programming, system analysis, cybersecurity</p>
+                    </div>
+                    
+                    <div class="skill-entry mb-lg">
+                        <h4>MEDICAL - Life Sciences</h4>
+                        <p><strong>Primary Attributes:</strong> Intellect (diagnosis), Coordination (surgery), Presence (bedside manner)</p>
+                        <p><strong>Core Concept:</strong> Healing and biological sciences across multiple species.</p>
+                        <p><strong>Scale Evolution:</strong> First aid → Surgery → Epidemiology → Planetary health systems</p>
+                        <p><strong>Common Uses:</strong> Treatment, surgery, disease control, xenobiology, enhancement</p>
+                    </div>
+                    
+                    <div class="skill-entry mb-lg">
+                        <h4>KNOWLEDGE - Academic Mastery</h4>
+                        <p><strong>Primary Attributes:</strong> Intellect (recall), Awareness (research), Resolve (study)</p>
+                        <p><strong>Core Concept:</strong> Academic knowledge and research capabilities.</p>
+                        <p><strong>Scale Evolution:</strong> Personal expertise → Library research → Database mining → Galactic archives</p>
+                        <p><strong>Common Uses:</strong> History, science, cultures, languages, investigation</p>
+                    </div>
+                    
+                    <div class="skill-entry mb-lg">
+                        <h4>CRAFT - Creation and Repair</h4>
+                        <p><strong>Primary Attributes:</strong> Coordination (precision), Intellect (design), Might (construction)</p>
+                        <p><strong>Core Concept:</strong> Building, modifying, and repairing objects of all scales.</p>
+                        <p><strong>Scale Evolution:</strong> Personal items → Vehicles → Starships → Space stations</p>
+                        <p><strong>Common Uses:</strong> Construction, modification, jury-rigging, artistic creation</p>
+                    </div>
+                    
+                    <div class="skill-entry">
+                        <h4>PILOT - Vehicle Operation</h4>
+                        <p><strong>Primary Attributes:</strong> Coordination (control), Awareness (navigation), Intellect (systems)</p>
+                        <p><strong>Core Concept:</strong> Operating vehicles from ground cars to capital ships.</p>
+                        <p><strong>Scale Evolution:</strong> Ground vehicles → Aircraft → Starships → Fleet coordination</p>
+                        <p><strong>Common Uses:</strong> Maneuvering, navigation, evasion, formation flying</p>
+                    </div>
+                </div>
+
+                <!-- Social & Support Skills -->
+                <div class="glass-panel p-lg mb-lg">
+                    <h3 style="color: var(--accent-gold);">Social & Support Skills</h3>
+                    
+                    <div class="skill-entry mb-lg">
+                        <h4>PERSUASION - The Art of Influence</h4>
+                        <p><strong>Primary Attributes:</strong> Presence (charm), Intellect (logic), Resolve (persistence)</p>
+                        <p><strong>Core Concept:</strong> Convincing others through charm, logic, or persistence.</p>
+                        <p><strong>Scale Evolution:</strong> Individual → Small groups → Organizations → Planetary populations</p>
+                        <p><strong>Common Uses:</strong> Negotiation, diplomacy, motivation, public speaking</p>
+                    </div>
+                    
+                    <div class="skill-entry mb-lg">
+                        <h4>DECEPTION - Misdirection Mastery</h4>
+                        <p><strong>Primary Attributes:</strong> Presence (acting), Intellect (planning), Coordination (sleight of hand)</p>
+                        <p><strong>Core Concept:</strong> Misleading others through lies, disguise, or misdirection.</p>
+                        <p><strong>Scale Evolution:</strong> White lies → Complex cons → Organizational fronts → Sector-wide propaganda</p>
+                        <p><strong>Common Uses:</strong> Lying, disguise, forgery, false identities, misinformation</p>
+                    </div>
+                    
+                    <div class="skill-entry mb-lg">
+                        <h4>INTIMIDATION - Fear as a Tool</h4>
+                        <p><strong>Primary Attributes:</strong> Presence (menace), Might (physical), Resolve (will)</p>
+                        <p><strong>Core Concept:</strong> Using fear to influence behavior.</p>
+                        <p><strong>Scale Evolution:</strong> Personal threats → Gang intimidation → Military deterrence → Planetary blockades</p>
+                        <p><strong>Common Uses:</strong> Threats, interrogation, crowd control, psychological warfare</p>
+                    </div>
+                    
+                    <div class="skill-entry mb-lg">
+                        <h4>COMMAND - Leadership Excellence</h4>
+                        <p><strong>Primary Attributes:</strong> Presence (authority), Intellect (tactics), Resolve (decisiveness)</p>
+                        <p><strong>Core Concept:</strong> Leading others effectively in peace and war.</p>
+                        <p><strong>Scale Evolution:</strong> Small team → Company → Ship crew → Fleet admiral</p>
+                        <p><strong>Common Uses:</strong> Giving orders, maintaining morale, tactical coordination, inspiration</p>
+                    </div>
+                    
+                    <div class="skill-entry mb-lg">
+                        <h4>PERFORMANCE - Artistic Expression</h4>
+                        <p><strong>Primary Attributes:</strong> Presence (stage), Coordination (instruments), Awareness (audience)</p>
+                        <p><strong>Core Concept:</strong> Entertainment and artistic expression.</p>
+                        <p><strong>Scale Evolution:</strong> Street performance → Venues → Broadcast → Galactic tours</p>
+                        <p><strong>Common Uses:</strong> Music, acting, public speaking, distraction, morale</p>
+                    </div>
+                    
+                    <div class="skill-entry mb-lg">
+                        <h4>COMMERCE - Economic Mastery</h4>
+                        <p><strong>Primary Attributes:</strong> Intellect (analysis), Presence (negotiation), Awareness (opportunities)</p>
+                        <p><strong>Core Concept:</strong> Understanding and manipulating economic systems.</p>
+                        <p><strong>Scale Evolution:</strong> Personal trades → Business deals → Corporate mergers → Sector economics</p>
+                        <p><strong>Common Uses:</strong> Trading, valuation, market analysis, resource management</p>
+                    </div>
+                    
+                    <div class="skill-entry mb-lg">
+                        <h4>PERCEPTION - Sensory Acuity</h4>
+                        <p><strong>Primary Attributes:</strong> Awareness (primary), Intellect (analysis), Resolve (focus)</p>
+                        <p><strong>Core Concept:</strong> Noticing details others miss.</p>
+                        <p><strong>Scale Evolution:</strong> Personal observation → Area surveillance → Ship sensors → Fleet intelligence</p>
+                        <p><strong>Common Uses:</strong> Spot hidden, hear faint sounds, notice patterns, sensor operation</p>
+                    </div>
+                    
+                    <div class="skill-entry mb-lg">
+                        <h4>SURVIVAL - Environmental Adaptation</h4>
+                        <p><strong>Primary Attributes:</strong> Resolve (endurance), Awareness (dangers), Intellect (planning)</p>
+                        <p><strong>Core Concept:</strong> Thriving in hostile environments.</p>
+                        <p><strong>Scale Evolution:</strong> Personal survival → Group resources → Colony management → Terraforming</p>
+                        <p><strong>Common Uses:</strong> Finding resources, shelter construction, hazard navigation, adaptation</p>
+                    </div>
+                    
+                    <div class="skill-entry">
+                        <h4>DISCIPLINE - Mental Fortitude</h4>
+                        <p><strong>Primary Attributes:</strong> Resolve (primary), Presence (confidence), Intellect (focus)</p>
+                        <p><strong>Core Concept:</strong> Mental resilience and self-control.</p>
+                        <p><strong>Scale Evolution:</strong> Personal focus → Team morale → Organizational culture → Societal order</p>
+                        <p><strong>Common Uses:</strong> Resist fear, maintain focus, meditation, resist mental effects</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 3: Quick Reference -->
+            <section id="quick-reference" class="mb-xl">
+                <h2>Quick Reference</h2>
+                
+                <!-- Skills by Category -->
+                <div class="glass-panel p-lg mb-lg">
+                    <h3>Skills by Category</h3>
+                    <div class="grid grid-3">
+                        <div>
+                            <h4 style="color: var(--accent-red);">Combat & Physical</h4>
+                            <ul style="list-style: none;">
+                                <li>• Combat</li>
+                                <li>• Athletics</li>
+                                <li>• Stealth</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 style="color: var(--accent-blue);">Technical & Mental</h4>
+                            <ul style="list-style: none;">
+                                <li>• Technology</li>
+                                <li>• Medical</li>
+                                <li>• Knowledge</li>
+                                <li>• Craft</li>
+                                <li>• Pilot</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 style="color: var(--accent-gold);">Social & Support</h4>
+                            <ul style="list-style: none;">
+                                <li>• Persuasion</li>
+                                <li>• Deception</li>
+                                <li>• Intimidation</li>
+                                <li>• Command</li>
+                                <li>• Performance</li>
+                                <li>• Commerce</li>
+                                <li>• Perception</li>
+                                <li>• Survival</li>
+                                <li>• Discipline</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Common Attribute Pairings -->
+                <div class="glass-card p-lg mb-lg">
+                    <h3>Common Attribute Pairings</h3>
+                    <table style="width: 100%;">
+                        <thead>
+                            <tr>
+                                <th>Action Type</th>
+                                <th>Typical Pairing</th>
+                                <th>Example</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Physical Action</td>
+                                <td>Might or Coordination</td>
+                                <td>Athletics + Might to lift heavy object</td>
+                            </tr>
+                            <tr>
+                                <td>Mental Action</td>
+                                <td>Intellect or Awareness</td>
+                                <td>Knowledge + Intellect to recall facts</td>
+                            </tr>
+                            <tr>
+                                <td>Social Action</td>
+                                <td>Presence or Resolve</td>
+                                <td>Persuasion + Presence to charm</td>
+                            </tr>
+                            <tr>
+                                <td>Extended Action</td>
+                                <td>Resolve</td>
+                                <td>Craft + Resolve for long project</td>
+                            </tr>
+                            <tr>
+                                <td>Quick Action</td>
+                                <td>Awareness or Coordination</td>
+                                <td>Combat + Awareness for initiative</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Where to Find More -->
+                <div class="rule-block" style="background: linear-gradient(135deg, rgba(255, 215, 0, 0.1), rgba(0, 0, 0, 0.5)); border: 2px solid var(--accent-gold);">
+                    <h3 style="color: var(--accent-gold);">📚 Complete Skill Progressions</h3>
+                    <p>For full 10-rank progressions with all tag options:</p>
+                    <ul>
+                        <li><strong>Interactive Skill Trees:</strong> Available at <code>/reference/skill-trees/</code></li>
+                        <li><strong>Printable Reference:</strong> Cosmos Engine Skills Compendium (separate document)</li>
+                        <li><strong>Quick Summaries:</strong> GM Screen includes common skills at ranks 1-5</li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+
+        <!-- Chapter Navigation -->
+        <div class="glass-panel p-lg mb-xl">
+            <div class="text-center">
+                <p style="margin-bottom: 2rem;">Ready for combat? Continue to Chapter 6.</p>
+                <div class="hero-buttons">
+                    <a href="../ch04-character-advancement/index.html" class="btn btn-secondary">← Previous Chapter</a>
+                    <a href="../ch06-personal-combat/index.html" class="btn btn-primary">Next Chapter →</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="text-center">
+            <div class="glass-panel p-lg">
+                <p style="color: var(--text-muted);">
+                    Chapter 5: Actions and Skills • Cosmos Engine RPG
+                </p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="../../assets/js/cosmos-engine.js"></script>
+</body>
+</html>

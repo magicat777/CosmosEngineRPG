@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Skill Tree v2 - With Tags - Cosmos Engine RPG</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #0b1929 0%, #1e3c53 50%, #2a5674 100%);
+            color: #fff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .header {
+            text-align: center;
+            padding: 2rem;
+            width: 100%;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            text-shadow: 0 0 20px rgba(100, 255, 218, 0.5);
+        }
+
+        .header p {
+            margin: 0.5rem 0;
+            color: #64ffda;
+            font-size: 1.1rem;
+        }
+
+        .tree-container {
+            width: 95%;
+            max-width: 1400px;
+            margin: 2rem auto;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 20px;
+            padding: 3rem;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .skill-tree {
+            display: flex;
+            flex-direction: column;
+            gap: 3rem;
+            position: relative;
+        }
+
+        .tier {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+        }
+
+        .tier-label {
+            font-size: 1.3rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #64ffda;
+            text-shadow: 0 0 10px rgba(100, 255, 218, 0.5);
+        }
+
+        .skills-row {
+            display: flex;
+            gap: 2rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .skill {
+            background: rgba(255, 255, 255, 0.1);
+            border: 2px solid #4a5568;
+            border-radius: 15px;
+            padding: 1.5rem;
+            width: 320px;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .skill::before {
+            content: '';
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            right: -2px;
+            bottom: -2px;
+            background: linear-gradient(45deg, transparent, transparent);
+            border-radius: 15px;
+            z-index: -1;
+            transition: all 0.3s ease;
+        }
+
+        .skill:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Tier-specific colors */
+        .base-skill {
+            border-color: #64ffda;
+        }
+        .base-skill::before {
+            background: linear-gradient(45deg, #64ffda, #4ecdc4);
+        }
+
+        .journeyman-skill {
+            border-color: #4ecdc4;
+        }
+        .journeyman-skill::before {
+            background: linear-gradient(45deg, #4ecdc4, #44a3aa);
+        }
+
+        .master-skill {
+            border-color: #ff6b6b;
+        }
+        .master-skill::before {
+            background: linear-gradient(45deg, #ff6b6b, #ee5a24);
+        }
+
+        .grandmaster-skill {
+            border-color: #c44569;
+        }
+        .grandmaster-skill::before {
+            background: linear-gradient(45deg, #c44569, #a8325d);
+        }
+
+        .skill-rank {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: bold;
+        }
+
+        .skill-name {
+            font-size: 1.3rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+            color: #fff;
+        }
+
+        .skill-scale {
+            font-size: 0.9rem;
+            color: #64ffda;
+            margin-bottom: 0.8rem;
+            font-style: italic;
+        }
+
+        .skill-effect {
+            font-size: 1rem;
+            line-height: 1.4;
+            margin-bottom: 0.8rem;
+            color: #e2e8f0;
+        }
+
+        .skill-description {
+            font-size: 0.9rem;
+            color: #a0aec0;
+            font-style: italic;
+            margin-bottom: 1rem;
+        }
+
+        /* Tag section styling */
+        .tag-section {
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 10px;
+            padding: 1rem;
+            margin-top: 1rem;
+        }
+
+        .tag-label {
+            font-size: 0.8rem;
+            color: #64ffda;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 0.5rem;
+        }
+
+        .tag-options {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .tag {
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(100, 255, 218, 0.3);
+            border-radius: 15px;
+            padding: 0.3rem 0.8rem;
+            font-size: 0.85rem;
+            color: #64ffda;
+            transition: all 0.2s ease;
+        }
+
+        .tag:hover {
+            background: rgba(100, 255, 218, 0.2);
+            border-color: rgba(100, 255, 218, 0.5);
+            transform: scale(1.05);
+        }
+
+        .tag-description {
+            font-size: 0.8rem;
+            color: #a0aec0;
+            font-style: italic;
+        }
+
+        .grandmaster-title {
+            margin-top: 0.5rem;
+            font-size: 0.85rem;
+            color: #ff6b6b;
+            font-weight: bold;
+        }
+
+        /* Connection lines */
+        .tier:not(:last-child)::after {
+            content: '';
+            position: absolute;
+            bottom: -3rem;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 2px;
+            height: 3rem;
+            background: linear-gradient(to bottom, #4a5568, transparent);
+        }
+
+        /* Scale legend */
+        .scale-legend {
+            margin-top: 3rem;
+            padding: 1.5rem;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 10px;
+            border: 1px solid rgba(100, 255, 218, 0.1);
+        }
+
+        .scale-legend h3 {
+            margin-top: 0;
+            color: #64ffda;
+            text-align: center;
+        }
+
+        .scale-items {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .scale-item {
+            text-align: center;
+            padding: 0.5rem 1rem;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 8px;
+        }
+
+        .scale-ranks {
+            font-weight: bold;
+            color: #64ffda;
+        }
+
+        .scale-name {
+            font-size: 0.9rem;
+            color: #a0aec0;
+        }
+
+        /* Tag synergy hint */
+        .synergy-hint {
+            background: rgba(78, 205, 196, 0.1);
+            border: 1px solid rgba(78, 205, 196, 0.3);
+            border-radius: 8px;
+            padding: 0.5rem;
+            margin-top: 0.5rem;
+            font-size: 0.8rem;
+            color: #4ecdc4;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .tree-container {
+                padding: 1.5rem;
+            }
+            
+            .skill {
+                width: 100%;
+                max-width: 350px;
+            }
+            
+            .header h1 {
+                font-size: 2rem;
+            }
+        }
+
+        /* Glow animations */
+        @keyframes glow {
+            0% { box-shadow: 0 0 5px rgba(100, 255, 218, 0.2); }
+            50% { box-shadow: 0 0 20px rgba(100, 255, 218, 0.4), 0 0 30px rgba(100, 255, 218, 0.2); }
+            100% { box-shadow: 0 0 5px rgba(100, 255, 218, 0.2); }
+        }
+
+        .grandmaster-skill:hover {
+            animation: glow 2s infinite;
+        }
+
+        /* Tag glow effect */
+        .tag-glow {
+            animation: tagPulse 3s infinite;
+        }
+
+        @keyframes tagPulse {
+            0% { box-shadow: 0 0 5px rgba(196, 69, 105, 0.3); }
+            50% { box-shadow: 0 0 15px rgba(196, 69, 105, 0.6); }
+            100% { box-shadow: 0 0 5px rgba(196, 69, 105, 0.3); }
+        }
+
+        /* Medical pulse effect */
+        .medical-pulse {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background: radial-gradient(circle, rgba(100, 255, 218, 0.1) 0%, transparent 70%);
+            animation: pulse 2s ease-in-out infinite;
+            pointer-events: none;
+            z-index: -1;
+        }
+
+        @keyframes pulse {
+            0% { transform: translate(-50%, -50%) scale(0.8); opacity: 0.5; }
+            50% { transform: translate(-50%, -50%) scale(1.2); opacity: 0.2; }
+            100% { transform: translate(-50%, -50%) scale(0.8); opacity: 0.5; }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>MEDICAL SKILL TREE v2</h1>
+        <p>Integrated Tag System - 7 Skills with Progressive Tags</p>
+    </div>
+
+    <div class="tree-container">
+        <div class="skill-tree">
+            <!-- Base Tier -->
+            <div class="tier">
+                <div class="tier-label">Base Skill</div>
+                <div class="skills-row">
+                    <div class="skill base-skill">
+                        <div class="medical-pulse"></div>
+                        <div class="skill-rank">Rank 1</div>
+                        <div class="skill-name">First Aid</div>
+                        <div class="skill-scale">Scale: Personal</div>
+                        <div class="skill-effect">Basic medical care, +1 to all healing rolls</div>
+                        <div class="skill-description">You can treat injuries and stabilize patients</div>
+                        <div class="tag-section">
+                            <div class="tag-label">Choose Foundation Tag:</div>
+                            <div class="tag-options">
+                                <span class="tag">[Clinical]</span>
+                                <span class="tag">[Intuitive]</span>
+                                <span class="tag">[Combat]</span>
+                                <span class="tag">[Holistic]</span>
+                            </div>
+                            <div class="tag-description">What drives your healing approach?</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Journeyman Tier -->
+            <div class="tier">
+                <div class="tier-label">Journeyman Tier (Ranks 2-3)</div>
+                <div class="skills-row">
+                    <div class="skill journeyman-skill">
+                        <div class="skill-rank">Rank 2</div>
+                        <div class="skill-name">Field Medicine</div>
+                        <div class="skill-scale">Scale: Personal → Vehicle</div>
+                        <div class="skill-effect">+2 healing in combat, can treat while moving</div>
+                        <div class="skill-description">You excel at medicine under pressure</div>
+                        <div class="tag-section">
+                            <div class="tag-label">Choose Specialty Tag:</div>
+                            <div class="tag-options">
+                                <span class="tag">[Trauma]</span>
+                                <span class="tag">[Surgery]</span>
+                                <span class="tag">[Toxicology]</span>
+                                <span class="tag">[Cybernetics]</span>
+                            </div>
+                            <div class="synergy-hint">Synergy: [Combat] + [Trauma] = "Battlefield Surgeon" (+2 dice)</div>
+                        </div>
+                    </div>
+                    <div class="skill journeyman-skill">
+                        <div class="skill-rank">Rank 3</div>
+                        <div class="skill-name">Medical Science</div>
+                        <div class="skill-scale">Scale: Vehicle</div>
+                        <div class="skill-effect">Can diagnose alien biology, create custom treatments</div>
+                        <div class="skill-description">You understand medicine at scientific levels</div>
+                        <div class="tag-section">
+                            <div class="tag-label">Choose Research Tag:</div>
+                            <div class="tag-options">
+                                <span class="tag">[Xenobiology]</span>
+                                <span class="tag">[Genetics]</span>
+                                <span class="tag">[Neuroscience]</span>
+                                <span class="tag">[Pharmacology]</span>
+                            </div>
+                            <div class="synergy-hint">Triple Synergy: [Intuitive] + [Cybernetics] + [Neuroscience] = "Neural Architect" (+3 dice)</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Master Tier -->
+            <div class="tier">
+                <div class="tier-label">Master Tier (Ranks 4-6)</div>
+                <div class="skills-row">
+                    <div class="skill master-skill">
+                        <div class="skill-rank">Rank 4</div>
+                        <div class="skill-name">Chief Medical Officer</div>
+                        <div class="skill-scale">Scale: Vehicle → Starship</div>
+                        <div class="skill-effect">Coordinate medical teams, heal multiple patients simultaneously</div>
+                        <div class="skill-description">You manage medical operations at scale</div>
+                        <div class="tag-section">
+                            <div class="tag-label">Choose Command Tag:</div>
+                            <div class="tag-options">
+                                <span class="tag">[Leadership]</span>
+                                <span class="tag">[Emergency]</span>
+                                <span class="tag">[Research]</span>
+                                <span class="tag">[Prevention]</span>
+                            </div>
+                            <div class="tag-description">How do you lead medical teams?</div>
+                        </div>
+                    </div>
+                    <div class="skill master-skill">
+                        <div class="skill-rank">Rank 6</div>
+                        <div class="skill-name">Master Physician</div>
+                        <div class="skill-scale">Scale: Starship</div>
+                        <div class="skill-effect">Can heal any condition, +3 to resurrection attempts</div>
+                        <div class="skill-description">You push the boundaries of medical possibility</div>
+                        <div class="tag-section">
+                            <div class="tag-label">Choose Mastery Tag:</div>
+                            <div class="tag-options">
+                                <span class="tag">[Miracle Worker]</span>
+                                <span class="tag">[Life Bringer]</span>
+                                <span class="tag">[Enhancement]</span>
+                                <span class="tag">[Regeneration]</span>
+                            </div>
+                            <div class="synergy-hint">Cross-Skill: [Enhancement] + Tech [Digital] + Combat [Enhanced] = "Augmentation Master" (+4 dice)</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Grandmaster Tier -->
+            <div class="tier">
+                <div class="tier-label">Grandmaster Tier (Ranks 7-10)</div>
+                <div class="skills-row">
+                    <div class="skill grandmaster-skill">
+                        <div class="skill-rank">Rank 8</div>
+                        <div class="skill-name">Medical Prodigy</div>
+                        <div class="skill-scale">Scale: Starship → Fleet</div>
+                        <div class="skill-effect">Your healing transcends known medicine, can cure plagues</div>
+                        <div class="skill-description">You redefine what medicine can achieve</div>
+                        <div class="tag-section">
+                            <div class="tag-label">Choose Legend Tag:</div>
+                            <div class="tag-options">
+                                <span class="tag">[Immortal Maker]</span>
+                                <span class="tag">[Disease Slayer]</span>
+                                <span class="tag">[Evolution Guide]</span>
+                                <span class="tag">[Soul Healer]</span>
+                            </div>
+                            <div class="synergy-hint">Legendary Chain: All previous tags harmonize at this level (+4 dice)</div>
+                        </div>
+                    </div>
+                    <div class="skill grandmaster-skill tag-glow">
+                        <div class="skill-rank">Rank 10</div>
+                        <div class="skill-name">LIFE WEAVER</div>
+                        <div class="skill-scale">Scale: Fleet</div>
+                        <div class="skill-effect">Command life itself, +5 to all allied health/recovery in your presence</div>
+                        <div class="skill-description">You transcend death - entire species evolve under your care</div>
+                        <div class="tag-section">
+                            <div class="tag-label">Choose Archetype Tag:</div>
+                            <div class="tag-options">
+                                <span class="tag">[Life Weaver]</span>
+                                <span class="tag">[The Undying]</span>
+                                <span class="tag">[Genesis Touch]</span>
+                                <span class="tag">[Death's Bane]</span>
+                            </div>
+                            <div class="grandmaster-title">Titles: "The Undying" • "Life Weaver" • "Death's Bane"</div>
+                            <div class="synergy-hint">Ultimate: All medical tags unite into life-defining power (+5 dice)</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scale Legend -->
+        <div class="scale-legend">
+            <h3>Scale Progression & Tag Evolution</h3>
+            <div class="scale-items">
+                <div class="scale-item">
+                    <div class="scale-ranks">Ranks 1-2</div>
+                    <div class="scale-name">Personal Care</div>
+                    <div class="tag-description">Foundation & Specialty</div>
+                </div>
+                <div class="scale-item">
+                    <div class="scale-ranks">Rank 3</div>
+                    <div class="scale-name">Medical Science</div>
+                    <div class="tag-description">Research Tags</div>
+                </div>
+                <div class="scale-item">
+                    <div class="scale-ranks">Ranks 4-5</div>
+                    <div class="scale-name">Vehicle → Starship</div>
+                    <div class="tag-description">Command Tags</div>
+                </div>
+                <div class="scale-item">
+                    <div class="scale-ranks">Rank 6</div>
+                    <div class="scale-name">Ship Medical Bay</div>
+                    <div class="tag-description">Mastery Tags</div>
+                </div>
+                <div class="scale-item">
+                    <div class="scale-ranks">Ranks 7-9</div>
+                    <div class="scale-name">Fleet Medicine</div>
+                    <div class="tag-description">Legend Tags</div>
+                </div>
+                <div class="scale-item">
+                    <div class="scale-ranks">Rank 10</div>
+                    <div class="scale-name">Galactic Health</div>
+                    <div class="tag-description">Archetype Tags</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

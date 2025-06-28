@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intimidation Skill Tree v2 - With Tags - Cosmos Engine RPG</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #2c0a0a 0%, #4a0e0e 50%, #1a0505 100%);
+            color: #fff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .header {
+            text-align: center;
+            padding: 2rem;
+            width: 100%;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            text-shadow: 0 0 20px rgba(220, 20, 60, 0.5);
+        }
+
+        .header p {
+            margin: 0.5rem 0;
+            color: #dc143c;
+            font-size: 1.1rem;
+        }
+
+        .tree-container {
+            width: 95%;
+            max-width: 1400px;
+            margin: 2rem auto;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 20px;
+            padding: 3rem;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .skill-tree {
+            display: flex;
+            flex-direction: column;
+            gap: 3rem;
+            position: relative;
+        }
+
+        .tier {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+        }
+
+        .tier-label {
+            font-size: 1.3rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #dc143c;
+            text-shadow: 0 0 10px rgba(220, 20, 60, 0.5);
+        }
+
+        .skills-row {
+            display: flex;
+            gap: 2rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .skill {
+            background: rgba(255, 255, 255, 0.1);
+            border: 2px solid #4a5568;
+            border-radius: 15px;
+            padding: 1.5rem;
+            width: 320px;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .skill::before {
+            content: '';
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            right: -2px;
+            bottom: -2px;
+            background: linear-gradient(45deg, transparent, transparent);
+            border-radius: 15px;
+            z-index: -1;
+            transition: all 0.3s ease;
+        }
+
+        .skill:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Tier-specific colors */
+        .base-skill {
+            border-color: #8b0000;
+        }
+        .base-skill::before {
+            background: linear-gradient(45deg, #8b0000, #a52a2a);
+        }
+
+        .journeyman-skill {
+            border-color: #b22222;
+        }
+        .journeyman-skill::before {
+            background: linear-gradient(45deg, #b22222, #cd5c5c);
+        }
+
+        .master-skill {
+            border-color: #dc143c;
+        }
+        .master-skill::before {
+            background: linear-gradient(45deg, #dc143c, #ff1744);
+        }
+
+        .grandmaster-skill {
+            border-color: #ff4444;
+        }
+        .grandmaster-skill::before {
+            background: linear-gradient(45deg, #ff4444, #ff6666);
+        }
+
+        .skill-rank {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: bold;
+        }
+
+        .skill-name {
+            font-size: 1.3rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+            color: #fff;
+        }
+
+        .skill-scale {
+            font-size: 0.9rem;
+            color: #ff6b6b;
+            margin-bottom: 0.8rem;
+            font-style: italic;
+        }
+
+        .skill-effect {
+            font-size: 1rem;
+            line-height: 1.4;
+            margin-bottom: 0.8rem;
+            color: #e2e8f0;
+        }
+
+        .skill-description {
+            font-size: 0.9rem;
+            color: #a0aec0;
+            font-style: italic;
+            margin-bottom: 1rem;
+        }
+
+        /* Tag section styling */
+        .tag-section {
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 10px;
+            padding: 1rem;
+            margin-top: 1rem;
+        }
+
+        .tag-label {
+            font-size: 0.8rem;
+            color: #ff6b6b;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 0.5rem;
+        }
+
+        .tag-options {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .tag {
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(220, 20, 60, 0.3);
+            border-radius: 15px;
+            padding: 0.3rem 0.8rem;
+            font-size: 0.85rem;
+            color: #ff6b6b;
+            transition: all 0.2s ease;
+        }
+
+        .tag:hover {
+            background: rgba(220, 20, 60, 0.2);
+            border-color: rgba(220, 20, 60, 0.5);
+            transform: scale(1.05);
+        }
+
+        .tag-description {
+            font-size: 0.8rem;
+            color: #a0aec0;
+            font-style: italic;
+        }
+
+        .grandmaster-title {
+            margin-top: 0.5rem;
+            font-size: 0.85rem;
+            color: #ff4444;
+            font-weight: bold;
+        }
+
+        /* Connection lines */
+        .tier:not(:last-child)::after {
+            content: '';
+            position: absolute;
+            bottom: -3rem;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 2px;
+            height: 3rem;
+            background: linear-gradient(to bottom, #4a5568, transparent);
+        }
+
+        /* Scale legend */
+        .scale-legend {
+            margin-top: 3rem;
+            padding: 1.5rem;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 10px;
+            border: 1px solid rgba(220, 20, 60, 0.1);
+        }
+
+        .scale-legend h3 {
+            margin-top: 0;
+            color: #dc143c;
+            text-align: center;
+        }
+
+        .scale-items {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .scale-item {
+            text-align: center;
+            padding: 0.5rem 1rem;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 8px;
+        }
+
+        .scale-ranks {
+            font-weight: bold;
+            color: #ff6b6b;
+        }
+
+        .scale-name {
+            font-size: 0.9rem;
+            color: #a0aec0;
+        }
+
+        /* Tag synergy hint */
+        .synergy-hint {
+            background: rgba(178, 34, 34, 0.1);
+            border: 1px solid rgba(178, 34, 34, 0.3);
+            border-radius: 8px;
+            padding: 0.5rem;
+            margin-top: 0.5rem;
+            font-size: 0.8rem;
+            color: #cd5c5c;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .tree-container {
+                padding: 1.5rem;
+            }
+            
+            .skill {
+                width: 100%;
+                max-width: 350px;
+            }
+            
+            .header h1 {
+                font-size: 2rem;
+            }
+        }
+
+        /* Glow animations */
+        @keyframes glow {
+            0% { box-shadow: 0 0 5px rgba(220, 20, 60, 0.2); }
+            50% { box-shadow: 0 0 20px rgba(220, 20, 60, 0.4), 0 0 30px rgba(220, 20, 60, 0.2); }
+            100% { box-shadow: 0 0 5px rgba(220, 20, 60, 0.2); }
+        }
+
+        .grandmaster-skill:hover {
+            animation: glow 2s infinite;
+        }
+
+        /* Tag glow effect */
+        .tag-glow {
+            animation: tagPulse 3s infinite;
+        }
+
+        @keyframes tagPulse {
+            0% { box-shadow: 0 0 5px rgba(255, 68, 68, 0.3); }
+            50% { box-shadow: 0 0 15px rgba(255, 68, 68, 0.6); }
+            100% { box-shadow: 0 0 5px rgba(255, 68, 68, 0.3); }
+        }
+
+        /* Fear effect */
+        .fear-pulse {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(circle at center, transparent 30%, rgba(139, 0, 0, 0.1) 70%);
+            animation: fearPulse 3s ease-in-out infinite;
+            pointer-events: none;
+        }
+
+        @keyframes fearPulse {
+            0% { opacity: 0; transform: scale(0.8); }
+            50% { opacity: 1; transform: scale(1.1); }
+            100% { opacity: 0; transform: scale(0.8); }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>INTIMIDATION SKILL TREE v2</h1>
+        <p>Integrated Tag System - 7 Skills with Progressive Tags</p>
+    </div>
+
+    <div class="tree-container">
+        <div class="skill-tree">
+            <!-- Base Tier -->
+            <div class="tier">
+                <div class="tier-label">Base Skill</div>
+                <div class="skills-row">
+                    <div class="skill base-skill">
+                        <div class="fear-pulse"></div>
+                        <div class="skill-rank">Rank 1</div>
+                        <div class="skill-name">Basic Intimidation</div>
+                        <div class="skill-scale">Scale: Personal</div>
+                        <div class="skill-effect">Project menace, +1 to all intimidation rolls</div>
+                        <div class="skill-description">You know how to use fear as a tool</div>
+                        <div class="tag-section">
+                            <div class="tag-label">Choose Foundation Tag:</div>
+                            <div class="tag-options">
+                                <span class="tag">[Physical]</span>
+                                <span class="tag">[Psychological]</span>
+                                <span class="tag">[Silent]</span>
+                                <span class="tag">[Explosive]</span>
+                            </div>
+                            <div class="tag-description">What type of fear do you inspire?</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Journeyman Tier -->
+            <div class="tier">
+                <div class="tier-label">Journeyman Tier (Ranks 2-3)</div>
+                <div class="skills-row">
+                    <div class="skill journeyman-skill">
+                        <div class="skill-rank">Rank 2</div>
+                        <div class="skill-name">Fearmonger</div>
+                        <div class="skill-scale">Scale: Personal → Vehicle</div>
+                        <div class="skill-effect">+2 to break morale, enemies hesitate before attacking</div>
+                        <div class="skill-description">Your presence disrupts enemy coordination</div>
+                        <div class="tag-section">
+                            <div class="tag-label">Choose Method Tag:</div>
+                            <div class="tag-options">
+                                <span class="tag">[Brutal]</span>
+                                <span class="tag">[Calculated]</span>
+                                <span class="tag">[Unpredictable]</span>
+                                <span class="tag">[Relentless]</span>
+                            </div>
+                            <div class="synergy-hint">Synergy: [Physical] + [Brutal] = "Savage Terror" (+2 dice)</div>
+                        </div>
+                    </div>
+                    <div class="skill journeyman-skill">
+                        <div class="skill-rank">Rank 3</div>
+                        <div class="skill-name">Dread Presence</div>
+                        <div class="skill-scale">Scale: Vehicle</div>
+                        <div class="skill-effect">Affect groups with fear, reputation precedes you</div>
+                        <div class="skill-description">Your name alone causes unease</div>
+                        <div class="tag-section">
+                            <div class="tag-label">Choose Reputation Tag:</div>
+                            <div class="tag-options">
+                                <span class="tag">[Merciless]</span>
+                                <span class="tag">[Mysterious]</span>
+                                <span class="tag">[Legendary]</span>
+                                <span class="tag">[Monstrous]</span>
+                            </div>
+                            <div class="synergy-hint">Triple Synergy: [Psychological] + [Calculated] + [Mysterious] = "Mind Breaker" (+3 dice)</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Master Tier -->
+            <div class="tier">
+                <div class="tier-label">Master Tier (Ranks 4-6)</div>
+                <div class="skills-row">
+                    <div class="skill master-skill">
+                        <div class="skill-rank">Rank 4</div>
+                        <div class="skill-name">Terror Master</div>
+                        <div class="skill-scale">Scale: Vehicle → Starship</div>
+                        <div class="skill-effect">Cause mass panic, immune to fear effects</div>
+                        <div class="skill-description">You weaponize terror at tactical scales</div>
+                        <div class="tag-section">
+                            <div class="tag-label">Choose Terror Tag:</div>
+                            <div class="tag-options">
+                                <span class="tag">[Warlord]</span>
+                                <span class="tag">[Executioner]</span>
+                                <span class="tag">[Nightmare]</span>
+                                <span class="tag">[Destroyer]</span>
+                            </div>
+                            <div class="tag-description">What terror do you embody?</div>
+                        </div>
+                    </div>
+                    <div class="skill master-skill">
+                        <div class="skill-rank">Rank 6</div>
+                        <div class="skill-name">Fear Incarnate</div>
+                        <div class="skill-scale">Scale: Starship</div>
+                        <div class="skill-effect">Entire crews surrender without fighting, +3 to psychological warfare</div>
+                        <div class="skill-description">You are fear given form</div>
+                        <div class="tag-section">
+                            <div class="tag-label">Choose Domain Tag:</div>
+                            <div class="tag-options">
+                                <span class="tag">[Death]</span>
+                                <span class="tag">[Pain]</span>
+                                <span class="tag">[Madness]</span>
+                                <span class="tag">[Void]</span>
+                            </div>
+                            <div class="synergy-hint">Cross-Skill: [Death] + Combat [Killer] + Deception [Ghost] = "Death's Shadow" (+4 dice)</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Grandmaster Tier -->
+            <div class="tier">
+                <div class="tier-label">Grandmaster Tier (Ranks 7-10)</div>
+                <div class="skills-row">
+                    <div class="skill grandmaster-skill">
+                        <div class="skill-rank">Rank 8</div>
+                        <div class="skill-name">Dread Lord</div>
+                        <div class="skill-scale">Scale: Starship → Fleet</div>
+                        <div class="skill-effect">Your name ends wars, civilizations flee your approach</div>
+                        <div class="skill-description">You are myth and nightmare combined</div>
+                        <div class="tag-section">
+                            <div class="tag-label">Choose Legend Tag:</div>
+                            <div class="tag-options">
+                                <span class="tag">[Apocalypse]</span>
+                                <span class="tag">[Eternal]</span>
+                                <span class="tag">[Inevitable]</span>
+                                <span class="tag">[Cosmic Horror]</span>
+                            </div>
+                            <div class="synergy-hint">Legendary Chain: All previous tags harmonize at this level (+4 dice)</div>
+                        </div>
+                    </div>
+                    <div class="skill grandmaster-skill tag-glow">
+                        <div class="skill-rank">Rank 10</div>
+                        <div class="skill-name">THE TERROR</div>
+                        <div class="skill-scale">Scale: Fleet</div>
+                        <div class="skill-effect">Entire species remember your wrath, +5 to all fear-based actions</div>
+                        <div class="skill-description">You are the thing that galaxies fear in the dark</div>
+                        <div class="tag-section">
+                            <div class="tag-label">Choose Archetype Tag:</div>
+                            <div class="tag-options">
+                                <span class="tag">[The Terror]</span>
+                                <span class="tag">[Void Walker]</span>
+                                <span class="tag">[Galaxy's End]</span>
+                                <span class="tag">[Fear Itself]</span>
+                            </div>
+                            <div class="grandmaster-title">Titles: "The Terror" • "Fear Itself" • "Galaxy's End"</div>
+                            <div class="synergy-hint">Ultimate: All intimidation tags unite into primordial dread (+5 dice)</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scale Legend -->
+        <div class="scale-legend">
+            <h3>Scale Progression & Tag Evolution</h3>
+            <div class="scale-items">
+                <div class="scale-item">
+                    <div class="scale-ranks">Ranks 1-2</div>
+                    <div class="scale-name">Personal Fear</div>
+                    <div class="tag-description">Foundation & Method</div>
+                </div>
+                <div class="scale-item">
+                    <div class="scale-ranks">Rank 3</div>
+                    <div class="scale-name">Group Terror</div>
+                    <div class="tag-description">Reputation Tags</div>
+                </div>
+                <div class="scale-item">
+                    <div class="scale-ranks">Ranks 4-5</div>
+                    <div class="scale-name">Vehicle → Starship</div>
+                    <div class="tag-description">Terror Tags</div>
+                </div>
+                <div class="scale-item">
+                    <div class="scale-ranks">Rank 6</div>
+                    <div class="scale-name">Fleet Fear</div>
+                    <div class="tag-description">Domain Tags</div>
+                </div>
+                <div class="scale-item">
+                    <div class="scale-ranks">Ranks 7-9</div>
+                    <div class="scale-name">System Terror</div>
+                    <div class="tag-description">Legend Tags</div>
+                </div>
+                <div class="scale-item">
+                    <div class="scale-ranks">Rank 10</div>
+                    <div class="scale-name">Galactic Dread</div>
+                    <div class="tag-description">Archetype Tags</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

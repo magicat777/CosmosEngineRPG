@@ -1,0 +1,227 @@
+<!-- Main Navigation Component -->
+<nav class="nav-primary glass-panel">
+    <div class="container">
+        <div class="nav-content">
+            <!-- Logo/Title -->
+            <div class="nav-brand">
+                <a href="../index.html" class="brand-link">
+                    <h3 style="margin: 0; color: var(--accent-gold);">Cosmos Engine RPG</h3>
+                    <small style="color: var(--text-muted); font-size: 0.8rem;">Second Edition</small>
+                </a>
+            </div>
+
+            <!-- Main Navigation -->
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="../index.html" class="nav-link">Home</a>
+                </li>
+                
+                <!-- Core Rules Dropdown -->
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle">Core Rules</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../chapters/ch01-introduction/index.html" class="nav-link">1. Introduction</a></li>
+                        <li><a href="../chapters/ch02-character-creation/index.html" class="nav-link">2. Character Creation</a></li>
+                        <li><a href="../chapters/ch03-attributes-advancement/index.html" class="nav-link">3. Attributes & Advancement</a></li>
+                        <li><a href="../chapters/ch04-species/index.html" class="nav-link">4. Species</a></li>
+                        <li><a href="../chapters/ch05-actions-skills/index.html" class="nav-link">5. Actions & Skills</a></li>
+                        <li><a href="../chapters/ch06-equipment/index.html" class="nav-link">6. Equipment</a></li>
+                        <li><a href="../chapters/ch07-combat/index.html" class="nav-link">7. Combat</a></li>
+                    </ul>
+                </li>
+
+                <!-- Advanced Rules Dropdown -->
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle">Advanced Rules</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../chapters/ch08-technology/index.html" class="nav-link">8. Technology</a></li>
+                        <li><a href="../chapters/ch09-psionics/index.html" class="nav-link">9. Psionics</a></li>
+                        <li><a href="../chapters/ch10-starships/index.html" class="nav-link">10. Starships</a></li>
+                    </ul>
+                </li>
+
+                <!-- Gamemaster Dropdown -->
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle">Gamemaster</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../chapters/ch11-gamemaster/index.html" class="nav-link">11. GM Guide</a></li>
+                        <li><a href="../chapters/ch12-adventures/index.html" class="nav-link">12. Adventures</a></li>
+                        <li><a href="../chapters/ch13-campaigns/index.html" class="nav-link">13. Campaigns</a></li>
+                        <li><a href="../chapters/ch14-bestiary/index.html" class="nav-link">14. Bestiary</a></li>
+                        <li><a href="../chapters/ch15-organizations/index.html" class="nav-link">15. Organizations</a></li>
+                    </ul>
+                </li>
+
+                <!-- Reference Dropdown -->
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle">Reference</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../reference/skill-trees/index.html" class="nav-link">Skill Trees</a></li>
+                        <li><a href="../reference/quick-reference/index.html" class="nav-link">Quick Reference</a></li>
+                        <li><a href="../reference/appendices/index.html" class="nav-link">Appendices</a></li>
+                        <li><a href="../reference/glossary/index.html" class="nav-link">Glossary</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <!-- Utility Navigation -->
+            <div class="nav-utils">
+                <!-- Search -->
+                <div id="search-container" class="search-container">
+                    <!-- Search will be initialized by JavaScript -->
+                </div>
+
+                <!-- Bookmarks Toggle -->
+                <button id="bookmarks-toggle" class="btn btn-secondary" title="Bookmarks (Ctrl+B)">
+                    🔖
+                </button>
+
+                <!-- Theme Toggle (for future use) -->
+                <button id="theme-toggle" class="btn btn-secondary" title="Toggle Theme">
+                    🌙
+                </button>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<!-- Dropdown Styles -->
+<style>
+.nav-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: var(--space-lg);
+}
+
+.nav-brand .brand-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: var(--glass-bg);
+    backdrop-filter: var(--glass-blur);
+    border: 1px solid var(--glass-border);
+    border-radius: var(--radius-md);
+    min-width: 200px;
+    padding: var(--space-sm);
+    margin-top: var(--space-xs);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+    z-index: 1000;
+    list-style: none;
+    margin-left: 0;
+}
+
+.dropdown:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.dropdown-menu li {
+    margin: 0;
+}
+
+.dropdown-menu .nav-link {
+    display: block;
+    padding: var(--space-sm);
+    border-radius: var(--radius-sm);
+    white-space: nowrap;
+}
+
+.dropdown-toggle::after {
+    content: ' ▼';
+    font-size: 0.7em;
+    opacity: 0.7;
+}
+
+.nav-utils {
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+}
+
+.search-container {
+    position: relative;
+    width: 250px;
+}
+
+/* Mobile Navigation */
+@media (max-width: 768px) {
+    .nav-content {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .nav-list {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .nav-utils {
+        justify-content: center;
+        width: 100%;
+    }
+    
+    .search-container {
+        width: 100%;
+        max-width: 300px;
+    }
+    
+    .dropdown-menu {
+        position: static;
+        opacity: 1;
+        visibility: visible;
+        transform: none;
+        margin-top: 0;
+        margin-left: var(--space-lg);
+        background: rgba(255, 255, 255, 0.02);
+        border: none;
+        border-left: 2px solid var(--accent-gold);
+    }
+}
+</style>
+
+<!-- Dropdown JavaScript -->
+<script>
+// Enhanced dropdown functionality for mobile
+document.addEventListener('DOMContentLoaded', function() {
+    const dropdowns = document.querySelectorAll('.dropdown');
+    
+    dropdowns.forEach(dropdown => {
+        const toggle = dropdown.querySelector('.dropdown-toggle');
+        const menu = dropdown.querySelector('.dropdown-menu');
+        
+        // Mobile touch handling
+        toggle.addEventListener('click', function(e) {
+            if (window.innerWidth <= 768) {
+                e.preventDefault();
+                menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+            }
+        });
+    });
+    
+    // Close dropdowns when clicking outside
+    document.addEventListener('click', function(e) {
+        if (!e.target.closest('.dropdown')) {
+            document.querySelectorAll('.dropdown-menu').forEach(menu => {
+                if (window.innerWidth <= 768) {
+                    menu.style.display = 'none';
+                }
+            });
+        }
+    });
+});
+</script>

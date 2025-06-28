@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 4: Character Advancement - Cosmos Engine RPG</title>
+    <link rel="stylesheet" href="../../assets/css/cosmos-engine.css">
+    <meta name="description" content="Simple character advancement system for Cosmos Engine RPG">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav-primary glass-panel">
+        <div class="container">
+            <div class="nav-content">
+                <div class="nav-brand">
+                    <a href="../../index.html" class="brand-link" style="display: flex; align-items: center; gap: 1rem; text-decoration: none;">
+                        <img src="../../assets/images/cosmos-engine-logo.png" alt="Cosmos Engine" style="width: 40px; height: 40px; filter: drop-shadow(0 0 10px rgba(0, 255, 255, 0.4));">
+                        <div>
+                        <h3 style="margin: 0; color: var(--accent-gold);">Cosmos Engine RPG</h3>
+                        <small style="color: var(--text-muted); font-size: 0.8rem;">Chapter 4: Character Advancement</small>
+                    </div>
+                    </a>
+                </div>
+                <div class="nav-utils">
+                    <div id="search-container" class="search-container"></div>
+                    <a href="../../index.html" class="btn btn-secondary">← Rulebook</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <!-- Breadcrumbs -->
+        <nav class="breadcrumb">
+            <a href="../../index.html">Home</a>
+            <span class="breadcrumb-separator">›</span>
+            <a href="../index.html">Chapters</a>
+            <span class="breadcrumb-separator">›</span>
+            <span>Chapter 4: Character Advancement</span>
+        </nav>
+
+        <!-- Chapter Header -->
+        <header class="glass-panel p-xl text-center mb-xl">
+            <h1>Chapter 4: Character Advancement</h1>
+            <p style="font-size: 1.1rem; color: var(--text-secondary); margin: 1rem 0;">
+                Characters advance by spending Advancement Points (AP) to increase skills. Each skill rank grants one new tag.
+            </p>
+        </header>
+
+        <!-- Table of Contents -->
+        <div class="glass-panel p-lg mb-xl">
+            <h2>Chapter Contents</h2>
+            <ul style="list-style: none; margin: 0;">
+                <li><a href="#core-advancement">Core Advancement System</a></li>
+                <li><a href="#tag-evolution">Tag Evolution</a></li>
+                <li><a href="#training-options">Training Options</a></li>
+                <li><a href="#quick-reference">Quick Reference</a></li>
+            </ul>
+        </div>
+
+        <!-- Main Content -->
+        <main>
+            <!-- Section 1: Core Advancement System -->
+            <section id="core-advancement" class="mb-xl">
+                <h2>Core Advancement System</h2>
+                
+                <div class="glass-card p-lg mb-lg">
+                    <h3>How Advancement Works</h3>
+                    <ol>
+                        <li><strong>Earn AP through play</strong> - GM awards based on accomplishments</li>
+                        <li><strong>Spend AP to increase skills</strong> - Cost depends on desired rank</li>
+                        <li><strong>Each rank grants one new tag</strong> - Choose from skill's tag list</li>
+                        <li><strong>Meet training time requirements</strong> - Higher ranks take longer</li>
+                    </ol>
+                </div>
+
+                <!-- Master Advancement Table -->
+                <div class="glass-panel p-lg mb-lg">
+                    <h3>Complete Advancement Table</h3>
+                    <div style="overflow-x: auto;">
+                        <table style="width: 100%;">
+                            <thead>
+                                <tr>
+                                    <th>Rank</th>
+                                    <th>Tier</th>
+                                    <th>AP Cost</th>
+                                    <th>Total AP</th>
+                                    <th>Training Time</th>
+                                    <th>Scale of Influence</th>
+                                    <th>Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td rowspan="2" style="background: rgba(128, 128, 128, 0.1);">Apprentice</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td>1 week</td>
+                                    <td rowspan="2">Personal</td>
+                                    <td>Basic competence</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>2</td>
+                                    <td>3</td>
+                                    <td>2 weeks</td>
+                                    <td>Reliable skill</td>
+                                </tr>
+                                <tr style="background: rgba(255, 215, 0, 0.05);">
+                                    <td>3</td>
+                                    <td rowspan="3" style="background: rgba(255, 215, 0, 0.1);">Journeyman</td>
+                                    <td>3</td>
+                                    <td>6</td>
+                                    <td>1 month</td>
+                                    <td rowspan="3">Vehicle</td>
+                                    <td>Professional level</td>
+                                </tr>
+                                <tr style="background: rgba(255, 215, 0, 0.05);">
+                                    <td>4</td>
+                                    <td>5</td>
+                                    <td>11</td>
+                                    <td>3 months</td>
+                                    <td>Local expert</td>
+                                </tr>
+                                <tr style="background: rgba(255, 215, 0, 0.05);">
+                                    <td>5</td>
+                                    <td>8</td>
+                                    <td>19</td>
+                                    <td>6 months</td>
+                                    <td>Regional reputation</td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td rowspan="2" style="background: rgba(0, 128, 255, 0.1);">Expert</td>
+                                    <td>13</td>
+                                    <td>32</td>
+                                    <td>1 year</td>
+                                    <td rowspan="2">Starship</td>
+                                    <td>Sector renowned</td>
+                                </tr>
+                                <tr>
+                                    <td>7</td>
+                                    <td>21</td>
+                                    <td>53</td>
+                                    <td>2 years</td>
+                                    <td>System famous</td>
+                                </tr>
+                                <tr style="background: rgba(255, 0, 0, 0.05);">
+                                    <td>8</td>
+                                    <td style="background: rgba(255, 0, 0, 0.1);">Master</td>
+                                    <td>34</td>
+                                    <td>87</td>
+                                    <td>5 years</td>
+                                    <td rowspan="3">Capital/Fleet</td>
+                                    <td>Galactic authority</td>
+                                </tr>
+                                <tr style="background: rgba(128, 0, 255, 0.05);">
+                                    <td>9</td>
+                                    <td style="background: rgba(128, 0, 255, 0.1);">Grandmaster</td>
+                                    <td>55</td>
+                                    <td>142</td>
+                                    <td>10 years</td>
+                                    <td>Living legend</td>
+                                </tr>
+                                <tr style="background: rgba(255, 215, 0, 0.1);">
+                                    <td>10</td>
+                                    <td style="background: rgba(255, 215, 0, 0.2);">Legendary</td>
+                                    <td>89</td>
+                                    <td>231</td>
+                                    <td>Lifetime</td>
+                                    <td>Mythic figure</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <p style="margin-top: 1rem; font-size: 0.9rem; color: var(--text-muted);">
+                        <strong>Note:</strong> This progression uses an exponential growth pattern (not true Fibonacci). 
+                        Scale of Influence indicates typical narrative scope, not usage restrictions.
+                    </p>
+                </div>
+
+                <!-- Downtime Rules -->
+                <div class="rule-block mb-lg" style="background: linear-gradient(135deg, rgba(0, 128, 255, 0.1), rgba(0, 0, 0, 0.5)); border: 2px solid var(--accent-blue);">
+                    <h3 style="color: var(--accent-blue);">📅 Downtime Training Rules</h3>
+                    <ul>
+                        <li><strong>Training time is game time</strong>, not real-world time</li>
+                        <li>Characters can train during travel or between missions</li>
+                        <li>Active adventuring counts as 50% training time</li>
+                        <li>Interruption adds 25% to remaining time</li>
+                        <li>Can train multiple skills simultaneously at 150% time each</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Section 2: Tag Evolution -->
+            <section id="tag-evolution" class="mb-xl">
+                <h2>Tag Evolution</h2>
+                
+                <div class="glass-card p-lg mb-lg">
+                    <h3>How Tags Change with Rank</h3>
+                    <p>The same tag grows more powerful at higher ranks. Tags don't change mechanically (+1 die) but their narrative scope expands:</p>
+                    
+                    <div class="example-block" style="margin-top: 1rem;">
+                        <h4>Example: [Precise] Tag Evolution</h4>
+                        <ul>
+                            <li><strong>Rank 1-2:</strong> "Careful aim" - Take time for accurate shots</li>
+                            <li><strong>Rank 3-5:</strong> "Perfect timing" - Strike at optimal moments</li>
+                            <li><strong>Rank 6-7:</strong> "Surgical precision" - Thread impossible gaps</li>
+                            <li><strong>Rank 8-10:</strong> "Reality-defining accuracy" - Hit across star systems</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="glass-card p-lg">
+                    <h3>Tag Synergies</h3>
+                    
+                    <div class="rule-block" style="background: rgba(0, 255, 0, 0.1); padding: 1rem; border-radius: 8px;">
+                        <h4 style="color: var(--accent-green);">Quick Synergy Rules</h4>
+                        <ul>
+                            <li>When multiple tags apply to the same action, they all provide dice</li>
+                            <li>Maximum +5 dice from all tag sources combined</li>
+                            <li>Players discover synergies through play, not predetermined lists</li>
+                            <li>GM has final say on which tags apply</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="example-block" style="margin-top: 1rem;">
+                        <h4>Example: Hacking a Military Database</h4>
+                        <p>Character with Technology 4 attempts the hack:</p>
+                        <ul>
+                            <li>[Military Tech] - Familiar with military systems (+1 die)</li>
+                            <li>[Patient] - Taking time to avoid detection (+1 die)</li>
+                            <li>[Systematic] - Following proper intrusion protocols (+1 die)</li>
+                            <li><strong>Total: +3 dice to the roll</strong></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 3: Training Options -->
+            <section id="training-options" class="mb-xl">
+                <h2>Training Options</h2>
+                
+                <div class="grid grid-3">
+                    <div class="glass-card">
+                        <h3 style="color: var(--accent-gold);">Self-Directed</h3>
+                        <p><strong>Standard Method</strong></p>
+                        <ul>
+                            <li>Full AP cost</li>
+                            <li>Full training time</li>
+                            <li>Learn through experience</li>
+                            <li>No external requirements</li>
+                        </ul>
+                        <p style="margin-top: 1rem; font-style: italic;">Most common advancement method</p>
+                    </div>
+                    
+                    <div class="glass-card">
+                        <h3 style="color: var(--accent-blue);">Instruction</h3>
+                        <p><strong>-25% AP Cost</strong></p>
+                        <ul>
+                            <li>Requires teacher 2+ ranks higher</li>
+                            <li>Standard training time</li>
+                            <li>Access to facilities/materials</li>
+                            <li>Regular lessons needed</li>
+                        </ul>
+                        <p style="margin-top: 1rem; font-style: italic;">Good for ranks 1-5</p>
+                    </div>
+                    
+                    <div class="glass-card">
+                        <h3 style="color: var(--accent-purple);">Mentorship</h3>
+                        <p><strong>-50% AP Cost</strong></p>
+                        <ul>
+                            <li>Requires master 4+ ranks higher</li>
+                            <li>150% training time</li>
+                            <li>Intensive one-on-one training</li>
+                            <li>Significant story commitment</li>
+                        </ul>
+                        <p style="margin-top: 1rem; font-style: italic;">Rare but powerful</p>
+                    </div>
+                </div>
+                
+                <div class="glass-card p-lg mt-lg">
+                    <h3>Special Advancement</h3>
+                    <div class="grid grid-2">
+                        <div>
+                            <h4 style="color: var(--accent-gold);">Breakthrough Moments</h4>
+                            <p>GM may award instant rank increases for:</p>
+                            <ul style="font-size: 0.9rem;">
+                                <li>Defeating vastly superior opponent using that skill</li>
+                                <li>Achieving "impossible" task under pressure</li>
+                                <li>Making galaxy-changing discovery</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 style="color: var(--accent-gold);">Attribute Enhancement</h4>
+                            <p>Improving attributes after character creation:</p>
+                            <ul style="font-size: 0.9rem;">
+                                <li>Cost: 10 × new level in AP</li>
+                                <li>Maximum increase: +2 over starting value</li>
+                                <li>Requires significant story justification</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 4: Quick Reference -->
+            <section id="quick-reference" class="mb-xl">
+                <h2>Quick Reference</h2>
+                
+                <!-- AP Award Guidelines -->
+                <div class="glass-panel p-lg mb-lg">
+                    <h3>AP Award Guidelines</h3>
+                    <table style="width: 100%;">
+                        <thead>
+                            <tr>
+                                <th>Session Type</th>
+                                <th>AP Award</th>
+                                <th>Notes</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Standard Session</td>
+                                <td>1-2 AP</td>
+                                <td>Normal progress, some challenges</td>
+                            </tr>
+                            <tr>
+                                <td>Major Milestone</td>
+                                <td>3-5 AP</td>
+                                <td>Complete story arc, defeat major foe</td>
+                            </tr>
+                            <tr>
+                                <td>Campaign Climax</td>
+                                <td>8-10 AP</td>
+                                <td>Save the galaxy, complete epic quest</td>
+                            </tr>
+                            <tr>
+                                <td>Excellent Roleplay</td>
+                                <td>+1 AP</td>
+                                <td>Bonus for exceptional character portrayal</td>
+                            </tr>
+                            <tr>
+                                <td>Clever Solution</td>
+                                <td>+1 AP</td>
+                                <td>Bonus for creative problem solving</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Common Questions -->
+                <div class="glass-card p-lg">
+                    <h3>Common Questions</h3>
+                    <div class="grid grid-2">
+                        <div>
+                            <h4>Can I save AP?</h4>
+                            <p>Yes. Bank AP until you have enough for desired rank.</p>
+                            
+                            <h4>Multiple teachers?</h4>
+                            <p>Use best discount only. Benefits don't stack.</p>
+                            
+                            <h4>Forgotten skills?</h4>
+                            <p>Skills don't degrade. Once learned, always available.</p>
+                        </div>
+                        <div>
+                            <h4>Starting above Rank 1?</h4>
+                            <p>Only with GM permission for experienced character concepts.</p>
+                            
+                            <h4>Learning new skills?</h4>
+                            <p>Rank 0→1 costs 1 AP, requires finding learning opportunity.</p>
+                            
+                            <h4>Maximum advancement rate?</h4>
+                            <p>Training time requirements naturally limit progression speed.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Chapter Navigation -->
+        <div class="glass-panel p-lg mb-xl">
+            <div class="text-center">
+                <p style="margin-bottom: 2rem;">Ready to explore the skill system? Continue to Chapter 5.</p>
+                <div class="hero-buttons">
+                    <a href="../ch03-character-creation/index.html" class="btn btn-secondary">← Previous Chapter</a>
+                    <a href="../ch05-actions-and-skills/index.html" class="btn btn-primary">Next Chapter →</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="text-center">
+            <div class="glass-panel p-lg">
+                <p style="color: var(--text-muted);">
+                    Chapter 4: Character Advancement • Cosmos Engine RPG
+                </p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="../../assets/js/cosmos-engine.js"></script>
+</body>
+</html>

@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 3: Character Creation - Cosmos Engine RPG</title>
+    <link rel="stylesheet" href="../../assets/css/cosmos-engine.css">
+    <meta name="description" content="Create your character in Cosmos Engine RPG with our streamlined 9-step process">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav-primary glass-panel">
+        <div class="container">
+            <div class="nav-content">
+                <div class="nav-brand">
+                    <a href="../../index.html" class="brand-link" style="display: flex; align-items: center; gap: 1rem; text-decoration: none;">
+                        <img src="../../assets/images/cosmos-engine-logo.png" alt="Cosmos Engine" style="width: 40px; height: 40px; filter: drop-shadow(0 0 10px rgba(0, 255, 255, 0.4));">
+                        <div>
+                        <h3 style="margin: 0; color: var(--accent-gold);">Cosmos Engine RPG</h3>
+                        <small style="color: var(--text-muted); font-size: 0.8rem;">Chapter 3: Character Creation</small>
+                    </div>
+                    </a>
+                </div>
+                <div class="nav-utils">
+                    <div id="search-container" class="search-container"></div>
+                    <a href="../../index.html" class="btn btn-secondary">← Rulebook</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <!-- Breadcrumbs -->
+        <nav class="breadcrumb">
+            <a href="../../index.html">Home</a>
+            <span class="breadcrumb-separator">›</span>
+            <a href="../index.html">Chapters</a>
+            <span class="breadcrumb-separator">›</span>
+            <span>Chapter 3: Character Creation</span>
+        </nav>
+
+        <!-- Chapter Header -->
+        <header class="glass-panel p-xl text-center mb-xl">
+            <h1>Chapter 3: Character Creation</h1>
+            <p style="font-size: 1.1rem; color: var(--text-secondary); margin: 1rem 0;">
+                Build your character in 9 steps. New players can create a character in 15 minutes using the Quick Start path.
+            </p>
+        </header>
+
+        <!-- Table of Contents -->
+        <div class="glass-panel p-lg mb-xl">
+            <h2>Chapter Contents</h2>
+            <div class="grid grid-2">
+                <ul style="list-style: none; margin: 0;">
+                    <li><a href="#quick-start">Quick Start Path (15 minutes)</a></li>
+                    <li><a href="#nine-steps">The Nine Steps</a></li>
+                    <li><a href="#example-character">Example: Marcus "Wire" Chen</a></li>
+                </ul>
+                <ul style="list-style: none; margin: 0;">
+                    <li><a href="#reference-tables">Reference Tables</a></li>
+                    <li><a href="#character-worksheet">Character Worksheet</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <main>
+            <!-- Quick Start Path -->
+            <section id="quick-start" class="mb-xl">
+                <h2>Quick Start Path (New Players)</h2>
+                
+                <div class="glass-card p-lg mb-lg">
+                    <h3 style="color: var(--accent-gold);">🚀 Create Your First Character in 15 Minutes</h3>
+                    <ol>
+                        <li><strong>Pick a Concept:</strong> Smuggler, Soldier, Scientist, or Pilot</li>
+                        <li><strong>Choose Human:</strong> No modifiers, most flexible</li>
+                        <li><strong>Use Standard Array:</strong> 5, 4, 4, 3, 3, 2 for attributes</li>
+                        <li><strong>Take a Skill Package:</strong> Explorer, Specialist, Soldier, or Socialite</li>
+                        <li><strong>Select Tags:</strong> One per skill rank (automatic with package)</li>
+                        <li><strong>Calculate Values:</strong> Use the formulas below</li>
+                        <li><strong>Grab Starting Gear:</strong> Pick an equipment package</li>
+                        <li><strong>Name & Motivate:</strong> Who are you and what drives you?</li>
+                        <li><strong>Connect:</strong> How do you know the other characters?</li>
+                    </ol>
+                    <p style="margin-top: 1rem; text-align: center;">
+                        <strong>Ready for more detail?</strong> <a href="#nine-steps">Continue to Full Process →</a>
+                    </p>
+                </div>
+            </section>
+
+            <!-- CRITICAL CLARIFICATION -->
+            <div class="rule-block mb-xl" style="background: linear-gradient(135deg, rgba(255, 215, 0, 0.1), rgba(0, 0, 0, 0.5)); border: 2px solid var(--accent-gold);">
+                <h3 style="color: var(--accent-gold);">📊 Two Separate AP Pools</h3>
+                <p><strong>You get TWO separate pools of 10 AP each:</strong></p>
+                <ul>
+                    <li><strong>10 AP for Attributes</strong> - Spend on your six PRIMAC scores</li>
+                    <li><strong>10 AP for Skills</strong> - Spend on skill ranks and specializations</li>
+                </ul>
+                <p style="margin-top: 1rem; font-style: italic;">These pools NEVER mix. You cannot transfer points between them.</p>
+            </div>
+
+            <!-- The Nine Steps -->
+            <section id="nine-steps" class="mb-xl">
+                <h2>The Nine Steps</h2>
+
+                <!-- Step 1: Concept -->
+                <div class="glass-card p-lg mb-lg">
+                    <h3>Step 1: Concept (1 minute)</h3>
+                    <p>Answer these questions:</p>
+                    <ul>
+                        <li>What's your profession or role?</li>
+                        <li>Where are you from?</li>
+                        <li>What's your greatest strength?</li>
+                        <li>What's your biggest flaw?</li>
+                    </ul>
+                    
+                    <div style="background: rgba(0, 0, 0, 0.3); padding: 1rem; border-radius: 8px; margin-top: 1rem;">
+                        <strong>Quick Background Generator (Optional)</strong>
+                        <p>Roll 2d10 or choose: First die = Career, Second die = Defining Event</p>
+                        <table style="width: 100%; font-size: 0.9rem; margin-top: 0.5rem;">
+                            <tr>
+                                <td>1. Military</td>
+                                <td>2. Criminal</td>
+                                <td>3. Academic</td>
+                                <td>4. Corporate</td>
+                                <td>5. Spacer</td>
+                            </tr>
+                            <tr>
+                                <td>6. Medical</td>
+                                <td>7. Explorer</td>
+                                <td>8. Entertainer</td>
+                                <td>9. Religious</td>
+                                <td>10. Freelance</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Step 2: Species -->
+                <div class="glass-card p-lg mb-lg">
+                    <h3>Step 2: Choose Species</h3>
+                    <p>Select from 10 species. See complete comparison table below or choose Human for simplicity.</p>
+                    <p style="margin-top: 1rem;"><em>Full species descriptions available in Chapter 10: Setting</em></p>
+                </div>
+
+                <!-- Step 3: Attributes -->
+                <div class="glass-card p-lg mb-lg">
+                    <h3>Step 3: Determine Attributes</h3>
+                    <p><strong>10 Attribute Points (AP)</strong> to spend on six PRIMAC attributes:</p>
+                    
+                    <table style="width: 100%; margin: 1rem 0;">
+                        <thead>
+                            <tr>
+                                <th>Score</th>
+                                <th>1</th>
+                                <th>2</th>
+                                <th>3</th>
+                                <th>4</th>
+                                <th>5</th>
+                                <th>6</th>
+                                <th>7</th>
+                                <th>8</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>AP Cost</strong></td>
+                                <td>-2</td>
+                                <td>0</td>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>3</td>
+                                <td>5</td>
+                                <td>7</td>
+                                <td>10</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                    <p><strong>Or use a Standard Array:</strong></p>
+                    <ul>
+                        <li><strong>Balanced:</strong> 5, 4, 4, 3, 3, 2</li>
+                        <li><strong>Specialist:</strong> 6, 4, 3, 3, 2, 2</li>
+                        <li><strong>Focused:</strong> 7, 3, 3, 3, 2, 2</li>
+                    </ul>
+                    
+                    <p style="margin-top: 1rem;"><strong>Apply species modifiers AFTER spending AP.</strong></p>
+                </div>
+
+                <!-- Step 4: Skills -->
+                <div class="glass-card p-lg mb-lg">
+                    <h3>Step 4: Allocate Skills</h3>
+                    <p><strong>10 Skill Points (AP)</strong> to spend on 18 skills:</p>
+                    
+                    <table style="width: 100%; margin: 1rem 0;">
+                        <thead>
+                            <tr>
+                                <th>Rank</th>
+                                <th>0</th>
+                                <th>1</th>
+                                <th>2</th>
+                                <th>3</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>AP Cost</strong></td>
+                                <td>0</td>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>3</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Competence</strong></td>
+                                <td>Untrained</td>
+                                <td>Novice</td>
+                                <td>Apprentice</td>
+                                <td>Journeyman</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                    <p><strong>Starting characters cannot exceed Rank 3 in any skill.</strong></p>
+                    
+                    <div style="background: rgba(0, 128, 255, 0.1); padding: 1rem; border-radius: 8px; margin-top: 1rem;">
+                        <strong>Skill Packages (Spend all 10 AP):</strong>
+                        <ul style="font-size: 0.9rem;">
+                            <li><strong>Explorer:</strong> Survival 3, Pilot 2, Tech 2, Perception 2, Athletics 1</li>
+                            <li><strong>Specialist:</strong> One skill at 3, two at 2, one at 1</li>
+                            <li><strong>Soldier:</strong> Combat 3, Athletics 2, Discipline 2, Intimidation 2, Survival 1</li>
+                            <li><strong>Socialite:</strong> Persuasion 3, Deception 2, Performance 2, Commerce 2, Knowledge 1</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Step 5: Tags -->
+                <div class="glass-card p-lg mb-lg">
+                    <h3>Step 5: Select Tags</h3>
+                    
+                    <div class="rule-block" style="background: rgba(0, 255, 0, 0.1); padding: 1rem; border-radius: 8px;">
+                        <h4 style="color: var(--accent-green);">Tag Quick Reference</h4>
+                        <ul>
+                            <li><strong>You get 1 tag per skill rank</strong></li>
+                            <li>Rank 1 = 1 tag, Rank 2 = 2 tags, Rank 3 = 3 tags</li>
+                            <li>Tags provide +1 die when relevant to your action</li>
+                            <li>Choose tags that fit your concept and playstyle</li>
+                        </ul>
+                    </div>
+                    
+                    <p style="margin-top: 1rem;"><em>See Appendix A for complete tag list, or use skill tree suggestions in Chapter 5</em></p>
+                </div>
+
+                <!-- Step 6: Derived Values -->
+                <div class="glass-card p-lg mb-lg">
+                    <h3>Step 6: Calculate Derived Values</h3>
+                    
+                    <table style="width: 100%;">
+                        <thead>
+                            <tr>
+                                <th>Value</th>
+                                <th>Formula</th>
+                                <th>Typical Range</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Health</strong></td>
+                                <td>10 + Might</td>
+                                <td>11-20</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Stress</strong></td>
+                                <td>10 + Resolve</td>
+                                <td>11-20</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Defense</strong></td>
+                                <td>10 + Coordination</td>
+                                <td>11-20</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Mental Defense</strong></td>
+                                <td>10 + Awareness</td>
+                                <td>11-20</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Initiative</strong></td>
+                                <td>Awareness + Coordination</td>
+                                <td>2-16</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Move</strong></td>
+                                <td>5 + Athletics</td>
+                                <td>5-8 meters</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Step 7: Equipment -->
+                <div class="glass-card p-lg mb-lg">
+                    <h3>Step 7: Starting Equipment</h3>
+                    
+                    <table style="width: 100%; margin-bottom: 1rem;">
+                        <thead>
+                            <tr>
+                                <th>Wealth Level</th>
+                                <th>Starting Credits</th>
+                                <th>Typical Background</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Struggling</td>
+                                <td>1d10 × 10</td>
+                                <td>Street, refugee, student</td>
+                            </tr>
+                            <tr>
+                                <td>Working</td>
+                                <td>2d10 × 50</td>
+                                <td>Military, spacer, freelance</td>
+                            </tr>
+                            <tr>
+                                <td>Comfortable</td>
+                                <td>3d10 × 100</td>
+                                <td>Professional, merchant</td>
+                            </tr>
+                            <tr>
+                                <td>Wealthy</td>
+                                <td>4d10 × 500</td>
+                                <td>Executive, noble, crime boss</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                    <p><strong>Equipment Packages:</strong></p>
+                    <ul style="font-size: 0.9rem;">
+                        <li><strong>Spacer's Kit:</strong> Vac suit, toolkit, sidearm</li>
+                        <li><strong>Military Kit:</strong> Armor, rifle, field gear</li>
+                        <li><strong>Professional Kit:</strong> Formal wear, datapad, credentials</li>
+                        <li><strong>Explorer's Kit:</strong> Survival gear, scanner, climbing kit</li>
+                    </ul>
+                    <p style="margin-top: 0.5rem;"><em>Full equipment lists in Chapter 7</em></p>
+                </div>
+
+                <!-- Step 8: Motivation -->
+                <div class="glass-card p-lg mb-lg">
+                    <h3>Step 8: Define Motivation</h3>
+                    <p>Choose or roll d10:</p>
+                    <ol style="font-size: 0.9rem;">
+                        <li>Survival - Stay alive in a hostile universe</li>
+                        <li>Wealth - Accumulate credits and resources</li>
+                        <li>Power - Gain influence and control</li>
+                        <li>Knowledge - Uncover secrets and learn</li>
+                        <li>Justice - Right wrongs and protect others</li>
+                        <li>Freedom - Break chains and explore</li>
+                        <li>Glory - Become legendary</li>
+                        <li>Love - Protect those you care about</li>
+                        <li>Redemption - Make up for past mistakes</li>
+                        <li>Discovery - Find what's never been found</li>
+                    </ol>
+                </div>
+
+                <!-- Step 9: Connections -->
+                <div class="glass-card p-lg mb-lg">
+                    <h3>Step 9: Create Connections</h3>
+                    <p>Answer for at least one other character:</p>
+                    <ul style="font-size: 0.9rem;">
+                        <li>How do you know them?</li>
+                        <li>Why do you trust them?</li>
+                        <li>What do you need from them?</li>
+                        <li>What can you offer them?</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Example Character -->
+            <section id="example-character" class="mb-xl">
+                <h2>Example: Marcus "Wire" Chen</h2>
+                
+                <div class="example-block">
+                    <h3>Following the Nine Steps</h3>
+                    
+                    <div class="grid grid-2">
+                        <div>
+                            <h4>1. Concept</h4>
+                            <p>Ex-military hacker turned freelance "security consultant"</p>
+                            
+                            <h4>2. Species</h4>
+                            <p>Human (no modifiers)</p>
+                            
+                            <h4>3. Attributes (10 AP)</h4>
+                            <ul style="font-size: 0.9rem;">
+                                <li>Presence: 2 (0 AP)</li>
+                                <li>Resolve: 3 (1 AP)</li>
+                                <li>Intellect: 5 (3 AP)</li>
+                                <li>Might: 2 (0 AP)</li>
+                                <li>Awareness: 4 (2 AP)</li>
+                                <li>Coordination: 4 (2 AP)</li>
+                                <li style="color: var(--accent-yellow);">Deficit: 2 AP (balanced)</li>
+                            </ul>
+                            
+                            <h4>4. Skills (10 AP)</h4>
+                            <ul style="font-size: 0.9rem;">
+                                <li>Technology: 3 (3 AP)</li>
+                                <li>Combat: 2 (2 AP)</li>
+                                <li>Stealth: 2 (2 AP)</li>
+                                <li>Deception: 2 (2 AP)</li>
+                                <li>Knowledge: 1 (1 AP)</li>
+                            </ul>
+                        </div>
+                        
+                        <div>
+                            <h4>5. Tags</h4>
+                            <ul style="font-size: 0.9rem;">
+                                <li>Technology: [Military Tech], [Quick-Hack], [System Exploit]</li>
+                                <li>Combat: [Cover Fighter], [Precise]</li>
+                                <li>Stealth: [Electronic], [Patient]</li>
+                                <li>Deception: [Fast-Talk], [Poker Face]</li>
+                                <li>Knowledge: [Military Protocols]</li>
+                            </ul>
+                            
+                            <h4>6. Derived Values</h4>
+                            <ul style="font-size: 0.9rem;">
+                                <li>Health: 12 (10 + MIG 2)</li>
+                                <li>Stress: 13 (10 + RES 3)</li>
+                                <li>Defense: 14 (10 + COO 4)</li>
+                                <li>Mental Defense: 14 (10 + AWA 4)</li>
+                                <li>Initiative: 8 (AWA 4 + COO 4)</li>
+                                <li>Move: 5 meters</li>
+                            </ul>
+                            
+                            <h4>7. Equipment</h4>
+                            <p>Working class (400 credits), Military Kit modified for hacking</p>
+                            
+                            <h4>8. Motivation</h4>
+                            <p>Redemption - Make up for military black ops past</p>
+                            
+                            <h4>9. Connection</h4>
+                            <p>"I served with Rodriguez. They saved my life on Kepler Station."</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Reference Tables -->
+            <section id="reference-tables" class="mb-xl">
+                <h2>Reference Tables</h2>
+                
+                <!-- Species Comparison -->
+                <div class="glass-panel p-lg mb-lg">
+                    <h3>Species Comparison</h3>
+                    <div style="overflow-x: auto;">
+                        <table style="width: 100%; font-size: 0.8rem;">
+                            <thead>
+                                <tr>
+                                    <th>Species</th>
+                                    <th>PRE</th>
+                                    <th>RES</th>
+                                    <th>INT</th>
+                                    <th>MIG</th>
+                                    <th>AWA</th>
+                                    <th>COO</th>
+                                    <th>Special Trait</th>
+                                    <th>Tags</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>Human</strong></td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>Adaptable (+1 any)</td>
+                                    <td>[Adaptable], [Ambitious]</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Sylathi</strong></td>
+                                    <td>+1</td>
+                                    <td>-</td>
+                                    <td>+1</td>
+                                    <td>-1</td>
+                                    <td>-</td>
+                                    <td>-1</td>
+                                    <td>Telepathic empathy</td>
+                                    <td>[Telepathic], [Graceful]</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Korthax</strong></td>
+                                    <td>-1</td>
+                                    <td>+1</td>
+                                    <td>-</td>
+                                    <td>+2</td>
+                                    <td>-</td>
+                                    <td>-1</td>
+                                    <td>Natural armor</td>
+                                    <td>[Tough], [Warrior]</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Nexari</strong></td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>+2</td>
+                                    <td>-1</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>Machine interface</td>
+                                    <td>[Tech-Savvy], [Logical]</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Voidborn</strong></td>
+                                    <td>-</td>
+                                    <td>+1</td>
+                                    <td>-</td>
+                                    <td>-1</td>
+                                    <td>+1</td>
+                                    <td>+1</td>
+                                    <td>Zero-G adaptation</td>
+                                    <td>[Zero-G], [Void-touched]</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Terrak</strong></td>
+                                    <td>+1</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>+1</td>
+                                    <td>-</td>
+                                    <td>Natural weapons</td>
+                                    <td>[Hunter], [Wild]</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Etherean</strong></td>
+                                    <td>-</td>
+                                    <td>-1</td>
+                                    <td>+1</td>
+                                    <td>-1</td>
+                                    <td>+2</td>
+                                    <td>-</td>
+                                    <td>Energy sense</td>
+                                    <td>[Energy], [Ethereal]</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Machina</strong></td>
+                                    <td>-1</td>
+                                    <td>+2</td>
+                                    <td>+1</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>-1</td>
+                                    <td>No biological needs</td>
+                                    <td>[Artificial], [Efficient]</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Chrysalid</strong></td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>Metamorphosis</td>
+                                    <td>[Evolving], [Adaptive]</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Quantum</strong></td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>+1</td>
+                                    <td>-2</td>
+                                    <td>+1</td>
+                                    <td>+1</td>
+                                    <td>Probability sight</td>
+                                    <td>[Quantum], [Prescient]</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Starting Limits -->
+                <div class="rule-block mb-lg" style="background: linear-gradient(135deg, rgba(255, 0, 0, 0.1), rgba(0, 0, 0, 0.5)); border: 2px solid var(--accent-red);">
+                    <h3 style="color: var(--accent-red);">Starting Character Limits</h3>
+                    <ul>
+                        <li>Maximum Attribute: 8 (before species modifiers)</li>
+                        <li>Maximum Skill Rank: 3</li>
+                        <li>Minimum Attribute: 1</li>
+                        <li>Total Attribute AP: 10</li>
+                        <li>Total Skill AP: 10</li>
+                    </ul>
+                </div>
+
+                <!-- Final Checklist -->
+                <div class="glass-card p-lg">
+                    <h3>Character Creation Checklist</h3>
+                    <p>Document the following on your character sheet:</p>
+                    <ul style="columns: 2;">
+                        <li>☐ Character name and concept</li>
+                        <li>☐ Species and traits</li>
+                        <li>☐ Six PRIMAC attributes</li>
+                        <li>☐ Skill ranks (at least 3-4 skills)</li>
+                        <li>☐ Tags (1 per skill rank)</li>
+                        <li>☐ Health & Stress</li>
+                        <li>☐ Defense & Mental Defense</li>
+                        <li>☐ Initiative & Movement</li>
+                        <li>☐ Starting equipment</li>
+                        <li>☐ Motivation</li>
+                        <li>☐ One connection</li>
+                        <li>☐ Background notes</li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+
+        <!-- Chapter Navigation -->
+        <div class="glass-panel p-lg mb-xl">
+            <div class="text-center">
+                <p style="margin-bottom: 2rem;">Ready to advance your character? Continue to Chapter 4.</p>
+                <div class="hero-buttons">
+                    <a href="../ch02-core-mechanics/index.html" class="btn btn-secondary">← Previous Chapter</a>
+                    <a href="../ch04-character-advancement/index.html" class="btn btn-primary">Next Chapter →</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="text-center">
+            <div class="glass-panel p-lg">
+                <p style="color: var(--text-muted);">
+                    Chapter 3: Character Creation • Cosmos Engine RPG
+                </p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="../../assets/js/cosmos-engine.js"></script>
+</body>
+</html>
