@@ -20,28 +20,28 @@
 
 ## Overview
 
-**Cosmos Engine RPG** is a comprehensive science fiction roleplaying game system featuring mathematically balanced mechanics that maintain consistent challenge from levels 1-20. Built on a unified 2d10 resolution system, it supports campaigns ranging from gritty cyberpunk street adventures to epic space opera spanning galactic civilizations.
+**Cosmos Engine RPG** is a comprehensive science fiction role-playing game system featuring mathematically balanced mechanics that maintain consistent challenge from levels 1 to 20. Built on a unified 2d10 resolution system, it supports campaigns ranging from gritty cyberpunk street adventures to epic space opera spanning galactic civilizations.
 
 ### Core Design Philosophy
 - **Mathematical Balance**: Maintains ~85% hit rates across all levels through innovative skill-divided-by-2 formula
-- **Unified Mechanics**: Single resolution system (2d10 + Attribute + Skill) for all actions
+- **Unified Mechanics**: Single resolution system (2d10 + Attribute Mod + Skill Mod) for all actions
 - **Scalable Complexity**: Simple core rules with optional advanced systems
-- **Technology Progression**: Four distinct eras from Primitive to Stellar
-- **Comprehensive Support**: Complete GM tools, adventures, and player resources
+- **Technology Progression**: Four distinct technological eras from Primitive to Cosmic (Galactic)
+- **Comprehensive Support**: Complete GM tools, probability analysis, pregen characters, several starter adventures, and numerous player resources (character sheets, dice roller, note taker, etc)
 
 ## Features
 
 ### 🎲 Balanced Game Mechanics
-- **Combat System**: Tactical depth without number inflation (equipment capped at +3)
-- **Skill System**: 12 primary skills covering all sci-fi scenarios
-- **Species System**: 10 balanced playable species with unique abilities
-- **Character Advancement**: Meaningful progression across 20 levels
+- **Combat System**: Tactical depth without number inflation by using an advantage dice pool attack. 
+- **Skill System**: 18 primary skills covering most sci-fi scenarios
+- **Species System**: 10 core playable species with unique abilities
+- **Character Advancement**: Meaningful progression across 20 levels with specialization bonuses and skill synergies. 
 
 ### 🚀 Advanced Systems
-- **Vehicle Chases**: Dynamic pursuit mechanics for ground, air, and space
-- **Cybernetics & AI**: Technology integration and companion rules
-- **Organizations**: Faction mechanics and relationship systems
-- **Economics**: Abstract wealth and resource management
+- **Vehicle Chases**: Dynamic pursuit mechanics for ground, air, and space that thematically represent chases over varying distances, speeds, and scales. 
+- **Cybernetics & AI**: Not a minigame. Same rules, parallel action with tags that don't bog down combat, but allow for detailed cybertheater.
+-**Organizations**: Faction mechanics and relationship systems that utilize skill synergies to offer greater scope and scale. 
+- **Economics**: Functional wealth and resource management through credits, equipment quirks (tags), and scalable economies for large civilization-spanning characters (such as Mon Mothma or  )
 - **Research**: Discovery and technology advancement mechanics
 
 ### 📚 Complete Documentation
@@ -52,8 +52,8 @@
 
 ### 🌌 Flexible Setting Framework
 - **Technology Eras**: Primitive, Industrial, Advanced, and Stellar
-- **Campaign Scales**: Personal, Planetary, System, and Galactic
-- **Genre Support**: Cyberpunk, Space Opera, Military Sci-Fi, and more
+- **Campaign Scales**: Personal, Planetary, System, and Cosmic (Galactic)
+- **Genre Support**: Cyberpunk, Space Opera, Military Sci-Fi, Space Horror, and more
 - **Modular Design**: Use what fits your campaign, ignore the rest
 
 ## Getting Started
