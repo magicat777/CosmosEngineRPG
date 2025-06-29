@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chapter 1: Welcome to Cosmos Engine - Cosmos Engine RPG</title>
     <link rel="stylesheet" href="../../assets/css/cosmos-engine.css">
+    <link rel="stylesheet" href="../../assets/css/print.css" media="print">
     <meta name="description" content="Introduction to Cosmos Engine RPG - Revolutionary science fiction tabletop RPG with Universal Tag System">
 </head>
 <body>
@@ -79,7 +80,7 @@
                         <h3 style="color: var(--accent-gold); margin-bottom: 1rem;">New to RPGs? Start Here!</h3>
                         <p><strong>First Time Playing?</strong> You need to know three things:</p>
                         <ol>
-                            <li><strong>Basic Roll:</strong> 2d10 + PRIMAC Attribute + Skill + Equipment vs Target Number</li>
+                            <li><strong>Basic Roll:</strong> 2d10 + PRIMAC Attribute Modifier + Skill Rank + Equipment vs Target Number</li>
                             <li><strong>Tag Synergy:</strong> When tags match your action, roll extra d10s, keep best 2</li>
                             <li><strong>Modifier Caps:</strong> Bonuses max at +8, penalties at -6</li>
                         </ol>
@@ -91,7 +92,7 @@
                         <h3 style="color: #ffa500; margin-bottom: 1rem;">⚠️ Core Resolution System</h3>
                         <div class="grid grid-2" style="gap: 1rem;">
                             <div>
-                                <p><strong>Basic Roll:</strong> 2d10 + Attribute (0-5) + Skill (0-5) + Equipment (0-5) + Situation (-3 to +3)</p>
+                                <p><strong>Basic Roll:</strong> 2d10 + Attribute modifier (-2 to +7) + Skill (0-10) + Equipment (0-5) + Situation (-3 to +3)</p>
                                 <p style="font-size: 0.9rem; margin-top: 0.5rem;"><strong>Maximum Total Modifiers:</strong> +8 (minimum -6)</p>
                             </div>
                             <div>
@@ -190,18 +191,18 @@
                     
                     <div style="background: rgba(0, 128, 255, 0.1); padding: 1.5rem; border-radius: 8px; border: 1px solid var(--accent-blue); margin-top: 1.5rem;">
                         <h4 style="color: var(--accent-blue); margin-bottom: 1rem;">📈 Understanding the Probability Data</h4>
-                        <p>The tables below show <strong>base 2d10 probabilities</strong> without modifiers. A competent character (Attribute 3 + Skill 3 = +6) transforms these dramatically:</p>
+                        <p>The tables below show <strong>base 2d10 probabilities</strong> without modifiers. A competent character (Attribute score 4 = +1 modifier + 3 Combat tags = 5d10+1k2) transforms these dramatically:</p>
                         <div class="grid grid-2" style="gap: 1rem; margin: 1rem 0;">
                             <div>
                                 <p><strong>Base 2d10 vs TN 8:</strong> 78%</p>
-                                <p><strong>Competent (+6) vs TN 8:</strong> 91%</p>
+                                <p><strong>Competent (5d10+1k2) vs TN 8:</strong> 88%</p>
                             </div>
                             <div>
                                 <p><strong>Base 2d10 vs TN 14:</strong> 28%</p>
-                                <p><strong>Competent (+6) vs TN 14:</strong> 64%</p>
+                                <p><strong>Competent (5d10+1k2) vs TN 14:</strong> 60%</p>
                             </div>
                         </div>
-                        <p>Tag synergies create even more dramatic shifts, transforming Zara's 28% base chance at a hard maneuver into an 80% probability of success through bonus dice.</p>
+                        <p>Tag synergies create even more dramatic shifts, transforming Zara's 28% base chance at a hard maneuver into an 85% probability of success through 7d10k2 when all her tags align.</p>
                     </div>
                 </div>
                 
@@ -971,7 +972,7 @@
 
                         <p><strong>Sarah:</strong> Excellent synergy! Your <span style="color: var(--accent-gold);">[Military-Training]</span> discipline combined with <span style="color: var(--accent-gold);">[Enhanced]</span> implants creates "Tactical Scan Protocol" - that's +2 dice. Roll Awareness plus Technology with your synergy bonus.</p>
 
-                        <p><strong>Alex:</strong> <em>rolls 4d10 (2d10 + 2 synergy dice)</em> I got 8, 7, 6, and 4. Keeping the best 2 gives me 15, plus my Awareness of 4 and Tech skill of 3... that's 22 total!</p>
+                        <p><strong>Alex:</strong> <em>rolls 4d10 (2d10 + 2 synergy dice)</em> I got 8, 7, 6, and 4. Keeping the best 2 gives me 15, plus my Awareness 4 (+1) and Tech skill of 3... that's 19 total!</p>
 
                         <p><strong>Sarah:</strong> Your military scanner initially glitches from the <span style="color: var(--accent-gold);">[Mysterious]</span> environment, but your <span style="color: var(--accent-gold);">[Enhanced]</span> implants compensate, stabilizing the readings. You detect minimal power in the station's core and... something large moving three sections ahead. The bio-signature doesn't match any known species in your implant's xenobiology database. Your scanner gains the <span style="color: var(--accent-gold);">[Alien-Touched]</span> tag from this encounter.</p>
                     </div>
@@ -1127,5 +1128,6 @@
     </div>
 
     <script src="../../assets/js/cosmos-engine.js"></script>
+    <script src="../../assets/js/standardize-navigation.js"></script>
 </body>
 </html>

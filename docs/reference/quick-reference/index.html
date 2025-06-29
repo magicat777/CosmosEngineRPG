@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quick Reference - Cosmos Engine RPG</title>
+    <link rel="stylesheet" href="../../assets/css/cosmos-engine.css">
+    <link rel="stylesheet" href="../../assets/css/print.css" media="print">
+    <meta name="description" content="Quick reference guide for Cosmos Engine RPG core mechanics, modifiers, and tables">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav-primary glass-panel">
+        <div class="container">
+            <div class="nav-content">
+                <div class="nav-brand">
+                    <a href="../../index.html" class="brand-link" style="display: flex; align-items: center; gap: 1rem; text-decoration: none;">
+                        <img src="../../assets/images/cosmos-engine-logo.png" alt="Cosmos Engine" style="width: 40px; height: 40px; filter: drop-shadow(0 0 10px rgba(0, 255, 255, 0.4));">
+                        <div>
+                        <h3 style="margin: 0; color: var(--accent-gold);">Cosmos Engine RPG</h3>
+                        <small style="color: var(--text-muted); font-size: 0.8rem;">Quick Reference</small>
+                    </div>
+                    </a>
+                </div>
+                <div class="nav-utils">
+                    <div id="search-container" class="search-container"></div>
+                    <a href="../../index.html" class="btn btn-secondary">← Rulebook</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <!-- Breadcrumbs -->
+        <nav class="breadcrumb">
+            <a href="../../index.html">Home</a>
+            <span class="breadcrumb-separator">›</span>
+            <a href="../index.html">Reference</a>
+            <span class="breadcrumb-separator">›</span>
+            <span>Quick Reference</span>
+        </nav>
+
+        <!-- Page Header -->
+        <header class="glass-panel p-xl text-center mb-xl">
+            <h1>Quick Reference Guide</h1>
+            <p style="font-size: 1.1rem; color: var(--text-secondary); margin: 1rem 0;">
+                Essential rules, tables, and mechanics for Cosmos Engine RPG at your fingertips.
+            </p>
+        </header>
+
+        <!-- Core Mechanics -->
+        <section class="mb-xl">
+            <div class="glass-panel p-xl" style="background: linear-gradient(135deg, rgba(255, 215, 0, 0.1), rgba(0, 0, 0, 0.9));">
+                <h2 style="color: var(--accent-gold); text-align: center; margin-bottom: 2rem;">🎲 Core Resolution Mechanics</h2>
+                
+                <div class="grid grid-2" style="gap: 2rem;">
+                    <div>
+                        <h3 style="color: var(--accent-blue);">Standard Method</h3>
+                        <div class="rule-block" style="background: rgba(0, 128, 255, 0.1); padding: 1rem;">
+                            <p style="font-size: 1.2rem; text-align: center; margin-bottom: 1rem;">
+                                <strong>2d10 + Attribute Modifier + Equipment + Situation + Tag Dice</strong>
+                            </p>
+                            <ul style="margin: 0;">
+                                <li>Attribute Modifier: -2 to +7</li>
+                                <li>Skill Tags: +1 to +7 dice per skill</li>
+                                <li>Equipment: 0-5 (Tech Era)</li>
+                                <li>Situation: -3 to +3</li>
+                                <li><strong>Flat Modifier Caps: +8 max, -6 min</strong></li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <h3 style="color: var(--accent-gold);">Tag Synergy Method</h3>
+                        <div class="rule-block" style="background: rgba(255, 215, 0, 0.1); padding: 1rem;">
+                            <p style="font-size: 1.2rem; text-align: center; margin-bottom: 1rem;">
+                                <strong>Roll extra d10s, keep best 2</strong>
+                            </p>
+                            <ul style="margin: 0;">
+                                <li>+1d10 per matching tag</li>
+                                <li>Maximum: 7d10, keep best 2</li>
+                                <li>Skill tags gained through advancement ranks</li>
+                                <li><strong>Replaces modifier caps when used</strong></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PRIMAC Attributes -->
+        <section class="mb-xl">
+            <div class="glass-card p-lg">
+                <h2 style="color: var(--accent-blue); text-align: center;">📊 PRIMAC Attributes</h2>
+                <div class="grid grid-3" style="gap: 1rem; margin-top: 2rem;">
+                    <div style="text-align: center;">
+                        <h4 style="color: var(--accent-gold);">🎭 Presence</h4>
+                        <p>Leadership, charisma, and social influence</p>
+                    </div>
+                    <div style="text-align: center;">
+                        <h4 style="color: var(--accent-gold);">🧠 Resolve</h4>
+                        <p>Willpower, mental fortitude, and determination</p>
+                    </div>
+                    <div style="text-align: center;">
+                        <h4 style="color: var(--accent-gold);">📚 Intellect</h4>
+                        <p>Reasoning, knowledge, and analytical thinking</p>
+                    </div>
+                    <div style="text-align: center;">
+                        <h4 style="color: var(--accent-gold);">💪 Might</h4>
+                        <p>Physical strength, endurance, and toughness</p>
+                    </div>
+                    <div style="text-align: center;">
+                        <h4 style="color: var(--accent-gold);">👁️ Awareness</h4>
+                        <p>Perception, intuition, and situational awareness</p>
+                    </div>
+                    <div style="text-align: center;">
+                        <h4 style="color: var(--accent-gold);">🎯 Coordination</h4>
+                        <p>Dexterity, agility, and precise movements</p>
+                    </div>
+                </div>
+                <p style="text-align: center; margin-top: 1rem; color: var(--text-muted);">
+                    <strong>Attribute Range:</strong> 1-10 (Modifiers: -2 to +7)
+                </p>
+            </div>
+        </section>
+
+        <!-- Target Numbers -->
+        <section class="mb-xl">
+            <div class="glass-card p-lg">
+                <h2>🎯 Target Numbers & Success Rates</h2>
+                <table style="width: 100%;">
+                    <thead>
+                        <tr>
+                            <th>Difficulty</th>
+                            <th>TN</th>
+                            <th>Base 2d10</th>
+                            <th>Competent (+6)</th>
+                            <th>Expert (+8)</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Trivial</strong></td>
+                            <td>8</td>
+                            <td>78%</td>
+                            <td>91%</td>
+                            <td>97%</td>
+                            <td>Routine tasks</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Easy</strong></td>
+                            <td>11</td>
+                            <td>55%</td>
+                            <td>64%</td>
+                            <td>79%</td>
+                            <td>Basic challenges</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Moderate</strong></td>
+                            <td>14</td>
+                            <td>28%</td>
+                            <td>30%</td>
+                            <td>45%</td>
+                            <td>Professional tasks</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Hard</strong></td>
+                            <td>17</td>
+                            <td>10%</td>
+                            <td>8%</td>
+                            <td>16%</td>
+                            <td>Expert challenges</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Extreme</strong></td>
+                            <td>20</td>
+                            <td>1%</td>
+                            <td>1%</td>
+                            <td>3%</td>
+                            <td>Near impossible</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Legendary</strong></td>
+                            <td>23</td>
+                            <td>0%</td>
+                            <td>0%</td>
+                            <td>0.1%</td>
+                            <td>Requires tags/luck</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Impossible</strong></td>
+                            <td>26</td>
+                            <td>0%</td>
+                            <td>0%</td>
+                            <td>0%</td>
+                            <td>Tags essential</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Status Effects -->
+        <section class="mb-xl">
+            <div class="glass-card p-lg">
+                <h2>⚡ Status Effects</h2>
+                <div class="grid grid-2" style="gap: 1rem;">
+                    <div>
+                        <h3 style="color: var(--accent-red);">Combat Conditions</h3>
+                        <ul>
+                            <li><strong>Stunned:</strong> Lose next action, -2 to defense</li>
+                            <li><strong>Wounded:</strong> -1 die to all physical actions</li>
+                            <li><strong>Exhausted:</strong> -1 die to all actions</li>
+                            <li><strong>Dying:</strong> Incapacitated, needs immediate aid</li>
+                            <li><strong>Pinned:</strong> Cannot move, -2 to attacks</li>
+                            <li><strong>Burning:</strong> 1d6 damage per round</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 style="color: var(--accent-blue);">Mental Conditions</h3>
+                        <ul>
+                            <li><strong>Panicked:</strong> Must flee or take -2 dice</li>
+                            <li><strong>Confused:</strong> Random target selection</li>
+                            <li><strong>Charmed:</strong> Cannot harm charmer</li>
+                            <li><strong>Terrified:</strong> Cannot approach source</li>
+                            <li><strong>Berserk:</strong> +2 damage, -2 defense</li>
+                            <li><strong>Focused:</strong> +1 die to chosen action</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Scale System -->
+        <section class="mb-xl">
+            <div class="glass-card p-lg">
+                <h2>📏 Scale System</h2>
+                <table style="width: 100%;">
+                    <thead>
+                        <tr>
+                            <th>Scale</th>
+                            <th>Examples</th>
+                            <th>Damage Multiplier</th>
+                            <th>Conversion</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Personal</strong></td>
+                            <td>Humans, power armor</td>
+                            <td>×1</td>
+                            <td>Base scale</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Vehicle</strong></td>
+                            <td>Cars, tanks, mechs</td>
+                            <td>×10</td>
+                            <td>10 personal = 1 vehicle</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Starship</strong></td>
+                            <td>Fighters, corvettes</td>
+                            <td>×100</td>
+                            <td>10 vehicle = 1 starship</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Capital</strong></td>
+                            <td>Cruisers, battleships</td>
+                            <td>×1000</td>
+                            <td>10 starship = 1 capital</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Fleet</strong></td>
+                            <td>Armadas, stations</td>
+                            <td>×10000</td>
+                            <td>10 capital = 1 fleet</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p style="margin-top: 1rem; font-style: italic;">
+                    <strong>Cross-Scale Combat:</strong> Higher scale weapons deal multiplied damage to lower scales. 
+                    Lower scale weapons need multiple hits to affect higher scales.
+                </p>
+            </div>
+        </section>
+
+        <!-- Common Modifiers -->
+        <section class="mb-xl">
+            <div class="glass-card p-lg">
+                <h2>🔧 Common Modifiers</h2>
+                <div class="grid grid-3" style="gap: 1rem;">
+                    <div>
+                        <h4 style="color: var(--accent-green);">Advantages (+)</h4>
+                        <ul style="font-size: 0.9rem;">
+                            <li>Superior equipment: +1 to +3</li>
+                            <li>Taking time: +1 to +2</li>
+                            <li>Assistance: +1 per helper</li>
+                            <li>Ideal conditions: +1 to +2</li>
+                            <li>Height advantage: +1</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 style="color: var(--accent-red);">Disadvantages (-)</h4>
+                        <ul style="font-size: 0.9rem;">
+                            <li>Poor equipment: -1 to -3</li>
+                            <li>Rushed action: -1 to -2</li>
+                            <li>Distracted: -1 to -2</li>
+                            <li>Bad conditions: -1 to -3</li>
+                            <li>Multiple targets: -1 each</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 style="color: var(--accent-blue);">Combat Specific</h4>
+                        <ul style="font-size: 0.9rem;">
+                            <li>Aim action: +1 next attack</li>
+                            <li>Cover: +1 to +3 defense</li>
+                            <li>Flanking: +1 attack</li>
+                            <li>Prone: +2 vs ranged</li>
+                            <li>Blind: -3 to actions</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quick Actions Reference -->
+        <section class="mb-xl">
+            <div class="glass-card p-lg">
+                <h2>⚡ Actions in Combat</h2>
+                <div class="grid grid-2" style="gap: 2rem;">
+                    <div>
+                        <h3 style="color: var(--accent-gold);">Standard Actions</h3>
+                        <ul>
+                            <li><strong>Attack:</strong> Roll to hit, deal damage</li>
+                            <li><strong>Full Defense:</strong> +3 to defense, no attack</li>
+                            <li><strong>Move:</strong> Up to Speed in meters</li>
+                            <li><strong>Aim:</strong> +1 to next attack</li>
+                            <li><strong>Reload:</strong> Ready weapon</li>
+                            <li><strong>Use Skill:</strong> Non-combat ability</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 style="color: var(--accent-blue);">Free Actions</h3>
+                        <ul>
+                            <li><strong>Speak:</strong> Short communication</li>
+                            <li><strong>Drop Item:</strong> Release held object</li>
+                            <li><strong>Simple Movement:</strong> Step, turn</li>
+                            <li><strong>Activate:</strong> Toggle simple device</li>
+                            <li><strong>Observe:</strong> Quick perception</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technology Eras -->
+        <section class="mb-xl">
+            <div class="glass-card p-lg">
+                <h2>🔬 Technology Eras & Equipment Bonuses</h2>
+                <table style="width: 100%;">
+                    <thead>
+                        <tr>
+                            <th>Era</th>
+                            <th>Equipment Bonus</th>
+                            <th>Examples</th>
+                            <th>Typical Tags</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Primitive</strong></td>
+                            <td>+0</td>
+                            <td>Stone tools, clubs</td>
+                            <td>[Basic], [Unreliable]</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Industrial</strong></td>
+                            <td>+1</td>
+                            <td>Firearms, vehicles</td>
+                            <td>[Mechanical], [Durable]</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Modern</strong></td>
+                            <td>+2</td>
+                            <td>Computers, jets</td>
+                            <td>[Electronic], [Precise]</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Advanced</strong></td>
+                            <td>+3</td>
+                            <td>Lasers, powered armor</td>
+                            <td>[Energy], [Smart]</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Cutting-Edge</strong></td>
+                            <td>+4</td>
+                            <td>Plasma, nanotech</td>
+                            <td>[Adaptive], [Quantum]</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Experimental</strong></td>
+                            <td>+5</td>
+                            <td>Singularity tech</td>
+                            <td>[Unstable], [Revolutionary]</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Critical Results -->
+        <section class="mb-xl">
+            <div class="glass-card p-lg">
+                <h2>💥 Critical Results</h2>
+                <div class="grid grid-2" style="gap: 2rem;">
+                    <div>
+                        <h3 style="color: var(--accent-green);">Critical Success (Natural 20)</h3>
+                        <ul>
+                            <li>Automatic success regardless of TN</li>
+                            <li>Double damage on attacks</li>
+                            <li>Exceptional result on skill checks</li>
+                            <li>May gain temporary tag or advantage</li>
+                            <li>Inspire allies (+1 die next action)</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 style="color: var(--accent-red);">Critical Failure (Natural 2)</h3>
+                        <ul>
+                            <li>Automatic failure regardless of modifiers</li>
+                            <li>Possible equipment malfunction</li>
+                            <li>May hit ally or self</li>
+                            <li>Lose next action or take penalty</li>
+                            <li>Create disadvantage for team</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="text-center mb-xl">
+            <div class="glass-panel p-lg">
+                <p style="color: var(--text-muted);">
+                    Quick Reference for Cosmos Engine RPG Second Edition
+                </p>
+                <p style="color: var(--text-muted); font-size: 0.9rem;">
+                    For complete rules, see the <a href="../../chapters/ch02-core-mechanics/index.html">Core Mechanics</a> chapter
+                </p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Scripts -->
+    <script src="../../assets/js/cosmos-engine.js"></script>
+</body>
+</html>

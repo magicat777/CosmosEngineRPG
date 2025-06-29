@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chapter 2: Core Mechanics - Cosmos Engine RPG</title>
     <link rel="stylesheet" href="../../assets/css/cosmos-engine.css">
+    <link rel="stylesheet" href="../../assets/css/print.css" media="print">
     <meta name="description" content="Master the Universal Tag System and 2d10 resolution mechanics that power Cosmos Engine RPG">
 </head>
 <body>
@@ -72,7 +73,7 @@
                 <div class="glass-card p-lg mb-lg">
                     <h3 style="color: var(--accent-blue);">The Universal Formula</h3>
                     <p style="font-size: 1.3rem; font-weight: bold; color: var(--accent-gold); text-align: center; margin: 2rem 0;">
-                        2d10 + Attribute + Skill + Equipment vs Target Number (TN)
+                        2d10 + Attribute Modifier + Equipment + Tag Dice vs Target Number (TN)
                     </p>
                     <p>Roll two ten-sided dice, add modifiers, compare to Target Number. That's it.</p>
                 </div>
@@ -144,7 +145,7 @@
                 
                 <!-- PRIMAC Attributes Table -->
                 <div class="glass-card p-lg mb-lg">
-                    <h3 style="color: var(--accent-blue);">PRIMAC Attributes (1-10 Scale)</h3>
+                    <h3 style="color: var(--accent-blue);">PRIMAC Attributes</h3>
                     <table style="width: 100%;">
                         <thead>
                             <tr>
@@ -195,10 +196,78 @@
                     </table>
                 </div>
 
+                <!-- Attribute Modifier Scale -->
+                <div class="glass-card p-lg mb-lg">
+                    <h3 style="color: var(--accent-blue);">Attribute Modifier Scale</h3>
+                    <table style="width: 100%;">
+                        <thead>
+                            <tr>
+                                <th>Score</th>
+                                <th>Modifier</th>
+                                <th>Description</th>
+                                <th>Score</th>
+                                <th>Modifier</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>1</strong></td>
+                                <td style="color: var(--accent-red);">-2</td>
+                                <td>Severely Impaired</td>
+                                <td><strong>6</strong></td>
+                                <td style="color: var(--accent-green);">+3</td>
+                                <td>Expert</td>
+                            </tr>
+                            <tr>
+                                <td><strong>2</strong></td>
+                                <td style="color: var(--accent-red);">-1</td>
+                                <td>Below Average</td>
+                                <td><strong>7</strong></td>
+                                <td style="color: var(--accent-green);">+4</td>
+                                <td>Elite</td>
+                            </tr>
+                            <tr>
+                                <td><strong>3</strong></td>
+                                <td>+0</td>
+                                <td>Average Human</td>
+                                <td><strong>8</strong></td>
+                                <td style="color: var(--accent-green);">+5</td>
+                                <td>Peak Human</td>
+                            </tr>
+                            <tr>
+                                <td><strong>4</strong></td>
+                                <td style="color: var(--accent-blue);">+1</td>
+                                <td>Above Average</td>
+                                <td><strong>9</strong></td>
+                                <td style="color: var(--accent-gold);">+6</td>
+                                <td>Enhanced</td>
+                            </tr>
+                            <tr>
+                                <td><strong>5</strong></td>
+                                <td style="color: var(--accent-blue);">+2</td>
+                                <td>Professional</td>
+                                <td><strong>10</strong></td>
+                                <td style="color: var(--accent-gold);">+7</td>
+                                <td>Superhuman</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p style="margin-top: 1rem; font-style: italic;">Note: Attribute 0 (Completely Deficient) has a -3 modifier and represents total disability in that area.</p>
+                    
+                    <div class="rule-block" style="background: rgba(255, 215, 0, 0.1); padding: 1rem; border-radius: 8px; margin-top: 1rem;">
+                        <h4 style="color: var(--accent-gold);">When to Use Modifiers vs Raw Scores</h4>
+                        <ul style="margin: 0.5rem 0;">
+                            <li><strong>Use Modifiers for:</strong> All skill checks, attack rolls, damage bonuses (melee), initiative, and movement speed</li>
+                            <li><strong>Use Raw Attribute Scores for:</strong> Defense calculations (10 + Coordination), derived values (Health = 10 + Might), and meeting prerequisites</li>
+                        </ul>
+                    </div>
+                </div>
+
                 <!-- Skills Overview -->
                 <div class="glass-card p-lg mb-lg">
                     <h3 style="color: var(--accent-blue);">Skills Overview</h3>
-                    <p>18 core skills, each advancing through 10 ranks. Details in Chapter 5.</p>
+                    <p>18 core skills, each providing specialized tags through 7 advancement ranks (1,2,3,4,6,8,10). Details in <a href="../ch05-actions-and-skills/index.html">Chapter 5</a>.</p>
                     <div class="grid grid-3" style="margin-top: 1rem;">
                         <div>
                             <strong>Combat & Physical</strong>
@@ -277,15 +346,14 @@
                         <li><strong>Build Dice Pool:</strong>
                             <ul>
                                 <li>Base: 2d10</li>
-                                <li>Intellect 4</li>
-                                <li>Technology 3</li>
-                                <li>Tags: [Military Tech] +1 die, [Quick Thinking] +1 die</li>
+                                <li>Intellect 4 (+1 modifier)</li>
+                                <li>Technology Tags: [Military Tech] +1 die, [Quick Thinking] +1 die</li>
                                 <li>Equipment: Hacking Kit +2</li>
                             </ul>
                         </li>
                         <li><strong>Roll:</strong> 4d10 (base + 2 tag dice) = 7, 9, 4, 10 → Keep 9, 10 = 19</li>
-                        <li><strong>Total:</strong> 19 + 4 + 3 + 2 = 28 vs TN 17</li>
-                        <li><strong>Result:</strong> Success by 11! Door opens immediately, surprising enemies.</li>
+                        <li><strong>Total:</strong> 19 + 1 + 2 = 22 vs TN 17</li>
+                        <li><strong>Result:</strong> Success by 5! Door opens immediately, surprising enemies.</li>
                     </ol>
                 </div>
 
@@ -418,15 +486,15 @@
                         <tbody>
                             <tr>
                                 <td>Attributes</td>
-                                <td>+1 to +10</td>
+                                <td>-2 to +7</td>
                                 <td>Flat bonus</td>
-                                <td>Based on 1-10 scale</td>
+                                <td>Based on modifier scale</td>
                             </tr>
                             <tr>
-                                <td>Skills</td>
-                                <td>+0 to +10</td>
-                                <td>Flat bonus</td>
-                                <td>0 = untrained, 10 = grandmaster</td>
+                                <td>Skill Tags</td>
+                                <td>+1 to +7 dice</td>
+                                <td>Bonus dice</td>
+                                <td>1 tag per advancement rank, roll extra d10s keep best 2</td>
                             </tr>
                             <tr>
                                 <td>Equipment</td>
@@ -461,6 +529,81 @@
                         </tbody>
                     </table>
                 </div>
+
+                <!-- Visual Modifier Caps -->
+                <div class="glass-card p-lg mt-lg" style="background: linear-gradient(135deg, rgba(255, 0, 0, 0.1), rgba(0, 128, 255, 0.1));">
+                    <h3 style="color: var(--accent-gold); text-align: center; margin-bottom: 2rem;">Modifier Caps Visualization</h3>
+                    
+                    <div style="position: relative; height: 120px; margin: 2rem 0;">
+                        <!-- Scale -->
+                        <div style="position: absolute; width: 100%; height: 40px; top: 40px; background: linear-gradient(90deg, 
+                            rgba(255, 0, 0, 0.3) 0%, 
+                            rgba(255, 0, 0, 0.2) 25%, 
+                            rgba(255, 255, 255, 0.1) 50%, 
+                            rgba(0, 128, 255, 0.2) 75%, 
+                            rgba(0, 128, 255, 0.3) 100%); 
+                            border-radius: 20px; border: 2px solid rgba(255, 255, 255, 0.3);">
+                        </div>
+                        
+                        <!-- Center Line -->
+                        <div style="position: absolute; left: 50%; top: 20px; width: 2px; height: 80px; background: var(--accent-gold); transform: translateX(-50%);">
+                            <div style="position: absolute; bottom: -25px; left: 50%; transform: translateX(-50%); color: var(--accent-gold); font-weight: bold;">0</div>
+                        </div>
+                        
+                        <!-- Negative Cap -->
+                        <div style="position: absolute; left: 25%; top: 20px; width: 3px; height: 80px; background: var(--accent-red);">
+                            <div style="position: absolute; top: -25px; left: 50%; transform: translateX(-50%); color: var(--accent-red); font-weight: bold; font-size: 1.2rem;">-6</div>
+                            <div style="position: absolute; bottom: -25px; left: 50%; transform: translateX(-50%); color: var(--accent-red); font-size: 0.8rem; white-space: nowrap;">Minimum</div>
+                        </div>
+                        
+                        <!-- Positive Cap -->
+                        <div style="position: absolute; left: 75%; top: 20px; width: 3px; height: 80px; background: var(--accent-blue);">
+                            <div style="position: absolute; top: -25px; left: 50%; transform: translateX(-50%); color: var(--accent-blue); font-weight: bold; font-size: 1.2rem;">+8</div>
+                            <div style="position: absolute; bottom: -25px; left: 50%; transform: translateX(-50%); color: var(--accent-blue); font-size: 0.8rem; white-space: nowrap;">Maximum</div>
+                        </div>
+                        
+                        <!-- Scale Markers -->
+                        <div style="position: absolute; left: 33.33%; top: 50px; width: 1px; height: 20px; background: rgba(255, 255, 255, 0.3);">
+                            <div style="position: absolute; bottom: -20px; left: 50%; transform: translateX(-50%); font-size: 0.8rem; color: var(--text-muted);">-4</div>
+                        </div>
+                        <div style="position: absolute; left: 41.67%; top: 50px; width: 1px; height: 20px; background: rgba(255, 255, 255, 0.3);">
+                            <div style="position: absolute; bottom: -20px; left: 50%; transform: translateX(-50%); font-size: 0.8rem; color: var(--text-muted);">-2</div>
+                        </div>
+                        <div style="position: absolute; left: 58.33%; top: 50px; width: 1px; height: 20px; background: rgba(255, 255, 255, 0.3);">
+                            <div style="position: absolute; bottom: -20px; left: 50%; transform: translateX(-50%); font-size: 0.8rem; color: var(--text-muted);">+2</div>
+                        </div>
+                        <div style="position: absolute; left: 66.67%; top: 50px; width: 1px; height: 20px; background: rgba(255, 255, 255, 0.3);">
+                            <div style="position: absolute; bottom: -20px; left: 50%; transform: translateX(-50%); font-size: 0.8rem; color: var(--text-muted);">+4</div>
+                        </div>
+                    </div>
+                    
+                    <div class="grid grid-2" style="gap: 2rem; margin-top: 3rem;">
+                        <div style="text-align: center;">
+                            <h4 style="color: var(--accent-red);">Penalty Cap: -6</h4>
+                            <p style="font-size: 0.9rem;">No matter how many negative modifiers apply, the total penalty cannot exceed -6.</p>
+                            <ul style="text-align: left; font-size: 0.85rem; margin-top: 0.5rem;">
+                                <li>Wounded: -2</li>
+                                <li>Poor visibility: -2</li>
+                                <li>Difficult terrain: -2</li>
+                                <li>Total: -6 (not -8)</li>
+                            </ul>
+                        </div>
+                        <div style="text-align: center;">
+                            <h4 style="color: var(--accent-blue);">Bonus Cap: +8</h4>
+                            <p style="font-size: 0.9rem;">No matter how many positive modifiers apply, the total bonus cannot exceed +8.</p>
+                            <ul style="text-align: left; font-size: 0.85rem; margin-top: 0.5rem;">
+                                <li>Skill expert: +5</li>
+                                <li>Superior equipment: +3</li>
+                                <li>Ideal conditions: +2</li>
+                                <li>Total: +8 (not +10)</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div style="background: rgba(255, 215, 0, 0.1); border: 1px solid var(--accent-gold); border-radius: 8px; padding: 1rem; margin-top: 2rem; text-align: center;">
+                        <p style="margin: 0;"><strong>Important:</strong> These caps apply to the standard resolution method. When using tag synergies for bonus dice, these modifier caps are replaced by the dice pool mechanics (max 7d10 keep 2).</p>
+                    </div>
+                </div>
             </section>
 
             <!-- Section 5: Quick Reference Card (1 page) -->
@@ -475,7 +618,7 @@
                         <div>
                             <h4 style="color: var(--accent-blue);">Core Formula</h4>
                             <p style="font-size: 1.1rem; font-weight: bold; margin-bottom: 1rem;">
-                                2d10 + Attribute + Skill + Equipment vs TN
+                                2d10 + Attribute Modifier + Equipment + Tag Dice vs TN
                             </p>
                             
                             <h4 style="color: var(--accent-blue);">Target Numbers</h4>
@@ -548,5 +691,6 @@
     </div>
 
     <script src="../../assets/js/cosmos-engine.js"></script>
+    <script src="../../assets/js/standardize-navigation.js"></script>
 </body>
 </html>

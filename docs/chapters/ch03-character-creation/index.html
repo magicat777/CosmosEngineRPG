@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chapter 3: Character Creation - Cosmos Engine RPG</title>
     <link rel="stylesheet" href="../../assets/css/cosmos-engine.css">
+    <link rel="stylesheet" href="../../assets/css/print.css" media="print">
     <meta name="description" content="Create your character in Cosmos Engine RPG with our streamlined 9-step process">
 </head>
 <body>
@@ -76,7 +77,7 @@
                         <li><strong>Choose Human:</strong> No modifiers, most flexible</li>
                         <li><strong>Use Standard Array:</strong> 5, 4, 4, 3, 3, 2 for attributes</li>
                         <li><strong>Take a Skill Package:</strong> Explorer, Specialist, Soldier, or Socialite</li>
-                        <li><strong>Select Tags:</strong> One per skill rank (automatic with package)</li>
+                        <li><strong>Select Tags:</strong> One per advancement rank 1,2,3 (choose from skill packages)</li>
                         <li><strong>Calculate Values:</strong> Use the formulas below</li>
                         <li><strong>Grab Starting Gear:</strong> Pick an equipment package</li>
                         <li><strong>Name & Motivate:</strong> Who are you and what drives you?</li>
@@ -190,7 +191,7 @@
                 <!-- Step 4: Skills -->
                 <div class="glass-card p-lg mb-lg">
                     <h3>Step 4: Allocate Skills</h3>
-                    <p><strong>10 Skill Points (AP)</strong> to spend on 18 skills:</p>
+                    <p><strong>10 Skill Points (AP)</strong> to spend on skill advancement ranks and tags:</p>
                     
                     <table style="width: 100%; margin: 1rem 0;">
                         <thead>
@@ -225,10 +226,10 @@
                     <div style="background: rgba(0, 128, 255, 0.1); padding: 1rem; border-radius: 8px; margin-top: 1rem;">
                         <strong>Skill Packages (Spend all 10 AP):</strong>
                         <ul style="font-size: 0.9rem;">
-                            <li><strong>Explorer:</strong> Survival 3, Pilot 2, Tech 2, Perception 2, Athletics 1</li>
-                            <li><strong>Specialist:</strong> One skill at 3, two at 2, one at 1</li>
-                            <li><strong>Soldier:</strong> Combat 3, Athletics 2, Discipline 2, Intimidation 2, Survival 1</li>
-                            <li><strong>Socialite:</strong> Persuasion 3, Deception 2, Performance 2, Commerce 2, Knowledge 1</li>
+                            <li><strong>Explorer:</strong> Survival (Ranks 1-3), Pilot (Ranks 1-2), Tech (Ranks 1-2), Perception (Ranks 1-2), Athletics (Rank 1)</li>
+                            <li><strong>Specialist:</strong> One skill to Rank 3, two skills to Rank 2, one skill to Rank 1</li>
+                            <li><strong>Soldier:</strong> Combat (Ranks 1-3), Athletics (Ranks 1-2), Discipline (Ranks 1-2), Intimidation (Ranks 1-2), Survival (Rank 1)</li>
+                            <li><strong>Socialite:</strong> Persuasion (Ranks 1-3), Deception (Ranks 1-2), Performance (Ranks 1-2), Commerce (Ranks 1-2), Knowledge (Rank 1)</li>
                         </ul>
                     </div>
                 </div>
@@ -240,10 +241,10 @@
                     <div class="rule-block" style="background: rgba(0, 255, 0, 0.1); padding: 1rem; border-radius: 8px;">
                         <h4 style="color: var(--accent-green);">Tag Quick Reference</h4>
                         <ul>
-                            <li><strong>You get 1 tag per skill rank</strong></li>
-                            <li>Rank 1 = 1 tag, Rank 2 = 2 tags, Rank 3 = 3 tags</li>
-                            <li>Tags provide +1 die when relevant to your action</li>
-                            <li>Choose tags that fit your concept and playstyle</li>
+                            <li><strong>You get 1 tag per advancement rank</strong></li>
+                            <li>Rank 1 = 1 tag, Rank 2 = 2 tags total, Rank 3 = 3 tags total</li>
+                            <li>Each tag provides +1 die when relevant to your action</li>
+                            <li>Choose from 4 thematic options per rank that fit your concept</li>
                         </ul>
                     </div>
                     
@@ -391,33 +392,33 @@
                             
                             <h4>3. Attributes (10 AP)</h4>
                             <ul style="font-size: 0.9rem;">
-                                <li>Presence: 2 (0 AP)</li>
-                                <li>Resolve: 3 (1 AP)</li>
-                                <li>Intellect: 5 (3 AP)</li>
-                                <li>Might: 2 (0 AP)</li>
-                                <li>Awareness: 4 (2 AP)</li>
-                                <li>Coordination: 4 (2 AP)</li>
+                                <li>Presence: 2 (-1) (0 AP)</li>
+                                <li>Resolve: 3 (+0) (1 AP)</li>
+                                <li>Intellect: 5 (+2) (3 AP)</li>
+                                <li>Might: 2 (-1) (0 AP)</li>
+                                <li>Awareness: 4 (+1) (2 AP)</li>
+                                <li>Coordination: 4 (+1) (2 AP)</li>
                                 <li style="color: var(--accent-yellow);">Deficit: 2 AP (balanced)</li>
                             </ul>
                             
-                            <h4>4. Skills (10 AP)</h4>
+                            <h4>4. Skills & Tags (10 AP)</h4>
                             <ul style="font-size: 0.9rem;">
-                                <li>Technology: 3 (3 AP)</li>
-                                <li>Combat: 2 (2 AP)</li>
-                                <li>Stealth: 2 (2 AP)</li>
-                                <li>Deception: 2 (2 AP)</li>
-                                <li>Knowledge: 1 (1 AP)</li>
+                                <li>Technology: Ranks 1-3 (3 AP) → 3 tags</li>
+                                <li>Combat: Ranks 1-2 (2 AP) → 2 tags</li>
+                                <li>Stealth: Ranks 1-2 (2 AP) → 2 tags</li>
+                                <li>Deception: Ranks 1-2 (2 AP) → 2 tags</li>
+                                <li>Knowledge: Rank 1 (1 AP) → 1 tag</li>
                             </ul>
                         </div>
                         
                         <div>
-                            <h4>5. Tags</h4>
+                            <h4>5. Selected Tags (10 total)</h4>
                             <ul style="font-size: 0.9rem;">
-                                <li>Technology: [Military Tech], [Quick-Hack], [System Exploit]</li>
-                                <li>Combat: [Cover Fighter], [Precise]</li>
-                                <li>Stealth: [Electronic], [Patient]</li>
-                                <li>Deception: [Fast-Talk], [Poker Face]</li>
-                                <li>Knowledge: [Military Protocols]</li>
+                                <li>Technology: [Military Tech] (R1), [Quick-Hack] (R2), [System Exploit] (R3)</li>
+                                <li>Combat: [Trained] (R1), [Precise] (R2)</li>
+                                <li>Stealth: [Electronic] (R1), [Patient] (R2)</li>
+                                <li>Deception: [Fast-Talk] (R1), [Poker Face] (R2)</li>
+                                <li>Knowledge: [Military Protocols] (R1)</li>
                             </ul>
                             
                             <h4>6. Derived Values</h4>
@@ -425,7 +426,7 @@
                                 <li>Health: 12 (10 + MIG 2)</li>
                                 <li>Stress: 13 (10 + RES 3)</li>
                                 <li>Defense: 14 (10 + COO 4)</li>
-                                <li>Mental Defense: 14 (10 + AWA 4)</li>
+                                <li>Mental Defense: 13 (10 + RES 3)</li>
                                 <li>Initiative: 8 (AWA 4 + COO 4)</li>
                                 <li>Move: 5 meters</li>
                             </ul>
@@ -637,5 +638,6 @@
     </div>
 
     <script src="../../assets/js/cosmos-engine.js"></script>
+    <script src="../../assets/js/standardize-navigation.js"></script>
 </body>
 </html>
