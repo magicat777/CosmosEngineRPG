@@ -23,7 +23,7 @@
 **Cosmos Engine RPG** is a comprehensive science fiction role-playing game system featuring mathematically balanced mechanics that maintain consistent challenge from levels 1 to 20. Built on a unified 2d10 resolution system, it supports campaigns ranging from gritty cyberpunk street adventures to epic space opera spanning galactic civilizations.
 
 ### Core Design Philosophy
-- **Mathematical Balance**: Maintains ~85% hit rates across all levels through innovative skill-divided-by-2 formula
+- **Mathematical Balance**: Maintains ~85% hit rates across all levels through innovative skill-mod-divided-by-2 formula
 - **Unified Mechanics**: Single resolution system (2d10 + Attribute Mod + Skill Mod) for all actions
 - **Scalable Complexity**: Simple core rules with optional advanced systems
 - **Technology Progression**: Four distinct technological eras from Primitive to Cosmic (Galactic)
@@ -32,23 +32,23 @@
 ## Features
 
 ### 🎲 Balanced Game Mechanics
-- **Combat System**: Tactical depth without number inflation by using an advantage dice pool attack. 
-- **Skill System**: 18 primary skills covering most sci-fi scenarios
-- **Species System**: 10 core playable species with unique abilities
-- **Character Advancement**: Meaningful progression across 20 levels with specialization bonuses and skill synergies. 
+- **Combat System**: Tactical depth without number inflation by using an advantage dice pool attack to hit (2d10+nd10k2), rewards planning without overscaling damage
+- **Skill-Profession System**: 18 primary skills covering most sci-fi professions, each with an epic archetype
+- **Species System**: 10 playable humanoid (organic and inorganic) species with unique abilities and balanced roles
+- **Character Advancement**: Meaningful progression across 20 character levels with unique abilities, specialization bonuses, skill synergies; using advancement-point (AP) buy
 
 ### 🚀 Advanced Systems
-- **Vehicle Chases**: Dynamic pursuit mechanics for ground, air, and space that thematically represent chases over varying distances, speeds, and scales. 
-- **Cybernetics & AI**: Not a minigame. Same rules, parallel action with tags that don't bog down combat, but allow for detailed cybertheater.
+- **Vehicle Chases**: Dynamic tactical pursuit mechanics for ground, air, and space that thematically represent chases over varying distances, speeds, and scales. 
+- **Cybernetics & AI**: Not a minigame. Same rules, parallel action that doesn't bog down combat, but allows for detailed cybertheater.
 -**Organizations**: Faction mechanics and relationship systems that utilize skill synergies to offer greater scope and scale. 
-- **Economics**: Functional wealth and resource management through credits, equipment quirks (tags), and scalable economies for large civilization-spanning characters (such as Mon Mothma or  )
+- **Economics**: Functional wealth and resource management through credits, equipment quirks (tags), and scalable economies for large civilization-spanning characters.
 - **Research**: Discovery and technology advancement mechanics
 
 ### 📚 Complete Documentation
-- **Core Rules**: Comprehensive rulebooks for players and GMs
-- **Quick Start**: Ready-to-play adventure "Signals in the Dark"
-- **Character Examples**: Pre-generated characters and iconic builds
-- **GM Resources**: Encounter design, campaign frameworks, and generators
+- **Core Rules**: Comprehensive rulebooks for players and GMs (in progress)
+- **Quick Start**: Ready-to-play adventure "Signals in the Dark" (to-do)
+- **Character Examples**: Pre-generated characters and iconic builds (in progress)
+- **GM Resources**: Encounter design, campaign frameworks, and generators (to-do)
 
 ### 🌌 Flexible Setting Framework
 - **Technology Eras**: Primitive, Industrial, Advanced, and Stellar
@@ -119,7 +119,7 @@ CosmosEngineRPG/
 
 ## Current Status
 
-### Completed Systems ✅
+### Completed Systems (in revision)
 - **Core Mechanics**: Balanced 2d10 resolution system with skill-divided-by-2 formula
 - **Combat System v3**: Tactical combat maintaining 85% hit rates across levels 1-20
 - **Character System**: 10 species, 12 skills, 20-level advancement
